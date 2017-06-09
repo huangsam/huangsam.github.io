@@ -1,0 +1,29 @@
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+main {
+    margin-top: 50px;
+}
+/* Sticky footer styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: white;
+}
+p {
+    margin-top: 20px;
+}
