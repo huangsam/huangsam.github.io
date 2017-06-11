@@ -3,7 +3,7 @@ brand_colors = {
     "facebook": "#3b5998",
     "linkedin": "#0077b5",
     "wordpress": "#21759b"
-}
+};
 
 $(".theme").mouseover(changeTheme);
 $(".theme").mouseleave(originalTheme);
