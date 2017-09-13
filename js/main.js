@@ -17,6 +17,7 @@ function changeTheme() {
   $(".col a").css("color", "white")
   $("footer").css("background-color", "white")
   $("footer span").css("color", color)
+  $("img").addClass("svg-invert")
 }
 
 function originalTheme() {
@@ -25,4 +26,5 @@ function originalTheme() {
   $(".col a").css("color", "#0275d8")
   $("footer").css("background-color", "#f5f5f5")
   $("footer span").css("color", "black")
+  $("img").removeClass("svg-invert")
 }

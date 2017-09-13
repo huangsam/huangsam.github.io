@@ -31,9 +31,6 @@ main {
   max-width: 680px;
   padding: 0 15px; }
 
-.row {
-  margin-bottom: 10px; }
-
 body {
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
@@ -45,5 +42,13 @@ a, h1, p {
   -moz-transition: color .25s ease-out;
   -o-transition: color .25s ease-out;
   transition: color .25s ease-out; }
+
+.svg-invert {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  transition: .25s filter linear; }
+
+#profile-row {
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map*/
