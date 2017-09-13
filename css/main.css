@@ -2,45 +2,46 @@
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%;
-}
+  min-height: 100%; }
+
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
-}
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5; }
 
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 nav {
-    margin-top: 10px;
-}
+  margin-top: 10px; }
+
 main {
-    margin-top: 50px;
-}
+  margin-top: 50px; }
+
 .container {
   width: auto;
   max-width: 680px;
-  padding: 0 15px;
-}
+  padding: 0 15px; }
+
 body {
-    -webkit-transition: background-color .5s ease-out;
-    -moz-transition: background-color .5s ease-out;
-    -o-transition: background-color .5s ease-out;
-    transition: background-color .5s ease-out;
-}
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out; }
+
 a, h1, p {
-    -webkit-transition: color .25s ease-out;
-    -moz-transition: color .25s ease-out;
-    -o-transition: color .25s ease-out;
-    transition: color .25s ease-out;
-}
+  -webkit-transition: color .25s ease-out;
+  -moz-transition: color .25s ease-out;
+  -o-transition: color .25s ease-out;
+  transition: color .25s ease-out; }
+
+/*# sourceMappingURL=main.css.map*/
