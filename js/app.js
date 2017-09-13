@@ -9,8 +9,8 @@ $(".theme").mouseover(changeTheme)
 $(".theme").mouseleave(originalTheme)
 
 function changeTheme() {
-  brand = $(this).attr("id")
-  color = brand_colors[brand]
+  let brand = $(this).attr("id")
+  let color = brand_colors[brand]
 
   $("body").css("background-color", color)
   $(".col p, h1").css("color", "white")
