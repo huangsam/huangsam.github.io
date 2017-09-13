@@ -31,6 +31,9 @@ main {
   max-width: 680px;
   padding: 0 15px; }
 
+.row {
+  margin-bottom: 10px; }
+
 body {
   -webkit-transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;

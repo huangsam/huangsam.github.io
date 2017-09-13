@@ -4,25 +4,28 @@
 -------------------------------------------------- */
 
 nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 main {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .container {
   width: auto;
   max-width: 680px;
   padding: 0 15px;
 }
+.row {
+  margin-bottom: 10px;
+}
 body {
-    -webkit-transition: background-color .5s ease-out;
-    -moz-transition: background-color .5s ease-out;
-    -o-transition: background-color .5s ease-out;
-    transition: background-color .5s ease-out;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
 }
 a, h1, p {
-    -webkit-transition: color .25s ease-out;
-    -moz-transition: color .25s ease-out;
-    -o-transition: color .25s ease-out;
-    transition: color .25s ease-out;
+  -webkit-transition: color .25s ease-out;
+  -moz-transition: color .25s ease-out;
+  -o-transition: color .25s ease-out;
+  transition: color .25s ease-out;
 }
