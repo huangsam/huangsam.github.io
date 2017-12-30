@@ -12,5 +12,8 @@
   },
   "scripts": {
     "webpack": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "npm": "^5.6.0"
   }
 }
