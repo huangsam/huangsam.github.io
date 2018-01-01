@@ -107,6 +107,11 @@ function originalTheme() {
     $("code").css("color", "black");
 }
 
+$(document).ready(function () {
+    var currentYear = new Date().getFullYear();
+    $("#current-year").text(currentYear);
+});
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {

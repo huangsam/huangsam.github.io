@@ -26,3 +26,8 @@ function originalTheme() {
     $("footer span").css("color", "black")
     $("code").css("color", "black")
 }
+
+$(document).ready(function () {
+    let currentYear = new Date().getFullYear()
+    $("#current-year").text(currentYear)
+})
