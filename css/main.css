@@ -23,7 +23,7 @@ nav {
   margin-top: 10px; }
 
 main {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 body {
   -webkit-transition: background-color .5s ease-out;
@@ -36,5 +36,8 @@ a, h1, p, code {
   -moz-transition: color .25s ease-out;
   -o-transition: color .25s ease-out;
   transition: color .25s ease-out; }
+
+a, a:visited {
+  color: #0275d8; }
 
 /*# sourceMappingURL=main.css.map*/
