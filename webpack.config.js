@@ -1,11 +1,11 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-const extractSass = new ExtractTextPlugin('css/[name].css');
+const extractSass = new ExtractTextPlugin('static/css/[name].css');
 
 module.exports = {
-  entry: ['./js/main.js', './scss/main.scss'],
+  entry: ['./app/main.js', './scss/main.scss'],
   output: {
-    filename: 'bundle.js'
+    filename: 'static/js/bundle.js'
   },
   module: {
     rules: [
