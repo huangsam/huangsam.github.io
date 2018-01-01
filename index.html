@@ -4,7 +4,6 @@
 <head>
     <title>Welcome to huangsam.github.io!</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -14,23 +13,24 @@
     <main>
         <h1>Sam Huang</h1>
         <p class="lead">Software engineer and artist</p>
-        <p>
-            <a id="facebook" class="theme" href="https://www.facebook.com/samuel.c.huang">&gt; Connect with me on Facebook</a>
-        </p>
-        <p>
-            <a id="linkedin" class="theme" href="https://www.linkedin.com/in/sambyte">&gt; See my work and education on LinkedIn</a>
-        </p>
-        <p>
-            <a id="wordpress" class="theme" href="https://sambyte.wordpress.com/">&gt; Read posts about my life on Wordpress</a>
-        </p>
         <code>while not success: try_again()</code>
+        <p>Connect with me on:</p>
+        <form>
+            <select id="service">
+                <option value="default">---</option>
+                <option value="facebook">Facebook</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="wordpress">Wordpress</option>
+            </select>
+            <input id="goto" type="submit" value="Submit">
+        </form>
     </main>
 
     <footer class="footer">
         <span>&copy; 2016-<span id="current-year"></span> All Rights Reserved</span>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="jquery.slim.min.js"></script>
     <script src="bundle.js"></script>
 </body>
 
