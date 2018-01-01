@@ -1,0 +1,16 @@
+/* Fonts styles
+-------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fira Mono', monospace;
+}
+
+code, pre {
+    font-family: 'Fira Mono', monospace;
+}
+
+p, span {
+    font-family: 'Open Sans', sans-serif;
+}

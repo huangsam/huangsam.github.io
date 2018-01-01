@@ -1,3 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);/* Fonts styles
+-------------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  font-family: 'Fira Mono', monospace; }
+
+code, pre {
+  font-family: 'Fira Mono', monospace; }
+
+p, span {
+  font-family: 'Open Sans', sans-serif; }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -38,5 +49,22 @@ a, h1, p, code {
 
 a, a:visited {
   color: #0275d8; }
+
+.lead {
+  font-weight: 1000; }
+
+.code-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  max-width: 300px; }
+
+.code-block pre {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  margin-left: 10px; }
 
 /*# sourceMappingURL=main.css.map*/
