@@ -78,39 +78,30 @@ module.exports = __webpack_require__(2);
 "use strict";
 
 
-var serviceColors = {
-    "github": "#24292e",
-    "facebook": "#3b5998",
-    "linkedin": "#0077b5",
-    "wordpress": "#21759b"
-};
+/* Data structures */
 
-var serviceUrls = {
-    "github": "https://github.com/huangsam",
-    "facebook": "https://www.facebook.com/samuel.c.huang",
-    "linkedin": "https://www.linkedin.com/in/sambyte",
-    "wordpress": "https://sambyte.wordpress.com"
-};
-
-$("#service").change(function () {
-    var service = $(this).val();
-    if (service === "default") {
-        originalTheme();
-    } else {
-        changeTheme(service);
+var serviceMeta = {
+    "github": {
+        "color": "#24292e",
+        "url": "https://github.com/huangsam"
+    },
+    "facebook": {
+        "color": "#3b5998",
+        "url": "https://www.facebook.com/samuel.c.huang"
+    },
+    "linkedin": {
+        "color": "#0077b5",
+        "url": "https://www.linkedin.com/in/sambyte"
+    },
+    "wordpress": {
+        "color": "#21759b",
+        "url": "https://sambyte.wordpress.com"
     }
-});
 
-$("#goto").click(function (e) {
-    e.preventDefault();
-    var service = $("#service").val();
-    if (service !== "default") {
-        window.location.href = serviceUrls[service];
-    }
-});
+    /* Event handlers */
 
-function changeTheme(service) {
-    var color = serviceColors[service];
+};function changeTheme(service) {
+    var color = serviceMeta[service]["color"];
 
     $("body").css("background-color", color);
     $("p, h1").css("color", "white");
@@ -126,6 +117,25 @@ function originalTheme() {
     $("footer span").css("color", "black");
     $("code").css("color", "black");
 }
+
+/* Event listeners */
+
+$("#service").change(function () {
+    var service = $(this).val();
+    if (service === "default") {
+        originalTheme();
+    } else {
+        changeTheme(service);
+    }
+});
+
+$("#goto").click(function (e) {
+    e.preventDefault();
+    var service = $("#service").val();
+    if (service !== "default") {
+        window.location.href = serviceMeta[service]["url"];
+    }
+});
 
 $(document).ready(function () {
     var currentYear = new Date().getFullYear();
