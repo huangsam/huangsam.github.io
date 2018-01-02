@@ -133,9 +133,11 @@ $("#service").change(function () {
 
 $("#goto").click(function (e) {
     e.preventDefault();
-    var service = $("#service").val();
+    var service = $("select#service").val();
     if (service !== "default") {
         window.location.href = getServiceUrl(service);
+    } else {
+        alert("Please select a valid service from the dropdown.");
     }
 });
 
