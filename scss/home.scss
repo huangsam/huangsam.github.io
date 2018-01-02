@@ -55,14 +55,14 @@ pre {
     font-size: .9em;
 }
 
-pre span.bool {
+pre code.language-python span.bool {
     color: #1ab728;
 }
 
-pre span.var {
+pre code.language-python span.var {
     color: #ff9100;
 }
 
-pre span.func {
+pre code.language-python span.func {
     color: #009dff;
 }
