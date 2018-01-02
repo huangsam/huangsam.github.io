@@ -3,9 +3,6 @@
 h1, h2, h3, h4, h5 {
   font-family: 'Fira Mono', monospace; }
 
-code, pre {
-  font-family: 'Fira Mono', monospace; }
-
 p, span {
   font-family: 'Open Sans', sans-serif; }
 
@@ -41,11 +38,17 @@ body {
   -o-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out; }
 
-a, h1, p, code {
+a, h1, p {
   -webkit-transition: color .25s ease-out;
   -moz-transition: color .25s ease-out;
   -o-transition: color .25s ease-out;
   transition: color .25s ease-out; }
+
+pre {
+  -webkit-transition: border .25s ease-out;
+  -moz-transition: border .25s ease-out;
+  -o-transition: border .25s ease-out;
+  transition: border .25s ease-out; }
 
 a, a:visited {
   color: #0275d8; }
@@ -55,16 +58,6 @@ a, a:visited {
 
 .code-block {
   margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: black;
-  color: white;
-  width: 100%;
-  max-width: 300px; }
-
-.code-block pre {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 12px;
-  margin-left: 10px; }
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map*/

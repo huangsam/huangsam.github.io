@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Welcome to my page!</title>
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/prism.css" />
+    <link rel="stylesheet" href="static/css/main.css" />
 </head>
 
 <body>
@@ -25,12 +26,10 @@
             </select>
             <input id="goto" type="submit" value="Submit">
         </form>
-        <div class="code-block">
-            <pre>
-#!/usr/bin/env python
+<div class="code-block"><pre><code class="language-python">success = False
 while success is not True:
-    try_again()</pre>
-        </div>
+    success = try_again()
+</code></pre></div>
     </main>
 
     <footer class="footer">
@@ -38,6 +37,7 @@ while success is not True:
     </footer>
 
     <script src="static/js/jquery.slim.min.js"></script>
+    <script src="static/js/prism.js"></script>
     <script src="static/js/bundle.js"></script>
 </body>
 

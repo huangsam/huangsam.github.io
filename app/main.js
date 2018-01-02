@@ -28,7 +28,7 @@ function changeTheme(service) {
     $("p, h1").css("color", "white")
     $("a").css("color", "white")
     $("footer span").css("color", "white")
-    $("code").css("color", "white")
+    $("pre").css("border", ".3em solid white")
 }
 
 function originalTheme() {
@@ -36,7 +36,7 @@ function originalTheme() {
     $("p, h1").css("color", "black")
     $("a").css("color", "#0275d8")
     $("footer span").css("color", "black")
-    $("code").css("color", "black")
+    $("pre").css("border", ".3em solid hsl(0, 0%, 33%)")
 }
 
 /* Event listeners */
