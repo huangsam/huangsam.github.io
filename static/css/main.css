@@ -3,7 +3,7 @@
 h1, h2, h3, h4, h5 {
   font-family: 'Fira Mono', monospace; }
 
-pre, code {
+pre, pre span, code {
   font-family: 'Fira Mono', monospace; }
 
 p, span {
@@ -74,5 +74,14 @@ pre {
   background-color: #141414;
   color: white;
   font-size: .9em; }
+
+pre span.bool {
+  color: #1ab728; }
+
+pre span.var {
+  color: #ff9100; }
+
+pre span.func {
+  color: #009dff; }
 
 /*# sourceMappingURL=main.css.map*/
