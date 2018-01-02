@@ -35,3 +35,14 @@ a, a:visited {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+pre {
+    border-radius: .5em;
+    border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+    box-shadow: 1px 1px .5em black inset;
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    font-size: .9em;
+}
