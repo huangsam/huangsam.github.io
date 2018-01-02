@@ -82,25 +82,27 @@ module.exports = __webpack_require__(2);
 
 var serviceMeta = {
     "github": {
-        "color": "#24292e",
-        "url": "https://github.com/huangsam"
+        "color": "#24292e"
     },
     "facebook": {
-        "color": "#3b5998",
-        "url": "https://www.facebook.com/samuel.c.huang"
+        "color": "#3b5998"
     },
     "linkedin": {
-        "color": "#0077b5",
-        "url": "https://www.linkedin.com/in/sambyte"
+        "color": "#0077b5"
     },
     "wordpress": {
-        "color": "#21759b",
-        "url": "https://sambyte.wordpress.com"
+        "color": "#21759b"
     }
 
-    /* Event handlers */
+    /* Helper routines */
 
-};function changeTheme(service) {
+};function getServiceUrl(service) {
+    return "http://" + service + ".sambyte.net";
+}
+
+/* Event handlers */
+
+function changeTheme(service) {
     var color = serviceMeta[service]["color"];
 
     $("body").css("background-color", color);
@@ -122,10 +124,10 @@ function originalTheme() {
 
 $("#service").change(function () {
     var service = $(this).val();
-    if (service === "default") {
-        originalTheme();
-    } else {
+    if (service !== "default") {
         changeTheme(service);
+    } else {
+        originalTheme();
     }
 });
 
@@ -133,7 +135,7 @@ $("#goto").click(function (e) {
     e.preventDefault();
     var service = $("#service").val();
     if (service !== "default") {
-        window.location.href = serviceMeta[service]["url"];
+        window.location.href = getServiceUrl(service);
     }
 });
 

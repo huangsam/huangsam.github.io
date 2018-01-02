@@ -2,21 +2,23 @@
 
 const serviceMeta = {
     "github": {
-        "color": "#24292e",
-        "url": "https://github.com/huangsam"
+        "color": "#24292e"
     },
     "facebook": {
-        "color": "#3b5998",
-        "url": "https://www.facebook.com/samuel.c.huang"
+        "color": "#3b5998"
     },
     "linkedin": {
-        "color": "#0077b5",
-        "url": "https://www.linkedin.com/in/sambyte"
+        "color": "#0077b5"
     },
     "wordpress": {
-        "color": "#21759b",
-        "url": "https://sambyte.wordpress.com"
+        "color": "#21759b"
     }
+}
+
+/* Helper routines */
+
+function getServiceUrl(service) {
+    return "http://" + service + ".sambyte.net"
 }
 
 /* Event handlers */
@@ -43,10 +45,10 @@ function originalTheme() {
 
 $("#service").change(function () {
     let service = $(this).val()
-    if (service === "default") {
-        originalTheme()
-    } else {
+    if (service !== "default") {
         changeTheme(service)
+    } else {
+        originalTheme()
     }
 })
 
@@ -54,7 +56,7 @@ $("#goto").click(function (e) {
     e.preventDefault()
     let service = $("#service").val()
     if (service !== "default") {
-        window.location.href = serviceMeta[service]["url"]
+        window.location.href = getServiceUrl(service)
     }
 })
 
