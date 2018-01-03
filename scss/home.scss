@@ -2,67 +2,67 @@
 -------------------------------------------------- */
 
 nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 main {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 body {
-    -webkit-transition: background-color .5s ease-out;
-    -moz-transition: background-color .5s ease-out;
-    -o-transition: background-color .5s ease-out;
-    transition: background-color .5s ease-out;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
 }
 
 a, h1, p {
-    -webkit-transition: color .25s ease-out;
-    -moz-transition: color .25s ease-out;
-    -o-transition: color .25s ease-out;
-    transition: color .25s ease-out;
+  -webkit-transition: color .25s ease-out;
+  -moz-transition: color .25s ease-out;
+  -o-transition: color .25s ease-out;
+  transition: color .25s ease-out;
 }
 
 pre {
-    -webkit-transition: border .25s ease-out;
-    -moz-transition: border .25s ease-out;
-    -o-transition: border .25s ease-out;
-    transition: border .25s ease-out;
+  -webkit-transition: border .25s ease-out;
+  -moz-transition: border .25s ease-out;
+  -o-transition: border .25s ease-out;
+  transition: border .25s ease-out;
 }
 
 a, a:visited {
-    color: #0275d8;
+  color: #0275d8;
 }
 
 .lead {
-    font-weight: 1000;
+  font-weight: bold;
 }
 
 .code-block {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 pre {
-    border-radius: .5em;
-    border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
-    box-shadow: 1px 1px .5em black inset;
-    margin: .5em 0;
-    overflow: auto;
-    padding: 1em;
-    background-color: hsl(0, 0%, 8%);
-    color: white;
-    font-size: .9em;
+  border-radius: .5em;
+  border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+  box-shadow: 1px 1px .5em black inset;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  font-size: .9em;
 }
 
 pre code.language-python span.bool {
-    color: #1ab728;
+  color: #1ab728;
 }
 
 pre code.language-python span.var {
-    color: #ff9100;
+  color: #ff9100;
 }
 
 pre code.language-python span.func {
-    color: #009dff;
+  color: #009dff;
 }
