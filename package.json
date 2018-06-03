@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "ajv": "6.5.0",
     "babel-core": "*",
     "babel-loader": "*",
     "babel-preset-env": "*",
@@ -8,9 +9,8 @@
     "node-sass": "*",
     "sass-loader": "*",
     "style-loader": "*",
-    "webpack": "*",
-    "webpack-cli": "*",
-    "ajv": "*"
+    "webpack": "4.10.2",
+    "webpack-cli": "3.0.1"
   },
   "scripts": {
     "webpack": "webpack --config webpack.config.js"
