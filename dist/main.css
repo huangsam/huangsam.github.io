@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);/* Fonts styles
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);
+/* Fonts styles
 -------------------------------------------------- */
 h1, h2, h3, h4, h5 {
   font-family: 'Fira Mono', monospace; }
@@ -83,5 +84,6 @@ pre code.language-python span.var {
 
 pre code.language-python span.func {
   color: #009dff; }
+
 
 /*# sourceMappingURL=main.css.map*/

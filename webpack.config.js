@@ -1,11 +1,18 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-const extractSass = new ExtractTextPlugin('static/css/[name].css');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: ['./app/main.js', './scss/main.scss'],
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    })
+  ],
   output: {
-    filename: 'static/js/bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -16,28 +23,19 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env']
-          }
-        }
+          },
+        },
       },
       {
-        test: /\.(sass|scss)$/,
-        use: extractSass.extract({
-          use: [
-            {
-              loader: 'css-loader?sourceMap'
-            },
-            {
-              loader: 'sass-loader'
-            }
-          ],
-          fallback: 'style-loader'
-        })
-      }
+        test: /\.s?[ac]ss$/,
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ],
+      },
     ]
   },
-  plugins: [
-    extractSass
-  ],
   stats: {
     colors: true
   },
