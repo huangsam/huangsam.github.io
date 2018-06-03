@@ -2,23 +2,27 @@
 
 const serviceMeta = {
     "github": {
-        "color": "#24292e"
+        "color": "#24292e",
+        "url": "https://github.com/huangsam/"
     },
     "facebook": {
-        "color": "#3b5998"
+        "color": "#3b5998",
+        "url": "https://www.facebook.com/samuel.c.huang"
     },
     "linkedin": {
-        "color": "#0077b5"
+        "color": "#0077b5",
+        "url": "https://www.linkedin.com/in/sambyte/"
     },
     "wordpress": {
-        "color": "#21759b"
+        "color": "#21759b",
+        "url": "https://sambyte.wordpress.com/"
     }
 }
 
 /* Helper routines */
 
 function getServiceUrl(service) {
-    return "http://" + service + ".sambyte.net"
+    return serviceMeta[service]["url"]
 }
 
 /* Event handlers */
