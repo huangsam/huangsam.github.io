@@ -2,42 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Welcome to my page!</title>
-    <link rel="stylesheet" href="dist/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Welcome to my page!</title>
+  <link rel="stylesheet" href="dist/main.css" />
 </head>
 
 <body>
-    <nav>
-        <p><a href="https://www.sambyte.net">My personal site</a></p>
-    </nav>
-    <main>
-        <h1>Sam Huang</h1>
-        <p class="lead">Software engineer and artist</p>
-        <p>Connect with me on:</p>
-        <form>
-            <select id="service">
-                <option value="default" selected>---</option>
-                <option value="github">GitHub</option>
-                <option value="facebook">Facebook</option>
-                <option value="linkedin">LinkedIn</option>
-                <option value="wordpress">Wordpress</option>
-            </select>
-            <input id="goto" type="submit" value="Submit">
-        </form>
-<div class="code-block"><pre><code class="language-python"><span class="var">success</span> = <span class="bool">False</span>
+  <nav>
+    <p>Welcome</p>
+  </nav>
+  <main>
+    <h1>Sam Huang</h1>
+    <p class="lead">Software engineer and artist</p>
+    <p>Connect with me on:</p>
+    <form>
+      <select id="service">
+        <option value="default" selected>---</option>
+        <option value="github">GitHub</option>
+        <option value="facebook">Facebook</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="wordpress">Wordpress</option>
+      </select>
+      <input id="goto" type="submit" value="Submit">
+    </form>
+    <div class="code-block">
+<!-- Special formatting for code -->
+<pre><code class="language-python"><span class="var">success</span> = <span class="bool">False</span>
 while <span class="var">success</span> is not <span class="bool">True</span>:
-    <span class="var">success</span> = <span class="func">try_again()</span>
-</code></pre></div>
-    </main>
+  <span class="var">success</span> = <span class="func">try_again()</span>
+</code></pre>
+    </div>
+  </main>
 
-    <footer class="footer">
-        <span>&copy; 2016-<span id="current-year"></span> All Rights Reserved</span>
-    </footer>
+  <footer class="footer">
+    <span>&copy; 2016-<span id="current-year"></span> All Rights Reserved</span>
+  </footer>
 
-    <script src="static/js/jquery.slim.min.js"></script>
-    <script src="dist/bundle.js"></script>
+  <script src="static/js/jquery.slim.min.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 
 </html>
