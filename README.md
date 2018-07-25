@@ -10,6 +10,6 @@ Install the package dependencies:
 
 Run the following to recompile the `dist` assets:
 
-    npm run webpack
+    yarn webpack
 
 Feel free to review the final output by opening up `index.html`.
