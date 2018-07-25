@@ -4,7 +4,11 @@ Acts as a collection of links to my commonly used pages.
 
 ## Build
 
-Run the following to recompile:
+Install the package dependencies:
+
+    yarn install
+
+Run the following to recompile the `dist` assets:
 
     npm run webpack
 
