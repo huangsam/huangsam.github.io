@@ -1,9 +1,7 @@
 /**
- * Home styles
- *
- * A couple of foundational CSS classes to keep the styling
- * of the page intact. Some of the DOM elements it applies styling
- * to are <nav>, <main> and <body>.
+ * Foundational CSS classes to keep the styling of the
+ * page intact. Some of the DOM elements it modifies are
+ * <nav>, <main> and <body>.
  */
 
 nav {
@@ -50,7 +48,8 @@ a, a:visited {
 
 pre {
   border-radius: .5em;
-  border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+  /* RGB equivalent is #282A2B */
+  border: .3em solid hsl(0, 0%, 33%);
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;

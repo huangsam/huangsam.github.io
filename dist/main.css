@@ -1,10 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);
 /**
- * Fonts styles
- *
- * The fonts that are currently being used are Fira Mono and
- * Open Sans. They are pulled from Google API fonts and loaded
- * dynamically into the application.
+ * Fira Mono and Open Sans are being pulled from Google APIs and
+ * loaded dynamically as assets.
  */
 h1, h2, h3, h4, h5 {
   font-family: 'Fira Mono', monospace; }
@@ -16,10 +13,8 @@ p, span {
   font-family: 'Open Sans', sans-serif; }
 
 /**
- * Sticky footer styles
- *
- * This styling is inspired by the CSS in the "Sticky Footer"
- * example from the official Bootstrap 4 website.
+ * Inspired by the CSS in the "Sticky Footer" example from
+ * the official Bootstrap 4 website.
  */
 html {
   position: relative;
@@ -38,11 +33,9 @@ body {
   line-height: 60px; }
 
 /**
- * Home styles
- *
- * A couple of foundational CSS classes to keep the styling
- * of the page intact. Some of the DOM elements it applies styling
- * to are <nav>, <main> and <body>.
+ * Foundational CSS classes to keep the styling of the
+ * page intact. Some of the DOM elements it modifies are
+ * <nav>, <main> and <body>.
  */
 nav {
   margin-top: 10px; }
@@ -80,8 +73,8 @@ a, a:visited {
 
 pre {
   border-radius: .5em;
+  /* RGB equivalent is #282A2B */
   border: 0.3em solid #545454;
-  /* #282A2B */
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;
