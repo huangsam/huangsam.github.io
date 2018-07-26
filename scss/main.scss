@@ -1,3 +1,12 @@
+/**
+ * Main styles
+ *
+ * This can be considered the "main" endpoint through which
+ * all styling would be imported. Any future SCSS files would be
+ * imported here and the Webpack build will take care of the rest.
+ * Keep in mind that import order matters.
+ */
+
 @import './fonts.scss';
 @import './footer.scss';
 @import './home.scss';
