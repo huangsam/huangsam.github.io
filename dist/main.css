@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);
 /**
- * Main styles
- *
- * This can be considered the "main" endpoint through which
- * all styling would be imported. Any future SCSS files would be
- * imported here and the Webpack build will take care of the rest.
- * Keep in mind that import order matters.
- */
-/**
  * Fonts styles
  *
  * The fonts that are currently being used are Fira Mono and
