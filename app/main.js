@@ -1,4 +1,4 @@
-/* Data structures */
+/** Data structures */
 
 const serviceMeta = {
   "github": {
@@ -19,13 +19,13 @@ const serviceMeta = {
   }
 };
 
-/* Helper routines */
+/** Helper routines */
 
 function getServiceUrl(service) {
   return serviceMeta[service]["url"];
 }
 
-/* Event handlers */
+/** Event handlers */
 
 function changeTheme(service) {
   let color = serviceMeta[service]["color"];
@@ -45,7 +45,7 @@ function originalTheme() {
   $("pre").css("border", ".3em solid hsl(0, 0%, 33%)");
 }
 
-/* Event listeners */
+/** Event listeners */
 
 $("#service").change(function () {
   let service = $(this).val();
