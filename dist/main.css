@@ -1,6 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);
-/* Fonts styles
--------------------------------------------------- */
+/**
+ * Main styles
+ *
+ * This can be considered the "main" endpoint through which
+ * all styling would be imported. Any future SCSS files would be
+ * imported here and the Webpack build will take care of the rest.
+ * Keep in mind that import order matters.
+ */
+/**
+ * Fonts styles
+ *
+ * The fonts that are currently being used are Fira Mono and
+ * Open Sans. They are pulled from Google API fonts and loaded
+ * dynamically into the application.
+ */
 h1, h2, h3, h4, h5 {
   font-family: 'Fira Mono', monospace; }
 
@@ -10,8 +23,12 @@ pre, pre span, code {
 p, span {
   font-family: 'Open Sans', sans-serif; }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/**
+ * Sticky footer styles
+ *
+ * This styling is inspired by the CSS in the "Sticky Footer"
+ * example from the official Bootstrap 4 website.
+ */
 html {
   position: relative;
   min-height: 100%; }
@@ -28,8 +45,13 @@ body {
   /* Vertically center the text there */
   line-height: 60px; }
 
-/* Home styles
--------------------------------------------------- */
+/**
+ * Home styles
+ *
+ * A couple of foundational CSS classes to keep the styling
+ * of the page intact. Some of the DOM elements it applies styling
+ * to are <nav>, <main> and <body>.
+ */
 nav {
   margin-top: 10px; }
 

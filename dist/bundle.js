@@ -96,7 +96,7 @@
 "use strict";
 
 
-/* Data structures */
+/** Data structures */
 
 var serviceMeta = {
   "github": {
@@ -117,13 +117,13 @@ var serviceMeta = {
   }
 };
 
-/* Helper routines */
+/** Helper routines */
 
 function getServiceUrl(service) {
   return serviceMeta[service]["url"];
 }
 
-/* Event handlers */
+/** Event handlers */
 
 function changeTheme(service) {
   var color = serviceMeta[service]["color"];
@@ -143,7 +143,7 @@ function originalTheme() {
   $("pre").css("border", ".3em solid hsl(0, 0%, 33%)");
 }
 
-/* Event listeners */
+/** Event listeners */
 
 $("#service").change(function () {
   var service = $(this).val();
