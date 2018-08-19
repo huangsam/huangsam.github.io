@@ -1,6 +1,7 @@
 {
   "name": "huangsam.github.io",
   "description": "Holds links to my commonly used pages",
+  "license": "UNLICENSED",
   "devDependencies": {
     "ajv": "6.5.0",
     "babel-core": "*",
