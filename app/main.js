@@ -21,13 +21,13 @@ const serviceMeta = {
 
 /** Helper routines */
 
-function getServiceUrl(service) {
+getServiceUrl = (service) => {
   return serviceMeta[service]["url"];
 }
 
 /** Event handlers */
 
-function changeTheme(service) {
+changeTheme = (service) => {
   let color = serviceMeta[service]["color"];
 
   $("body").css("background-color", color);
@@ -37,7 +37,7 @@ function changeTheme(service) {
   $("pre").css("border", ".3em solid white");
 }
 
-function originalTheme() {
+originalTheme = () => {
   $("body").css("background-color", "white");
   $("p, h1").css("color", "black");
   $("a").css("color", "#0275d8");
@@ -47,8 +47,8 @@ function originalTheme() {
 
 /** Event listeners */
 
-$("#service").change(function () {
-  let service = $(this).val();
+$("#service").change((e) => {
+  let service = e.currentTarget.value;
   if (service !== "default") {
     changeTheme(service);
   } else {
@@ -56,7 +56,7 @@ $("#service").change(function () {
   }
 });
 
-$("#goto").click(function (e) {
+$("#goto").click((e) => {
   e.preventDefault();
   let service = $("select#service").val();
   if (service !== "default") {
@@ -66,7 +66,7 @@ $("#goto").click(function (e) {
   }
 });
 
-$(document).ready(function () {
+$(document).ready(() => {
   let currentYear = new Date().getFullYear();
   $("#current-year").text(currentYear);
 });
