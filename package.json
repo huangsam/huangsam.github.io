@@ -3,9 +3,9 @@
   "description": "Holds links to my commonly used pages",
   "license": "UNLICENSED",
   "devDependencies": {
-    "ajv": "^6.5.0",
     "@babel/core": "*",
     "@babel/preset-env": "*",
+    "ajv": "^6.5.0",
     "babel-loader": "*",
     "css-loader": "*",
     "mini-css-extract-plugin": "*",
