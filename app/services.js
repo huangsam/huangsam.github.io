@@ -21,13 +21,13 @@ const serviceMeta = {
 
 getServiceUrl = (service) => {
   return serviceMeta[service]["url"];
-}
+};
 
 getServiceColor = (service) => {
   return serviceMeta[service]["color"];
-}
+};
 
 module.exports = {
   getServiceUrl,
   getServiceColor
-}
+};

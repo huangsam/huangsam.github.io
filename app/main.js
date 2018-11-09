@@ -2,7 +2,7 @@ require("./services");
 
 /** Event handlers */
 
-changeTheme = (service) => {
+var changeTheme = (service) => {
   let color = getServiceColor(service);
 
   $("body").css("background-color", color);
@@ -10,15 +10,15 @@ changeTheme = (service) => {
   $("a").css("color", "white");
   $("footer span").css("color", "white");
   $("pre").css("border", ".3em solid white");
-}
+};
 
-originalTheme = () => {
+var originalTheme = () => {
   $("body").css("background-color", "white");
   $("p, h1").css("color", "black");
   $("a").css("color", "#0275d8");
   $("footer span").css("color", "black");
   $("pre").css("border", ".3em solid hsl(0, 0%, 33%)");
-}
+};
 
 /** Event listeners */
 

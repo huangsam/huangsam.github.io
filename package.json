@@ -8,6 +8,7 @@
     "ajv": "*",
     "babel-loader": "*",
     "css-loader": "*",
+    "eslint": "^5.8.0",
     "husky": "*",
     "jest": "*",
     "mini-css-extract-plugin": "*",
@@ -18,6 +19,7 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
+    "lint": "eslint app",
     "test": "jest --coverage",
     "dev:build": "webpack --progress",
     "prod:build": "webpack -p --progress"

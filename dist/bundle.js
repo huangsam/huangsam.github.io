@@ -97,7 +97,7 @@ __webpack_require__(/*! ./services */ "./app/services.js");
 /** Event handlers */
 
 
-changeTheme = function changeTheme(service) {
+var changeTheme = function changeTheme(service) {
   var color = getServiceColor(service);
   $("body").css("background-color", color);
   $("p, h1").css("color", "white");
@@ -106,7 +106,7 @@ changeTheme = function changeTheme(service) {
   $("pre").css("border", ".3em solid white");
 };
 
-originalTheme = function originalTheme() {
+var originalTheme = function originalTheme() {
   $("body").css("background-color", "white");
   $("p, h1").css("color", "black");
   $("a").css("color", "#0275d8");
