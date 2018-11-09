@@ -40,33 +40,3 @@ a, a:visited {
 .lead {
   font-weight: bold;
 }
-
-.code-block {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-pre {
-  border-radius: .5em;
-  /* RGB equivalent is #282A2B */
-  border: .3em solid hsl(0, 0%, 33%);
-  box-shadow: 1px 1px .5em black inset;
-  margin: .5em 0;
-  overflow: auto;
-  padding: 1em;
-  background-color: hsl(0, 0%, 8%);
-  color: white;
-  font-size: .9em;
-}
-
-pre code.language-python span.bool {
-  color: #1ab728;
-}
-
-pre code.language-python span.var {
-  color: #ff9100;
-}
-
-pre code.language-python span.func {
-  color: #009dff;
-}

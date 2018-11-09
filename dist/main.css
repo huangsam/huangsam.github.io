@@ -67,6 +67,10 @@ a, a:visited {
 .lead {
   font-weight: bold; }
 
+/**
+ * Code classes to make <pre> blocks look nicer on the
+ * browser side.
+ */
 .code-block {
   margin-top: 20px;
   margin-bottom: 20px; }
