@@ -1,6 +1,6 @@
 require("./services");
 
-describe('All URLs should return as expected', () => {
+describe('All URLs should work as expected', () => {
   test("github url works", () => {
     expect(getServiceUrl("github")).toBe("https://github.com/huangsam/");
   });
@@ -17,14 +17,14 @@ describe('All URLs should return as expected', () => {
     expect(getServiceUrl("wordpress")).toBe("https://sambyte.wordpress.com/");
   });
 
-  test("bogus url fails", () => {
+  test("bogus url throws error", () => {
     expect(() => {
       getServiceUrl("bogus");
     }).toThrow(TypeError);
   });
 });
 
-describe('All colors should return as expected', () => {
+describe('All colors should work as expected', () => {
   test("github color works", () => {
     expect(getServiceColor("github")).toBe("#24292e");
   });
@@ -41,7 +41,7 @@ describe('All colors should return as expected', () => {
     expect(getServiceColor("wordpress")).toBe("#21759b");
   });
 
-  test("bogus color fails", () => {
+  test("bogus color throws error", () => {
     expect(() => {
       getServiceColor("bogus");
     }).toThrow(TypeError);
