@@ -1,7 +1,5 @@
 require("./services");
 
-/* URL tests */
-
 describe('All URLs should return as expected', () => {
   test("github url works", () => {
     expect(getServiceUrl("github")).toBe("https://github.com/huangsam/");
@@ -19,8 +17,6 @@ describe('All URLs should return as expected', () => {
     expect(getServiceUrl("wordpress")).toBe("https://sambyte.wordpress.com/");
   });
 });
-
-/* Color tests */
 
 describe('All colors should return as expected', () => {
   test("github color works", () => {
