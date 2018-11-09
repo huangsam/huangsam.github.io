@@ -16,6 +16,12 @@ describe('All URLs should return as expected', () => {
   test("wordpress url works", () => {
     expect(getServiceUrl("wordpress")).toBe("https://sambyte.wordpress.com/");
   });
+
+  test("bogus url fails", () => {
+    expect(() => {
+      getServiceUrl("bogus");
+    }).toThrow(TypeError);
+  });
 });
 
 describe('All colors should return as expected', () => {
@@ -33,5 +39,11 @@ describe('All colors should return as expected', () => {
 
   test("wordpress color works", () => {
     expect(getServiceColor("wordpress")).toBe("#21759b");
+  });
+
+  test("bogus color fails", () => {
+    expect(() => {
+      getServiceColor("bogus");
+    }).toThrow(TypeError);
   });
 });
