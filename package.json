@@ -5,11 +5,11 @@
   "devDependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",
-    "ajv": "^6.5.0",
+    "ajv": "*",
     "babel-loader": "*",
     "css-loader": "*",
     "husky": "*",
-    "jest": "^23.6.0",
+    "jest": "*",
     "mini-css-extract-plugin": "*",
     "node-sass": "*",
     "sass-loader": "*",
