@@ -3,6 +3,7 @@
   "description": "Holds links to my commonly used pages",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@babel/cli": "*",
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "ajv": "*",
