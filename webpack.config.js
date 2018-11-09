@@ -1,15 +1,10 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: 'development',
-  entry: ['./app/main.js', './scss/main.scss'],
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    })
-  ],
+  entry: './app/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -29,13 +24,21 @@ module.exports = {
       {
         test: /\.s?[ac]ss$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { url: false, sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } }
         ],
       },
     ]
   },
+  devtool: devMode ? 'source-map' : false,
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    })
+  ],
+  mode : devMode ? 'development' : 'production',
   stats: {
     colors: true
   },
