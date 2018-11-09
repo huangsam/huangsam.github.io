@@ -1,4 +1,5 @@
 require("./services");
+require("../scss/main.scss");
 
 /** Event handlers */
 
