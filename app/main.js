@@ -1,34 +1,9 @@
-/** Data structures */
-
-const serviceMeta = {
-  "github": {
-    "color": "#24292e",
-    "url": "https://github.com/huangsam/"
-  },
-  "facebook": {
-    "color": "#3b5998",
-    "url": "https://www.facebook.com/samuel.c.huang"
-  },
-  "linkedin": {
-    "color": "#0077b5",
-    "url": "https://www.linkedin.com/in/sambyte/"
-  },
-  "wordpress": {
-    "color": "#21759b",
-    "url": "https://sambyte.wordpress.com/"
-  }
-};
-
-/** Helper routines */
-
-getServiceUrl = (service) => {
-  return serviceMeta[service]["url"];
-}
+require("./services");
 
 /** Event handlers */
 
 changeTheme = (service) => {
-  let color = serviceMeta[service]["color"];
+  let color = getServiceColor(service);
 
   $("body").css("background-color", color);
   $("p, h1").css("color", "white");

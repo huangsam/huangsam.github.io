@@ -9,6 +9,7 @@
     "babel-loader": "*",
     "css-loader": "*",
     "husky": "*",
+    "jest": "^23.6.0",
     "mini-css-extract-plugin": "*",
     "node-sass": "*",
     "sass-loader": "*",
@@ -17,12 +18,13 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
+    "test": "jest --coverage",
     "dev:build": "webpack --progress",
     "prod:build": "webpack -p --progress"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn dev:build"
+      "pre-commit": "yarn test && yarn dev:build"
     }
   }
 }

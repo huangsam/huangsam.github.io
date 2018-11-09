@@ -91,37 +91,14 @@
   !*** ./app/main.js ***!
   \*********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/** Data structures */
-var serviceMeta = {
-  "github": {
-    "color": "#24292e",
-    "url": "https://github.com/huangsam/"
-  },
-  "facebook": {
-    "color": "#3b5998",
-    "url": "https://www.facebook.com/samuel.c.huang"
-  },
-  "linkedin": {
-    "color": "#0077b5",
-    "url": "https://www.linkedin.com/in/sambyte/"
-  },
-  "wordpress": {
-    "color": "#21759b",
-    "url": "https://sambyte.wordpress.com/"
-  }
-};
-/** Helper routines */
-
-getServiceUrl = function getServiceUrl(service) {
-  return serviceMeta[service]["url"];
-};
+__webpack_require__(/*! ./services */ "./app/services.js");
 /** Event handlers */
 
 
 changeTheme = function changeTheme(service) {
-  var color = serviceMeta[service]["color"];
+  var color = getServiceColor(service);
   $("body").css("background-color", color);
   $("p, h1").css("color", "white");
   $("a").css("color", "white");
@@ -162,6 +139,48 @@ $(document).ready(function () {
   var currentYear = new Date().getFullYear();
   $("#current-year").text(currentYear);
 });
+
+/***/ }),
+
+/***/ "./app/services.js":
+/*!*************************!*\
+  !*** ./app/services.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var serviceMeta = {
+  "github": {
+    "color": "#24292e",
+    "url": "https://github.com/huangsam/"
+  },
+  "facebook": {
+    "color": "#3b5998",
+    "url": "https://www.facebook.com/samuel.c.huang"
+  },
+  "linkedin": {
+    "color": "#0077b5",
+    "url": "https://www.linkedin.com/in/sambyte/"
+  },
+  "wordpress": {
+    "color": "#21759b",
+    "url": "https://sambyte.wordpress.com/"
+  }
+};
+/** Helper routines */
+
+getServiceUrl = function getServiceUrl(service) {
+  return serviceMeta[service]["url"];
+};
+
+getServiceColor = function getServiceColor(service) {
+  return serviceMeta[service]["color"];
+};
+
+module.exports = {
+  getServiceUrl: getServiceUrl,
+  getServiceColor: getServiceColor
+};
 
 /***/ }),
 
