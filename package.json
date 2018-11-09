@@ -8,6 +8,7 @@
     "ajv": "^6.5.0",
     "babel-loader": "*",
     "css-loader": "*",
+    "husky": "*",
     "mini-css-extract-plugin": "*",
     "node-sass": "*",
     "sass-loader": "*",
@@ -16,6 +17,12 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
-    "webpack": "webpack --config webpack.config.js"
+    "dev:build": "webpack --progress",
+    "prod:build": "webpack -p --progress"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn dev:build"
+    }
   }
 }
