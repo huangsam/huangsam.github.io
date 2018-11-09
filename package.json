@@ -8,7 +8,7 @@
     "ajv": "*",
     "babel-loader": "*",
     "css-loader": "*",
-    "eslint": "^5.8.0",
+    "eslint": "*",
     "husky": "*",
     "jest": "*",
     "mini-css-extract-plugin": "*",
