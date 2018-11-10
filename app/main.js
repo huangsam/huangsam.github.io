@@ -1,5 +1,8 @@
-require("./services");
-require("../scss/main.scss");
+import $ from "jquery";
+import {getServiceUrl, getServiceColor} from "./services";
+import "../scss/main.scss";
+
+window.jQuery = $;
 
 /** Event handlers */
 

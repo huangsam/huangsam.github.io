@@ -13,6 +13,14 @@ const presets = [
   ],
 ];
 
+// https://github.com/facebook/jest/issues/2081
+const env = {
+  production: {
+    plugins: ["transform-es2015-modules-commonjs"]
+  }
+};
+
 module.exports = {
-  presets
+  env,
+  presets,
 };
