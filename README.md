@@ -20,8 +20,12 @@ Run the test suite to make sure everything works as expected:
 
 ### Create build
 
-Run the following to recompile the `dist` assets:
+Recompile the `dist` assets for development:
 
     yarn dev:build
+
+Or recompile the `dist` assets for production:
+
+    yarn prod:build
 
 Feel free to review the final output by opening up `index.html`.
