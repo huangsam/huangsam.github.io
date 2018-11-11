@@ -2,9 +2,7 @@
   "name": "huangsam.github.io",
   "description": "Holds links to my commonly used pages",
   "license": "UNLICENSED",
-  "dependencies": {
-    "jquery": "^3.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
@@ -17,7 +15,6 @@
     "eslint": "*",
     "husky": "*",
     "jest": "*",
-    "jquery": "^3.3.1",
     "mini-css-extract-plugin": "*",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",

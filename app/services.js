@@ -19,11 +19,11 @@ const serviceMeta = {
 
 /** Helper routines */
 
-let getServiceUrl = (service) => {
+var getServiceUrl = (service) => {
   return serviceMeta[service]['url'];
 };
 
-let getServiceColor = (service) => {
+var getServiceColor = (service) => {
   return serviceMeta[service]['color'];
 };
 

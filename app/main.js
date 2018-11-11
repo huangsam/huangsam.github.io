@@ -1,51 +1,76 @@
-import $ from 'jquery';
 import {getServiceUrl, getServiceColor} from './services';
 import '../scss/main.scss';
-
-window.jQuery = $;
 
 /** Event handlers */
 
 var changeTheme = (service) => {
   let color = getServiceColor(service);
 
-  $('body').css('background-color', color);
-  $('p, h1').css('color', 'white');
-  $('a').css('color', 'white');
-  $('footer span').css('color', 'white');
-  $('pre').css('border', '.3em solid white');
+  document.body.style.backgroundColor = color;
+
+  document.querySelectorAll('p, h1, footer span').forEach(
+    (el) => {
+      el.style.color = 'white';
+    }
+  );
+
+  document.getElementsByTagName('a').forEach(
+    (el) => {
+      el.style.color = 'white';
+    }
+  );
+
+  document.getElementsByTagName('pre').forEach(
+    (el) => {
+      el.style.border = '.3em solid white';
+    }
+  );
 };
 
 var originalTheme = () => {
-  $('body').css('background-color', 'white');
-  $('p, h1').css('color', 'black');
-  $('a').css('color', '#0275d8');
-  $('footer span').css('color', 'black');
-  $('pre').css('border', '.3em solid hsl(0, 0%, 33%)');
+  document.body.style.backgroundColor = 'white';
+
+  document.querySelectorAll('p, h1, footer span').forEach(
+    (el) => {
+      el.style.color = 'black';
+    }
+  );
+
+  document.getElementsByTagName('a').forEach(
+    (el) => {
+      el.style.color = '#0275d8';
+    }
+  );
+
+  document.getElementsByTagName('pre').forEach(
+    (el) => {
+      el.style.border = '.3em solid hsl(0, 0%, 33%)';
+    }
+  );
 };
 
 /** Event listeners */
 
-$('#service').change((e) => {
+document.getElementById('service').onchange = (e) => {
   let service = e.currentTarget.value;
   if (service !== 'default') {
     changeTheme(service);
   } else {
     originalTheme();
   }
-});
+};
 
-$('#goto').click((e) => {
+document.getElementById('goto').onclick = (e) => {
   e.preventDefault();
-  let service = $('select#service').val();
+  let service = document.getElementById('service').value;
   if (service !== 'default') {
     window.location.href = getServiceUrl(service);
   } else {
     alert('Please select a valid service from the dropdown.');
   }
-});
+};
 
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", (event) => {
   let currentYear = new Date().getFullYear();
-  $('#current-year').text(currentYear);
+  document.getElementById('current-year').innerHTML = currentYear;
 });
