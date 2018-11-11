@@ -9,21 +9,15 @@ var changeTheme = (service) => {
   document.body.style.backgroundColor = color;
 
   document.querySelectorAll('p, h1, footer span').forEach(
-    (el) => {
-      el.style.color = 'white';
-    }
+    (el) => { el.style.color = 'white'; }
   );
 
   document.getElementsByTagName('a').forEach(
-    (el) => {
-      el.style.color = 'white';
-    }
+    (el) => { el.style.color = 'white'; }
   );
 
   document.getElementsByTagName('pre').forEach(
-    (el) => {
-      el.style.border = '.3em solid white';
-    }
+    (el) => { el.style.border = '.3em solid white'; }
   );
 };
 
@@ -31,21 +25,15 @@ var originalTheme = () => {
   document.body.style.backgroundColor = 'white';
 
   document.querySelectorAll('p, h1, footer span').forEach(
-    (el) => {
-      el.style.color = 'black';
-    }
+    (el) => { el.style.color = 'black'; }
   );
 
   document.getElementsByTagName('a').forEach(
-    (el) => {
-      el.style.color = '#0275d8';
-    }
+    (el) => { el.style.color = '#0275d8'; }
   );
 
   document.getElementsByTagName('pre').forEach(
-    (el) => {
-      el.style.border = '.3em solid hsl(0, 0%, 33%)';
-    }
+    (el) => { el.style.border = '.3em solid hsl(0, 0%, 33%)'; }
   );
 };
 
