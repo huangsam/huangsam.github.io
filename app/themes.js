@@ -1,4 +1,4 @@
-var changeTheme = (bgColor, textColor, codeBorder) => {
+var setTheme = (bgColor, textColor, codeBorder) => {
   document.body.style.backgroundColor = bgColor;
 
   let textNodes = document.querySelectorAll('p, h1, footer span');
@@ -13,11 +13,11 @@ var changeTheme = (bgColor, textColor, codeBorder) => {
 };
 
 var originalTheme = () => {
-  changeTheme('white', '', '');
+  setTheme('white', '', '');
 };
 
 var serviceTheme = (serviceColor) => {
-  changeTheme(serviceColor, 'white', '.3em solid white');
+  setTheme(serviceColor, 'white', '.3em solid white');
 };
 
 module.exports = {
