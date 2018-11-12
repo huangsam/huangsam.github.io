@@ -17,8 +17,6 @@ const serviceMeta = {
   }
 };
 
-/** Helper routines */
-
 var getServiceUrl = (service) => {
   return serviceMeta[service]['url'];
 };
@@ -26,6 +24,8 @@ var getServiceUrl = (service) => {
 var getServiceColor = (service) => {
   return serviceMeta[service]['color'];
 };
+
+/** Public API */
 
 module.exports = {
   getServiceUrl,
