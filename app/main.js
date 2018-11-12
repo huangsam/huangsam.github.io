@@ -24,12 +24,12 @@ var originalTheme = () => {
 
   let textNodes = document.querySelectorAll('p, h1, footer span');
   for (let node of textNodes) {
-    node.style.color = 'black';
+    node.style.color = '';
   }
 
   let codeNodes = document.getElementsByTagName('pre');
   for (let node of codeNodes) {
-    node.style.border = '.3em solid hsl(0, 0%, 33%)';
+    node.style.border = '';
   }
 };
 
