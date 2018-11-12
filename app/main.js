@@ -3,34 +3,26 @@ import '../scss/main.scss';
 
 /** Event handlers */
 
-var changeTheme = (service) => {
-  let color = getServiceColor(service);
-
-  document.body.style.backgroundColor = color;
+var changeTheme = (bgColor, textColor, codeBorder) => {
+  document.body.style.backgroundColor = bgColor;
 
   let textNodes = document.querySelectorAll('p, h1, footer span');
   for (let node of textNodes) {
-    node.style.color = 'white';
+    node.style.color = textColor;
   }
 
   let codeNodes = document.getElementsByTagName('pre');
   for (let node of codeNodes) {
-    node.style.border = '.3em solid white';
+    node.style.border = codeBorder;
   }
 };
 
 var originalTheme = () => {
-  document.body.style.backgroundColor = 'white';
+  changeTheme('white', '', '');
+};
 
-  let textNodes = document.querySelectorAll('p, h1, footer span');
-  for (let node of textNodes) {
-    node.style.color = '';
-  }
-
-  let codeNodes = document.getElementsByTagName('pre');
-  for (let node of codeNodes) {
-    node.style.border = '';
-  }
+var serviceTheme = (service) => {
+  changeTheme(getServiceColor(service), 'white', '.3em solid white');
 };
 
 /** Event listeners */
@@ -38,7 +30,7 @@ var originalTheme = () => {
 document.getElementById('service').onchange = (e) => {
   let service = e.currentTarget.value;
   if (service !== 'default') {
-    changeTheme(service);
+    serviceTheme(service);
   } else {
     originalTheme();
   }
