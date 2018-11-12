@@ -8,25 +8,29 @@ var changeTheme = (service) => {
 
   document.body.style.backgroundColor = color;
 
-  document.querySelectorAll('p, h1, footer span').forEach(
-    (el) => { el.style.color = 'white'; }
-  );
+  let textNodes = document.querySelectorAll('p, h1, footer span');
+  for (let node of textNodes) {
+    node.style.color = 'white';
+  }
 
-  Array.from(document.getElementsByTagName('pre')).forEach(
-    (el) => { el.style.border = '.3em solid white'; }
-  );
+  let codeNodes = document.getElementsByTagName('pre');
+  for (let node of codeNodes) {
+    node.style.border = '.3em solid white';
+  }
 };
 
 var originalTheme = () => {
   document.body.style.backgroundColor = 'white';
 
-  document.querySelectorAll('p, h1, footer span').forEach(
-    (el) => { el.style.color = 'black'; }
-  );
+  let textNodes = document.querySelectorAll('p, h1, footer span');
+  for (let node of textNodes) {
+    node.style.color = 'black';
+  }
 
-  Array.from(document.getElementsByTagName('pre')).forEach(
-    (el) => { el.style.border = '.3em solid hsl(0, 0%, 33%)'; }
-  );
+  let codeNodes = document.getElementsByTagName('pre');
+  for (let node of codeNodes) {
+    node.style.border = '.3em solid hsl(0, 0%, 33%)';
+  }
 };
 
 /** Event listeners */
