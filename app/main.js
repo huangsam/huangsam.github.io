@@ -12,11 +12,7 @@ var changeTheme = (service) => {
     (el) => { el.style.color = 'white'; }
   );
 
-  document.getElementsByTagName('a').forEach(
-    (el) => { el.style.color = 'white'; }
-  );
-
-  document.getElementsByTagName('pre').forEach(
+  Array.from(document.getElementsByTagName('pre')).forEach(
     (el) => { el.style.border = '.3em solid white'; }
   );
 };
@@ -28,11 +24,7 @@ var originalTheme = () => {
     (el) => { el.style.color = 'black'; }
   );
 
-  document.getElementsByTagName('a').forEach(
-    (el) => { el.style.color = '#0275d8'; }
-  );
-
-  document.getElementsByTagName('pre').forEach(
+  Array.from(document.getElementsByTagName('pre')).forEach(
     (el) => { el.style.border = '.3em solid hsl(0, 0%, 33%)'; }
   );
 };
