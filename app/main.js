@@ -2,8 +2,6 @@ import {getServiceUrl, getServiceColor} from './services';
 import {originalTheme, serviceTheme} from './themes';
 import '../scss/main.scss';
 
-/** Event listeners */
-
 document.getElementById('service').onchange = (e) => {
   let service = e.currentTarget.value;
   if (service !== 'default') {
