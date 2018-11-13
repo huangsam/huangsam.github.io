@@ -29,7 +29,7 @@
     "dev:start": "webpack-dev-server",
     "dev:build": "webpack --progress",
     "lint": "eslint app *.config.js",
-    "lint:fix": "eslint --fix app *.config.js",
+    "lint:fix": "yarn lint --fix",
     "test": "jest -c jest.config.js",
     "test:watch": "yarn test --watch",
     "test:unit": "jest -c jest-unit.config.js",
