@@ -1,29 +1,25 @@
 const serviceMeta = {
-  'github': {
-    'color': '#24292e',
-    'url': 'https://github.com/huangsam/',
+  github: {
+    bgcolor: '#24292e',
+    url: 'https://github.com/huangsam/',
   },
-  'facebook': {
-    'color': '#3b5998',
-    'url': 'https://www.facebook.com/samuel.c.huang',
+  facebook: {
+    bgcolor: '#3b5998',
+    url: 'https://www.facebook.com/samuel.c.huang',
   },
-  'linkedin': {
-    'color': '#0077b5',
-    'url': 'https://www.linkedin.com/in/sambyte/',
+  linkedin: {
+    bgcolor: '#0077b5',
+    url: 'https://www.linkedin.com/in/sambyte/',
   },
-  'wordpress': {
-    'color': '#21759b',
-    'url': 'https://sambyte.wordpress.com/',
+  wordpress: {
+    bgcolor: '#21759b',
+    url: 'https://sambyte.wordpress.com/',
   },
 };
 
-var getServiceUrl = (service) => {
-  return serviceMeta[service]['url'];
-};
+const getServiceUrl = service => serviceMeta[service].url;
 
-var getServiceColor = (service) => {
-  return serviceMeta[service]['color'];
-};
+const getServiceColor = service => serviceMeta[service].bgcolor;
 
 module.exports = {
   getServiceUrl,

@@ -1,11 +1,11 @@
-import {getServiceUrl, getServiceColor} from './services';
-import {originalTheme, serviceTheme} from './themes';
+import { getServiceUrl, getServiceColor } from './services';
+import { originalTheme, serviceTheme } from './themes';
 import '../scss/main.scss';
 
 document.getElementById('service').onchange = (e) => {
-  let service = e.currentTarget.value;
+  const service = e.currentTarget.value;
   if (service !== 'default') {
-    let serviceColor = getServiceColor(service);
+    const serviceColor = getServiceColor(service);
     serviceTheme(serviceColor);
   } else {
     originalTheme();
@@ -14,7 +14,7 @@ document.getElementById('service').onchange = (e) => {
 
 document.getElementById('goto').onclick = (e) => {
   e.preventDefault();
-  let service = document.getElementById('service').value;
+  const service = document.getElementById('service').value;
   if (service !== 'default') {
     window.location.href = getServiceUrl(service);
   } else {
@@ -22,7 +22,7 @@ document.getElementById('goto').onclick = (e) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  let currentYear = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', () => {
+  const currentYear = new Date().getFullYear();
   document.getElementById('current-year').innerHTML = currentYear;
 });

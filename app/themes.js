@@ -1,22 +1,22 @@
-var setTheme = (bgColor, textColor, codeBorder) => {
+const setTheme = (bgColor, textColor, codeBorder) => {
   document.body.style.backgroundColor = bgColor;
 
-  let textNodes = document.querySelectorAll('p, h1, footer span');
-  for (let node of textNodes) {
+  const textNodes = document.querySelectorAll('p, h1, footer span');
+  for (const node of textNodes) {
     node.style.color = textColor;
   }
 
-  let codeNodes = document.getElementsByTagName('pre');
-  for (let node of codeNodes) {
+  const codeNodes = document.getElementsByTagName('pre');
+  for (const node of codeNodes) {
     node.style.border = codeBorder;
   }
 };
 
-var originalTheme = () => {
+const originalTheme = () => {
   setTheme('white', '', '');
 };
 
-var serviceTheme = (serviceColor) => {
+const serviceTheme = (serviceColor) => {
   setTheme(serviceColor, 'white', '.3em solid white');
 };
 

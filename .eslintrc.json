@@ -6,10 +6,12 @@
       "jsx": true
     }
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "airbnb-base"],
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
-    "semi": 2
+    "semi": 2,
+    "no-restricted-syntax": 0,
+    "no-alert": 0
   },
   "env": {
     "browser": true,
