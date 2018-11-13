@@ -12,25 +12,23 @@ main {
   margin-top: 30px;
 }
 
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
 body {
-  -webkit-transition: background-color .5s ease-out;
-  -moz-transition: background-color .5s ease-out;
-  -o-transition: background-color .5s ease-out;
-  transition: background-color .5s ease-out;
+  @include transition(background-color .5s ease-out);
 }
 
 a, h1, p {
-  -webkit-transition: color .25s ease-out;
-  -moz-transition: color .25s ease-out;
-  -o-transition: color .25s ease-out;
-  transition: color .25s ease-out;
+  @include transition(color .25s ease-out);
 }
 
 pre {
-  -webkit-transition: border .25s ease-out;
-  -moz-transition: border .25s ease-out;
-  -o-transition: border .25s ease-out;
-  transition: border .25s ease-out;
+  @include transition(border .25s ease-out);
 }
 
 a, a:visited {
