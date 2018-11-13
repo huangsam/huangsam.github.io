@@ -7,15 +7,18 @@ describe('Website should work as expected', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+      headless: false,
+      slowMo: 100,
+    });
     page = await browser.newPage();
   });
 
   test('basic workflow', async () => {
     await page.goto(webUrl);
-    await page.waitForSelector('.code-block');
-    await page.select('#service', 'github');
-  }, 10000);
+    await page.waitForSelector('div.code-block');
+    await page.select('select#service', 'github');
+  }, 15000);
 
   afterAll(() => {
     browser.close();
