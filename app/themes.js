@@ -20,8 +20,6 @@ var serviceTheme = (serviceColor) => {
   setTheme(serviceColor, 'white', '.3em solid white');
 };
 
-/** Public API */
-
 module.exports = {
   originalTheme,
   serviceTheme,

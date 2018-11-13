@@ -25,8 +25,6 @@ var getServiceColor = (service) => {
   return serviceMeta[service]['color'];
 };
 
-/** Public API */
-
 module.exports = {
   getServiceUrl,
   getServiceColor,
