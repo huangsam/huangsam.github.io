@@ -1,4 +1,4 @@
-import {getServiceUrl, getServiceColor} from './services';
+import { getServiceUrl, getServiceColor } from './services';
 
 describe('All URLs should work as expected', () => {
   test('github url works', () => {
