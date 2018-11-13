@@ -7,7 +7,7 @@ module.exports = {
   entry: './app/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -17,7 +17,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env'],
           },
         },
       },
@@ -26,21 +26,21 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: devMode } },
-          { loader: 'sass-loader', options: { sourceMap: devMode } }
+          { loader: 'sass-loader', options: { sourceMap: devMode } },
         ],
       },
-    ]
+    ],
   },
   devtool: devMode ? 'source-map' : false,
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
-    })
+    }),
   ],
   mode : devMode ? 'development' : 'production',
   stats: {
-    colors: true
+    colors: true,
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
 };
