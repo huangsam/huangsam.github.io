@@ -22,7 +22,7 @@ document.getElementById('goto').onclick = (e) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   let currentYear = new Date().getFullYear();
   document.getElementById('current-year').innerHTML = currentYear;
 });

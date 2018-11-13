@@ -6,8 +6,9 @@
       "jsx": true
     }
   },
+  "extends": "eslint:recommended",
   "rules": {
-    "semi": 2,
-    "comma-dangle": ["error", "always-multiline"]
+    "comma-dangle": ["error", "always-multiline"],
+    "no-undef": 0
   }
 }

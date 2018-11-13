@@ -3,7 +3,7 @@ const path = require('path');
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  mode: 'development',
+  mode : devMode ? 'development' : 'production',
   entry: './app/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -38,9 +38,7 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
   ],
-  mode : devMode ? 'development' : 'production',
   stats: {
     colors: true,
   },
-  devtool: 'source-map',
 };
