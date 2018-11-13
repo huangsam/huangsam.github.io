@@ -15,9 +15,6 @@ describe('Website should work as expected', () => {
     await page.goto(webUrl);
     await page.waitForSelector('.code-block');
     await page.select('#service', 'github');
-    await page.select('#service', 'facebook');
-    await page.select('#service', 'linkedin');
-    await page.select('#service', 'wordpress');
   }, 10000);
 
   afterAll(() => {
