@@ -7,7 +7,7 @@ describe('Website should work as expected', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch({ headless: true });
+    browser = await puppeteer.launch();
     page = await browser.newPage();
   });
 
