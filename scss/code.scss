@@ -10,13 +10,12 @@
 
 pre {
   border-radius: .5em;
-  /* RGB equivalent is #282A2B */
-  border: .3em solid hsl(0, 0%, 33%);
+  border: .3em solid #545454;
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;
   padding: 1em;
-  background-color: hsl(0, 0%, 8%);
+  background-color: #141414;
   color: white;
   font-size: .9em;
 }
