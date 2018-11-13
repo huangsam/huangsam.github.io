@@ -10,10 +10,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
@@ -33,13 +39,10 @@ module.exports = {
     ],
   },
   devtool: devMode ? 'source-map' : false,
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
-  stats: {
-    colors: true,
+  devServer: {
+    contentBase: path.join(__dirname),
+    compress: true,
+    port: 9000,
+    hot: devMode,
   },
 };
