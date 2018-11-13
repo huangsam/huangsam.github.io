@@ -22,13 +22,15 @@
     "puppeteer": "^1.10.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
+    "dev:start": "webpack-dev-server",
+    "dev:build": "webpack --progress",
     "lint": "eslint app *.config.js",
     "lint:fix": "eslint --fix app *.config.js",
     "test": "jest --coverage",
-    "dev:build": "webpack --progress",
     "prod:build": "webpack -p --progress"
   },
   "husky": {
