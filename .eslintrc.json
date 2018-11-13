@@ -9,6 +9,7 @@
   "extends": "eslint:recommended",
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
-    "no-undef": 0
+    "no-undef": 0,
+    "semi": 2
   }
 }
