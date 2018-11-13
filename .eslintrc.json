@@ -9,6 +9,7 @@
   "extends": ["eslint:recommended", "airbnb-base"],
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "semi": 2,
     "no-restricted-syntax": 0,
     "no-alert": 0

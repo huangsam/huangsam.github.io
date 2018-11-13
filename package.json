@@ -30,13 +30,15 @@
     "dev:build": "webpack --progress",
     "lint": "eslint app *.config.js",
     "lint:fix": "eslint --fix app *.config.js",
-    "test": "jest --coverage",
+    "test": "jest -c jest.config.js",
+    "test:unit": "jest -c jest-unit.config.js",
+    "test:e2e": "jest -c jest-e2e.config.js",
     "prod:build": "webpack -p --progress"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn test",
-      "pre-push": "yarn lint && yarn test && yarn prod:build"
+      "pre-commit": "yarn lint && yarn test:unit",
+      "pre-push": "yarn lint && yarn test:unit && yarn prod:build"
     }
   }
 }
