@@ -31,6 +31,7 @@
     "lint": "eslint app *.config.js",
     "lint:fix": "eslint --fix app *.config.js",
     "test": "jest -c jest.config.js",
+    "test:watch": "yarn test --watch",
     "test:unit": "jest -c jest-unit.config.js",
     "test:e2e": "jest -c jest-e2e.config.js",
     "prod:build": "webpack -p --progress"
