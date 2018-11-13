@@ -24,5 +24,5 @@ var serviceTheme = (serviceColor) => {
 
 module.exports = {
   originalTheme,
-  serviceTheme
+  serviceTheme,
 };
