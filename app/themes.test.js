@@ -18,7 +18,7 @@ describe('Original theme should work as expected', () => {
 
 describe('Service themes should work as expected', () => {
   document.body.innerHTML = '<body><p></p><pre></pre></body>';
-  test('original theme works', () => {
+  test('service theme works', () => {
     serviceTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
     const pNodes = document.getElementsByTagName('p');
