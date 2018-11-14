@@ -5,14 +5,16 @@ describe('Original theme should work as expected', () => {
   test('original theme works', () => {
     originalTheme();
     expect(document.body.style.backgroundColor).toBe('white');
-    const pNodes = document.getElementsByTagName('p');
-    for (const node of pNodes) {
-      expect(node.style.color).toBe('');
-    }
-    const preNodes = document.getElementsByTagName('pre');
-    for (const node of preNodes) {
-      expect(node.style.border).toBe('');
-    }
+    const pNodes = Array.from(document.getElementsByTagName('p'));
+    pNodes.forEach((node) => {
+      const { style } = node;
+      expect(style.color).toBe('');
+    });
+    const preNodes = Array.from(document.getElementsByTagName('pre'));
+    preNodes.forEach((node) => {
+      const { style } = node;
+      expect(style.border).toBe('');
+    });
   });
 });
 
@@ -21,13 +23,15 @@ describe('Service themes should work as expected', () => {
   test('service theme works', () => {
     serviceTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
-    const pNodes = document.getElementsByTagName('p');
-    for (const node of pNodes) {
-      expect(node.style.color).toBe('white');
-    }
-    const preNodes = document.getElementsByTagName('pre');
-    for (const node of preNodes) {
-      expect(node.style.border).toBe('.3em solid white');
-    }
+    const pNodes = Array.from(document.getElementsByTagName('p'));
+    pNodes.forEach((node) => {
+      const { style } = node;
+      expect(style.color).toBe('white');
+    });
+    const preNodes = Array.from(document.getElementsByTagName('pre'));
+    preNodes.forEach((node) => {
+      const { style } = node;
+      expect(style.border).toBe('.3em solid white');
+    });
   });
 });
