@@ -16,7 +16,6 @@
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "semi": 2,
     "valid-jsdoc": 2,
-    "no-restricted-syntax": 0,
     "no-alert": 0
   },
   "env": {

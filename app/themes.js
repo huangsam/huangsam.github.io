@@ -2,14 +2,16 @@ const setTheme = (bgColor, textColor, codeBorder) => {
   document.body.style.backgroundColor = bgColor;
 
   const textNodes = document.querySelectorAll('p, h1, footer span');
-  for (const node of textNodes) {
-    node.style.color = textColor;
-  }
+  textNodes.forEach((node) => {
+    const { style } = node;
+    style.color = textColor;
+  });
 
-  const codeNodes = document.getElementsByTagName('pre');
-  for (const node of codeNodes) {
-    node.style.border = codeBorder;
-  }
+  const codeNodes = Array.from(document.getElementsByTagName('pre'));
+  codeNodes.forEach((node) => {
+    const { style } = node;
+    style.border = codeBorder;
+  });
 };
 
 const originalTheme = () => {
