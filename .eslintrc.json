@@ -8,9 +8,14 @@
   },
   "extends": ["eslint:recommended", "airbnb-base"],
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
+    "indent": ["warn", 2],
+    "brace-style": 1,
+    "comma-dangle": ["warn", "always-multiline"],
+    "comma-style": 1,
+    "wrap-regex": 1,
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "semi": 2,
+    "valid-jsdoc": 2,
     "no-restricted-syntax": 0,
     "no-alert": 0
   },
