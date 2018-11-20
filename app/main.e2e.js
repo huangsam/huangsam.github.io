@@ -12,6 +12,7 @@ describe('Website should work as expected', () => {
       slowMo: 100,
     });
     page = await browser.newPage();
+    await page.setCacheEnabled(false);
   });
 
   test('basic workflow', async () => {
