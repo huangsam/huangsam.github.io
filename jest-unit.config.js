@@ -11,4 +11,5 @@ config.coverageThreshold = {
     statements: -10,
   },
 };
+
 module.exports = config;
