@@ -2,10 +2,20 @@
  * Fonts are pulled from Google APIs and loaded as assets.
  */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Open+Sans");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: local('Roboto Mono'), url('../fonts/Roboto_Mono/RobotoMono-Regular.ttf');
+}
 
 h1, h2, h3, h4, h5, p, span {
-  font-family: "Roboto", "Open Sans", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
 }
 
 pre, pre span, code {
