@@ -20,4 +20,6 @@ body {
   height: 60px;
   /* Vertically center the text there */
   line-height: 60px;
+  /* Prevent code block from squishing footer */
+  padding-top: 15px;
 }
