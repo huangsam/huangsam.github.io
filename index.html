@@ -29,9 +29,18 @@
     </form>
     <div class="code-block">
 <!-- Code block start -->
-<pre><code class="language-python"><span class="var">success</span> = <span class="bool">False</span>
-while <span class="var">success</span> is not <span class="bool">True</span>:
-  <span class="var">success</span> = <span class="func">try_again()</span>
+<pre><code class="language-python">def <span class="func">try_again()</span>:
+    return <span class="func">random.random()</span> > <span class="literal">0.99</span>
+
+
+def <span class="func">main()</span>:
+    <span class="var">success</span> = <span class="literal">False</span>
+    while <span class="var">success</span> is not <span class="literal">True</span>:
+        <span class="var">success</span> = <span class="func">try_again()</span>
+
+
+if <span class="var">__name__</span> == '__main__':
+    <span class="func">main()</span>
 </code></pre>
 <!-- Code block end -->
     </div>
