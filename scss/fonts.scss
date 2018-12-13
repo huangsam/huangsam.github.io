@@ -3,10 +3,10 @@
  * loaded dynamically as assets.
  */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Open+Sans|Helvetica+Neue");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Open+Sans");
 
 h1, h2, h3, h4, h5, p, span {
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "Roboto", "Open Sans", helvetica, arial, sans-serif;
 }
 
 pre, pre span, code {
