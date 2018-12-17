@@ -6,14 +6,14 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Regular.ttf');
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Mono'), url('../fonts/Roboto_Mono/RobotoMono-Regular.ttf');
+  src: local("Roboto Mono"), url("../fonts/Roboto_Mono/RobotoMono-Regular.ttf");
 }
 
 h1, h2, h3, h4, h5, p, span {
