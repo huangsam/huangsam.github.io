@@ -20,7 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -29,7 +29,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s?[ac]ss$/,
+        test: /\.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: devMode } },
