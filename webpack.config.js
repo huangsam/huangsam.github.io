@@ -30,6 +30,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: devMode } },
