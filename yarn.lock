@@ -2320,9 +2320,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.92:
-  version "1.3.92"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.92.tgz#9027b5abaea400045edd652c0e4838675c814399"
-  integrity sha512-En051LMzMl3/asMWGZEtU808HOoVWIpmmZx1Ep8N+TT9e7z/X8RcLeBU2kLSNLGQ+5SuKELzMx+MVuTBXk6Q9w==
+  version "1.3.94"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.94.tgz#896dba14f6fefb431295b90543874925ee0cd46e"
+  integrity sha512-miQqXALb6eBD3OetCtg3UM5XTLMwHISux0l6mh14iiV5SE+qvftgOCXT9Vvp53fWaCLET4sfA/SmIMYHXkaNmw==
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -4352,9 +4352,9 @@ jest@^23.6.0:
     jest-cli "^23.6.0"
 
 js-base64@^2.1.8:
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"
-  integrity sha512-xcinL3AuDJk7VSzsHgb9DvvIXayBbadtMZ4HFPx8rUszbW1MuNMlwYVC4zzCZ6e1sqZpnNS5ZFYOhXqA39T7LQ==
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.0.tgz#42255ba183ab67ce59a0dee640afdc00ab5ae93e"
+  integrity sha512-wlEBIZ5LP8usDylWbDNhKPEFVFdI5hCHpnVoT/Ysvoi/PRhJENm/Rlh9TvjYB38HFfKZN7OzEbRjmjvLkFw11g==
 
 js-levenshtein@^1.1.3:
   version "1.1.4"
