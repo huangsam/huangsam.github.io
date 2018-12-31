@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-const webUrl = process.env.WEBSITE || 'https://huangsam.github.io';
+const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
 
 describe('Website should work as expected', () => {
   let browser;
