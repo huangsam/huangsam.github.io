@@ -1,29 +1,5 @@
 import { getServiceUrl, getServiceColor } from './services';
 
-describe('All URLs should work as expected', () => {
-  test('github url works', () => {
-    expect(getServiceUrl('github')).toBe('https://github.com/huangsam/');
-  });
-
-  test('facebook url works', () => {
-    expect(getServiceUrl('facebook')).toBe('https://www.facebook.com/samuel.c.huang');
-  });
-
-  test('linkedin url works', () => {
-    expect(getServiceUrl('linkedin')).toBe('https://www.linkedin.com/in/sambyte/');
-  });
-
-  test('wordpress url works', () => {
-    expect(getServiceUrl('wordpress')).toBe('https://sambyte.wordpress.com/');
-  });
-
-  test('bogus url throws error', () => {
-    expect(() => {
-      getServiceUrl('bogus');
-    }).toThrow(TypeError);
-  });
-});
-
 describe('All colors should work as expected', () => {
   test('github color works', () => {
     expect(getServiceColor('github')).toBe('#24292e');
@@ -44,6 +20,30 @@ describe('All colors should work as expected', () => {
   test('bogus color throws error', () => {
     expect(() => {
       getServiceColor('bogus');
+    }).toThrow(TypeError);
+  });
+});
+
+describe('All URLs should work as expected', () => {
+  test('github url works', () => {
+    expect(getServiceUrl('github')).toBe('https://github.com/huangsam/');
+  });
+
+  test('facebook url works', () => {
+    expect(getServiceUrl('facebook')).toBe('https://www.facebook.com/samuel.c.huang');
+  });
+
+  test('linkedin url works', () => {
+    expect(getServiceUrl('linkedin')).toBe('https://www.linkedin.com/in/sambyte/');
+  });
+
+  test('wordpress url works', () => {
+    expect(getServiceUrl('wordpress')).toBe('https://sambyte.wordpress.com/');
+  });
+
+  test('bogus url throws error', () => {
+    expect(() => {
+      getServiceUrl('bogus');
     }).toThrow(TypeError);
   });
 });
