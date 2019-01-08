@@ -17,11 +17,6 @@ const serviceMeta = {
   },
 };
 
-const getServiceColor = service => serviceMeta[service].bgcolor;
+export const getServiceColor = service => serviceMeta[service].bgcolor;
 
-const getServiceUrl = service => serviceMeta[service].url;
-
-module.exports = {
-  getServiceUrl,
-  getServiceColor,
-};
+export const getServiceUrl = service => serviceMeta[service].url;
