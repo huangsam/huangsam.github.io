@@ -14,15 +14,10 @@ const setTheme = (bgColor, textColor, codeBorder) => {
   });
 };
 
-const originalTheme = () => {
+export const originalTheme = () => {
   setTheme('white', '', '');
 };
 
-const serviceTheme = (serviceColor) => {
+export const serviceTheme = (serviceColor) => {
   setTheme(serviceColor, 'white', '.3em solid white');
-};
-
-module.exports = {
-  originalTheme,
-  serviceTheme,
 };
