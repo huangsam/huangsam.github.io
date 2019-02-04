@@ -41,5 +41,8 @@
       "pre-commit": "yarn lint && yarn test:unit",
       "pre-push": "yarn lint && yarn test:unit && yarn prod:build"
     }
+  },
+  "resolutions": {
+    "terser": "3.14.1"
   }
 }
