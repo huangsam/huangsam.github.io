@@ -7,7 +7,7 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
-    "ajv": "^6.5.5",
+    "ajv": "^6.9.1",
     "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
@@ -41,8 +41,5 @@
       "pre-commit": "yarn lint && yarn test:unit",
       "pre-push": "yarn lint && yarn test:unit && yarn prod:build"
     }
-  },
-  "resolutions": {
-    "ajv": "6.8.1"
   }
 }
