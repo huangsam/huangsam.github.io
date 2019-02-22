@@ -1,7 +1,10 @@
 import { originalTheme, serviceTheme } from './themes';
 
-describe('Original theme should work as expected', () => {
-  document.body.innerHTML = '<body><p></p><pre></pre></body>';
+describe('Theme logic should work as expected', () => {
+  beforeEach(() => {
+    document.body.innerHTML = '<body><p></p><pre></pre></body>';
+  });
+
   test('original theme works', () => {
     originalTheme();
     expect(document.body.style.backgroundColor).toBe('white');
@@ -16,10 +19,7 @@ describe('Original theme should work as expected', () => {
       expect(style.border).toBe('');
     });
   });
-});
 
-describe('Service themes should work as expected', () => {
-  document.body.innerHTML = '<body><p></p><pre></pre></body>';
   test('service theme works', () => {
     serviceTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
