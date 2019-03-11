@@ -30,11 +30,15 @@ describe('All URLs should work as expected', () => {
   });
 
   test('facebook url works', () => {
-    expect(getServiceUrl('facebook')).toBe('https://www.facebook.com/samuel.c.huang');
+    expect(getServiceUrl('facebook')).toBe(
+      'https://www.facebook.com/samuel.c.huang'
+    );
   });
 
   test('linkedin url works', () => {
-    expect(getServiceUrl('linkedin')).toBe('https://www.linkedin.com/in/sambyte/');
+    expect(getServiceUrl('linkedin')).toBe(
+      'https://www.linkedin.com/in/sambyte/'
+    );
   });
 
   test('wordpress url works', () => {
