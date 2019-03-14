@@ -2,7 +2,10 @@
   "name": "huangsam.github.io",
   "description": "Holds links to my commonly used pages",
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+    "jest-haste-map": "^24.0.0",
+    "jest-resolve": "^24.1.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.5",
