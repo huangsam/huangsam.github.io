@@ -1,12 +1,12 @@
 import { getServiceUrl, getServiceColor } from './services';
-import { originalTheme, serviceTheme } from './themes';
+import { originalTheme, customTheme } from './themes';
 import '../scss/main.scss';
 
 document.getElementById('service').onchange = e => {
   const service = e.currentTarget.value;
   if (service !== 'default') {
     const serviceColor = getServiceColor(service);
-    serviceTheme(serviceColor);
+    customTheme(serviceColor);
   } else {
     originalTheme();
   }

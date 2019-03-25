@@ -1,4 +1,4 @@
-import { originalTheme, serviceTheme } from './themes';
+import { originalTheme, customTheme } from './themes';
 
 describe('Theme logic should work as expected', () => {
   beforeEach(() => {
@@ -20,8 +20,8 @@ describe('Theme logic should work as expected', () => {
     });
   });
 
-  test('service theme works', () => {
-    serviceTheme('red');
+  test('custom theme works', () => {
+    customTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
     const pNodes = Array.from(document.getElementsByTagName('p'));
     pNodes.forEach(node => {
