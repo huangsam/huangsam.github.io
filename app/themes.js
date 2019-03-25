@@ -18,6 +18,6 @@ export const originalTheme = () => {
   setTheme('white', '', '');
 };
 
-export const serviceTheme = serviceColor => {
-  setTheme(serviceColor, 'white', '.3em solid white');
+export const customTheme = customColor => {
+  setTheme(customColor, 'white', '.3em solid white');
 };
