@@ -1023,9 +1023,9 @@ acorn-dynamic-import@^4.0.0:
   integrity sha512-d3OEjQV4ROpoflsnUA8HozoIR504TFxNivYEUi6uwz0IYhBkTDXGuWlNdMtybRt3nqVx/L6XqMt0FxkXuWKZhw==
 
 acorn-globals@^4.1.0:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-4.3.1.tgz#deb149c59276657ebd40ba2ba849ddd529763ccf"
-  integrity sha512-gJSiKY8dBIjV/0jagZIFBdVMtfQyA5QHCvAT48H2q8REQoW8Fs5AOjqBql1LgSXgrMWdevcE+8cdZ33NtVbIBA==
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-4.3.2.tgz#4e2c2313a597fd589720395f6354b41cd5ec8006"
+  integrity sha512-BbzvZhVtZP+Bs1J1HcwrQe8ycfO0wStkSGxuul3He3GkHOIZ6eTqOkPuw9IP1X3+IkOo4wiJmwkobzXYz4wewQ==
   dependencies:
     acorn "^6.0.1"
     acorn-walk "^6.0.1"
@@ -7442,9 +7442,9 @@ webidl-conversions@^4.0.2:
   integrity sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
 
 webpack-cli@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.0.tgz#55c8a74cae1e88117f9dda3a801c7272e93ca318"
-  integrity sha512-t1M7G4z5FhHKJ92WRKwZ1rtvi7rHc0NZoZRbSkol0YKl4HvcC8+DsmGDmK7MmZxHSAetHagiOsjOB6MmzC2TUw==
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.1.tgz#98b0499c7138ba9ece8898bd99c4f007db59909d"
+  integrity sha512-c2inFU7SM0IttEgF7fK6AaUsbBnORRzminvbyRKS+NlbQHVZdCtzKBlavRL5359bFsywXGRAItA5di/IruC8mg==
   dependencies:
     chalk "^2.4.1"
     cross-spawn "^6.0.5"
