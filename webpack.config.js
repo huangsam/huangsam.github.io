@@ -5,7 +5,6 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: devMode ? 'development' : 'production',
-  entry: './app/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -40,11 +39,4 @@ module.exports = {
     ],
   },
   devtool: devMode ? 'source-map' : false,
-  devServer: {
-    contentBase: path.join(__dirname),
-    compress: true,
-    port: 9000,
-    hot: devMode,
-    open: true,
-  },
 };

@@ -1,3 +1,3 @@
 module.exports = {
-  testRegex: 'app/[a-z]+\\.(test|e2e)\\.jsx?$',
+  testRegex: 'src/[a-z]+\\.(test|e2e)\\.jsx?$',
 };

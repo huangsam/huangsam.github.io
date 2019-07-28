@@ -1,6 +1,6 @@
 const config = require('./jest.config');
 
-config.testRegex = 'app/[a-z]+\\.test\\.jsx?$';
+config.testRegex = 'src/[a-z]+\\.test\\.jsx?$';
 config.collectCoverage = true;
 config.coverageDirectory = 'coverage';
 config.coverageThreshold = {
