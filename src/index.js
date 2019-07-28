@@ -1,6 +1,6 @@
 import { getServiceUrl, getServiceColor } from './services';
 import { originalTheme, customTheme } from './themes';
-import '../scss/main.scss';
+import '../styles/main.css';
 
 document.getElementById('service').onchange = e => {
   const service = e.currentTarget.value;

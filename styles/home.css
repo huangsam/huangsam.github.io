@@ -1,0 +1,46 @@
+/**
+ * Foundational CSS classes for the homepage.
+ */
+
+@media (min-width: 700px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 699px) {
+  body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+nav {
+  margin-top: 25px;
+}
+
+body {
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+a, h1, p {
+  -webkit-transition: color .25s ease-out;
+  -moz-transition: color .25s ease-out;
+  -o-transition: color .25s ease-out;
+  transition: color .25s ease-out;
+}
+
+pre {
+  -webkit-transition: border .25s ease-out;
+  -moz-transition: border .25s ease-out;
+  -o-transition: border .25s ease-out;
+  transition: border .25s ease-out;
+}
+
+a, a:visited {
+  color: #0275d8;
+}
