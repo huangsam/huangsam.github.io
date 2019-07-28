@@ -26,7 +26,6 @@
     "prettier": "^1.16.4",
     "puppeteer": "^1.13.0",
     "regenerator-runtime": "^0.13.2",
-    "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
