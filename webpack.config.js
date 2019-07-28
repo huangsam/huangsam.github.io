@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -23,12 +23,11 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.css$/,
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: devMode } },
-          { loader: 'sass-loader', options: { sourceMap: devMode } },
         ],
       },
     ],
