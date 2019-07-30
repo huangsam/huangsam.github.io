@@ -14,14 +14,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: /src/,
         use: {
           loader: 'babel-loader',
         },
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        include: /styles/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: devMode } },
