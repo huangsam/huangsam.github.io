@@ -6,7 +6,7 @@
       "jsx": true
     }
   },
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["prettier"],
   "plugins": ["prettier"],
   "rules": {
     "indent": ["warn", 2],
@@ -14,7 +14,6 @@
     "comma-dangle": ["warn", "always-multiline"],
     "comma-style": 1,
     "wrap-regex": 1,
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "semi": 2,
     "valid-jsdoc": 2,
     "no-alert": 0,
