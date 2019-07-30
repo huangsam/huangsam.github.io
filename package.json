@@ -29,13 +29,12 @@
     "dev:start": "webpack-dev-server",
     "dev:build": "webpack --progress",
     "lint": "eslint src *.config.js",
-    "lint:fix": "yarn lint --fix",
+    "fmt": "yarn lint --fix",
     "test": "jest -c jest.config.js",
     "test:watch": "yarn test --watch",
     "test:unit": "jest -c jest-unit.config.js",
     "test:e2e": "jest -c jest-e2e.config.js",
-    "prod:build": "webpack -p --progress",
-    "fmt": "prettier --write \"src/**/*.js\""
+    "prod:build": "webpack -p --progress"
   },
   "husky": {
     "hooks": {
