@@ -71,25 +71,31 @@ nav {
   margin-top: 25px;
 }
 
+:root {
+  --bg-transition: background-color .5s ease-out;
+  --color-transition: color .25s ease-out;
+  --border-transition: border .25s ease-out;
+}
+
 body {
-  -webkit-transition: background-color .5s ease-out;
-  -moz-transition: background-color .5s ease-out;
-  -o-transition: background-color .5s ease-out;
-  transition: background-color .5s ease-out;
+  -webkit-transition: var(--bg-transition);
+  -moz-transition: var(--bg-transition);
+  -o-transition: var(--bg-transition);
+  transition: var(--bg-transition);
 }
 
 a, h1, p {
-  -webkit-transition: color .25s ease-out;
-  -moz-transition: color .25s ease-out;
-  -o-transition: color .25s ease-out;
-  transition: color .25s ease-out;
+  -webkit-transition: var(--color-transition);
+  -moz-transition: var(--color-transition);
+  -o-transition: var(--color-transition);
+  transition: var(--color-transition);
 }
 
 pre {
-  -webkit-transition: border .25s ease-out;
-  -moz-transition: border .25s ease-out;
-  -o-transition: border .25s ease-out;
-  transition: border .25s ease-out;
+  -webkit-transition: var(--border-transition);
+  -moz-transition: var(--border-transition);
+  -o-transition: var(--border-transition);
+  transition: var(--border-transition);
 }
 
 a, a:visited {
