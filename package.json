@@ -26,20 +26,19 @@
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
-    "dev:start": "webpack-dev-server",
-    "dev:build": "webpack --progress",
+    "build:dev": "webpack --progress",
+    "build:prod": "webpack -p --progress",
     "lint": "eslint src *.config.js",
     "fmt": "yarn lint --fix",
     "test": "jest -c jest.config.js",
-    "test:watch": "yarn test --watch",
     "test:unit": "jest -c jest-unit.config.js",
     "test:e2e": "jest -c jest-e2e.config.js",
-    "prod:build": "webpack -p --progress"
+    "test:watch": "yarn test:unit --watch"
   },
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint && yarn test:unit",
-      "pre-push": "yarn lint && yarn test:unit && yarn prod:build"
+      "pre-push": "yarn build:prod"
     }
   }
 }
