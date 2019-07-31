@@ -22,10 +22,10 @@ Run the test suite to make sure everything works as expected:
 
 Recompile the `dist` assets for development:
 
-    yarn dev:build
+    yarn build:dev
 
 Or recompile the `dist` assets for production:
 
-    yarn prod:build
+    yarn build:prod
 
-Feel free to review the final output by opening up `index.html`.
+Review the final output by opening up `index.html`.
