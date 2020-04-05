@@ -9,12 +9,12 @@ describe('Theme logic should work as expected', () => {
     originalTheme();
     expect(document.body.style.backgroundColor).toBe('white');
     const pNodes = Array.from(document.getElementsByTagName('p'));
-    pNodes.forEach(node => {
+    pNodes.forEach((node) => {
       const { style } = node;
       expect(style.color).toBe('');
     });
     const preNodes = Array.from(document.getElementsByTagName('pre'));
-    preNodes.forEach(node => {
+    preNodes.forEach((node) => {
       const { style } = node;
       expect(style.border).toBe('');
     });
@@ -24,12 +24,12 @@ describe('Theme logic should work as expected', () => {
     customTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
     const pNodes = Array.from(document.getElementsByTagName('p'));
-    pNodes.forEach(node => {
+    pNodes.forEach((node) => {
       const { style } = node;
       expect(style.color).toBe('white');
     });
     const preNodes = Array.from(document.getElementsByTagName('pre'));
-    preNodes.forEach(node => {
+    preNodes.forEach((node) => {
       const { style } = node;
       expect(style.border).toBe('.3em solid white');
     });
