@@ -1,53 +1,29 @@
-import { getServiceUrl, getServiceColor } from './services';
+import services from './services';
 
-describe('All colors should work as expected', () => {
-  test('github color works', () => {
-    expect(getServiceColor('github')).toBe('#24292e');
-  });
-
-  test('facebook color works', () => {
-    expect(getServiceColor('facebook')).toBe('#3b5998');
-  });
-
-  test('linkedin color works', () => {
-    expect(getServiceColor('linkedin')).toBe('#0077b5');
-  });
-
-  test('wordpress color works', () => {
-    expect(getServiceColor('wordpress')).toBe('#21759b');
+describe('Service colors should work as expected', () => {
+  test.each(services.getServices())('%s color is valid', (svc) => {
+    const color = services.getServiceColor(svc);
+    expect(color).toBeTruthy();
+    expect(color).toMatch(/#[a-z0-9]{6}/);
   });
 
   test('bogus color throws error', () => {
     expect(() => {
-      getServiceColor('bogus');
+      services.getServiceColor('bogus');
     }).toThrow(TypeError);
   });
 });
 
-describe('All URLs should work as expected', () => {
-  test('github url works', () => {
-    expect(getServiceUrl('github')).toBe('https://github.com/huangsam/');
-  });
-
-  test('facebook url works', () => {
-    expect(getServiceUrl('facebook')).toBe(
-      'https://www.facebook.com/samuel.c.huang'
-    );
-  });
-
-  test('linkedin url works', () => {
-    expect(getServiceUrl('linkedin')).toBe(
-      'https://www.linkedin.com/in/sambyte/'
-    );
-  });
-
-  test('wordpress url works', () => {
-    expect(getServiceUrl('wordpress')).toBe('https://sambyte.wordpress.com/');
+describe('Service URLs should work as expected', () => {
+  test.each(services.getServices())('%s url is valid', (svc) => {
+    const url = services.getServiceUrl(svc);
+    expect(url).toBeTruthy();
+    expect(url).toMatch(/https:\/\/.*/);
   });
 
   test('bogus url throws error', () => {
     expect(() => {
-      getServiceUrl('bogus');
+      services.getServiceUrl('bogus');
     }).toThrow(TypeError);
   });
 });

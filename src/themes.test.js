@@ -1,4 +1,4 @@
-import { originalTheme, customTheme } from './themes';
+import themes from './themes';
 
 describe('Theme logic should work as expected', () => {
   beforeEach(() => {
@@ -6,7 +6,7 @@ describe('Theme logic should work as expected', () => {
   });
 
   test('original theme works', () => {
-    originalTheme();
+    themes.originalTheme();
     expect(document.body.style.backgroundColor).toBe('white');
     const pNodes = Array.from(document.getElementsByTagName('p'));
     pNodes.forEach((node) => {
@@ -21,7 +21,7 @@ describe('Theme logic should work as expected', () => {
   });
 
   test('custom theme works', () => {
-    customTheme('red');
+    themes.customTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
     const pNodes = Array.from(document.getElementsByTagName('p'));
     pNodes.forEach((node) => {

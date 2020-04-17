@@ -20,3 +20,7 @@ const serviceMeta = {
 export const getServiceColor = (service) => serviceMeta[service].bgcolor;
 
 export const getServiceUrl = (service) => serviceMeta[service].url;
+
+export const getServices = () => Object.keys(serviceMeta);
+
+export default { getServiceColor, getServiceUrl, getServices };
