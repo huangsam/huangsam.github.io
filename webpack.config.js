@@ -16,9 +16,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: /src/,
-        use: {
-          loader: 'babel-loader',
-        },
+        loader: 'babel-loader',
       },
       {
         test: /\.css$/,
