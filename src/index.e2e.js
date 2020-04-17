@@ -2,6 +2,8 @@ import puppeteer from 'puppeteer';
 
 const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
 
+const timeOut = 5000;
+
 describe('Website should work as expected', () => {
   let browser;
   let page;
@@ -13,13 +15,17 @@ describe('Website should work as expected', () => {
     });
     page = await browser.newPage();
     await page.setCacheEnabled(false);
-  });
-
-  test('basic workflow', async () => {
     await page.goto(webUrl);
     await page.waitForSelector('div.code-block');
-    await page.select('select#service', 'github');
-  }, 15000);
+  });
+
+  test.each(['github', 'facebook', 'linkedin', 'wordpress'])(
+    'select %s from dropdown',
+    async (item) => {
+      await page.select('select#service', item);
+    },
+    timeOut
+  );
 
   afterAll(() => {
     browser.close();
