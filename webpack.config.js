@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+// Developer flag
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
