@@ -1,5 +1,5 @@
 /**
- * Fonts are pulled from Google APIs and loaded as assets.
+ * Google Fonts for use on the whole site.
  */
 
 @font-face {
@@ -50,7 +50,7 @@ body {
 }
 
 /**
- * Foundational CSS classes for the homepage.
+ * Transitions, padding and link color for the home page.
  */
 
 @media (min-width: 700px) {
@@ -103,7 +103,7 @@ a, a:visited {
 }
 
 /**
- * Styling for making <pre> look pretty on the browser.
+ * Pretty code blocks for user experience.
  */
 
 .code-block {
