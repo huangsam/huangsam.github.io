@@ -12,10 +12,7 @@ describe('Website should work as expected', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 100,
-    });
+    browser = await puppeteer.launch();
     page = await browser.newPage();
     await page.setCacheEnabled(false);
     await page.goto(webUrl);
