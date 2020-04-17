@@ -1,8 +1,11 @@
 import puppeteer from 'puppeteer';
+import { getServices } from './services';
 
+// Web URL
 const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
 
-const timeOut = 5000;
+// Timeout in milliseconds
+const allTimeOut = 10000;
 
 describe('Website should work as expected', () => {
   let browser;
@@ -17,17 +20,13 @@ describe('Website should work as expected', () => {
     await page.setCacheEnabled(false);
     await page.goto(webUrl);
     await page.waitForSelector('div.code-block');
-  });
+  }, allTimeOut);
 
-  test.each(['github', 'facebook', 'linkedin', 'wordpress'])(
-    'select %s from dropdown',
-    async (item) => {
-      await page.select('select#service', item);
-    },
-    timeOut
-  );
+  test.each(getServices())('select %s from dropdown', async (svc) => {
+    await page.select('select#service', svc);
+  });
 
   afterAll(() => {
     browser.close();
-  });
+  }, allTimeOut);
 });

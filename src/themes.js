@@ -21,3 +21,5 @@ export const originalTheme = () => {
 export const customTheme = (customColor) => {
   setTheme(customColor, 'white', '.3em solid white');
 };
+
+export default { originalTheme, customTheme };
