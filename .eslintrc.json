@@ -6,7 +6,6 @@
   "extends": ["prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "no-alert": "off",
     "prettier/prettier": "error"
   },
   "env": {

@@ -17,8 +17,6 @@ document.getElementById('goto').onclick = (e) => {
   const service = document.getElementById('service').value;
   if (service !== 'default') {
     window.location.href = getServiceUrl(service);
-  } else {
-    alert('Please select a valid service from the dropdown.');
   }
 };
 
