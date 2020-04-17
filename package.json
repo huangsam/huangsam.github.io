@@ -29,7 +29,7 @@
   "scripts": {
     "build": "yarn build:prod",
     "build:dev": "webpack --progress",
-    "build:prod": "webpack -p --progress",
+    "build:prod": "NODE_ENV=production webpack -p --progress",
     "lint": "eslint src *.config.js",
     "fmt": "yarn lint --fix",
     "test": "jest -c jest.config.js",
