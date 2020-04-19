@@ -14,7 +14,6 @@
     "webpack-cli": "^3.3.0"
   },
   "devDependencies": {
-    "ajv": "^6.10.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^25.1.0",
     "eslint": "^6.1.0",
@@ -25,8 +24,7 @@
     "jest-haste-map": "^25.0.0",
     "jest-resolve": "^25.0.0",
     "prettier": "^2.0.0",
-    "puppeteer": "^3.0.0",
-    "regenerator-runtime": "^0.13.3"
+    "puppeteer": "^3.0.0"
   },
   "scripts": {
     "build": "yarn build:prod",
