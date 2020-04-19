@@ -123,15 +123,15 @@ pre {
   font-size: .9em;
 }
 
-pre code.language-python span.literal {
+pre span.literal {
   color: #29f349;
 }
 
-pre code.language-python span.var {
+pre span.var {
   color: #ffc500;
 }
 
-pre code.language-python span.func {
+pre span.func {
   color: #00bbff;
 }
 
