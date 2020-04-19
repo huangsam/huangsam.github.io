@@ -1,6 +1,7 @@
+// https://encycolorpedia.com/
 const serviceMeta = {
   github: {
-    bgcolor: '#24292e',
+    bgcolor: '#171515',
     url: 'https://github.com/huangsam/',
   },
   facebook: {
@@ -8,7 +9,7 @@ const serviceMeta = {
     url: 'https://www.facebook.com/samuel.c.huang',
   },
   linkedin: {
-    bgcolor: '#0077b5',
+    bgcolor: '#0072b1',
     url: 'https://www.linkedin.com/in/sambyte/',
   },
   wordpress: {
