@@ -7,7 +7,7 @@ const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
 // Timeout in milliseconds
 const allTimeOut = 10000;
 
-describe('Website should work as expected', () => {
+describe('Website page', () => {
   let browser;
   let page;
 
@@ -19,7 +19,7 @@ describe('Website should work as expected', () => {
     await page.waitForSelector('div.code-block');
   }, allTimeOut);
 
-  test.each(getServices())('select %s from dropdown', async (svc) => {
+  test.each(getServices())('%s exists in dropdown', async (svc) => {
     await page.select('select#service', svc);
   });
 
