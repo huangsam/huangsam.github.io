@@ -1,15 +1,17 @@
 import services from './services';
 
-describe('Service color', () => {
-  test.each(services.getServices())('exists for %s', (svc) => {
-    const color = services.getServiceColor(svc);
-    expect(color).toBeTruthy();
-    expect(color).toMatch(/#[a-zA-Z0-9]{6}/);
+describe('Service colors', () => {
+  test.each(services.getServices())('exist for %s', (svc) => {
+    const colors = services.getServiceColors(svc);
+    expect(typeof colors).toBe('object');
+    for (const [name, color] of Object.entries(colors)) {
+      expect(color).toMatch(/#[a-zA-Z0-9]{6}/);
+    }
   });
 
-  test('does not exist for bogus', () => {
+  test('do not exist for bogus', () => {
     expect(() => {
-      services.getServiceColor('bogus');
+      services.getServiceColors('bogus');
     }).toThrow(TypeError);
   });
 });
