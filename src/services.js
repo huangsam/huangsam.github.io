@@ -1,27 +1,34 @@
+import { Theme } from './theme';
+
 // https://encycolorpedia.com/
 const serviceMeta = {
   github: {
-    colors: { bodyBgColor: '#171515' },
+    theme: Theme.CustomTheme('#171515'),
     url: 'https://github.com/huangsam/',
   },
   facebook: {
-    colors: { bodyBgColor: '#3b5998' },
+    theme: Theme.CustomTheme('#3b5998'),
     url: 'https://www.facebook.com/samuel.c.huang',
   },
   linkedin: {
-    colors: { bodyBgColor: '#0072b1' },
+    theme: Theme.CustomTheme('#0072b1'),
     url: 'https://www.linkedin.com/in/sambyte/',
   },
   wordpress: {
-    colors: { bodyBgColor: '#21759b' },
+    theme: Theme.CustomTheme('#21759b'),
     url: 'https://sambyte.wordpress.com/',
   },
 };
 
-export const getServiceColors = (service) => serviceMeta[service].colors;
+// Helper methods
+const getServices = () => Object.keys(serviceMeta);
+const getServiceTheme = (service) => serviceMeta[service].theme;
+const getServiceUrl = (service) => serviceMeta[service].url;
+const getOriginalTheme = () => Theme.OriginalTheme();
 
-export const getServiceUrl = (service) => serviceMeta[service].url;
-
-export const getServices = () => Object.keys(serviceMeta);
-
-export default { getServiceColors, getServiceUrl, getServices };
+export default {
+  getServices,
+  getServiceTheme,
+  getServiceUrl,
+  getOriginalTheme,
+};

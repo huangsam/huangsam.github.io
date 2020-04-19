@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import { getServices } from './services';
+import services from './services';
 
 // Web URL
 const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
@@ -19,7 +19,7 @@ describe('Website page', () => {
     await page.waitForSelector('div.code-block');
   }, allTimeOut);
 
-  test.each(getServices())('%s exists in dropdown', async (svc) => {
+  test.each(services.getServices())('%s exists in dropdown', async (svc) => {
     await page.select('select#service', svc);
   });
 
