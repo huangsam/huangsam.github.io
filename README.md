@@ -1,6 +1,6 @@
 # huangsam.github.io
 
-Acts as a collection of links to my commonly used pages.
+Holds links to my commonly used pages.
 
 ## Getting Started
 
