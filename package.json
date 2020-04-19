@@ -2,16 +2,21 @@
   "name": "huangsam.github.io",
   "description": "Holds links to my commonly used pages",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "ajv": "^6.10.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.5",
     "core-js": "^3.0.0",
     "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "ajv": "^6.10.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.0.1",
@@ -19,12 +24,9 @@
     "jest": "^25.0.0",
     "jest-haste-map": "^25.0.0",
     "jest-resolve": "^25.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
     "prettier": "^2.0.0",
     "puppeteer": "^3.0.0",
-    "regenerator-runtime": "^0.13.3",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "regenerator-runtime": "^0.13.3"
   },
   "scripts": {
     "build": "yarn build:prod",
