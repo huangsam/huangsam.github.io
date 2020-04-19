@@ -1,14 +1,19 @@
+import { Website } from './website';
 import services from './services';
-import themes from './themes';
 import '../styles/main.css';
+
+// Website context
+let website = new Website();
 
 document.getElementById('service').onchange = (e) => {
   const service = e.currentTarget.value;
-  if (service !== 'default') {
-    themes.customTheme(services.getServiceColors(service));
+  let theme = undefined;
+  if (service === 'default') {
+    theme = services.getOriginalTheme();
   } else {
-    themes.originalTheme();
+    theme = services.getServiceTheme(service);
   }
+  website.setTheme(theme);
 };
 
 document.getElementById('goto').onclick = (e) => {
