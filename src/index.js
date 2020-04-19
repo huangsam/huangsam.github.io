@@ -7,7 +7,7 @@ let website = new Website();
 
 document.getElementById('service').onchange = (e) => {
   const service = e.currentTarget.value;
-  let theme = undefined;
+  let theme;
   if (service === 'default') {
     theme = services.getOriginalTheme();
   } else {
