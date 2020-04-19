@@ -13,8 +13,7 @@ describe('Website', () => {
   });
 
   test('can be set to original', () => {
-    const theme = Theme.OriginalTheme();
-    website.setTheme(theme);
+    website.setTheme(Theme.OriginalTheme());
     expect(document.body.style.backgroundColor).toBe('white');
 
     const paraNodes = Array.from(document.getElementsByTagName('p'));
@@ -24,7 +23,22 @@ describe('Website', () => {
 
     const preNodes = Array.from(document.getElementsByTagName('pre'));
     preNodes.forEach((node) => {
-      expect(node.style.border).toBe('');
+      expect(node.style.backgroundColor).toBe('');
+    });
+  });
+
+  test('can be set to anything', () => {
+    website.setTheme(new Theme('red', 'white', 'blue', 'black'));
+    expect(document.body.style.backgroundColor).toBe('red');
+
+    const paraNodes = Array.from(document.getElementsByTagName('p'));
+    paraNodes.forEach((node) => {
+      expect(node.style.color).toBe('white');
+    });
+
+    const preNodes = Array.from(document.getElementsByTagName('pre'));
+    preNodes.forEach((node) => {
+      expect(node.style.backgroundColor).toBe('blue');
     });
   });
 });
