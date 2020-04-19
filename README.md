@@ -4,7 +4,7 @@ Holds links to my commonly used pages.
 
 ## Getting Started
 
-There are a couple steps to getting started.
+Here are some steps to get started as a contributor.
 
 ### Install packages
 
@@ -14,18 +14,14 @@ Install the package dependencies:
 
 ### Run tests
 
-Run the test suite to make sure everything works as expected:
+Run the full test suite to verify changes:
 
     yarn test
 
-### Create build
+### Build assets
 
-Recompile the `dist` assets for development:
+Compile the `dist` assets for production:
 
-    yarn build:dev
-
-Or recompile the `dist` assets for production:
-
-    yarn build:prod
+    yarn build
 
 Review the final output by opening up `index.html`.
