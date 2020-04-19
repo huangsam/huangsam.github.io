@@ -1,11 +1,11 @@
 import themes from './themes';
 
-describe('themes', () => {
+describe('Site themes', () => {
   beforeEach(() => {
     document.body.innerHTML = '<body><p></p><pre></pre></body>';
   });
 
-  test('set as original', () => {
+  test('original has white bg + plain text/borders', () => {
     themes.originalTheme();
     expect(document.body.style.backgroundColor).toBe('white');
 
@@ -22,7 +22,7 @@ describe('themes', () => {
     });
   });
 
-  test('set as custom', () => {
+  test('custom has custom bg + white text/borders', () => {
     themes.customTheme('red');
     expect(document.body.style.backgroundColor).toBe('red');
 
