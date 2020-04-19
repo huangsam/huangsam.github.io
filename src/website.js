@@ -1,4 +1,4 @@
-export class Website {
+export default class Website {
   constructor() {
     this.bodyStyle = document.body.style;
     this.paraNodes = document.querySelectorAll('p, h1, footer span');

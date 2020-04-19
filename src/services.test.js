@@ -1,5 +1,5 @@
 import services from './services';
-import { Theme } from './theme';
+import Theme from './theme';
 
 describe('Service metadata', () => {
   test.each(services.getServices())('exists for %s', (svc) => {
