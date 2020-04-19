@@ -1,5 +1,5 @@
-import { Website } from './website';
-import { Theme } from './theme';
+import Theme from './theme';
+import Website from './website';
 
 beforeAll(() => {
   document.body.innerHTML = '<body><p></p><pre></pre></body>';

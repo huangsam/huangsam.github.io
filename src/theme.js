@@ -1,4 +1,4 @@
-export class Theme {
+export default class Theme {
   constructor(
     bodyBgColor = '',
     paraColor = '',

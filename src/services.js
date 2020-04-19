@@ -1,4 +1,4 @@
-import { Theme } from './theme';
+import Theme from './theme';
 
 // https://encycolorpedia.com/
 const serviceMeta = {

@@ -1,4 +1,4 @@
-import { Theme } from './theme';
+import Theme from './theme';
 
 describe('Theme', () => {
   test('should create properly without params', () => {

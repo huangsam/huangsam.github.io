@@ -1,5 +1,5 @@
-import { Website } from './website';
 import services from './services';
+import Website from './website';
 import '../styles/main.css';
 
 // Website context
