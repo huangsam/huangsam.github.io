@@ -5,12 +5,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: devMode ? 'development' : 'production',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
