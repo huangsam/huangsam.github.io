@@ -19,7 +19,7 @@ describe('Website page', () => {
     await page.waitForSelector('div.code-block');
   }, allTimeOut);
 
-  test.each(services.getServices())('%s exists in dropdown', async (svc) => {
+  test.each(services.getServices())('has %s in dropdown', async (svc) => {
     await page.select('select#service', svc);
   });
 
