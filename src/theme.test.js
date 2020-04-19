@@ -1,7 +1,7 @@
 import Theme from './theme';
 
 describe('Theme', () => {
-  test('should create properly without params', () => {
+  test('is created without params', () => {
     let theme = new Theme();
     expect(theme.getBodyBgColor()).toBe('');
     expect(theme.getParaColor()).toBe('');
@@ -9,7 +9,7 @@ describe('Theme', () => {
     expect(theme.getPreBorder()).toBe('');
   });
 
-  test('should create properly with all params', () => {
+  test('is created with all params', () => {
     let theme = new Theme('white', 'white', 'white', 'white');
     expect(theme.getBodyBgColor()).toBe('white');
     expect(theme.getParaColor()).toBe('white');
