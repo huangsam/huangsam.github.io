@@ -17,23 +17,22 @@ describe('Site themes', () => {
     test('has plain text', () => {
       const pNodes = Array.from(document.getElementsByTagName('p'));
       pNodes.forEach((node) => {
-        const { style } = node;
-        expect(style.color).toBe('');
+        expect(node.style.color).toBe('');
       });
     });
 
     test('has plain borders', () => {
       const preNodes = Array.from(document.getElementsByTagName('pre'));
       preNodes.forEach((node) => {
-        const { style } = node;
-        expect(style.border).toBe('');
+        expect(node.style.border).toBe('');
       });
     });
   });
 
   describe('Custom theme', () => {
     beforeAll(() => {
-      themes.customTheme('red');
+      const redColors = { bodyBgColor: 'red' };
+      themes.customTheme(redColors);
     });
 
     test('has red bg', () => {
@@ -43,16 +42,14 @@ describe('Site themes', () => {
     test('has white text', () => {
       const pNodes = Array.from(document.getElementsByTagName('p'));
       pNodes.forEach((node) => {
-        const { style } = node;
-        expect(style.color).toBe('white');
+        expect(node.style.color).toBe('white');
       });
     });
 
     test('has white borders', () => {
       const preNodes = Array.from(document.getElementsByTagName('pre'));
       preNodes.forEach((node) => {
-        const { style } = node;
-        expect(style.border).toBe('.3em solid white');
+        expect(node.style.border).toBe('.3em solid white');
       });
     });
   });
