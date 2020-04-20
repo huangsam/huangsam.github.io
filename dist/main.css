@@ -19,15 +19,15 @@ pre {
 }
 
 pre span.literal {
-  color: #29f349;
+  color: #bb66ff;
 }
 
 pre span.var {
-  color: #ffc500;
+  color: #ffaa00;
 }
 
 pre span.func {
-  color: #00bbff;
+  color: #ff00aa;
 }
 
 /**
@@ -140,7 +140,28 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: #252525;
+  background-color: #222222;
+}
+
+pre.github span.literal,
+pre.facebook span.literal,
+pre.linkedin span.literal,
+pre.wordpress span.literal {
+  color: #29f349;
+}
+
+pre.github span.var,
+pre.facebook span.var,
+pre.linkedin span.var,
+pre.wordpress span.var {
+  color: #ffc500;
+}
+
+pre.github span.func,
+pre.facebook span.func,
+pre.linkedin span.func,
+pre.wordpress span.func {
+  color: #00bbff;
 }
 
 /**

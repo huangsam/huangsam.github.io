@@ -19,13 +19,13 @@ pre {
 }
 
 pre span.literal {
-  color: #29f349;
+  color: #bb66ff;
 }
 
 pre span.var {
-  color: #ffc500;
+  color: #ffaa00;
 }
 
 pre span.func {
-  color: #00bbff;
+  color: #ff00aa;
 }
