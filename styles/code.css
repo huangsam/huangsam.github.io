@@ -19,13 +19,13 @@ pre {
 }
 
 pre span.literal {
-  color: var(--saberpurple);
+  color: var(--jedipurple);
 }
 
 pre span.var {
-  color: var(--creambar);
+  color: var(--jediorange);
 }
 
 pre span.func {
-  color: var(--saberpink);
+  color: var(--jedipink);
 }
