@@ -5,4 +5,9 @@ describe('Service metadata', () => {
     const url = services.getServiceUrl(svc);
     expect(url).toMatch(/https?:\/\/.*/);
   });
+
+  test('does not exist for bogus', () => {
+    const url = services.getServiceUrl('bogus');
+    expect(url).toBe(undefined);
+  });
 });
