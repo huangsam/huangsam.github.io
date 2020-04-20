@@ -11,18 +11,18 @@ describe('Website', () => {
     website = new Website();
   });
 
-  test('can set as default', () => {
+  test('is set as default', () => {
     website.setTheme('default');
     expect(document.body.classList.length).toBe(0);
   });
 
-  test('can set as github', () => {
+  test('is set as github', () => {
     website.setTheme('github');
     expect(document.body.classList.contains('github')).toBeTruthy();
     expect(document.body.classList.length).toBe(1);
   });
 
-  test('can set as github-linkedin', () => {
+  test('is set as github-linkedin', () => {
     website.setTheme('github');
     website.setTheme('linkedin');
     expect(document.body.classList.contains('github')).toBeFalsy();
@@ -30,13 +30,13 @@ describe('Website', () => {
     expect(document.body.classList.length).toBe(1);
   });
 
-  test('can set as github-default', () => {
+  test('is set as github-default', () => {
     website.setTheme('github');
     website.setTheme('default');
     expect(document.body.classList.length).toBe(0);
   });
 
-  test('can set as github-default-linkedin', () => {
+  test('is set as github-default-linkedin', () => {
     website.setTheme('github');
     website.setTheme('default');
     website.setTheme('linkedin');
