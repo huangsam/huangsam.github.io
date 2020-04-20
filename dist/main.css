@@ -1,5 +1,59 @@
 /**
- * Google Fonts for use on the whole site.
+ * Pretty code blocks for the website.
+ */
+
+.code-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+pre {
+  border-radius: .5em;
+  border: .3em solid #545454;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+  background-color: #141414;
+  color: white;
+  font-size: .9em;
+}
+
+pre span.literal {
+  color: #29f349;
+}
+
+pre span.var {
+  color: #ffc500;
+}
+
+pre span.func {
+  color: #00bbff;
+}
+
+/**
+ * Content padding for the website.
+ */
+
+@media (min-width: 700px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 699px) {
+  body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+nav {
+  margin-top: 25px;
+}
+
+/**
+ * Google Fonts for the website.
  */
 
 @font-face {
@@ -50,92 +104,15 @@ body {
 }
 
 /**
- * Transitions, padding and link color for the home page.
+ * Link coloring for the website.
  */
-
-@media (min-width: 700px) {
-  body {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-
-@media (max-width: 699px) {
-  body {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-nav {
-  margin-top: 25px;
-}
-
-body {
-  --bg-transition: background-color .5s ease-out;
-  --color-transition: color .25s ease-out;
-  --border-transition: border .25s ease-out;
-}
-
-body {
-  -webkit-transition: var(--bg-transition);
-  -moz-transition: var(--bg-transition);
-  -o-transition: var(--bg-transition);
-  transition: var(--bg-transition);
-}
-
-a, h1, p {
-  -webkit-transition: var(--color-transition);
-  -moz-transition: var(--color-transition);
-  -o-transition: var(--color-transition);
-  transition: var(--color-transition);
-}
-
-pre {
-  -webkit-transition: var(--border-transition);
-  -moz-transition: var(--border-transition);
-  -o-transition: var(--border-transition);
-  transition: var(--border-transition);
-}
 
 a, a:visited {
   color: #0275d8;
 }
 
 /**
- * Pretty code blocks for user experience.
- */
-
-.code-block {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-pre {
-  border-radius: .5em;
-  border: .3em solid #545454;
-  margin: .5em 0;
-  overflow: auto;
-  padding: 1em;
-  background-color: #141414;
-  color: white;
-  font-size: .9em;
-}
-
-pre span.literal {
-  color: #29f349;
-}
-
-pre span.var {
-  color: #ffc500;
-}
-
-pre span.func {
-  color: #00bbff;
-}
-
-/**
- * Service themes to apply on the website
+ * Service themes for the website.
  */
 
 body.github {
@@ -164,6 +141,37 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
   background-color: #252525;
+}
+
+/**
+ * Transitions for the website.
+ */
+
+:root {
+  --bg-transition: background-color .5s ease-out;
+  --color-transition: color .25s ease-out;
+  --border-transition: border .25s ease-out;
+}
+
+body {
+  -webkit-transition: var(--bg-transition);
+  -moz-transition: var(--bg-transition);
+  -o-transition: var(--bg-transition);
+  transition: var(--bg-transition);
+}
+
+a, h1, p {
+  -webkit-transition: var(--color-transition);
+  -moz-transition: var(--color-transition);
+  -o-transition: var(--color-transition);
+  transition: var(--color-transition);
+}
+
+pre {
+  -webkit-transition: var(--border-transition);
+  -moz-transition: var(--border-transition);
+  -o-transition: var(--border-transition);
+  transition: var(--border-transition);
 }
 
 
