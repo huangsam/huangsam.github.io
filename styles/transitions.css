@@ -2,12 +2,6 @@
  * Transitions for the website.
  */
 
-:root {
-  --bg-transition: background-color .5s ease-out;
-  --color-transition: color .25s ease-out;
-  --border-transition: border .25s ease-out;
-}
-
 body {
   -webkit-transition: var(--bg-transition);
   -moz-transition: var(--bg-transition);

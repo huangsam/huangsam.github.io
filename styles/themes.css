@@ -3,19 +3,19 @@
  */
 
 body.github {
-  background-color: #171515;
+  background-color: var(--github-logo);
 }
 
 body.facebook {
-  background-color: #3b5998;
+  background-color: var(--facebook-logo);
 }
 
 body.linkedin {
-  background-color: #0072b1;
+  background-color: var(--linkedin-logo);
 }
 
 body.wordpress {
-  background-color: #21759b;
+  background-color: var(--wordpress-logo);
 }
 
 p.github, h1.github, footer span.github,
@@ -27,26 +27,35 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: #222222;
+  background-color: var(--grey-two);
 }
 
-pre.github span.literal,
+pre.github span.literal {
+  color: var(--saberpurple);
+}
+
 pre.facebook span.literal,
 pre.linkedin span.literal,
 pre.wordpress span.literal {
-  color: #29f349;
+  color: var(--sabergreen);
 }
 
-pre.github span.var,
+pre.github span.var {
+  color: white;
+}
+
 pre.facebook span.var,
 pre.linkedin span.var,
 pre.wordpress span.var {
-  color: #ffc500;
+  color: var(--saberorange);
 }
 
-pre.github span.func,
+pre.github span.func {
+  color: var(--sabergreen);
+}
+
 pre.facebook span.func,
 pre.linkedin span.func,
 pre.wordpress span.func {
-  color: #00bbff;
+  color: var(--saberblue);
 }

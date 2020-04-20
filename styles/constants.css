@@ -1,0 +1,25 @@
+/**
+ * Hardcoded constants for website
+ */
+
+:root {
+  --github-logo: #171515;
+  --facebook-logo: #3b5998;
+  --linkedin-logo: #0072b1;
+  --wordpress-logo: #21759b;
+
+  --grey-one: #141414;
+  --grey-two: #242424;
+  --grey-five: #545454;
+
+  --creambar: #ffaa00;
+  --saberblue: #00bbff;
+  --sabergreen: #29f349;
+  --saberorange: #ffc500;
+  --saberpink: #ff6bbd;
+  --saberpurple: #bb66ff;
+
+  --bg-transition: background-color .5s ease-out;
+  --color-transition: color .25s ease-out;
+  --border-transition: border .25s ease-out;
+}
