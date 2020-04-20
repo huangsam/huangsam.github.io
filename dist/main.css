@@ -1,33 +1,27 @@
 /**
- * Pretty code blocks for the website.
+ * Hardcoded constants for website
  */
 
-.code-block {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+:root {
+  --github-logo: #171515;
+  --facebook-logo: #3b5998;
+  --linkedin-logo: #0072b1;
+  --wordpress-logo: #21759b;
 
-pre {
-  border-radius: .5em;
-  border: .3em solid #545454;
-  margin: .5em 0;
-  overflow: auto;
-  padding: 1em;
-  background-color: #141414;
-  color: white;
-  font-size: .9em;
-}
+  --grey-one: #141414;
+  --grey-two: #242424;
+  --grey-five: #545454;
 
-pre span.literal {
-  color: #bb66ff;
-}
+  --creambar: #ffaa00;
+  --saberblue: #00bbff;
+  --sabergreen: #29f349;
+  --saberorange: #ffc500;
+  --saberpink: #ff6bbd;
+  --saberpurple: #bb66ff;
 
-pre span.var {
-  color: #ffaa00;
-}
-
-pre span.func {
-  color: #ff6bbd;
+  --bg-transition: background-color .5s ease-out;
+  --color-transition: color .25s ease-out;
+  --border-transition: border .25s ease-out;
 }
 
 /**
@@ -50,6 +44,38 @@ pre span.func {
 
 nav {
   margin-top: 25px;
+}
+
+/**
+ * Pretty code blocks for the website.
+ */
+
+.code-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+pre {
+  border-radius: .5em;
+  border: .3em solid var(--grey-five);
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+  background-color: var(--grey-one);
+  color: white;
+  font-size: .9em;
+}
+
+pre span.literal {
+  color: var(--saberpurple);
+}
+
+pre span.var {
+  color: var(--creambar);
+}
+
+pre span.func {
+  color: var(--saberpink);
 }
 
 /**
@@ -116,19 +142,19 @@ a, a:visited {
  */
 
 body.github {
-  background-color: #171515;
+  background-color: var(--github-logo);
 }
 
 body.facebook {
-  background-color: #3b5998;
+  background-color: var(--facebook-logo);
 }
 
 body.linkedin {
-  background-color: #0072b1;
+  background-color: var(--linkedin-logo);
 }
 
 body.wordpress {
-  background-color: #21759b;
+  background-color: var(--wordpress-logo);
 }
 
 p.github, h1.github, footer span.github,
@@ -140,39 +166,42 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: #222222;
+  background-color: var(--grey-two);
 }
 
-pre.github span.literal,
+pre.github span.literal {
+  color: var(--saberpurple);
+}
+
 pre.facebook span.literal,
 pre.linkedin span.literal,
 pre.wordpress span.literal {
-  color: #29f349;
+  color: var(--sabergreen);
 }
 
-pre.github span.var,
+pre.github span.var {
+  color: white;
+}
+
 pre.facebook span.var,
 pre.linkedin span.var,
 pre.wordpress span.var {
-  color: #ffc500;
+  color: var(--saberorange);
 }
 
-pre.github span.func,
+pre.github span.func {
+  color: var(--sabergreen);
+}
+
 pre.facebook span.func,
 pre.linkedin span.func,
 pre.wordpress span.func {
-  color: #00bbff;
+  color: var(--saberblue);
 }
 
 /**
  * Transitions for the website.
  */
-
-:root {
-  --bg-transition: background-color .5s ease-out;
-  --color-transition: color .25s ease-out;
-  --border-transition: border .25s ease-out;
-}
 
 body {
   -webkit-transition: var(--bg-transition);

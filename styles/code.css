@@ -9,23 +9,23 @@
 
 pre {
   border-radius: .5em;
-  border: .3em solid #545454;
+  border: .3em solid var(--grey-five);
   margin: .5em 0;
   overflow: auto;
   padding: 1em;
-  background-color: #141414;
+  background-color: var(--grey-one);
   color: white;
   font-size: .9em;
 }
 
 pre span.literal {
-  color: #bb66ff;
+  color: var(--saberpurple);
 }
 
 pre span.var {
-  color: #ffaa00;
+  color: var(--creambar);
 }
 
 pre span.func {
-  color: #ff6bbd;
+  color: var(--saberpink);
 }
