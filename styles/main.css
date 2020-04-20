@@ -1,5 +1,7 @@
+@import "./code.css";
+@import "./content.css";
 @import "./fonts.css";
 @import "./footer.css";
-@import "./home.css";
-@import "./code.css";
-@import "./theme.css";
+@import "./links.css";
+@import "./themes.css";
+@import "./transitions.css";
