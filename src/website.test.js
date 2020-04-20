@@ -1,4 +1,3 @@
-import Theme from './theme';
 import Website from './website';
 
 beforeAll(() => {
@@ -12,33 +11,37 @@ describe('Website', () => {
     website = new Website();
   });
 
-  test('can be set to original', () => {
-    website.setTheme(Theme.OriginalTheme());
-    expect(document.body.style.backgroundColor).toBe('white');
-
-    const paraNodes = Array.from(document.getElementsByTagName('p'));
-    paraNodes.forEach((node) => {
-      expect(node.style.color).toBe('');
-    });
-
-    const preNodes = Array.from(document.getElementsByTagName('pre'));
-    preNodes.forEach((node) => {
-      expect(node.style.backgroundColor).toBe('');
-    });
+  test('can be set to default', () => {
+    website.setTheme('default');
+    expect(document.body.classList.length).toBe(0);
   });
 
-  test('can be set to anything', () => {
-    website.setTheme(new Theme('red', 'white', 'blue', 'black'));
-    expect(document.body.style.backgroundColor).toBe('red');
+  test('can be set to github', () => {
+    website.setTheme('github');
+    expect(document.body.classList.contains('github')).toBeTruthy();
+    expect(document.body.classList.length).toBe(1);
+  });
 
-    const paraNodes = Array.from(document.getElementsByTagName('p'));
-    paraNodes.forEach((node) => {
-      expect(node.style.color).toBe('white');
-    });
+  test('can be set to github-linkedin', () => {
+    website.setTheme('github');
+    website.setTheme('linkedin');
+    expect(document.body.classList.contains('github')).toBeFalsy();
+    expect(document.body.classList.contains('linkedin')).toBeTruthy();
+    expect(document.body.classList.length).toBe(1);
+  });
 
-    const preNodes = Array.from(document.getElementsByTagName('pre'));
-    preNodes.forEach((node) => {
-      expect(node.style.backgroundColor).toBe('blue');
-    });
+  test('can be set to github-default', () => {
+    website.setTheme('github');
+    website.setTheme('default');
+    expect(document.body.classList.length).toBe(0);
+  });
+
+  test('can be set to github-default-linkedin', () => {
+    website.setTheme('github');
+    website.setTheme('default');
+    website.setTheme('linkedin');
+    expect(document.body.classList.contains('github')).toBeFalsy();
+    expect(document.body.classList.contains('linkedin')).toBeTruthy();
+    expect(document.body.classList.length).toBe(1);
   });
 });

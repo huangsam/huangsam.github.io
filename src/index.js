@@ -7,11 +7,7 @@ let website = new Website();
 
 document.getElementById('service').onchange = (e) => {
   const service = e.currentTarget.value;
-  if (service !== 'default') {
-    website.setTheme(services.getServiceTheme(service));
-  } else {
-    website.setTheme(services.getOriginalTheme());
-  }
+  website.setTheme(service);
 };
 
 document.getElementById('goto').onclick = (e) => {

@@ -1,0 +1,31 @@
+/**
+ * Theme styling for each service
+ */
+
+body.github {
+  background-color: #171515;
+}
+
+body.facebook {
+  background-color: #3b5998;
+}
+
+body.linkedin {
+  background-color: #0072b1;
+}
+
+body.wordpress {
+  background-color: #21759b;
+}
+
+p.github, h1.github, footer span.github,
+p.facebook, h1.facebook, footer span.facebook,
+p.linkedin, h1.linkedin, footer span.linkedin,
+p.wordpress, h1.wordpress, footer span.wordpress {
+  color: white;
+}
+
+pre.github, pre.facebook, pre.linkedin, pre.wordpress {
+  border: .3em solid white;
+  background-color: #252525;
+}
