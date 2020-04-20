@@ -7,7 +7,7 @@ const webUrl = process.env.WEB_URL || 'https://huangsam.github.io';
 // Timeout in milliseconds
 const allTimeOut = 10000;
 
-describe('Website page', () => {
+describe('Homepage', () => {
   let browser;
   let page;
 
