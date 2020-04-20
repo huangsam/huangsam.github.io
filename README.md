@@ -2,7 +2,7 @@
 
 Holds links to my commonly used pages.
 
-## Getting Started
+## Getting started
 
 Here are the steps to get started as a contributor:
 
