@@ -8,16 +8,16 @@
   --linkedin-logo: #0072b1;
   --wordpress-logo: #21759b;
 
-  --greyone: #111111;
-  --greytwo: #222222;
-  --greyfive: #555555;
+  --grey-one: #111111;
+  --grey-two: #222222;
+  --grey-five: #555555;
 
-  --jediblue: #00bbff;
-  --jedigreen: #29f349;
-  --jediorange: #ffc500;
-  --jedipink: #ff84c8;
-  --jedipurple: #c67eff;
-  --jedired: #ff6666;
+  --jedi-blue: #00bbff;
+  --jedi-green: #29f349;
+  --jedi-orange: #ffc500;
+  --jedi-pink: #ff84c8;
+  --jedi-purple: #c67eff;
+  --jedi-red: #ff6666;
 
   --bg-color-transition: background-color .3s ease-out;
   --color-transition: color .15s ease-out;

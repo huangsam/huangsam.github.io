@@ -27,53 +27,53 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: var(--greytwo);
+  background-color: var(--grey-two);
 }
 
 pre.github span.literal {
-  color: var(--jedipurple);
+  color: var(--jedi-purple);
 }
 
 pre.facebook span.literal {
-  color: var(--jediorange);
+  color: var(--jedi-orange);
 }
 
 pre.linkedin span.literal {
-  color: var(--jedigreen);
+  color: var(--jedi-green);
 }
 
 pre.wordpress span.literal {
-  color: var(--jedigreen);
+  color: var(--jedi-green);
 }
 
 pre.github span.var {
-  color: var(--jedipink);
+  color: var(--jedi-pink);
 }
 
 pre.facebook span.var {
-  color: var(--jedigreen);
+  color: var(--jedi-green);
 }
 
 pre.linkedin span.var {
-  color: var(--jediorange);
+  color: var(--jedi-orange);
 }
 
 pre.wordpress span.var {
-  color: var(--jedired);
+  color: var(--jedi-red);
 }
 
 pre.github span.func {
-  color: var(--jedigreen);
+  color: var(--jedi-green);
 }
 
 pre.facebook span.func {
-  color: var(--jedired);
+  color: var(--jedi-red);
 }
 
 pre.linkedin span.func {
-  color: var(--jediblue);
+  color: var(--jedi-blue);
 }
 
 pre.wordpress span.func {
-  color: var(--jediorange);
+  color: var(--jedi-orange);
 }
