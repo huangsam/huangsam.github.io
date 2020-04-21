@@ -8,9 +8,9 @@
   --linkedin-logo: #0072b1;
   --wordpress-logo: #21759b;
 
-  --grey-one: #111111;
-  --grey-two: #222222;
-  --grey-five: #555555;
+  --greyone: #111111;
+  --greytwo: #222222;
+  --greyfive: #555555;
 
   --jediblue: #00bbff;
   --jedigreen: #29f349;
@@ -19,7 +19,7 @@
   --jedipurple: #c67eff;
   --jedired: #ff6666;
 
-  --bg-transition: background-color .3s ease-out;
+  --bg-color-transition: background-color .3s ease-out;
   --color-transition: color .15s ease-out;
   --border-transition: border .15s ease-out;
 }
@@ -57,11 +57,11 @@ nav {
 
 pre {
   border-radius: 8px;
-  border: 4px solid var(--grey-five);
+  border: 4px solid var(--greyfive);
   margin: 8px 0;
   overflow: auto;
   padding: 16px;
-  background-color: var(--grey-one);
+  background-color: var(--greyone);
   color: white;
   font-size: .9em;
 }
@@ -158,7 +158,7 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: var(--grey-two);
+  background-color: var(--greytwo);
 }
 
 pre.github span.literal {
@@ -214,10 +214,10 @@ pre.wordpress span.func {
  */
 
 body {
-  -webkit-transition: var(--bg-transition);
-  -moz-transition: var(--bg-transition);
-  -o-transition: var(--bg-transition);
-  transition: var(--bg-transition);
+  -webkit-transition: var(--bg-color-transition);
+  -moz-transition: var(--bg-color-transition);
+  -o-transition: var(--bg-color-transition);
+  transition: var(--bg-color-transition);
 }
 
 a, h1, p {

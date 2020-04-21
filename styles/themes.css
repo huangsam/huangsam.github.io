@@ -27,7 +27,7 @@ p.wordpress, h1.wordpress, footer span.wordpress {
 
 pre.github, pre.facebook, pre.linkedin, pre.wordpress {
   border: .3em solid white;
-  background-color: var(--grey-two);
+  background-color: var(--greytwo);
 }
 
 pre.github span.literal {

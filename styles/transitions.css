@@ -3,10 +3,10 @@
  */
 
 body {
-  -webkit-transition: var(--bg-transition);
-  -moz-transition: var(--bg-transition);
-  -o-transition: var(--bg-transition);
-  transition: var(--bg-transition);
+  -webkit-transition: var(--bg-color-transition);
+  -moz-transition: var(--bg-color-transition);
+  -o-transition: var(--bg-color-transition);
+  transition: var(--bg-color-transition);
 }
 
 a, h1, p {

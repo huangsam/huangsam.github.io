@@ -9,11 +9,11 @@
 
 pre {
   border-radius: 8px;
-  border: 4px solid var(--grey-five);
+  border: 4px solid var(--greyfive);
   margin: 8px 0;
   overflow: auto;
   padding: 16px;
-  background-color: var(--grey-one);
+  background-color: var(--greyone);
   color: white;
   font-size: .9em;
 }
