@@ -23,5 +23,5 @@ module.exports = {
       },
     ],
   },
-  devtool: devMode ? 'source-map' : false,
+  devtool: devMode ? 'eval' : false,
 };
