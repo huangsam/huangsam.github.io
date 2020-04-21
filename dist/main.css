@@ -25,7 +25,7 @@
 }
 
 /**
- * Content padding for the website.
+ * Content for the website.
  */
 
 @media (min-width: 700px) {
@@ -79,33 +79,7 @@ pre span.func {
 }
 
 /**
- * Google Fonts for the website.
- */
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Mono"), url("../fonts/Roboto_Mono/RobotoMono-Regular.ttf");
-}
-
-h1, h2, h3, h4, h5, p, span {
-  font-family: "Roboto", sans-serif;
-}
-
-pre, pre span, code {
-  font-family: "Roboto Mono", monospace;
-}
-
-/**
- * Inspired by "Sticky Footer" from the Bootstrap website.
+ * Sticky footer for the website.
  */
 
 html {
@@ -130,11 +104,29 @@ body {
 }
 
 /**
- * Link coloring for the website.
+ * Google fonts for the website.
  */
 
-a, a:visited {
-  color: #0275d8;
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Mono"), url("../fonts/Roboto_Mono/RobotoMono-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, p, span {
+  font-family: "Roboto", sans-serif;
+}
+
+pre, pre span, code {
+  font-family: "Roboto Mono", monospace;
 }
 
 /**
