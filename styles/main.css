@@ -1,8 +1,7 @@
-@import "./constants.css";
+@import "./variables.css";
 @import "./content.css";
 @import "./code.css";
-@import "./fonts.css";
 @import "./footer.css";
-@import "./links.css";
+@import "./fonts.css";
 @import "./themes.css";
 @import "./transitions.css";
