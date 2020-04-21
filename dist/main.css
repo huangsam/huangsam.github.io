@@ -56,11 +56,11 @@ nav {
 }
 
 pre {
-  border-radius: .5em;
-  border: .3em solid var(--grey-five);
-  margin: .5em 0;
+  border-radius: 8px;
+  border: 4px solid var(--grey-five);
+  margin: 8px 0;
   overflow: auto;
-  padding: 1em;
+  padding: 16px;
   background-color: var(--grey-one);
   color: white;
   font-size: .9em;
