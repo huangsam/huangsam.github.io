@@ -19,9 +19,9 @@
   --jedipurple: #c67eff;
   --jedired: #ff6666;
 
-  --bg-transition: background-color .5s ease-out;
-  --color-transition: color .25s ease-out;
-  --border-transition: border .25s ease-out;
+  --bg-transition: background-color .3s ease-out;
+  --color-transition: color .15s ease-out;
+  --border-transition: border .15s ease-out;
 }
 
 /**
