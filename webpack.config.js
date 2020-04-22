@@ -25,5 +25,5 @@ module.exports = {
       },
     ],
   },
-  devtool: devMode ? 'eval' : false,
+  devtool: devMode ? 'eval-source-map' : false,
 };

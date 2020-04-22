@@ -6,15 +6,16 @@ import '../styles/main.css';
 let website = new Website();
 
 document.getElementById('service').onchange = (e) => {
-  const service = e.currentTarget.value;
-  website.setTheme(service);
+  const newService = e.currentTarget.value;
+  website.setTheme(newService);
 };
 
 document.getElementById('goto').onclick = (e) => {
   e.preventDefault();
-  const service = document.getElementById('service').value;
-  if (service !== 'default') {
-    window.location.href = services.getServiceUrl(service);
+  const newService = document.getElementById('service').value;
+  const allServices = services.getServices();
+  if (allServices.includes(newService)) {
+    window.location.href = services.getServiceUrl(newService);
   }
 };
 
