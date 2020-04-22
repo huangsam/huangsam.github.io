@@ -18,7 +18,7 @@ module.exports = {
         include: /styles/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { url: false } },
+          {loader: 'css-loader', options: {url: false}},
         ],
       },
     ],
