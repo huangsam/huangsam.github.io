@@ -27,8 +27,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
     "build:dev": "webpack --progress",
-    "lint": "eslint src *.config.js",
-    "fmt": "prettier --write src *.config.js",
+    "lint": "eslint src *.js",
+    "fmt": "prettier --write src *.js",
     "test": "jest",
     "test:e2e": "jest -c jest.e2e.config.js",
     "test:watch": "jest --watch"
