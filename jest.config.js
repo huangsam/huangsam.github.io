@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   testRegex: 'src/[a-z]+\\.test\\.jsx?$',
   collectCoverage: true,
