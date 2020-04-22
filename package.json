@@ -1,7 +1,5 @@
 {
-  "name": "huangsam.github.io",
-  "description": "Holds links to my commonly used pages",
-  "license": "MIT",
+  "private": true,
   "dependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
