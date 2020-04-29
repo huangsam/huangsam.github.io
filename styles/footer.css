@@ -12,7 +12,7 @@ body {
   margin-bottom: 60px;
 }
 
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   /* Set the fixed height of the footer here */
