@@ -1,10 +1,6 @@
 const replaceNodeTheme = (node, themeA, themeB) => {
-  if (themeA !== 'default') {
-    node.classList.remove(themeA);
-  }
-  if (themeB !== 'default') {
-    node.classList.add(themeB);
-  }
+  if (themeA !== 'default') node.classList.remove(themeA);
+  if (themeB !== 'default') node.classList.add(themeB);
 };
 
 export default class Website {
