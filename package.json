@@ -12,13 +12,13 @@
     "webpack-cli": "^3.3.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^25.1.0",
+    "babel-eslint": "^10.0.0",
+    "babel-jest": "^26.0.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^3.0.0",
     "husky": "^4.0.0",
-    "jest": "^25.0.0",
+    "jest": "^26.0.0",
     "prettier": "^2.0.0",
     "puppeteer": "^3.0.0"
   },
