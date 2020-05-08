@@ -1,4 +1,4 @@
-const serviceMeta = {
+const serviceUrls = {
   github: 'https://github.com/huangsam/',
   facebook: 'https://www.facebook.com/samuel.c.huang',
   linkedin: 'https://www.linkedin.com/in/sambyte/',
@@ -6,8 +6,8 @@ const serviceMeta = {
 };
 
 // Helper methods
-const getServices = () => Object.keys(serviceMeta);
-const getServiceUrl = (service) => serviceMeta[service];
+const getServices = () => Object.keys(serviceUrls);
+const getServiceUrl = (service) => serviceUrls[service];
 
 export default {
   getServices,
