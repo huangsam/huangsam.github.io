@@ -7,7 +7,7 @@ const serviceUrls = {
 
 // Helper methods
 const getServices = () => Object.keys(serviceUrls);
-const getServiceUrl = (service) => serviceUrls[service];
+const getServiceUrl = (svc) => serviceUrls[svc];
 
 export default {
   getServices,
