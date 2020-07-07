@@ -18,10 +18,7 @@ body.wordpress {
   background-color: var(--wordpress-logo);
 }
 
-p.github, h1.github, footer span.github,
-p.facebook, h1.facebook, footer span.facebook,
-p.linkedin, h1.linkedin, footer span.linkedin,
-p.wordpress, h1.wordpress, footer span.wordpress {
+.github, .facebook, .linkedin, .wordpress {
   color: white;
 }
 

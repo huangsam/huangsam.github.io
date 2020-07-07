@@ -6,7 +6,7 @@ const replaceNodeTheme = (node, themeA, themeB) => {
 export default class Website {
   constructor() {
     this.bodyNode = document.body;
-    this.textNodes = document.querySelectorAll('p, h1, footer span');
+    this.textNodes = document.querySelectorAll('p, h1, label, footer span');
     this.codeNodes = document.getElementsByTagName('pre');
     this.currentTheme = 'default';
   }
