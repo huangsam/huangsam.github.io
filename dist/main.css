@@ -46,6 +46,10 @@ nav {
   margin-top: 25px;
 }
 
+div.form-group {
+  margin-bottom: 10px;
+}
+
 /**
  * Pretty code blocks for the website.
  */

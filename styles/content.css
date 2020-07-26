@@ -19,3 +19,7 @@
 nav {
   margin-top: 25px;
 }
+
+div.form-group {
+  margin-bottom: 10px;
+}
