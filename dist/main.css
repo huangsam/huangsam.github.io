@@ -54,7 +54,7 @@ div.form-group {
  * Pretty code blocks for the website.
  */
 
-.code-block {
+div.code-block {
   margin-top: 20px;
   margin-bottom: 20px;
 }
