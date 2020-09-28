@@ -21,6 +21,10 @@ module.exports = {
         name: `wordpress`,
         url: `https://sambyte.wordpress.com/`,
       },
+      {
+        name: `twitter`,
+        url: `https://twitter.com/s_c_huang`,
+      },
     ],
   },
   plugins: [
@@ -31,5 +35,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
