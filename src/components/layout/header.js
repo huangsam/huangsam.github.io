@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <header>
-      <div>Header</div>
-      <nav>Navigation</nav>
+    <header style={{marginBottom: `1.45rem`}}>
+      <span>Header</span>
+      <nav style={{float: `right`}}>Navigation</nav>
     </header>
   )
 }
