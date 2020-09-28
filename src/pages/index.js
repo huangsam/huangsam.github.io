@@ -4,18 +4,18 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import {
-  FaTwitterSquare,
   FaFacebookSquare,
   FaGithub,
-  FaWordpress,
   FaLinkedin,
+  FaTwitterSquare,
+  FaWordpress,
 } from "react-icons/fa"
 
 const SOCIAL_COMPONENTS = {
+  facebook: FaFacebookSquare,
+  github: FaGithub,
   linkedin: FaLinkedin,
   twitter: FaTwitterSquare,
-  github: FaGithub,
-  facebook: FaFacebookSquare,
   wordpress: FaWordpress,
 }
 
