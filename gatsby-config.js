@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Sam's corner of the web`,
+    title: `Sam's personal site`,
     author: `Sam Huang`,
+    twitter: `@s_c_huang`,
     description: `A couple pages about Sam Huang`,
     siteUrl: `https://sambyte.net/`,
     social: [
@@ -28,6 +29,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
