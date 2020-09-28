@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <header>Header</header>
+    <header>
+      <div>Header</div>
+      <nav>Navigation</nav>
+    </header>
   )
 }
