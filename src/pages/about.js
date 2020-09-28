@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 export default function About({ data }) {
   return (
     <Layout>
+      <SEO title="About" />
       <h1>About Me</h1>
       <p>I graduated from UC Davis with an emphasis in Computer Science and Engineering.
         Currently, I work as a Software Engineer at LinkedIn in Mountain View.</p>

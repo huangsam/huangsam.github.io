@@ -2,13 +2,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import SEO from '../components/seo'
 import {
   FaTwitterSquare,
   FaFacebookSquare,
   FaGithub,
   FaWordpress,
   FaLinkedin,
-} from 'react-icons/fa';
+} from 'react-icons/fa'
 
 const SOCIAL_COMPONENTS = {
   linkedin: FaLinkedin,
@@ -28,6 +29,7 @@ export default function Home({ data }) {
   }
   return (
     <Layout>
+      <SEO title="Home" />
       <div style={{
         textAlign: `center`,
         margin: `0 auto`,
