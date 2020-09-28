@@ -1,0 +1,59 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+header {
+  background-color: black;
+  color: white;
+  /* Padding for header links */
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+  /* Horizontal padding for content */
+  padding-left: 16px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  /* Vertically center the text there */
+  line-height: 60px;
+  /* Prevent code block from squishing footer */
+  padding: 25px;
+}
+.social a {
+  color: black;
+}
+.social a:hover {
+  color: grey;
+}
+.social svg {
+  /* Social icon size */
+  font-size: 40px;
+  /* Social icon space */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header a {
+  color: white;
+}
