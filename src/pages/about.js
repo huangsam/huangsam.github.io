@@ -13,19 +13,24 @@ export default function About() {
         Software Engineer at LinkedIn in Mountain View.
       </p>
       <p>
-        My primary hobbies are drumming and photography. I also enjoy doing
-        ping-pong, hiking, traveling and foosball occasionally.
+        I actively play drums, shoot photos and work on open source projects in
+        my free time. I occasionally play ping-pong, play foosball, walk on
+        hiking trails and travel to new places.
       </p>
+      <p>I currently attend two churches:</p>
+      <ul>
+        <li>
+          <a href="http://glorious-light.net/">
+            Glorious Light Christian Church
+          </a>
+        </li>
+        <li>
+          <a href="https://echo.church">Echo Church</a>
+        </li>
+      </ul>
       <p>
-        Currently, I go to two churches. The first one is in Daly City and it’s
-        called{" "}
-        <a href="http://glorious-light.net/">Glorious Light Christian Church</a>
-        . The second one is in San Jose and it’s called{" "}
-        <a href="https://echo.church">Echo Church</a>.
-      </p>
-      <p>
-        My parents are an important component of my life. They are the ones who
-        shaped my life into who I am today, and I am happy to be their only son.
+        My parents are an important part of my life. They shaped me into who I
+        am today, and I am proud to be their son.
       </p>
     </Layout>
   )
