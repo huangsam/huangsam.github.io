@@ -41,19 +41,16 @@ export default function Home({ data }) {
       >
         <h1>Sam Huang</h1>
         <p>Software Engineer at day. Artist at night.</p>
-        <div
+        <Img
+          fluid={data.profileImg.childImageSharp.fluid}
           style={{
             maxWidth: `300px`,
             marginBottom: `1.45rem`,
             marginLeft: `auto`,
             marginRight: `auto`,
           }}
-        >
-          <Img
-            fluid={data.profileImg.childImageSharp.fluid}
-            imgStyle={{ borderRadius: `50%` }}
-          />
-        </div>
+          imgStyle={{ borderRadius: `50%` }}
+        />
         <div className="social">{socialButtons}</div>
       </div>
     </Layout>
