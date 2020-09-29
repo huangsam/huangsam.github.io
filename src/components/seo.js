@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { favicon, site } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -22,16 +22,12 @@ function SEO({ description, lang, meta, title }) {
             twitter
           }
         }
-        favicon: file(name: { eq: "favicon" }) {
-          publicURL
-        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const faviconUrl = favicon?.publicURL
 
   return (
     <Helmet
@@ -74,13 +70,6 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-      link={[
-        {
-          rel: "icon",
-          type: "image/png",
-          href: faviconUrl,
-        },
-      ]}
     />
   )
 }
