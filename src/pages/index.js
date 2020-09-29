@@ -1,8 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import SEO from "../components/seo"
 import {
   FaFacebookSquare,
   FaGithub,
@@ -10,6 +8,9 @@ import {
   FaTwitterSquare,
   FaWordpress,
 } from "react-icons/fa"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const SOCIAL_COMPONENTS = {
   facebook: FaFacebookSquare,
