@@ -22,7 +22,7 @@ function SEO({ description, lang, meta, title }) {
             twitter
           }
         }
-        favicon: file(name: {eq: "favicon"}) {
+        favicon: file(name: { eq: "favicon" }) {
           publicURL
         }
       }
@@ -76,10 +76,10 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
       link={[
         {
-          "rel": "icon",
-          "type": "image/png",
-          "href": faviconUrl,
-        }
+          rel: "icon",
+          type: "image/png",
+          href: faviconUrl,
+        },
       ]}
     />
   )
