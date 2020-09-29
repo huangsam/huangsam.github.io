@@ -8,9 +8,10 @@ export default function About() {
       <SEO title="About" />
       <h1>About Me</h1>
       <p>
-        I graduated from <a href="https://www.ucdavis.edu/">UC Davis</a> with an
-        emphasis in Computer Science and Engineering. I currently work as a
-        Software Engineer at LinkedIn in Mountain View.
+        I graduated from <a href="https://www.ucdavis.edu/">UC Davis</a> with a
+        bachelor's degree in Computer Science and Engineering. I currently work
+        as a Software Engineer at <a href="https://linkedin.com">LinkedIn</a>,
+        working in the Flagship Productivity Engineering organization.
       </p>
       <p>
         I actively play drums, shoot photos and work on open source projects in
