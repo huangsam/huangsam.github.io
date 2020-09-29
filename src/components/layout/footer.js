@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       &copy; 2016-{new Date().getFullYear()} Made with{" "}
       <FaHeart style={{ verticalAlign: `text-top` }} /> by{" "}
-      <a href="https://github.com/huangsam" style={{ color: `black` }}>
+      <a href="https://github.com/huangsam">
         huangsam
       </a>
     </footer>
