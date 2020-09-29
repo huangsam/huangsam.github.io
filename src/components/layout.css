@@ -1,58 +1,67 @@
 html {
+  /* Text rendering for mobile */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Support sticky footer */
   position: relative;
   min-height: 100%;
 }
 body {
   /* No margin for flush content */
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   /* Default fonts */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header {
   background-color: black;
   color: white;
-  /* Padding for header links */
-  padding: 25px;
-  margin-bottom: 50px;
+  /* Padding for header content */
+  padding: 1.50rem;
+  /* Push main content down */
+  margin-bottom: 3.125rem;
+}
+header a {
+  /* Enforce header links for background contrast */
+  color: white;
 }
 .content {
   margin: 0 auto;
   max-width: 960px;
   /* Horizontal padding for content */
-  padding-left: 16px;
-  padding-right: 24px;
+  padding-left: 1.00rem;
+  padding-right: 1.50rem;
   /* Vertical padding for content */
-  padding-bottom: 50px;
+  padding-bottom: 1.50rem;
 }
 footer {
   position: absolute;
   bottom: 0;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  /* Vertically center the text there */
-  line-height: 60px;
-  /* Prevent code block from squishing footer */
-  padding: 25px;
+  /* Padding for footer content */
+  padding: 1.50rem;
 }
 footer a {
+  /* Link to GitHub account */
   color: black;
 }
 .social a {
+  /* Social button links are passive */
   color: black;
 }
 .social a:hover {
+  /* Social button links are active */
   color: grey;
 }
 .social svg {
   /* Social icon size */
-  font-size: 40px;
+  font-size: 2.50rem;
   /* Social icon space */
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 h1,
 h2,
@@ -60,10 +69,29 @@ h3,
 h4,
 h5,
 h6 {
+  color: inherit;
   /* Header fonts */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
 }
-header a {
-  color: white;
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.50rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.00rem;
+}
+h5 {
+  font-size: 0.75rem;
+}
+h6 {
+  font-size: 0.50rem;
 }
