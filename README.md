@@ -13,7 +13,7 @@ yarn develop
 
 The site is now running at `http://localhost:8000`.
 
-## Deploying
+## Deploying site
 
 As simple as:
 
