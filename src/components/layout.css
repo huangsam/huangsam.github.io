@@ -1,5 +1,7 @@
 html {
-  /* Text rendering for mobile */
+  /* Simplify layout element sizing */
+  box-sizing: border-box;
+  /* Add text size hints for mobile */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   /* Support sticky footer */
