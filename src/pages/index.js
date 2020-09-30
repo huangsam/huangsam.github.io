@@ -43,10 +43,9 @@ export default function Home({ data }) {
         <h1>Sam Huang</h1>
         <p>Software Engineer at day. Artist at night.</p>
         <Img
-          fluid={data.profileImg.childImageSharp.fluid}
+          fixed={data.profileImg.childImageSharp.fixed}
           style={{
-            maxWidth: `300px`,
-            marginBottom: `1.45rem`,
+            marginBottom: `1.50rem`,
             marginLeft: `auto`,
             marginRight: `auto`,
           }}
@@ -62,8 +61,8 @@ export const query = graphql`
   query {
     profileImg: file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+        fixed(width: 300, height: 300) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
