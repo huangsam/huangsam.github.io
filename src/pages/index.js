@@ -26,7 +26,7 @@ export default function Home({ data }) {
     socialButtons.push(
       React.createElement(
         "a",
-        { key: obj.name, href: obj.url },
+        { key: obj.name, alt: obj.name, href: obj.url },
         React.createElement(SOCIAL_COMPONENTS[obj.name])
       )
     )
