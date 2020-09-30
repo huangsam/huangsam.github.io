@@ -1,6 +1,6 @@
 # GitHub Pages for huangsam
 
-Serves as a personal site for [huangsam](https://github.com/huangsam).
+Serves the code used to build and deploy my personal site.
 
 ## Getting started
 
@@ -11,7 +11,7 @@ yarn install
 yarn develop
 ```
 
-The site is now running at `http://localhost:8000`.
+The site is now running at http://localhost:8000.
 
 ## Deploying site
 
