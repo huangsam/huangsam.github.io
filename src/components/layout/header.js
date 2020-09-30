@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 export default function Footer() {
   const { site } = useStaticQuery(graphql`
