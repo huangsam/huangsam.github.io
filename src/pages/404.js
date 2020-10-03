@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function Home() {
+export default function NotFound() {
   return (
     <Layout>
       <SEO title="Not Found" />

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
-export default function Footer() {
+export default function Header() {
   const { site } = useStaticQuery(graphql`
     query {
       site {
