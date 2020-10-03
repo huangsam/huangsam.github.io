@@ -2,17 +2,17 @@ version: 2.1
 orbs:
   node: circleci/node@4.1.0
 jobs:
-  build-and-deploy:
+  build:
     executor: node/default
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
       - run:
-          command: yarn deploy
-          name: Build and deploy
+          command: yarn build
+          name: Build
 
 workflows:
   main:
     jobs:
-      - build-and-deploy
+      - build
