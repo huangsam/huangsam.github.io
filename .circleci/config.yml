@@ -1,7 +1,12 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  build:
+    executor: node/default
+    steps:
+      - checkout
 workflows:
-  node-tests:
+  main:
     jobs:
-      - node/test
+      - build
