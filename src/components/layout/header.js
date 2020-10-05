@@ -13,10 +13,8 @@ export default function Header() {
   `)
   return (
     <header>
-      <Link to="/" style={{ color: `white` }}>
-        {site.siteMetadata.title}
-      </Link>
-      <nav style={{ float: `right` }}>
+      <Link to="/">{site.siteMetadata.title}</Link>
+      <nav>
         <Link to="/about">About</Link>
       </nav>
     </header>

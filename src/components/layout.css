@@ -4,45 +4,40 @@ html {
   /* Add text size hints for mobile */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  /* Support sticky footer */
-  position: relative;
-  min-height: 100%;
 }
 body {
-  /* No margin for flush content */
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  /* Margin bottom by footer height */
-  margin-bottom: 3.75rem;
-  /* Default fonts */
+  margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.layout {
+  margin: 0;
+  display: flex;
+  /* Support sticky footer */
+  min-height: 100vh;
+  flex-direction: column;
 }
 header {
   background-color: black;
   color: white;
-  /* Padding for header content */
   padding: 1.50rem;
-  /* Push main content down */
-  margin-bottom: 3.125rem;
+  margin-bottom: 1.50rem;
 }
 header a {
   /* Enforce header links for background contrast */
   color: white;
 }
-.content {
-  margin: 0 auto;
-  max-width: 960px;
+header nav {
+  /* Stick header navigation to the right */
+  float: right;
+}
+main.content {
+  /* Support sticky footer */
+  flex: 1;
   /* Horizontal padding for content */
-  padding-left: 1.00rem;
-  padding-right: 1.50rem;
-  /* Vertical padding for content */
-  padding-bottom: 1.50rem;
+  padding-left: 2.00rem;
+  padding-right: 3.00rem;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  /* Padding for footer content */
   padding: 1.50rem;
 }
 footer a {
