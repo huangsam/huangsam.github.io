@@ -6,20 +6,23 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  /* No margin for flush content */
   margin: 0;
+  /* Default fonts */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 div.layout {
-  margin: 0;
-  display: flex;
   /* Support sticky footer */
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 header {
   background-color: black;
   color: white;
+  /* Padding for header content */
   padding: 1.50rem;
+  /* Spacing between header and main */
   margin-bottom: 1.50rem;
 }
 header a {
@@ -38,10 +41,11 @@ main.content {
   padding-right: 3.00rem;
 }
 footer {
+  /* Padding for footer content */
   padding: 1.50rem;
 }
 footer a {
-  /* Link to GitHub account */
+  /* Footer links */
   color: black;
 }
 .social a {
