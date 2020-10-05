@@ -39,6 +39,8 @@ main.content {
   /* Horizontal padding for content */
   padding-left: 2.00rem;
   padding-right: 3.00rem;
+  /* Spacing between main and footer */
+  margin-bottom: 1.50rem;
 }
 footer {
   /* Padding for footer content */
