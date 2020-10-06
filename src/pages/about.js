@@ -34,6 +34,10 @@ export default function About() {
         My parents are an important part of my life. They shaped me into who I
         am today, and I am proud to be their son.
       </p>
+      <p>
+        I am blessed with a lovely wife who enjoys planting flowers, making
+        crafts and eating cake.
+      </p>
     </Layout>
   )
 }
