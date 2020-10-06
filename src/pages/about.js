@@ -36,7 +36,7 @@ export default function About() {
       </p>
       <p>
         I am blessed with a lovely wife who enjoys planting flowers, making
-        crafts and eating cake.
+        crafts and eating pastries.
       </p>
     </Layout>
   )
