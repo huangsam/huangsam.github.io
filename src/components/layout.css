@@ -52,17 +52,17 @@ footer a {
   color: black;
 }
 .social a {
-  /* Customize color for passive social buttons */
+  /* Customize passive social icon color */
   color: black;
 }
 .social a:hover {
-  /* Customize color for active social buttons */
+  /* Customize active social icon color */
   color: grey;
 }
 .social svg {
   /* Customize social icon size */
   font-size: 2.50rem;
-  /* Add spacing for social icons */
+  /* Customize spacing for social icon */
   margin-top: 0.625rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
