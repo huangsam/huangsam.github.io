@@ -12,12 +12,13 @@ export default function About() {
         I graduated from <a href="https://www.ucdavis.edu/">UC Davis</a> with a
         bachelor's degree in Computer Science and Engineering. I currently work
         as a Software Engineer at <a href="https://linkedin.com">LinkedIn</a>,
-        working in the Flagship Productivity Engineering organization.
+        working in the Flagship Infrastructure and Productivity organization.
       </p>
       <p>
-        I actively play drums, shoot photos and work on open source projects in
-        my free time. I occasionally play ping-pong, play foosball, walk on
-        hiking trails and travel to new places.
+        I actively play drums, shoot photos and work on{" "}
+        <a href="https://github.com/huangsam">open source projects</a> in my
+        free time. I also play ping-pong and foosball, walk on hiking trails and
+        travel to new places.
       </p>
       <p>I currently attend two churches:</p>
       <ul>
