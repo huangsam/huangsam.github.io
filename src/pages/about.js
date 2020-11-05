@@ -15,10 +15,14 @@ export default function About() {
         working in the Flagship Infrastructure and Productivity organization.
       </p>
       <p>
-        I actively play drums, shoot photos and work on{" "}
-        <a href="https://github.com/huangsam">open source projects</a> in my
-        free time. I also play ping-pong and foosball, walk on hiking trails and
-        travel to new places.
+        I actively play drums in a church setting and shoot family / event
+        photos with Canon gear. I also have a passion for open-source projects
+        that help empower developers to advance in their career journey. I
+        appreciate ping-pong and foosball with friends and hiking trails for the
+        thrill of nature. When I have the opportunity, I travel outside to
+        experience new cultures. I have visited the following US states: Oregon,
+        Washington, Nevada, Wyoming, Ohio and Chicago. I have visited the
+        following countries: Taiwan, Mexico, Japan, Korea and Italy.
       </p>
       <p>I currently attend two churches:</p>
       <ul>
