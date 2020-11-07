@@ -9,10 +9,9 @@ export default function About() {
       <SEO title="About" />
       <h1>About Me</h1>
       <p>
-        I graduated from <a href="https://www.ucdavis.edu/">UC Davis</a> with a
-        bachelor's degree in Computer Science and Engineering. I currently work
-        as a Software Engineer at <a href="https://linkedin.com">LinkedIn</a>,
-        working in the Flagship Infrastructure and Productivity organization.
+        I graduated from UC Davis with a bachelor's degree in Computer Science
+        and Engineering. I currently work as a Software Engineer at LinkedIn
+        under Flagship Infrastructure and Productivity.
       </p>
       <p>
         I actively play drums in a church setting and shoot family / event
@@ -21,9 +20,9 @@ export default function About() {
         appreciate playing video games, ping-pong and foosball with friends.
       </p>
       <p>
-        When I need to get out into the open, I prefer hiking trails and open
-        parks. Occasionally, I travel outside of my comfort zone to experience
-        new cultures. I have visited the following US states: Oregon,
+        When I need to get out into the open, I prefer hiking trails and
+        recreational parks. Occasionally, I travel outside of my comfort zone to
+        experience new cultures. I have visited the following US states: Oregon,
         Washington, Nevada, Wyoming, Ohio and Chicago. I have also visited the
         following countries: Taiwan, Mexico, Japan, Korea and Italy.
       </p>
