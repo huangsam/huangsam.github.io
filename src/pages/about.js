@@ -16,13 +16,13 @@ export default function About() {
       <p>
         I actively play drums in a church setting and shoot family / event
         photos with Canon gear. I also have a passion for making open-source
-        projects that help empower developers in their career journey. I
-        appreciate playing video games, ping-pong and foosball with friends.
+        projects that empower developers in their career journey. I enjoy
+        playing video games, ping-pong and foosball with friends.
       </p>
       <p>
-        When I want to get out into the open, I prefer hiking trails and
-        recreational parks. Occasionally, I travel outside of my comfort zone to
-        experience new cultures. I have visited the following US states: Oregon,
+        When I want to go outdoors, I prefer hiking trails and recreational
+        parks. Occasionally, I travel outside of my comfort zone to experience
+        new cultures. I have visited the following US states: Oregon,
         Washington, Nevada, Wyoming, Ohio and Chicago. I have also visited the
         following countries: Taiwan, Mexico, Japan, Korea and Italy.
       </p>
