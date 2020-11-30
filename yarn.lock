@@ -1013,10 +1013,10 @@
     is-promise "4.0.0"
     tslib "~2.0.1"
 
-"@graphql-tools/delegate@^7.0.0", "@graphql-tools/delegate@^7.0.1":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-7.0.6.tgz#dfead3ee89db9f6622ae159a699c4915a825cff0"
-  integrity sha512-KqhES4UFOyEhNkvcyv12y9mklKX3eMa43xS6VbdiXlTqsXdzJ7BaXHFDZPhiMhFIEs070HQE38CGG12SREfTXg==
+"@graphql-tools/delegate@^7.0.1", "@graphql-tools/delegate@^7.0.7":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-7.0.7.tgz#276fd3f22183857c17ed0d37eac95f91bc982ac5"
+  integrity sha512-2sze+CJxu37b4jcQ4fyj6ap9TMnx8+NBtApSs1nWIVENzPE2510aNTsBHgSdTwSeV/tVIFkAtZZAlMEGYGXzQA==
   dependencies:
     "@ardatan/aggregate-error" "0.0.6"
     "@graphql-tools/batch-execute" "^7.0.0"
@@ -1118,11 +1118,11 @@
     tslib "~2.0.1"
 
 "@graphql-tools/wrap@^7.0.0":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-7.0.1.tgz#a93e548439d19a1be6f7a032c7561059ea589b70"
-  integrity sha512-0feqjgEJSRLm2V0kEUaV2dw7ukVPjRujYMqNdcqHsIyXmf0VO8PGF5hcva/+5U/9Yfbf3Fck+P5JTJ5MlXPlsQ==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-7.0.2.tgz#f7ab04b8cb7db2191af3ef69dfb770e6bcad4d0c"
+  integrity sha512-+JUPbCtqIuAWTPk5cpCxOGiC6+hNCn9r+AWPdkuxDdJlrC1yGg9TOgps1LIhuScSnPeVVrk+/vwgPA/pV0aq9w==
   dependencies:
-    "@graphql-tools/delegate" "^7.0.0"
+    "@graphql-tools/delegate" "^7.0.7"
     "@graphql-tools/schema" "^7.0.0"
     "@graphql-tools/utils" "^7.0.0"
     is-promise "4.0.0"
@@ -12930,9 +12930,9 @@ unist-util-is@^3.0.0:
   integrity sha512-sVZZX3+kspVNmLWBPAB6r+7D9ZgAFPNWm66f7YNb420RlQSbn+n8rG8dGZSkrER7ZIXGQYNm5pqC3v3HopH24A==
 
 unist-util-is@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-4.0.3.tgz#e8b44db55fc20c43752b3346c116344d45d7c91d"
-  integrity sha512-bTofCFVx0iQM8Jqb1TBDVRIQW03YkD3p66JOd/aCWuqzlLyUtx1ZAGw/u+Zw+SttKvSVcvTiKYbfrtLoLefykw==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-4.0.4.tgz#3e9e8de6af2eb0039a59f50c9b3e99698a924f50"
+  integrity sha512-3dF39j/u423v4BBQrk1AQ2Ve1FxY5W3JKwXxVFzBODQ6WEvccguhgp802qQLKSnxPODE6WuRZtV+ohlUg4meBA==
 
 unist-util-remove-position@^1.0.0:
   version "1.1.4"
