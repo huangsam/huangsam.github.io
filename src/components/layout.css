@@ -1,14 +1,15 @@
 html {
   /* Simplify layout element sizing */
   box-sizing: border-box;
-  /* Add text size hints for mobile */
+  /* Apply text size hints for mobile */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   /* Enforce flush content */
   margin: 0;
-  /* Customize default font */
+  padding: 0;
+  /* Apply default font */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 div.layout {
@@ -18,16 +19,16 @@ div.layout {
   flex-direction: column;
 }
 header {
-  /* Customize header colors */
+  /* Support sticky footer */
+  flex-shrink: 0;
+  /* Apply header colors */
   background-color: black;
   color: white;
-  /* Add padding for header content */
+  /* Apply padding for header content */
   padding: 1.50rem;
-  /* Add spacing between header and main */
-  margin-bottom: 1.50rem;
 }
 header a {
-  /* Customize header link color */
+  /* Apply header link color */
   color: white;
 }
 header nav {
@@ -36,33 +37,32 @@ header nav {
 }
 main.content {
   /* Support sticky footer */
-  flex: 1;
-  /* Add padding for main content */
-  padding-left: 2.00rem;
-  padding-right: 3.00rem;
-  /* Add spacing between main and footer */
-  margin-bottom: 1.50rem;
+  flex-grow: 1;
+  /* Apply padding for main content */
+  margin: 1.50rem 5.00rem 1.50rem 3.00rem;
 }
 footer {
-  /* Add padding for footer content */
+  /* Support sticky footer */
+  flex-shrink: 0;
+  /* Apply padding for footer content */
   padding: 1.50rem;
 }
 footer a {
-  /* Customize footer link color */
+  /* Apply color for footer link */
   color: black;
 }
 .social a {
-  /* Customize passive social icon color */
+  /* Apply color for passive social icon */
   color: black;
 }
 .social a:hover {
-  /* Customize active social icon color */
+  /* Apply color for active social icon */
   color: grey;
 }
 .social svg {
-  /* Customize social icon size */
+  /* Apply size for social icon */
   font-size: 2.50rem;
-  /* Customize spacing for social icon */
+  /* Apply spacing for social icon */
   margin-top: 0.625rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -73,10 +73,10 @@ h3,
 h4,
 h5,
 h6 {
-  /* Customize header font */
+  /* Define family for header font */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* Define common header font settings */
+  /* Define common settings for header font */
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
