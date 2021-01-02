@@ -9,6 +9,3 @@ trim_trailing_whitespace = true
 [*.{css,js,jsx,json}]
 indent_size = 2
 indent_style = space
-
-[README.md]
-indent_size = 4
