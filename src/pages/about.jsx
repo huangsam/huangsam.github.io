@@ -1,11 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default function About() {
   return (
-    <Layout>
+    <div>
       <SEO title="About" />
       <h1>About Me</h1>
       <p>
@@ -45,6 +44,6 @@ export default function About() {
         I am blessed with a lovely wife who enjoys planting flowers, making
         crafts and eating pastries.
       </p>
-    </Layout>
+    </div>
   )
 }

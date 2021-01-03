@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default function NotFound() {
   return (
-    <Layout>
+    <div>
       <SEO title="Not Found" />
       <h1>
         Landed on <code>/dev/null</code>
@@ -14,6 +13,6 @@ export default function NotFound() {
       <p>
         Please return back to the <Link to="/">home page</Link>.
       </p>
-    </Layout>
+    </div>
   )
 }

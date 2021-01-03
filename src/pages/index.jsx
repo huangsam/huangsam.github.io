@@ -9,7 +9,6 @@ import {
   FaWordpress,
 } from "react-icons/fa"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const SOCIAL_COMPONENTS = {
@@ -32,7 +31,7 @@ export default function Home({ data }) {
     )
   }
   return (
-    <Layout>
+    <div>
       <SEO title="Home" />
       <div
         style={{
@@ -53,7 +52,7 @@ export default function Home({ data }) {
         />
         <div className="social">{socialButtons}</div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
