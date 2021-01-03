@@ -40,7 +40,6 @@ header {
 header a {
   /* Apply header link color */
   color: white;
-  text-decoration: none;
 }
 header nav {
   /* Ensure header links are on the right */
