@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap');
+@font-face {
+  font-family: 'Fjalla One';
+  font-weight: normal;
+  src: url(/fonts/FjallaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: normal;
+  src: url(/fonts/Merriweather-Regular.ttf) format('truetype');
+}
 html {
   /* Simplify layout element sizing */
   box-sizing: border-box;
