@@ -48,6 +48,14 @@ header {
 header a {
   /* Apply header link color */
   color: white;
+  /* Support header hover effects */
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+}
+header a:hover {
+  /* Support header hover effects */
+  color: black;
+  background-color: white;
 }
 header nav {
   /* Ensure header links are on the right */

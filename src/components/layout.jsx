@@ -1,16 +1,33 @@
 import React from "react"
-
-import Footer from "./layout/footer"
-import Header from "./layout/header"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { FaHeart } from "react-icons/fa"
 
 import "./layout.css"
 
 export default function Layout({ children }) {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
   return (
     <div className="layout">
-      <Header />
+      <header>
+        <Link to="/">{site.siteMetadata.title}</Link>
+        <nav>
+          <Link to="/about">About</Link>
+        </nav>
+      </header>
       <main className="content">{children}</main>
-      <Footer />
+      <footer>
+        &copy; 2016-{new Date().getFullYear()} Made with{" "}
+        <FaHeart style={{ verticalAlign: `text-top` }} /> by{" "}
+        <a href="https://github.com/huangsam">huangsam</a>
+      </footer>
     </div>
   )
 }
