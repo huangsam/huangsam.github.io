@@ -41,13 +41,6 @@ header a {
   /* Apply header link color */
   color: white;
   text-decoration: none;
-  /* Support transitions for header links */
-  transition: 0.3s;
-  padding: 0.25rem;
-}
-header a:hover {
-  background-color: white;
-  color: black;
 }
 header nav {
   /* Ensure header links are on the right */
