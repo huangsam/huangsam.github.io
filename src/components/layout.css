@@ -15,6 +15,14 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+@media (max-width: 1000px) {
+  /* Apply smaller font for small screens */
+  html { font-size: 14px; }
+}
+@media (min-width: 1500px) {
+  /* Apply larger font for large screens */
+  html { font-size: 18px; }
+}
 body {
   /* Enforce flush content */
   margin: 0;
@@ -48,8 +56,8 @@ header nav {
 main.content {
   /* Support sticky footer */
   flex-grow: 1;
-  /* Apply padding for main content */
-  margin: 1.50rem 5.00rem 1.50rem 3.00rem;
+  /* Apply margin for main content */
+  margin: 1.50rem;
 }
 footer {
   /* Support sticky footer */
