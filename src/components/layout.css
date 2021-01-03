@@ -15,11 +15,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   /* Apply smaller font for small screens */
   html { font-size: 14px; }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   /* Apply larger font for large screens */
   html { font-size: 18px; }
 }
@@ -48,12 +48,12 @@ header {
 header a {
   /* Apply header link color */
   color: white;
-  /* Support header hover effects */
+  /* Support header link hover */
   padding: 0.25rem;
   margin-right: 0.25rem;
 }
 header a:hover {
-  /* Support header hover effects */
+  /* Support header link hover */
   color: black;
   background-color: white;
 }
