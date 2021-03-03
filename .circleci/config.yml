@@ -6,8 +6,9 @@ jobs:
       - image: cimg/node:15.10.0
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
+      - run:
+          command: yarn install
+          name: Install
       - run:
           command: yarn build
           name: Build
