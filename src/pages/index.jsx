@@ -30,7 +30,7 @@ export default function Home({ data }) {
       )
     )
   }
-  const image = getImage(data.profileImg)
+  const image = getImage(data.profile)
   return (
     <div>
       <SEO title="Home" />
@@ -62,14 +62,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    profileImg: file(relativePath: { eq: "profile.jpg" }) {
+    profile: file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
-        gatsbyImageData(
-          width: 300
-          height: 300
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
-        )
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
     site {
