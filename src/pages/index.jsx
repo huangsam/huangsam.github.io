@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   FaFacebookSquare,
   FaGithub,
@@ -30,6 +30,7 @@ export default function Home({ data }) {
       )
     )
   }
+  const image = getImage(data.profileImg)
   return (
     <div>
       <SEO title="Home" />
@@ -41,14 +42,17 @@ export default function Home({ data }) {
       >
         <h1>Sam Huang</h1>
         <p>Software Engineer at day. Artist at night.</p>
-        <Img
-          fixed={data.profileImg.childImageSharp.fixed}
+        <GatsbyImage
+          image={image}
+          alt=""
           style={{
             marginBottom: `1.50rem`,
             marginLeft: `auto`,
             marginRight: `auto`,
+            borderRadius: `25%`,
           }}
-          imgStyle={{ borderRadius: `50%` }}
+          width={300}
+          height={300}
         />
         <div className="social">{socialButtons}</div>
       </div>
@@ -58,11 +62,14 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    profileImg: file(relativePath: { eq: "profile.jpg" }) {
+    profileImg: file(relativePath: {eq: "profile.jpg"}) {
       childImageSharp {
-        fixed(width: 300, height: 300) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(
+          width: 300,
+          height: 300,
+          placeholder: BLURRED,
+          formats: [AUTO, WEBP, AVIF]
+        )
       }
     }
     site {
