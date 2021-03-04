@@ -46,13 +46,13 @@ export default function Home({ data }) {
           image={image}
           alt=""
           style={{
+            width: `18.75rem`,
+            height: `18.75rem`,
             marginBottom: `1.50rem`,
             marginLeft: `auto`,
             marginRight: `auto`,
             borderRadius: `25%`,
           }}
-          width={300}
-          height={300}
         />
         <div className="social">{socialButtons}</div>
       </div>
