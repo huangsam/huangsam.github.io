@@ -62,12 +62,12 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    profileImg: file(relativePath: {eq: "profile.jpg"}) {
+    profileImg: file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
         gatsbyImageData(
-          width: 300,
-          height: 300,
-          placeholder: BLURRED,
+          width: 300
+          height: 300
+          placeholder: BLURRED
           formats: [AUTO, WEBP, AVIF]
         )
       }
