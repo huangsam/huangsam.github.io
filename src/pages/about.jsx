@@ -21,10 +21,12 @@ export default function About() {
       <p>
         When I want to go outdoors, I prefer hiking trails and recreational
         parks. Occasionally, I travel outside of my comfort zone to experience
-        new cultures. I have visited the following US states: Oregon,
-        Washington, Nevada, Wyoming, Ohio and Chicago. I have also visited the
-        following countries: Taiwan, Mexico, Japan, Korea and Italy.
+        new cultures. Here are all the places I visited outside of California:
       </p>
+      <ul>
+        <li>US states: Oregon, Washington, Nevada, Wyoming, Ohio, Chicago</li>
+        <li>Countries: Taiwan, Mexico, Japan, Korea, Italy</li>
+      </ul>
       <p>I currently attend two churches:</p>
       <ul>
         <li>
