@@ -4,6 +4,9 @@ jobs:
   build:
     docker:
       - image: cimg/node:lts
+        auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - restore_cache:
@@ -25,4 +28,5 @@ jobs:
 workflows:
   main:
     jobs:
-      - build
+      - build:
+          context: docker-hub-creds
