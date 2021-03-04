@@ -6,9 +6,18 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - node-cache-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - node-cache-{{ arch }}-{{ .Branch }}
+            - node-cache
       - run:
           command: yarn install
           name: Install
+      - save_cache:
+          key: node-cache-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
       - run:
           command: yarn build
           name: Build
