@@ -4,7 +4,7 @@ Serves the code used to build and deploy my personal site.
 
 ## Getting started
 
-As simple as:
+Getting started is as simple as:
 
 ```bash
 yarn install
@@ -15,7 +15,7 @@ The site is now running at http://localhost:8000.
 
 ## Deploying site
 
-As simple as:
+Deploying the site is as simple as:
 
 ```bash
 yarn deploy
