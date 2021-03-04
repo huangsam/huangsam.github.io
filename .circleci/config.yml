@@ -29,3 +29,4 @@ workflows:
   main:
     jobs:
       - build
+          context: docker-hub-creds
