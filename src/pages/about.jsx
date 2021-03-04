@@ -21,7 +21,7 @@ export default function About() {
       <p>
         When I want to go outdoors, I prefer hiking trails and recreational
         parks. Occasionally, I travel outside of my comfort zone to experience
-        new cultures. Here are all the places I visited outside of California:
+        new cultures. Here are the places I visited outside of California:
       </p>
       <ul>
         <li>US states: Oregon, Washington, Nevada, Wyoming, Ohio, Chicago</li>
