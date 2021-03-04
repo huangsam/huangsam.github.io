@@ -7,14 +7,14 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        keys:
-          - yarn-lock-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          keys:
+            - yarn-lock-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           command: yarn install
           name: Install
       - save_cache:
-        keys:
-          - yarn-lock-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          keys:
+            - yarn-lock-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           command: yarn build
           name: Build
