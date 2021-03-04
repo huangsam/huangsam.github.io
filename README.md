@@ -1,6 +1,6 @@
 # GitHub Pages for huangsam
 
-Hosts the code for [my personal site](https://sambyte.net/).
+Hosts the code for my personal website.
 
 ## Getting started
 
