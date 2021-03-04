@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build-and-test:
     docker:
       - image: cimg/node:lts
         auth:
@@ -28,5 +28,5 @@ jobs:
 workflows:
   main:
     jobs:
-      - build:
+      - build-and-test:
           context: docker-hub-creds
