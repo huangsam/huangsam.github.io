@@ -1,6 +1,6 @@
 # GitHub Pages for huangsam
 
-Serves the code used to build and deploy my personal site.
+Hosts the code for [my personal site](https://sambyte.net/).
 
 ## Getting started
 
