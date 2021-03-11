@@ -3759,15 +3759,15 @@ css-declaration-sorter@^4.0.1:
     timsort "^0.3.0"
 
 css-loader@^5.0.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.1.1.tgz#9362d444a0f7c08c148a109596715c904e252879"
-  integrity sha512-5FfhpjwtuRgxqmusDidowqmLlcb+1HgnEDMsi2JhiUrZUcoc+cqw+mUtMIF/+OfeMYaaFCLYp1TaIt9H6I/fKA==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.1.2.tgz#b93dba498ec948b543b49d4fab5017205d4f5c3e"
+  integrity sha512-T7vTXHSx0KrVEg/xjcl7G01RcVXpcw4OELwDPvkr7izQNny85A84dK3dqrczuEfBcu7Yg7mdTjJLSTibRUoRZg==
   dependencies:
     camelcase "^6.2.0"
     cssesc "^3.0.0"
     icss-utils "^5.1.0"
     loader-utils "^2.0.0"
-    postcss "^8.2.6"
+    postcss "^8.2.8"
     postcss-modules-extract-imports "^3.0.0"
     postcss-modules-local-by-default "^4.0.0"
     postcss-modules-scope "^3.0.0"
@@ -4421,9 +4421,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.649:
-  version "1.3.684"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.684.tgz#053fbb0a4b2d5c076dfa6e1d8ecd06a3075a558a"
-  integrity sha512-GV/vz2EmmtRSvfGSQ5A0Lucic//IRSDijgL15IgzbBEEnp4rfbxeUSZSlBfmsj7BQvE4sBdgfsvPzLCnp6L21w==
+  version "1.3.685"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.685.tgz#f636d17c9c232c925f8bbfbff4f86303da091ff9"
+  integrity sha512-C3oFZNkJ8lz85ADqr3hzpjBc2ciejMRN2SCd/D0hwcqpr6MGxfdN/j89VN6l+ERTuCUvhg0VYsf40Q4qTz4bhQ==
 
 email-addresses@^3.0.1:
   version "3.1.0"
@@ -5658,9 +5658,9 @@ gatsby-page-utils@^1.0.0:
     micromatch "^4.0.2"
 
 gatsby-plugin-image@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.0.0.tgz#100ab670549c1b4b742034d09944c19b6a5cd4ee"
-  integrity sha512-qPfydip7atF+rlESv1HLDmbwmmQvC8aU7W6GwO62hWcuGcIFJD3lcn6B8xF55f4rxE99vxbO5gUwRUwj+fUH1A==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.0.1.tgz#b2b46ec7b2203c05b3511e1440100bcd3d2af68a"
+  integrity sha512-Aa8CV+bt5kboHDWPaZZ9OWDDnlZp7Ut+cx5nMfoXAq5fPgAFtausiLzyBfsYcikjZxgYIc4VBXaUJoi0I7sjTA==
   dependencies:
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
@@ -5696,9 +5696,9 @@ gatsby-plugin-react-helmet@^4.0.0:
     "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-sharp@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.0.0.tgz#276557883ccfc9ea5503bb16b2fcd24f7a55928e"
-  integrity sha512-gmIzHjv+JaW1Gyyrz81s43yBkqtMpgvGb6qbPzH2ZX8V2YTyd9LnfUxKx/uTwluEB5oz/om4jtHSCH5DSUsTFA==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.0.1.tgz#994a2a2a0305bd7d3e4aa698e30532c0b7cfba96"
+  integrity sha512-HL519LIhTmTySUPFO2IuwIHBlgo/0N7gJng2gu2XwD/DJ3ENgw5+SXmiVTwvERx7Pr5YVPECgYuszWdlYgJmgw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
@@ -9755,7 +9755,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.27:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^8.2.6:
+postcss@^8.2.8:
   version "8.2.8"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.8.tgz#0b90f9382efda424c4f0f69a2ead6f6830d08ece"
   integrity sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
@@ -12737,9 +12737,9 @@ yargs-parser@^18.1.2:
     decamelize "^1.2.0"
 
 yargs-parser@^20.2.2:
-  version "20.2.6"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.6.tgz#69f920addf61aafc0b8b89002f5d66e28f2d8b20"
-  integrity sha512-AP1+fQIWSM/sMiET8fyayjx/J+JmTPt2Mr0FkrgqB4todtfa53sOsrSAcIrJRD5XS20bKUwaDIuMkWKCEiQLKA==
+  version "20.2.7"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.7.tgz#61df85c113edfb5a7a4e36eb8aa60ef423cbc90a"
+  integrity sha512-FiNkvbeHzB/syOjIUxFDCnhSfzAL8R5vs40MgLFBorXACCOAEaWu0gRZl14vG8MR9AOJIZbmkjhusqBYZ3HTHw==
 
 yargs@^13.3.2:
   version "13.3.2"
