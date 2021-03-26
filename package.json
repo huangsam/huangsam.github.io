@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "gatsby": "^3.0.0",
-    "gatsby-plugin-image": "^1.0.0",
+    "gatsby-plugin-image": "next",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-sitemap": "^3.0.0",
