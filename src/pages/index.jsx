@@ -9,7 +9,7 @@ import {
   FaWordpress,
 } from "react-icons/fa"
 
-import SEO from "../components/seo"
+import SearchOptimizer from "../components/seo"
 
 const SOCIAL_COMPONENTS = {
   facebook: FaFacebookSquare,
@@ -33,7 +33,7 @@ export default function Home({ data }) {
   const image = getImage(data.profile)
   return (
     <div>
-      <SEO title="Home" />
+      <SearchOptimizer title="Home" />
       <div
         style={{
           textAlign: `center`,

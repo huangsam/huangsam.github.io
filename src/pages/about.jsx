@@ -1,11 +1,11 @@
 import React from "react"
 
-import SEO from "../components/seo"
+import SearchOptimizer from "../components/seo"
 
 export default function About() {
   return (
     <div>
-      <SEO title="About" />
+      <SearchOptimizer title="About" />
       <h1>About Me</h1>
       <p>
         I graduated from UC Davis with a bachelor's degree in Computer Science
