@@ -25,7 +25,8 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata?.description || "My hidden notes"
+  const metaDescription =
+    description || site.siteMetadata?.description || "My hidden notes"
   const defaultTitle = site.siteMetadata?.title || "My hidden lair"
   const defaultAuthor = site.siteMetadata?.author || "My hidden self"
 
