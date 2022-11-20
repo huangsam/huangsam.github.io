@@ -25,11 +25,11 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription =
-    description || site.siteMetadata?.description || "My hidden notes"
+  const defaultDescription = site.siteMetadata?.description || "My hidden notes"
   const defaultTitle = site.siteMetadata?.title || "My hidden lair"
   const defaultAuthor = site.siteMetadata?.author || "My hidden self"
 
+  const displayDescription = description ? description : defaultDescription
   const displayTitle = title ? `${defaultTitle} | ${title}` : defaultTitle
   const displayAuthor = defaultAuthor
 
@@ -37,10 +37,10 @@ function SEO({ description, lang, meta, title }) {
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content={metaDescription} />
+      <meta name="description" content={displayDescription} />
       <meta name="author" content={displayAuthor} />
       <meta name="og:title" content={displayTitle} />
-      <meta name="og:description" content={metaDescription} />
+      <meta name="og:description" content={displayDescription} />
       <meta name="og:type" content="website" />
       <title>{displayTitle}</title>
     </>
