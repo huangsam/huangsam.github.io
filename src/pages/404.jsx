@@ -16,3 +16,7 @@ export default function NotFound() {
     </div>
   )
 }
+
+export const Head = () => {
+  return <SearchOptimizer title="NotFound" />
+}
