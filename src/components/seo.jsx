@@ -22,20 +22,18 @@ function SearchOptimizer({ description, lang, meta, title }) {
     }
   `)
 
-  const defaultDescription = site.siteMetadata?.description || "My hidden notes"
-  const defaultTitle = site.siteMetadata?.title || "My hidden lair"
-  const defaultAuthor = site.siteMetadata?.author || "My hidden self"
+  const defaultDescription = site.siteMetadata.description
+  const defaultTitle = site.siteMetadata.title
 
   const displayDescription = description ? description : defaultDescription
   const displayTitle = title ? `${defaultTitle} | ${title}` : defaultTitle
-  const displayAuthor = defaultAuthor
 
   return (
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={displayDescription} />
-      <meta name="author" content={displayAuthor} />
+      <meta name="author" content={site.siteMetadata.author} />
       <meta name="og:title" content={displayTitle} />
       <meta name="og:description" content={displayDescription} />
       <meta name="og:type" content="website" />
