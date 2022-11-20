@@ -33,7 +33,6 @@ export default function Home({ data }) {
   const image = getImage(data.profile)
   return (
     <div>
-      <SearchOptimizer title="Home" />
       <div
         style={{
           textAlign: `center`,
@@ -58,6 +57,10 @@ export default function Home({ data }) {
       </div>
     </div>
   )
+}
+
+export const Head = () => {
+  return <SearchOptimizer title="Home" />
 }
 
 export const query = graphql`

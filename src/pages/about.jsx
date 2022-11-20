@@ -5,7 +5,6 @@ import SearchOptimizer from "../components/seo"
 export default function About() {
   return (
     <div>
-      <SearchOptimizer title="About" />
       <h1>About Me</h1>
       <p>
         I graduated from UC Davis with a bachelor's degree in Computer Science
@@ -48,4 +47,8 @@ export default function About() {
       </p>
     </div>
   )
+}
+
+export const Head = () => {
+  return <SearchOptimizer title="About" />
 }
