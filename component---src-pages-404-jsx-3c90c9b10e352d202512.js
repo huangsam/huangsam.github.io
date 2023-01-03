@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhuangsam_github_io=self.webpackChunkhuangsam_github_io||[]).push([[256],{7291:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var l=n(7294),u=n(1883),a=n(9680);function r(){return l.createElement("div",null,l.createElement(a.Z,{title:"Not Found"}),l.createElement("h1",null,"Landed on ",l.createElement("code",null,"/dev/null")),l.createElement("p",null,"Please return back to the ",l.createElement(u.rU,{to:"/"},"home page"),"."))}}}]);
-//# sourceMappingURL=component---src-pages-404-jsx-3c90c9b10e352d202512.js.map
