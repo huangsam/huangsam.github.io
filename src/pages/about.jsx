@@ -9,7 +9,7 @@ export default function About() {
       <p>
         I graduated from UC Davis with a bachelor's degree in Computer Science
         and Engineering. I currently work as a Software Engineer at LinkedIn
-        under Flagship Infrastructure and Productivity.
+        under Product Application and Infrastructure.
       </p>
       <p>
         I actively play drums in a church setting and shoot family / event
