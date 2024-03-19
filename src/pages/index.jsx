@@ -26,8 +26,8 @@ export default function Home({ data }) {
       React.createElement(
         "a",
         { key: obj.name, alt: obj.name, href: obj.url },
-        React.createElement(SOCIAL_COMPONENTS[obj.name])
-      )
+        React.createElement(SOCIAL_COMPONENTS[obj.name]),
+      ),
     )
   }
   const image = getImage(data.profile)
