@@ -22,12 +22,16 @@ html {
 
 @media (max-width: 800px) {
   /* Apply smaller font for small screens */
-  html { font-size: 14px; }
+  html {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1400px) {
   /* Apply larger font for large screens */
-  html { font-size: 18px; }
+  html {
+    font-size: 18px;
+  }
 }
 
 body {
@@ -52,7 +56,7 @@ header {
   background-color: black;
   color: white;
   /* Apply padding for header content */
-  padding: 1.50rem;
+  padding: 1.5rem;
 }
 
 header a {
@@ -78,14 +82,14 @@ main.content {
   /* Support sticky footer */
   flex-grow: 1;
   /* Apply margin for main content */
-  margin: 1.50rem;
+  margin: 1.5rem;
 }
 
 footer {
   /* Support sticky footer */
   flex-shrink: 0;
   /* Apply padding for footer content */
-  padding: 1.50rem;
+  padding: 1.5rem;
 }
 
 footer a {
@@ -123,7 +127,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -131,7 +135,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.00rem;
+  font-size: 1rem;
 }
 
 h5 {
@@ -139,5 +143,5 @@ h5 {
 }
 
 h6 {
-  font-size: 0.50rem;
+  font-size: 0.5rem;
 }

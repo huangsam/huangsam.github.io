@@ -48,7 +48,7 @@
     padding-bottom: 1em;
   }
   a.social {
-    margin-top: .5em;
+    margin-top: 0.5em;
     margin-left: 1em;
   }
   a.social:first-child {

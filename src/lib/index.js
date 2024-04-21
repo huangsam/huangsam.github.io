@@ -1,5 +1,5 @@
 // place files you want to import through the `$lib` alias in this folder.
-export let social = [
+export const social = [
   {
     name: `GitHub`,
     url: `https://github.com/huangsam`
