@@ -32,16 +32,23 @@
   }
   img.profile {
     border-radius: 25%;
-    width: 50%;
+    width: 18.75rem;
+    height: 18.75rem;
     max-width: 375px;
     box-shadow: 3px 3px 5px #ccc;
     -webkit-box-shadow: 3px 3px 5px #ccc;
     -moz-box-shadow: 3px 3px 5px #ccc;
   }
   div.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 1em;
   }
   a.social {
+    margin-top: .5em;
     margin-left: 1em;
   }
   a.social:first-child {

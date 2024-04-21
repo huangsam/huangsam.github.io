@@ -43,3 +43,9 @@
 </p>
 
 <blockquote>The days are long, but the years are short.</blockquote>
+
+<style>
+  blockquote {
+    font-style: italic;
+  }
+</style>

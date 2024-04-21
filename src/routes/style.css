@@ -1,38 +1,143 @@
-:root {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Fjalla One';
+  font-weight: normal;
+  src: url(/fonts/FjallaOne-Regular.ttf) format('truetype');
+  font-display: swap;
 }
-html,
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: normal;
+  src: url(/fonts/Merriweather-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+html {
+  /* Simplify layout element sizing */
+  box-sizing: border-box;
+  /* Apply text size hints for mobile */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 800px) {
+  /* Apply smaller font for small screens */
+  html { font-size: 14px; }
+}
+
+@media (min-width: 1400px) {
+  /* Apply larger font for large screens */
+  html { font-size: 18px; }
+}
+
 body {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 0;
+  /* Enforce flush content */
   margin: 0;
+  padding: 0;
+  /* Apply default font */
+  font-family: 'Merriweather', serif;
 }
-div.wrapper {
-  box-sizing: border-box;
-  min-height: 100%;
+
+div.layout {
+  /* Support sticky footer */
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
-header,
-footer {
-  flex-grow: 0;
+
+header {
+  /* Support sticky footer */
   flex-shrink: 0;
-  padding: 1em;
-  background-color: #fafafa;
+  /* Apply header colors */
+  background-color: black;
+  color: white;
+  /* Apply padding for header content */
+  padding: 1.50rem;
 }
-main {
+
+header a {
+  /* Apply header link color */
+  color: white;
+  /* Support header link hover */
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+header a:hover {
+  /* Support header link hover */
+  color: black;
+  background-color: white;
+}
+
+header nav {
+  /* Ensure header links are on the right */
+  float: right;
+}
+
+main.content {
+  /* Support sticky footer */
   flex-grow: 1;
-  padding: 1em;
+  /* Apply margin for main content */
+  margin: 1.50rem;
 }
-a:link,
-a:visited {
+
+footer {
+  /* Support sticky footer */
+  flex-shrink: 0;
+  /* Apply padding for footer content */
+  padding: 1.50rem;
+}
+
+footer a {
+  /* Apply color for footer link */
   color: black;
 }
-a:hover,
-a:active {
-  color: red;
+
+.social a {
+  /* Apply color for passive social icon */
+  color: black;
 }
-blockquote {
-  font-style: italic;
+
+.social a:hover {
+  /* Apply color for active social icon */
+  color: grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Define family for header font */
+  font-family: 'Fjalla One', sans-serif;
+  /* Define common settings for header font */
+  color: inherit;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.50rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.00rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.50rem;
 }

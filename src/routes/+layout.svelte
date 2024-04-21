@@ -17,16 +17,10 @@
   </nav>
 </header>
 
-<main>
+<main class="content">
   <slot />
 </main>
 
 <footer>
   <div>&copy; 2016-{now.getFullYear()}. Made with &hearts; by @huangsam.</div>
 </footer>
-
-<style>
-  nav.right {
-    float: right;
-  }
-</style>
