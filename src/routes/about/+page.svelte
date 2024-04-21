@@ -1,5 +1,5 @@
 <script>
-  import Quote from '../../lib/components/Quote.svelte';
+  import Quote from '$lib/components/Quote.svelte';
 </script>
 
 <h1>About Me</h1>
