@@ -41,7 +41,7 @@
     padding-bottom: 1em;
   }
   a.social {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-left: 1em;
     background-color: black;
     color: white;
