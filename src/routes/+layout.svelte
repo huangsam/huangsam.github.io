@@ -22,5 +22,5 @@
 </main>
 
 <footer>
-  <div>&copy; 2016-{now.getFullYear()}. Made with &hearts; by @huangsam.</div>
+  <div>&copy; 2016-{now.getFullYear()} Made with &hearts; by @huangsam.</div>
 </footer>

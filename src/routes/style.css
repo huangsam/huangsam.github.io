@@ -92,21 +92,6 @@ footer {
   padding: 1.5rem;
 }
 
-footer a {
-  /* Apply color for footer link */
-  color: black;
-}
-
-.social a {
-  /* Apply color for passive social icon */
-  color: black;
-}
-
-.social a:hover {
-  /* Apply color for active social icon */
-  color: grey;
-}
-
 h1,
 h2,
 h3,

@@ -20,13 +20,6 @@
   div.banner {
     text-align: center;
   }
-  div.banner h1 {
-    font-size: 2.5em;
-  }
-  div.banner p,
-  div.banner a {
-    font-size: 1.1em;
-  }
   div.profile {
     margin: 2em 0em;
   }
@@ -48,10 +41,17 @@
     padding-bottom: 1em;
   }
   a.social {
-    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     margin-left: 1em;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
   }
   a.social:first-child {
     margin-left: 0px;
+  }
+  a.social:hover {
+    background-color: grey;
   }
 </style>
