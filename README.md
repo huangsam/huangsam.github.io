@@ -8,10 +8,10 @@ Getting started is as simple as:
 
 ```bash
 yarn install
-yarn develop
+yarn dev
 ```
 
-The site is now running at http://localhost:8000.
+The site is now running at http://localhost:5173/.
 
 ## Deploying site
 
