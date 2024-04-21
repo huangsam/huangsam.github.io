@@ -1,17 +1,15 @@
 <script>
   import './style.css';
   let now = new Date();
-  let title = "Sam's website";
-  let description = 'Website for huangsam';
 </script>
 
 <svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description} />
+  <title>Sam Huang</title>
+  <meta name="description" content="Website for Sam Huang" />
 </svelte:head>
 
 <header>
-  <a href="/">{title}</a>
+  <a href="/">Sam's website</a>
   <nav class="right">
     <a href="/about">About</a>
   </nav>
