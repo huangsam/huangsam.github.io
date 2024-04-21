@@ -28,9 +28,9 @@
     width: 18.75rem;
     height: 18.75rem;
     max-width: 375px;
-    box-shadow: 3px 3px 5px #ccc;
-    -webkit-box-shadow: 3px 3px 5px #ccc;
-    -moz-box-shadow: 3px 3px 5px #ccc;
+    box-shadow: 3px 3px 5px lightgrey;
+    -webkit-box-shadow: 3px 3px 5px lightgrey;
+    -moz-box-shadow: 3px 3px 5px lightgrey;
   }
   div.social {
     display: -webkit-box;
