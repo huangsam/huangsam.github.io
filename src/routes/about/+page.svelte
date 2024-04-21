@@ -1,3 +1,7 @@
+<script>
+  import Quote from '../../lib/components/Quote.svelte';
+</script>
+
 <h1>About Me</h1>
 
 <p>
@@ -42,14 +46,4 @@
   am the father of two kids, and they make the old saying become a reality:
 </p>
 
-<blockquote>The days are long, but the years are short.</blockquote>
-
-<style>
-  blockquote {
-    opacity: .5;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    font-style: italic;
-    font-size: 1.25rem;
-  }
-</style>
+<Quote>The days are long, but the years are short.</Quote>
