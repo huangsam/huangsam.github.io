@@ -39,7 +39,7 @@
 
 <p>
   I am blessed with a lovely wife who enjoys planting flowers, making crafts and eating pastries. I
-  am also the father of two kids, and they make the old saying become a reality:
+  am the father of two kids, and they make the old saying become a reality:
 </p>
 
 <blockquote>The days are long, but the years are short.</blockquote>
