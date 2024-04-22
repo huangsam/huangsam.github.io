@@ -21,7 +21,7 @@
     text-align: center;
   }
   div.profile {
-    margin: 2em 0em;
+    margin: 2rem 0;
   }
   img.profile {
     border-radius: 25%;
@@ -39,7 +39,7 @@
     padding-bottom: 1em;
   }
   a.social {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     padding: 1.25em;
     border-radius: 2em;
@@ -47,7 +47,7 @@
     color: white;
   }
   a.social:first-child {
-    margin-left: 0rem;
+    margin-left: 0;
   }
   a.social:hover {
     background-color: grey;
@@ -55,10 +55,10 @@
   @media (max-width: 600px) {
     div.social {
       flex-direction: column;
-      padding: 0em 3em;
+      padding: 0 3em;
     }
     a.social {
-      margin-left: 0rem;
+      margin-left: 0;
       margin-bottom: 1.25rem;
     }
   }
