@@ -32,9 +32,9 @@ high-level overview of what's changed over the years:
   </tr>
 </table>
 
-In all of these cases, the HTML and CSS were hand-written. No CSS libraries
-and frameworks (think Tailwind and Bootstrap) were used in the process of
-building this site.
+In all of these cases, the site's HTML and CSS were written from the ground up. No
+CSS libraries and frameworks (think Tailwind and Bootstrap) were used in the
+process of building this site.
 
 ## Getting started
 
