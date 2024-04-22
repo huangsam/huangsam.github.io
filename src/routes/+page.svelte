@@ -42,10 +42,10 @@
   a.social {
     margin-bottom: 1em;
     margin-left: 1rem;
+    padding: 1.25em;
+    border-radius: 2em;
     background-color: black;
     color: white;
-    padding: 1em;
-    border-radius: 2em;
   }
   a.social:first-child {
     margin-left: 0rem;
