@@ -64,6 +64,11 @@ header {
 header a {
   /* Apply header link color */
   color: white;
+  margin-right: 1rem;
+}
+
+header a:last-child {
+  margin-right: 0;
 }
 
 header nav {
