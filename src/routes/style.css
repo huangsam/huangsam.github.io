@@ -16,6 +16,7 @@ html {
   /* Simplify layout element sizing */
   box-sizing: border-box;
   /* Apply text size hints for mobile */
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }

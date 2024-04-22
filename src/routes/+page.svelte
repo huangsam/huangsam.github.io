@@ -29,29 +29,38 @@
     height: 18.75rem;
     max-width: 375px;
     box-shadow: 3px 3px 5px lightgrey;
-    -webkit-box-shadow: 3px 3px 5px lightgrey;
     -moz-box-shadow: 3px 3px 5px lightgrey;
+    -webkit-box-shadow: 3px 3px 5px lightgrey;
   }
   div.social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     padding-bottom: 1em;
   }
   a.social {
     margin-bottom: 1em;
-    margin-left: 1em;
+    margin-left: 1rem;
     background-color: black;
     color: white;
     padding: 1em;
     border-radius: 2em;
   }
   a.social:first-child {
-    margin-left: 0px;
+    margin-left: 0rem;
   }
   a.social:hover {
     background-color: grey;
+  }
+  @media (max-width: 600px) {
+    div.social {
+      flex-direction: column;
+      padding: 0em 3em;
+    }
+    a.social {
+      margin-left: 0rem;
+      margin-bottom: 1.25rem;
+    }
   }
 </style>
