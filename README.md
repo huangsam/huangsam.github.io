@@ -2,6 +2,12 @@
 
 Hosts the code for my personal website.
 
+The site has gone through quite the history:
+
+- Vanilla JS with Webpack (2017)
+- Gatsby.js (2021)
+- SvelteKit (2024)
+
 ## Getting started
 
 Getting started is as simple as:
