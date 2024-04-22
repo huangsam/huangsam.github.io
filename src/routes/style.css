@@ -64,10 +64,12 @@ header {
 header a {
   /* Apply header link color */
   color: white;
+  /* Apply margin between header links */
   margin-right: 1rem;
 }
 
 header a:last-child {
+  /* Ensure last header link is flush */
   margin-right: 0;
 }
 
