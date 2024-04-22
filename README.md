@@ -14,7 +14,7 @@ high-level overview of what's changed over the years:
   </tr>
   <tr>
     <td>2017</td>
-    <td>Vanille JS</td>
+    <td>Vanilla JS</td>
     <td>Jest, Puppeteer</td>
     <td>Webpack</td>
   </tr>
