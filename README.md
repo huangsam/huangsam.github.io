@@ -1,6 +1,6 @@
 # GitHub Pages for huangsam
 
-Hosts the code for my personal website.
+Hosts the code for my personal site.
 
 The codebase has went through multiple JavaScript stages, but here's a
 high-level overview of what's changed over the years:
@@ -31,6 +31,10 @@ high-level overview of what's changed over the years:
     <td>Vite</td>
   </tr>
 </table>
+
+In all of these cases, the HTML and CSS were hand-written. No CSS libraries
+and frameworks (think Tailwind and Bootstrap) were used in the process of
+building this site.
 
 ## Getting started
 
