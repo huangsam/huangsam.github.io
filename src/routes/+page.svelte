@@ -1,6 +1,6 @@
 <script>
-  import { social } from '$lib/index.js';
   import profile from '$lib/assets/profile.jpg';
+  import { social } from '$lib/index.js';
 </script>
 
 <div class="banner">
