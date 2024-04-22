@@ -2,7 +2,8 @@
 
 Hosts the code for my personal website.
 
-The site has gone through quite the history:
+The codebase has went through multiple JavaScript stages, but here's a
+high-level overview of what's changed over the years:
 
 <table>
   <tr>
