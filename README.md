@@ -4,9 +4,9 @@ Hosts the code for my personal website.
 
 The site has gone through quite the history:
 
-- Vanilla JS with Webpack (2017)
-- Gatsby.js (2021)
-- SvelteKit (2024)
+- Vanilla JS with [webpack] (2017)
+- [React] with [Gatsby] (2021)
+- [Svelte] with [SvelteKit] (2024)
 
 ## Getting started
 
@@ -28,3 +28,9 @@ yarn deploy
 ```
 
 The site is now deployed to the `gh-pages` branch.
+
+[Gatsby]: https://www.gatsbyjs.com/
+[React]: https://react.dev/
+[SvelteKit]: https://kit.svelte.dev/
+[Svelte]: https://svelte.dev/
+[webpack]: https://webpack.js.org/
