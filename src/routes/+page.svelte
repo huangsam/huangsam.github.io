@@ -25,8 +25,8 @@
   }
   img.profile {
     border-radius: 25%;
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 19rem;
+    height: 19rem;
     box-shadow: 3px 3px 5px lightgrey;
     -moz-box-shadow: 3px 3px 5px lightgrey;
     -webkit-box-shadow: 3px 3px 5px lightgrey;
@@ -55,7 +55,8 @@
   @media (max-width: 600px) {
     div.social {
       flex-direction: column;
-      padding: 0 3em;
+      margin-left: 0;
+      padding: 0 1em;
     }
     a.social {
       margin-left: 0;
