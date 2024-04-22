@@ -11,7 +11,7 @@ yarn install
 yarn dev
 ```
 
-The site is now running at http://localhost:5173/.
+The site is now running at <http://localhost:5173/>.
 
 ## Deploying site
 
