@@ -50,7 +50,9 @@ div.layout {
   flex-direction: column;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   /* Apply padding across visual content */
   padding: 1.5em;
 }
