@@ -36,7 +36,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 1em;
+    padding: 1em 0;
   }
   a.social {
     margin-bottom: 1rem;
