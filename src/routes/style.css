@@ -68,12 +68,6 @@ header a {
   margin-right: 0.25rem;
 }
 
-header a:hover {
-  /* Support header link hover */
-  color: black;
-  background-color: white;
-}
-
 header nav {
   /* Ensure header links are on the right */
   float: right;
