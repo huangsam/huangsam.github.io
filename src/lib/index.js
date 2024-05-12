@@ -1,4 +1,4 @@
-export const social = [
+export const socialProfiles = [
   {
     name: `GitHub`,
     url: `https://github.com/huangsam`
@@ -18,5 +18,21 @@ export const social = [
   {
     name: `Twitter`,
     url: `https://twitter.com/s_c_huang`
+  }
+];
+
+export const traveledPlaces = {
+  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago'],
+  countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy']
+};
+
+export const currentChurches = [
+  {
+    name: 'Glorious Light Christian Church',
+    url: 'https://glorious-light.net'
+  },
+  {
+    name: 'Echo Church',
+    url: 'https://echo.church'
   }
 ];

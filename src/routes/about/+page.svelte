@@ -1,5 +1,10 @@
 <script>
   import Quote from '$lib/components/Quote.svelte';
+  import { traveledPlaces, currentChurches } from '$lib/index.js';
+
+  function getPlaces(places) {
+    return places.join(', ');
+  }
 </script>
 
 <h1>About Me</h1>
@@ -16,24 +21,24 @@
 
 <p>
   I recharge from the busyness by shooting photos, playing foosball with friends and catching up for
-  a good meal. When I go outdoors, I prefer hiking trails and recreational parks. Occasionally, I
-  travel outside to experience new cultures. Here are the places I visited:
+  a good meal. When I go outdoors, I prefer hiking trails and recreational parks.
+</p>
+
+<p>
+  I occasionally travel outside of the US to experience new cultures. Here are the places I visited:
 </p>
 
 <ul>
-  <li>US states: Oregon, Washington, Nevada, Wyoming, Ohio, Chicago</li>
-  <li>Countries: Taiwan, Mexico, Japan, Korea, Italy</li>
+  <li>US states: {getPlaces(traveledPlaces.states)}</li>
+  <li>Countries: {getPlaces(traveledPlaces.countries)}</li>
 </ul>
 
 <p>I currently attend these churches:</p>
 
 <ul>
-  <li>
-    <a href="http://glorious-light.net/">Glorious Light Christian Church</a>
-  </li>
-  <li>
-    <a href="https://echo.church">Echo Church</a>
-  </li>
+  {#each currentChurches as { url, name }}
+    <li><a href={url}>{name}</a></li>
+  {/each}
 </ul>
 
 <p>

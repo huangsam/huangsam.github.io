@@ -1,6 +1,6 @@
 <script>
   import profile from '$lib/assets/profile.jpg';
-  import { social } from '$lib/index.js';
+  import { socialProfiles } from '$lib/index.js';
 </script>
 
 <div class="banner">
@@ -10,7 +10,7 @@
     <img class="profile" src={profile} alt="profile" />
   </div>
   <div class="social">
-    {#each social as { name, url }}
+    {#each socialProfiles as { name, url }}
       <a id={name.toLowerCase()} href={url} class="social">{name}</a>
     {/each}
   </div>
