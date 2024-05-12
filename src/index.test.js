@@ -1,9 +1,18 @@
 import { describe, it, expect } from 'vitest';
 
-import { social } from '$lib/index.js';
+import { socialProfiles, traveledPlaces, currentChurches } from '$lib/index.js';
 
-describe('social links', () => {
-  it('should not be empty', () => {
-    expect(social.length).greaterThan(0);
+describe('personal site', () => {
+  it('should have social profiles', () => {
+    expect(socialProfiles.length).greaterThan(0);
+  });
+
+  it('should have traveled places', () => {
+    expect(traveledPlaces.states.length).greaterThan(0);
+    expect(traveledPlaces.countries.length).greaterThan(0);
+  });
+
+  it('should have current churches', () => {
+    expect(currentChurches.length).greaterThan(0);
   });
 });
