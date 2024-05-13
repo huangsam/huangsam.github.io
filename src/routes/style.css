@@ -1,4 +1,40 @@
+html,
+body {
+  /* Support sticky footer */
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div.layout {
+  /* Support sticky footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header,
+footer {
+  /* Support sticky footer */
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+main {
+  /* Support sticky footer */
+  flex-grow: 1;
+}
+
+header,
+main,
+footer {
+  /* Apply padding across visual content */
+  padding: 1em;
+}
+
 @font-face {
+  /* Define custom sans-serif font */
   font-family: 'Fjalla One';
   font-weight: normal;
   src: url(/fonts/FjallaOne-Regular.ttf) format('truetype');
@@ -6,6 +42,7 @@
 }
 
 @font-face {
+  /* Define custom serif font */
   font-family: 'Merriweather';
   font-weight: normal;
   src: url(/fonts/Merriweather-Regular.ttf) format('truetype');
@@ -13,9 +50,8 @@
 }
 
 html {
-  /* Simplify layout element sizing */
-  box-sizing: border-box;
   /* Apply text size hints for mobile */
+  text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -28,23 +64,9 @@ html {
   }
 }
 
-body {
-  /* Enforce flush layout */
-  margin: 0;
-  padding: 0;
-  /* Define default font */
-  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-}
-
 header,
-main,
 footer {
-  /* Apply padding across visual content */
-  padding: 1.5em;
-}
-
-header {
-  /* Apply header colors */
+  /* Apply header and footer colors */
   background-color: black;
   color: white;
 }
@@ -66,22 +88,9 @@ header nav {
   float: right;
 }
 
-div.layout {
-  /* Support sticky footer */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-header,
-footer {
-  /* Support sticky footer */
-  flex-shrink: 0;
-}
-
-main.content {
-  /* Support sticky footer */
-  flex-grow: 1;
+body {
+  /* Define default font */
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
 }
 
 h1,

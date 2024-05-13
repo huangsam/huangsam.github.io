@@ -4,8 +4,7 @@
 
 <style>
   blockquote {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin: 1.5em 1em;
     font-style: italic;
     font-size: 1.25rem;
     color: grey;

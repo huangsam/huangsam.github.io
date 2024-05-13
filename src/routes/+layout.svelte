@@ -15,7 +15,7 @@
   </nav>
 </header>
 
-<main class="content">
+<main>
   <slot />
 </main>
 
