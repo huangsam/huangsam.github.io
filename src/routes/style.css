@@ -39,15 +39,8 @@ body {
   /* Enforce flush layout */
   margin: 0;
   padding: 0;
-  /* Apply default font */
+  /* Define default font */
   font-family: 'Merriweather', serif;
-}
-
-div.layout {
-  /* Support sticky footer */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 header,
@@ -80,7 +73,14 @@ header nav {
   float: right;
 }
 
-header {
+div.layout {
+  /* Support sticky footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header, footer {
   /* Support sticky footer */
   flex-shrink: 0;
 }
@@ -90,18 +90,13 @@ main.content {
   flex-grow: 1;
 }
 
-footer {
-  /* Support sticky footer */
-  flex-shrink: 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  /* Define family for header font */
+  /* Define header font */
   font-family: 'Fjalla One', sans-serif;
   /* Define common settings for header font */
   color: inherit;
