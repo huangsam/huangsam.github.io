@@ -49,8 +49,10 @@
   a.social:first-child {
     margin-left: 0;
   }
-  a.social:hover {
-    background-color: grey;
+  @media (hover: hover) {
+    a.social:hover {
+      background-color: grey;
+    }
   }
   @media (max-width: 600px) {
     div.social {
