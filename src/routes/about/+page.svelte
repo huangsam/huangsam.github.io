@@ -29,8 +29,14 @@
 </p>
 
 <ul>
-  <li>US states: {getPlaces(traveledPlaces.states)}</li>
-  <li>Countries: {getPlaces(traveledPlaces.countries)}</li>
+  <li>
+    <span>US states:</span>
+    <span>{getPlaces(traveledPlaces.states)}</span>
+  </li>
+  <li>
+    <span>Countries:</span>
+    <span>{getPlaces(traveledPlaces.countries)}</span>
+  </li>
 </ul>
 
 <p>I currently attend these churches:</p>
