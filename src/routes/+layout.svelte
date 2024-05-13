@@ -20,5 +20,7 @@
 </main>
 
 <footer>
-  <div>&copy; 2016-{now.getFullYear()} Made with &hearts; by @huangsam.</div>
+  <span>&copy;</span>
+  <span>2016-{now.getFullYear()}</span>
+  <span>Made with &hearts; by @huangsam.</span>
 </footer>
