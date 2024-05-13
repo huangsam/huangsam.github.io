@@ -42,7 +42,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     padding: 1.25em;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: black;
     color: white;
   }
