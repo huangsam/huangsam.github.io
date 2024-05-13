@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   /* Define default font */
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
 }
 
 header,
@@ -91,7 +91,7 @@ h4,
 h5,
 h6 {
   /* Define header font */
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
   /* Define common settings for header font */
   color: inherit;
   font-weight: bold;
