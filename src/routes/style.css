@@ -28,13 +28,6 @@ html {
   }
 }
 
-@media (min-width: 1400px) {
-  /* Apply larger font for large screens */
-  html {
-    font-size: 18px;
-  }
-}
-
 body {
   /* Enforce flush layout */
   margin: 0;
