@@ -23,7 +23,7 @@
     "gh-pages": "^6.1.1",
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
-    "svelte": "^4.2.7",
+    "svelte": "^4.2.19",
     "vite": "^5.0.3",
     "vitest": "^2.0.3"
   },
