@@ -1,5 +1,7 @@
 # GitHub Pages for huangsam
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/huangsam.github.io/ci.yml)
+
 Hosts the code for my personal site.
 
 The codebase has went through multiple phases of JavaScript, but here's a
