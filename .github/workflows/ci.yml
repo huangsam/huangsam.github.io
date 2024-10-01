@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  node-build:
+    name: Node 20
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Node LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: |
+          npm install -g yarn
+          yarn install
+      - name: Lint with prettier and eslint
+        run: |
+          yarn lint
+      - name: Test with vitest
+        run: |
+          yarn test run
+      - name: Build with vite
+        run: |
+          yarn build
