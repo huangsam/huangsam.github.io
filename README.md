@@ -1,7 +1,7 @@
 # GitHub Pages for huangsam
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/huangsam.github.io/ci.yml)](https://github.com/huangsam/huangsam.github.io/actions)
-[![License](https://img.shields.io/github/license/huangsam/huangsam.github.io)](https://github.com/huangsam/huangsam.github.io/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/huangsam/huangsam.github.io)](https://github.com/huangsam/huangsam.github.io/blob/main/LICENSE)
 
 Hosts the code for my personal site.
 
