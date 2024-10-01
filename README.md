@@ -47,6 +47,17 @@ yarn dev
 
 The site is now running at <http://localhost:5173/>.
 
+## Run validations
+
+Running validations is as simple as:
+
+```bash
+yarn lint
+yarn test
+```
+
+The site is now tested with linters and tests.
+
 ## Deploying site
 
 Deploying the site is as simple as:
