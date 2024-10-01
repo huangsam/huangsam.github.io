@@ -20,6 +20,9 @@ footer {
   /* Support sticky footer */
   flex-grow: 0;
   flex-shrink: 0;
+  /* Apply header and footer colors */
+  background-color: black;
+  color: white;
 }
 
 main {
@@ -74,13 +77,6 @@ html {
   html {
     font-size: 14px;
   }
-}
-
-header,
-footer {
-  /* Apply header and footer colors */
-  background-color: black;
-  color: white;
 }
 
 header a {
