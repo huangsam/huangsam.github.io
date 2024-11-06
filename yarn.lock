@@ -207,9 +207,9 @@
   integrity sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==
 
 "@humanwhocodes/retry@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.0.tgz#b57438cab2a2381b4b597b0ab17339be381bd755"
-  integrity sha512-xnRgu9DxZbkWak/te3fcytNyp8MTbuiZIaueg2rgEvBuN55n04nwLYLU9TX/VVlusc9L2ZNXi99nUFNkHXtr5g==
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.1.tgz#9a96ce501bc62df46c4031fbd970e3cc6b10f07b"
+  integrity sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==
 
 "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.5"
@@ -372,9 +372,9 @@
   integrity sha512-MGJcesnJWj7FxDcB/GbrdYD3q24Uk0PIL4QIX149ku+hlJuj//nxUbb0HxUTpjkecWfHjVveSUnUaQWnPRXlpg==
 
 "@sveltejs/kit@^2.0.0":
-  version "2.7.5"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.7.5.tgz#234ffbb4a0b7df9146807992849e9f0fedc2b94d"
-  integrity sha512-8WIrVch2Ze2Rq3eIMPTqIIRFPM2zGQcGKHim2z43KVRdgdtYWBugAQ7nemH9ATnzlvbgztk6hwhEZOi8A8ZOPg==
+  version "2.7.7"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.7.7.tgz#e78f458c5fa48445a8c22b7c46971edd031a1c8e"
+  integrity sha512-EvNErTd0QuIUX6SbZecOJQus3cILJR87XyIQXF4kfwWap63/OV58GGTEI47k3ydrFssAWGw4eu3RlB2dmBYETA==
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
@@ -1568,9 +1568,9 @@ svelte-eslint-parser@^0.43.0:
     postcss-scss "^4.0.9"
 
 svelte@^5.1.0:
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.1.9.tgz#e8d5f2e4b4e029091c1e3a5a0882ff75d40ba291"
-  integrity sha512-nzq+PPKGS2PoEWDjAcXSrKSbXmmmOAxd6dAz1IhRusUpVkFS6DMELWPyBPGwu6TpO/gsgtFXwX0M4+pAR5gzKw==
+  version "5.1.10"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.1.10.tgz#7f38f871b145406e7feae4cc40bbd9ad3442ba95"
+  integrity sha512-lDR04z/5taV2qhqYt7UXQ3sVuv/FVfbHz4UBQpYP9Xlcv2OV0rw74hkZ7kbdZr3UKLgGdIGxG2UBxtRmgzB2Cg==
   dependencies:
     "@ampproject/remapping" "^2.3.0"
     "@jridgewell/sourcemap-codec" "^1.5.0"
