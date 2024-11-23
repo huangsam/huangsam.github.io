@@ -372,9 +372,9 @@
   integrity sha512-MGJcesnJWj7FxDcB/GbrdYD3q24Uk0PIL4QIX149ku+hlJuj//nxUbb0HxUTpjkecWfHjVveSUnUaQWnPRXlpg==
 
 "@sveltejs/kit@^2.0.0":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.8.1.tgz#f6d244d60217b44741c88e6ba099374d2cda9469"
-  integrity sha512-uuOfFwZ4xvnfPsiTB6a4H1ljjTUksGhWnYq5X/Y9z4x5+3uM2Md8q/YVeHL+7w+mygAwoEFdgKZ8YkUuk+VKww==
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.8.2.tgz#abfc58326f0544724690923a579f134e609c9aed"
+  integrity sha512-c9My0AnojYtaa96XDAcxcMUdMd3iIhWfrj6BLNtOFz55lMtA/Jima54ZLcYcvfMqei3c86fGRXYa2aIHO+vzFg==
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
@@ -1410,9 +1410,9 @@ prelude-ls@^1.2.1:
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
 prettier-plugin-svelte@^3.1.2:
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-3.2.8.tgz#5944cd1578eaeb1d7d1c120f3146e4bdd1ca4630"
-  integrity sha512-PAHmmU5cGZdnhW4mWhmvxuG2PVbbHIxUuPOdUKvfE+d4Qt2d29iU5VWrPdsaW5YqVEE0nqhlvN4eoKmVMpIF3Q==
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-3.3.2.tgz#f0c0b023a697f5cb43fb7257170e3d8762b547c6"
+  integrity sha512-kRPjH8wSj2iu+dO+XaUv4vD8qr5mdDmlak3IT/7AOgGIMRG86z/EHOLauFcClKEnOUf4A4nOA7sre5KrJD4Raw==
 
 prettier@^3.1.1:
   version "3.3.3"
@@ -1572,9 +1572,9 @@ svelte-eslint-parser@^0.43.0:
     postcss-scss "^4.0.9"
 
 svelte@^5.1.0:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.2.3.tgz#6505ce6509a386f6755d10deaf3e4ecb76d3ce83"
-  integrity sha512-DRrWXdzo6+gfX9H/hQofQYyAtsGqC99+CFBvttImGt6gAy4Xzh0hHBrCHw5OtBgaPOdVGNW+S+mDcYcEsvTPOw==
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.2.7.tgz#97d363e88b2cac6011b05d8d42909ca1fc090da5"
+  integrity sha512-cEhPGuLHiH2+Z8B1FwQgiZJgA39uUmJR4516TKrM5zrp0/cuwJkfhUfcTxhAkznanAF5fXUKzvYR4o+Ksx3ZCQ==
   dependencies:
     "@ampproject/remapping" "^2.3.0"
     "@jridgewell/sourcemap-codec" "^1.5.0"
