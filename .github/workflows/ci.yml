@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   node-build:
-    name: Node 20
+    name: Node 22
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node LTS
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - name: Install dependencies
         run: |
           npm install -g yarn
