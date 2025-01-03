@@ -36,3 +36,9 @@ export const currentChurches = [
     url: 'https://echo.church'
   }
 ];
+
+export const employmentInfo = {
+  company: 'Tesla',
+  role: 'Software Engineer',
+  org: 'Network Engineering'
+};

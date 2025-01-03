@@ -1,6 +1,6 @@
 <script>
   import Quote from '$lib/components/Quote.svelte';
-  import { traveledPlaces, currentChurches } from '$lib/index.js';
+  import { traveledPlaces, currentChurches, employmentInfo } from '$lib/index.js';
 
   function getPlaces(places) {
     return places.join(', ');
@@ -11,7 +11,7 @@
 
 <p>
   I graduated from UC Davis with a bachelor's degree in Computer Science and Engineering. I
-  currently work as a Software Engineer at LinkedIn under Product Application and Infrastructure.
+  currently work as a {employmentInfo.role} at {employmentInfo.company} under {employmentInfo.org}.
 </p>
 
 <p>
