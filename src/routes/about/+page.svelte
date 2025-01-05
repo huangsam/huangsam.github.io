@@ -15,17 +15,18 @@
 </p>
 
 <p>
-  I enjoy playing music in a band setting. I have a passion for building open-source projects that
-  empower developers in their career journeys.
+  I enjoy shooting photos for family, friends and clients. I have a passion for building open-source
+  projects that empower developers in their career journeys.
 </p>
 
 <p>
-  I recharge from the busyness by shooting photos, playing foosball with friends and catching up for
-  a good meal. When I go outdoors, I prefer hiking trails and recreational parks.
+  I recharge from the busyness by playing music, building keyboards and catching up with peers for a
+  good meal. When I go outdoors, I prefer visiting nearby hiking trails and recreational parks.
 </p>
 
 <p>
-  I occasionally travel outside of the US to experience new cultures. Here are the places I visited:
+  I occasionally travel outside of the US to appreciate new experiences. Here are the places I
+  visited:
 </p>
 
 <ul>
