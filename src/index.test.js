@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { socialProfiles, traveledPlaces, currentChurches } from '$lib/index.js';
+import { socialProfiles, traveledPlaces, currentChurches, employmentInfo } from '$lib/index.js';
 
 describe('personal site', () => {
   it('should have social profiles', () => {
@@ -14,5 +14,11 @@ describe('personal site', () => {
 
   it('should have current churches', () => {
     expect(currentChurches.length).greaterThan(0);
+  });
+
+  it('should have employment info', () => {
+    expect(employmentInfo).toHaveProperty('company');
+    expect(employmentInfo).toHaveProperty('role');
+    expect(employmentInfo).toHaveProperty('org');
   });
 });
