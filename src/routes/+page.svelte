@@ -1,5 +1,4 @@
 <script>
-  import profile from '$lib/assets/profile.jpg';
   import { socialProfiles } from '$lib/index.js';
 </script>
 
@@ -7,7 +6,7 @@
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
   <div class="profile">
-    <img class="profile" src={profile} alt="profile" />
+    <enhanced:img class="profile" src="../lib/assets/profile.jpg" alt="profile" />
   </div>
   <div class="social">
     {#each socialProfiles as { name, url }}
