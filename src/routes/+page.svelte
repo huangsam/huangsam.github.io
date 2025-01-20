@@ -22,6 +22,7 @@
   div.profile-border {
     margin: 2rem 0;
   }
+  /* https://svelte.dev/docs/svelte/compiler-warnings#css_unused_selector */
   .profile-image :global {
     border-radius: 25%;
     width: 19rem;
