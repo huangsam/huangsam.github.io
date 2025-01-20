@@ -22,14 +22,6 @@
   div.profile {
     margin: 2rem 0;
   }
-  img.profile {
-    border-radius: 25%;
-    width: 19rem;
-    height: 19rem;
-    box-shadow: 3px 3px 5px lightgrey;
-    -moz-box-shadow: 3px 3px 5px lightgrey;
-    -webkit-box-shadow: 3px 3px 5px lightgrey;
-  }
   div.social {
     display: flex;
     flex-wrap: wrap;
