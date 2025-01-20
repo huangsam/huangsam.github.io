@@ -5,8 +5,8 @@
 <div class="banner">
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
-  <div class="profile">
-    <enhanced:img class="profile" src="../lib/assets/profile.jpg" alt="profile" />
+  <div class="profile-border">
+    <enhanced:img class="profile-image" src="../lib/assets/profile.jpg" alt="profile" />
   </div>
   <div class="social">
     {#each socialProfiles as { name, url }}
@@ -19,10 +19,10 @@
   div.banner {
     text-align: center;
   }
-  div.profile {
+  div.profile-border {
     margin: 2rem 0;
   }
-  img.profile {
+  .profile-image :global {
     border-radius: 25%;
     width: 19rem;
     height: 19rem;
