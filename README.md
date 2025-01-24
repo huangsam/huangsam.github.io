@@ -37,7 +37,8 @@ high-level overview of what's changed over the years:
 
 In all of these cases, the site's HTML and CSS were written from the ground up. No
 CSS libraries and frameworks (think Tailwind and Bootstrap) were used in the
-process of building this site.
+process of building this site as it encouraged me to learn CSS styling at a
+deeper level.
 
 ## Getting started
 
