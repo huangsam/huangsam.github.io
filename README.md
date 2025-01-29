@@ -36,9 +36,9 @@ high-level overview of what's changed over the years:
 </table>
 
 In all of these cases, the site's HTML and CSS were written from the ground up. No
-CSS libraries and frameworks (think Tailwind and Bootstrap) were used in the
-process of building this site as it encouraged me to learn CSS styling at a
-deeper level.
+CSS libraries and frameworks (think Tailwind and Bootstrap) were used in the process
+of building this site. It was personally beneficial, as it encouraged me to learn
+CSS styling at a deeper level.
 
 ## Getting started
 
