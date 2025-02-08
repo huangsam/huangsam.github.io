@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint": "prettier --check . && eslint .",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "lint": "svelte-kit sync && prettier --check . && eslint .",
     "format": "prettier --write .",
     "pages": "gh-pages -d build -t"
   },
@@ -28,6 +29,7 @@
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
     "svelte": "^5.1.0",
+    "svelte-check": "^4.1.4",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.23.0",
     "vite": "^6.0.9",
