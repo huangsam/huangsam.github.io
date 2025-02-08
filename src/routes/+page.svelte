@@ -1,5 +1,5 @@
-<script>
-  import { socialProfiles } from '$lib/index.ts';
+<script lang="ts">
+  import { socialProfiles } from '$lib/index';
 </script>
 
 <div class="banner">

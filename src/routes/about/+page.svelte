@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import { traveledPlaces, currentChurches, employmentInfo } from '$lib/index.js';
+  import { traveledPlaces, currentChurches, employmentInfo } from '$lib/index';
 
-  function getPlaces(places) {
+  function getPlaces(places: string[]) {
     return places.join(', ');
   }
 </script>
