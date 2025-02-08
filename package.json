@@ -10,7 +10,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "lint": "svelte-kit sync && prettier --check . && eslint .",
     "format": "prettier --write .",
-    "pages": "gh-pages -d build -t"
+    "github": "gh-pages -d build -t"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.6",

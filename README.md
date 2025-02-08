@@ -42,32 +42,19 @@ CSS styling at a deeper level.
 
 ## Getting started
 
-Getting started is as simple as:
-
-```bash
+```shell
+# Install dependencies
 pnpm install
+
+# Run dev server on localhost:5173
 pnpm dev
-```
 
-The site is now running at <http://localhost:5173/>.
-
-## Running validations
-
-Running validations is as simple as:
-
-```bash
+# Run linters
 pnpm lint
+
+# Run tests
 pnpm test
+
+# Deploy to the gh-pages branch
+pnpm github
 ```
-
-The site is now tested with linters and tests.
-
-## Deploying site
-
-Deploying the site is as simple as:
-
-```bash
-pnpm deploy
-```
-
-The site is now deployed to the `gh-pages` branch.
