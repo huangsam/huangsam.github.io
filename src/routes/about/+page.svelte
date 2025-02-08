@@ -11,7 +11,8 @@
 
 <p>
   I graduated from UC Davis with a bachelor's degree in Computer Science and Engineering. I
-  currently work as a {employmentInfo.role} at {employmentInfo.company} under {employmentInfo.org}.
+  currently work as a {employmentInfo.role} at {employmentInfo.company}
+  under {employmentInfo.org}.
 </p>
 
 <p>

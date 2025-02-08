@@ -18,17 +18,17 @@ export default ts.config(
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.node
-      }
-    }
+        ...globals.node,
+      },
+    },
   },
   {
     files: ['**/*.svelte'],
 
     languageOptions: {
       parserOptions: {
-        parser: ts.parser
-      }
-    }
-  }
+        parser: ts.parser,
+      },
+    },
+  },
 );
