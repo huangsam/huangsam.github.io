@@ -45,8 +45,8 @@ CSS styling at a deeper level.
 Getting started is as simple as:
 
 ```bash
-yarn install
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 The site is now running at <http://localhost:5173/>.
@@ -56,8 +56,8 @@ The site is now running at <http://localhost:5173/>.
 Running validations is as simple as:
 
 ```bash
-yarn lint
-yarn test
+pnpm lint
+pnpm test
 ```
 
 The site is now tested with linters and tests.
@@ -67,7 +67,7 @@ The site is now tested with linters and tests.
 Deploying the site is as simple as:
 
 ```bash
-yarn deploy
+pnpm deploy
 ```
 
 The site is now deployed to the `gh-pages` branch.

@@ -9,7 +9,7 @@
     "test": "vitest",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
-    "deploy": "yarn build && gh-pages -d build -t"
+    "deploy": "pnpm run build && gh-pages -d build -t"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^4.0.0",
@@ -29,5 +29,5 @@
     "vitest": "^3.0.2"
   },
   "type": "module",
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92"
 }
