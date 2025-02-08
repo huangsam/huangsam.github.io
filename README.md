@@ -5,8 +5,8 @@
 
 Hosts the code for my personal site.
 
-The codebase has went through multiple phases of JavaScript, but here's a
-high-level overview of what's changed over the years:
+The codebase has went through multiple phases of JavaScript - and Typescript - but
+here's a high-level overview of what's changed over the years:
 
 <table>
   <tr>
