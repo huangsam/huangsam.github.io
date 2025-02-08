@@ -25,9 +25,11 @@ jobs:
         uses: pnpm/action-setup@v4
       - name: Install dependencies
         run: pnpm install
-      - name: Lint with prettier and eslint
+      - name: Run checkers
+        run: pnpm check
+      - name: Run linters
         run: pnpm lint
-      - name: Test with vitest
+      - name: Run tests
         run: pnpm test run
-      - name: Build with vite
+      - name: Run build
         run: pnpm build
