@@ -1,4 +1,25 @@
-export const socialProfiles = [
+interface SocialProfile {
+  name: string;
+  url: string;
+}
+
+interface TraveledPlaces {
+  states: string[];
+  countries: string[];
+}
+
+interface Church {
+  name: string;
+  url: string;
+}
+
+interface EmploymentInfo {
+  company: string;
+  role: string;
+  org: string;
+}
+
+export const socialProfiles: SocialProfile[] = [
   {
     name: 'GitHub',
     url: 'https://github.com/huangsam'
@@ -21,12 +42,12 @@ export const socialProfiles = [
   }
 ];
 
-export const traveledPlaces = {
+export const traveledPlaces: TraveledPlaces = {
   states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy']
 };
 
-export const currentChurches = [
+export const currentChurches: Church[] = [
   {
     name: 'Glorious Light Christian Church',
     url: 'https://glorious-light.net'
@@ -37,7 +58,7 @@ export const currentChurches = [
   }
 ];
 
-export const employmentInfo = {
+export const employmentInfo: EmploymentInfo = {
   company: 'Tesla',
   role: 'Software Engineer',
   org: 'Network Engineering'

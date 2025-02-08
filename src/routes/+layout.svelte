@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import './style.css';
-  let now = new Date();
+  let now: Date = new Date();
 </script>
 
 <svelte:head>
