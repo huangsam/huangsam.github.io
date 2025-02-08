@@ -19,6 +19,9 @@
   div.banner {
     text-align: center;
   }
+  div.banner h1 {
+    font-size: 2.5rem;
+  }
   div.profile-border {
     margin: 2rem 0;
   }
