@@ -42,6 +42,8 @@ CSS styling at a deeper level.
 
 ## Getting started
 
+Here are the commands you need to know:
+
 ```shell
 # Install dependencies
 pnpm install
