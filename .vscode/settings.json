@@ -1,8 +1,3 @@
 {
-  "editor.tabSize": 2,
-  "markdownlint.config": {
-    "MD033": {
-      "allowed_elements": ["table", "tr", "th", "td", "a"]
-    }
-  }
+  "editor.tabSize": 2
 }
