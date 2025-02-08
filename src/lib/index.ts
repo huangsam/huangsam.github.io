@@ -23,7 +23,7 @@ interface EmploymentInfo {
   org: string;
 }
 
-export const socialProfiles: SocialProfile[] = [
+export const SOCIAL_PROFILES: SocialProfile[] = [
   {
     name: 'GitHub',
     url: 'https://github.com/huangsam',
@@ -46,12 +46,12 @@ export const socialProfiles: SocialProfile[] = [
   },
 ];
 
-export const travelHistory: TravelHistory = {
+export const TRAVEL_HISTORY: TravelHistory = {
   states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
 
-export const currentChurches: Church[] = [
+export const CURRENT_CHURCHES: Church[] = [
   {
     name: 'Glorious Light Christian Church',
     url: 'https://glorious-light.net',
@@ -62,7 +62,7 @@ export const currentChurches: Church[] = [
   },
 ];
 
-export const employmentInfo: EmploymentInfo = {
+export const EMPLOYMENT_INFO: EmploymentInfo = {
   company: 'Tesla',
   role: 'Software Engineer',
   org: 'Network Engineering',

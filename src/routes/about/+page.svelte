@@ -1,6 +1,6 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import { travelHistory, currentChurches, employmentInfo } from '$lib/index';
+  import { TRAVEL_HISTORY, CURRENT_CHURCHES, EMPLOYMENT_INFO } from '$lib/index';
 
   function places(arr: string[]): string {
     return arr.join(', ');
@@ -11,8 +11,8 @@
 
 <p>
   I graduated from UC Davis with a bachelor's degree in Computer Science and Engineering. I
-  currently work as a {employmentInfo.role} at {employmentInfo.company}
-  under {employmentInfo.org}.
+  currently work as a {EMPLOYMENT_INFO.role} at {EMPLOYMENT_INFO.company}
+  under {EMPLOYMENT_INFO.org}.
 </p>
 
 <p>
@@ -33,18 +33,18 @@
 <ul>
   <li>
     <span>US states:</span>
-    <span>{places(travelHistory.states)}</span>
+    <span>{places(TRAVEL_HISTORY.states)}</span>
   </li>
   <li>
     <span>Countries:</span>
-    <span>{places(travelHistory.countries)}</span>
+    <span>{places(TRAVEL_HISTORY.countries)}</span>
   </li>
 </ul>
 
 <p>I currently attend these churches:</p>
 
 <ul>
-  {#each currentChurches as { url, name }}
+  {#each CURRENT_CHURCHES as { url, name }}
     <li><a href={url}>{name}</a></li>
   {/each}
 </ul>

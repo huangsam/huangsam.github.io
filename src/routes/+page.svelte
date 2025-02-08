@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { socialProfiles } from '$lib/index';
+  import { SOCIAL_PROFILES } from '$lib/index';
 </script>
 
 <div class="banner">
@@ -9,7 +9,7 @@
     <enhanced:img class="profile-image" src="../lib/assets/profile.jpg" alt="profile" />
   </div>
   <div class="social">
-    {#each socialProfiles as { name, url }}
+    {#each SOCIAL_PROFILES as { name, url }}
       <a id={name.toLowerCase()} href={url} class="social">{name}</a>
     {/each}
   </div>
