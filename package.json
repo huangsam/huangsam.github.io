@@ -12,6 +12,7 @@
     "deploy": "pnpm run build && gh-pages -d build -t"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.6",
     "@eslint/js": "^9.20.0",
     "@sveltejs/adapter-auto": "^4.0.0",
     "@sveltejs/adapter-static": "^3.0.0",
@@ -27,6 +28,7 @@
     "prettier-plugin-svelte": "^3.1.2",
     "svelte": "^5.1.0",
     "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0",
     "vite": "^6.0.9",
     "vitest": "^3.0.2"
   },
