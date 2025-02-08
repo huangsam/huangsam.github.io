@@ -1,19 +1,19 @@
-export interface SocialProfile {
+interface SocialProfile {
   name: string;
   url: string;
 }
 
-export interface TraveledPlaces {
+interface TraveledPlaces {
   states: string[];
   countries: string[];
 }
 
-export interface Church {
+interface Church {
   name: string;
   url: string;
 }
 
-export interface EmploymentInfo {
+interface EmploymentInfo {
   company: string;
   role: string;
   org: string;
