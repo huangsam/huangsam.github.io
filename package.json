@@ -12,6 +12,7 @@
     "deploy": "pnpm run build && gh-pages -d build -t"
   },
   "devDependencies": {
+    "@eslint/js": "^9.20.0",
     "@sveltejs/adapter-auto": "^4.0.0",
     "@sveltejs/adapter-static": "^3.0.0",
     "@sveltejs/enhanced-img": "^0.4.4",
