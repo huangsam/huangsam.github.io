@@ -1,18 +1,22 @@
+// Represents a social profile with a name and URL
 interface SocialProfile {
   name: string;
   url: string;
 }
 
-interface TraveledPlaces {
+// Represents places traveled, including states and countries
+interface TravelHistory {
   states: string[];
   countries: string[];
 }
 
+// Represents a church with a name and URL
 interface Church {
   name: string;
   url: string;
 }
 
+// Represents employment information including company, role, and organization
 interface EmploymentInfo {
   company: string;
   role: string;
@@ -42,7 +46,7 @@ export const socialProfiles: SocialProfile[] = [
   },
 ];
 
-export const traveledPlaces: TraveledPlaces = {
+export const travelHistory: TravelHistory = {
   states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };

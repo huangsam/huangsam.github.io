@@ -1,9 +1,9 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import { traveledPlaces, currentChurches, employmentInfo } from '$lib/index';
+  import { travelHistory, currentChurches, employmentInfo } from '$lib/index';
 
-  function getPlaces(places: string[]) {
-    return places.join(', ');
+  function places(arr: string[]): string {
+    return arr.join(', ');
   }
 </script>
 
@@ -33,11 +33,11 @@
 <ul>
   <li>
     <span>US states:</span>
-    <span>{getPlaces(traveledPlaces.states)}</span>
+    <span>{places(travelHistory.states)}</span>
   </li>
   <li>
     <span>Countries:</span>
-    <span>{getPlaces(traveledPlaces.countries)}</span>
+    <span>{places(travelHistory.countries)}</span>
   </li>
 </ul>
 
