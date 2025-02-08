@@ -21,16 +21,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Install dependencies
-        run: |
-          npm install -g yarn
-          yarn install
+        run: pnpm install
       - name: Lint with prettier and eslint
-        run: |
-          yarn lint
+        run: pnpm lint
       - name: Test with vitest
-        run: |
-          yarn test run
+        run: pnpm test run
       - name: Build with vite
-        run: |
-          yarn build
+        run: pnpm build
