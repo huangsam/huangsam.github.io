@@ -9,7 +9,7 @@
     "test": "vitest",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
-    "deploy": "pnpm run build && gh-pages -d build -t"
+    "pages": "gh-pages -d build -t"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.6",
