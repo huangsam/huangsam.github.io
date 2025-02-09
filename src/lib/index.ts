@@ -16,7 +16,7 @@ interface Church {
   url: string;
 }
 
-// Represents employment information including company, role, and organization
+// Represents employment info like company, role, and organization
 interface EmploymentInfo {
   company: string;
   role: string;
