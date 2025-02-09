@@ -17,8 +17,8 @@ describe('personal site', () => {
   });
 
   it('should have employment info', () => {
-    expect(EMPLOYMENT_INFO).toHaveProperty('company');
-    expect(EMPLOYMENT_INFO).toHaveProperty('role');
-    expect(EMPLOYMENT_INFO).toHaveProperty('org');
+    expect(EMPLOYMENT_INFO.company).not.toBe('');
+    expect(EMPLOYMENT_INFO.role).not.toBe('');
+    expect(EMPLOYMENT_INFO.org).not.toBe('');
   });
 });
