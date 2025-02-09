@@ -47,7 +47,7 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
 ];
 
 export const TRAVEL_HISTORY: TravelHistory = {
-  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago'],
+  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago', 'Utah'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
 
