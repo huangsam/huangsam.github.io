@@ -109,7 +109,7 @@
     margin-left: 1rem;
     padding: 1.25em;
     border-radius: 1em;
-    background-color: black;
+    background-color: var(--primary-bg-color);
     color: white;
   }
   a.social:first-child {
@@ -117,8 +117,8 @@
   }
   @media (hover: hover) {
     a.social:hover {
-      background-color: #f5cb53;
-      color: black;
+      background-color: var(--secondary-bg-color);
+      color: var(--primary-text-color);
     }
   }
   @media (max-width: 600px) {
@@ -134,17 +134,17 @@
   }
   section.about {
     padding: 4em;
-    background-color: black;
+    background-color: var(--primary-bg-color);
     color: white;
     line-height: 2;
   }
   section.about ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 2em;
+    margin: 0 2rem;
   }
   section.about ul li {
-    margin-top: 1em;
+    margin-top: 0.5rem;
   }
   section.about a {
     color: white;
