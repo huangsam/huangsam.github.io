@@ -8,7 +8,7 @@
   }
 </script>
 
-<div class="banner">
+<section class="banner">
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
   <div class="profile-border">
@@ -19,9 +19,9 @@
       <a id={name.toLowerCase()} href={url} class="social">{name}</a>
     {/each}
   </div>
-</div>
+</section>
 
-<div class="about">
+<section class="about">
   <h1>About Me</h1>
 
   <p>
@@ -75,13 +75,14 @@
   </p>
 
   <Quote>The days are long, but the years are short.</Quote>
-</div>
+</section>
 
 <style>
-  div.banner {
+  section.banner {
     text-align: center;
+    padding: 1em 0;
   }
-  div.banner h1 {
+  section.banner h1 {
     font-size: 2.5rem;
   }
   div.profile-border {
@@ -131,25 +132,25 @@
       margin-bottom: 1.25rem;
     }
   }
-  div.about {
+  section.about {
     padding: 4em;
     background-color: black;
     color: white;
     line-height: 2;
   }
-  div.about ul {
+  section.about ul {
     list-style-type: none;
     padding: 0;
     margin: 0 2em;
   }
-  div.about ul li {
+  section.about ul li {
     margin-top: 1em;
   }
-  div.about a {
+  section.about a {
     color: white;
   }
   @media (max-width: 600px) {
-    div.about {
+    section.about {
       padding: 2em;
     }
   }
