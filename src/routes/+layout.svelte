@@ -11,7 +11,7 @@
 <header>
   <a href="/">Sam's website</a>
   <nav class="right">
-    <a href="/about">About</a>
+    <a href="https://github.com/huangsam/huangsam.github.io">Source code</a>
   </nav>
 </header>
 
