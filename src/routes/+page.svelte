@@ -116,7 +116,8 @@
   }
   @media (hover: hover) {
     a.social:hover {
-      background-color: grey;
+      background-color: #f5cb53;
+      color: black;
     }
   }
   @media (max-width: 600px) {
