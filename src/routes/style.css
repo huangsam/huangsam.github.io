@@ -51,7 +51,6 @@ main {
 @media (pointer: coarse) {
   /* Apply coarse padding across UI */
   header,
-  main,
   footer {
     padding: 1.5em;
   }
