@@ -22,5 +22,6 @@
 <footer>
   <span>&copy;</span>
   <span>2016-{now.getFullYear()}</span>
+  <span> | </span>
   <span>Made with &hearts; by @huangsam.</span>
 </footer>
