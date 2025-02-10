@@ -80,7 +80,6 @@
 <style>
   section.banner {
     text-align: center;
-    padding: 1em 0;
   }
   section.banner h1 {
     font-size: 2.5rem;
@@ -102,7 +101,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 2em 0;
+    margin: 2em 0;
   }
   a.social {
     margin-bottom: 1rem;
@@ -133,7 +132,7 @@
     }
   }
   section.about {
-    padding: 4em;
+    padding: 1em 4em;
     background-color: var(--primary-bg-color);
     color: white;
     line-height: 2;
