@@ -139,7 +139,6 @@
     line-height: 2;
   }
   section.about ul {
-    list-style-type: none;
     padding: 0;
     margin: 0 2rem;
   }
