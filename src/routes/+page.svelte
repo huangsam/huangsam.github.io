@@ -2,10 +2,7 @@
   import Quote from '$lib/components/Quote.svelte';
   import { SOCIAL_PROFILES } from '$lib/index';
   import { TRAVEL_HISTORY, CURRENT_CHURCHES, EMPLOYMENT_INFO } from '$lib/index';
-
-  function places(arr: string[]): string {
-    return arr.join(', ');
-  }
+  import { places } from '$lib/pages/home';
 </script>
 
 <section class="banner">
