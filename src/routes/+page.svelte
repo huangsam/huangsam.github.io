@@ -79,10 +79,11 @@
 
 <style>
   section.banner {
+    padding: 1em 0;
     text-align: center;
   }
   section.banner h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   div.profile-border {
     margin: 2rem 0;
@@ -121,6 +122,9 @@
     }
   }
   @media (max-width: 600px) {
+    section.banner {
+      padding: 0.5em 0;
+    }
     div.social {
       flex-direction: column;
       margin-left: 0;
