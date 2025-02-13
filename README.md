@@ -30,7 +30,7 @@ here's a high-level overview of what's changed over the years:
   <tr>
     <td>2024</td>
     <td>Svelte, SvelteKit</td>
-    <td>Vitest</td>
+    <td>Vitest, Playwright</td>
     <td>Vite</td>
   </tr>
 </table>
@@ -54,8 +54,12 @@ pnpm dev
 # Run linters
 pnpm lint
 
-# Run tests
+# Run unit tests
 pnpm test
+
+# Run E2E tests
+pnpm prepare:e2e
+pnpm test:e2e
 
 # Deploy to the gh-pages branch
 pnpm github

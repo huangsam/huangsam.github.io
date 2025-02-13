@@ -25,8 +25,8 @@ jobs:
         uses: pnpm/action-setup@v4
       - name: Install dependencies
         run: pnpm install
-      - name: Setup UI and browsers
-        run: pnpm prepare
+      - name: Setup browsers
+        run: pnpm prepare:e2e
       - name: Run tests
         run: pnpm test:e2e
       - name: Upload test report
