@@ -1,7 +1,6 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import { SOCIAL_PROFILES } from '$lib/index';
-  import { TRAVEL_HISTORY, CURRENT_CHURCHES, EMPLOYMENT_INFO } from '$lib/index';
+  import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
 </script>
 

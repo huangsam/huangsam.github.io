@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { SOCIAL_PROFILES, TRAVEL_HISTORY, CURRENT_CHURCHES, EMPLOYMENT_INFO } from './index';
+import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
 
 describe('personal site', () => {
   it('should have social profiles', () => {
