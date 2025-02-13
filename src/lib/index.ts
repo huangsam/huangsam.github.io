@@ -1,22 +1,22 @@
-/** Represents a social profile with a name and URL */
+/** Represents a social profile with a name and URL. */
 interface SocialProfile {
   name: string;
   url: string;
 }
 
-/** Represents places traveled, including states and countries */
+/** Represents places traveled, including states and countries. */
 interface TravelHistory {
   states: string[];
   countries: string[];
 }
 
-/** Represents a church with a name and URL */
+/** Represents a church with a name and URL. */
 interface Church {
   name: string;
   url: string;
 }
 
-/** Represents employment info like company, role, and organization */
+/** Represents employment info like company, role, and organization. */
 interface EmploymentInfo {
   company: string;
   role: string;
