@@ -10,6 +10,7 @@
     "prepare:e2e": "playwright install --with-deps",
     "test": "vitest",
     "test:e2e": "NODE_OPTIONS=--no-experimental-strip-types playwright test",
+    "report:e2e": "playwright show-report",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "lint": "svelte-kit sync && prettier --check . && eslint .",
     "format": "prettier --write .",
