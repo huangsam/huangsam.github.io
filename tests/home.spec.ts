@@ -26,6 +26,9 @@ test.describe('Site', () => {
 
       await locator.hover();
 
+      // Wait 0.25s before checking color again
+      await page.waitForTimeout(250);
+
       const after = await getBackgroundColor(locator);
       expect(after).toBe('rgb(245, 203, 83)');
     }
