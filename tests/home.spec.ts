@@ -19,12 +19,14 @@ test.describe('Site', () => {
     await expect(socialLinks).toHaveCount(5);
 
     for (let i = 0; i < 5; i++) {
-      const before = await getBackgroundColor(socialLinks.nth(i));
+      const locator = socialLinks.nth(i);
+
+      const before = await getBackgroundColor(locator);
       expect(before).toBe('rgb(17, 17, 17)');
 
-      await socialLinks.nth(i).hover();
+      await locator.hover();
 
-      const after = await getBackgroundColor(socialLinks.nth(i));
+      const after = await getBackgroundColor(locator);
       expect(after).toBe('rgb(245, 203, 83)');
     }
   });
