@@ -49,9 +49,6 @@ main {
     /* Apply fine padding across UI */
     padding: 1.25em;
   }
-  main {
-    padding: 0em;
-  }
 }
 
 @media (pointer: coarse) {
