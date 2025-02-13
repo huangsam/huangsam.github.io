@@ -2,7 +2,7 @@ import { test, expect, type Locator } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
-  await page.goto('http://localhost:5173');
+  await page.goto('https://sambyte.net');
 });
 
 test.describe('Site', () => {
@@ -25,9 +25,6 @@ test.describe('Site', () => {
       expect(before).toBe('rgb(17, 17, 17)');
 
       await locator.hover();
-
-      // Wait 0.25s before checking color again
-      await page.waitForTimeout(250);
 
       const after = await getBackgroundColor(locator);
       expect(after).toBe('rgb(245, 203, 83)');
