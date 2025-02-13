@@ -30,6 +30,6 @@ test.describe('Site', () => {
   });
 });
 
-function getBackgroundColor(locator: Locator): Promise<String> {
+function getBackgroundColor(locator: Locator): Promise<string> {
   return locator.evaluate((el) => getComputedStyle(el).backgroundColor);
 }
