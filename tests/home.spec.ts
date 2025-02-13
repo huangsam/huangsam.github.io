@@ -15,10 +15,11 @@ test.describe('Site', () => {
   });
 
   test('has social links', async ({ page }) => {
+    const expectedSocialLinksCount = 5;
     const socialLinks = page.locator('a.social');
-    await expect(socialLinks).toHaveCount(5);
+    await expect(socialLinks).toHaveCount(expectedSocialLinksCount);
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < expectedSocialLinksCount; i++) {
       const locator = socialLinks.nth(i);
 
       await expect(locator).toBeVisible();
@@ -32,6 +33,7 @@ test.describe('Site', () => {
   });
 });
 
+/** Retrieves the background color of a given locator element. */
 function getBackgroundColor(locator: Locator): Promise<string> {
   return locator.evaluate((el) => getComputedStyle(el).backgroundColor);
 }
