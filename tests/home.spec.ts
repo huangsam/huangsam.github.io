@@ -21,13 +21,13 @@ test.describe('Site', () => {
     for (let i = 0; i < 5; i++) {
       const locator = socialLinks.nth(i);
 
-      const before = await getBackgroundColor(locator);
-      expect(before).toBe('rgb(17, 17, 17)');
+      await expect(locator).toBeVisible();
+      expect(await getBackgroundColor(locator)).toBe('rgb(17, 17, 17)');
 
       await locator.hover();
 
-      const after = await getBackgroundColor(locator);
-      expect(after).toBe('rgb(245, 203, 83)');
+      await expect(locator).toBeVisible();
+      expect(await getBackgroundColor(locator)).toBe('rgb(245, 203, 83)');
     }
   });
 });
