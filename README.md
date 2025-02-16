@@ -48,7 +48,7 @@ Here are the commands you need to know:
 # Install dependencies
 pnpm install
 
-# Run dev server on http://localhost:5173/
+# Run dev server on http://localhost:5173
 pnpm dev
 
 # Build and deploy to the gh-pages branch
