@@ -48,19 +48,9 @@ Here are the commands you need to know:
 # Install dependencies
 pnpm install
 
-# Run dev server on localhost:5173
+# Run dev server on http://localhost:5173/
 pnpm dev
 
-# Run linters
-pnpm lint
-
-# Run unit tests
-pnpm test
-
-# Run E2E tests
-pnpm prepare:e2e
-pnpm test:e2e
-
-# Deploy to the gh-pages branch
+# Build and deploy to the gh-pages branch
 pnpm github
 ```
