@@ -29,6 +29,11 @@ footer {
   flex-shrink: 0;
 }
 
+main {
+  /* Support sticky footer */
+  flex-grow: 1;
+}
+
 header {
   background-color: var(--primary-bg-color);
   color: white;
@@ -38,15 +43,10 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
-main {
-  /* Support sticky footer */
-  flex-grow: 1;
-}
-
 @media (pointer: fine) {
+  /* Apply fine padding across UI */
   header,
   footer {
-    /* Apply fine padding across UI */
     padding: 1.25em;
   }
 }
