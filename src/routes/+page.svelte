@@ -145,7 +145,7 @@
     margin-top: 0.5rem;
   }
   section.about a {
-    color: white;
+    color: inherit;
   }
   @media (max-width: 600px) {
     section.about {

@@ -7,6 +7,6 @@
     margin: 1em 2em;
     font-style: italic;
     font-size: 1.25rem;
-    color: white;
+    color: inherit;
   }
 </style>
