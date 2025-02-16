@@ -92,7 +92,7 @@ html {
 
 header a {
   /* Apply header link color */
-  color: white;
+  color: inherit;
   /* Apply margin between header links */
   margin-right: 1rem;
 }
