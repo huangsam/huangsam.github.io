@@ -12,27 +12,26 @@ import svelteConfig from './svelte.config.js';
 const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 
 export default ts.config(
-  includeIgnoreFile(gitignorePath),
-  js.configs.recommended,
-  ...ts.configs.recommended,
-  ...svelte.configs['flat/recommended'],
-  prettier,
-  ...svelte.configs['flat/prettier'],
+  includeIgnoreFile(gitignorePath), // skip linting for ignored files
+  js.configs.recommended, // baseline JavaScript config
+  ...ts.configs.recommended, // baseline TypeScript config
+  ...svelte.configs['flat/recommended'], // baseline Svelte config
+  prettier, // baseline Prettier config
+  ...svelte.configs['flat/prettier'], // override with Svelte config for Prettier
   {
     languageOptions: {
       globals: {
-        ...globals.browser,
-        ...globals.node,
+        ...globals.browser, // globals for browser runtime
+        ...globals.node, // globals for Node runtime
       },
     },
   },
   {
-    files: ['**/*.svelte'],
-
+    files: ['**/*.svelte'], // apply this config only to Svelte files
     languageOptions: {
       parserOptions: {
-        parser: ts.parser,
-        svelteConfig,
+        parser: ts.parser, // use TypeScript parser
+        svelteConfig, // use custom Svelte config
       },
     },
   },
