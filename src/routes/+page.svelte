@@ -132,7 +132,7 @@
     }
   }
   section.about {
-    padding: 1em 4em;
+    padding: 2em 10em;
     background-color: var(--primary-bg-color);
     color: white;
     line-height: 2;
