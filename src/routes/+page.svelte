@@ -117,7 +117,7 @@
       color: var(--primary-text-color);
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     section.banner {
       padding: 0.5em 0;
     }
@@ -147,7 +147,7 @@
   section.about a {
     color: inherit;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     section.about {
       padding: 2em;
     }
