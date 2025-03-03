@@ -11,9 +11,9 @@ here's a high-level overview of what's changed over the years:
 <table>
   <tr>
     <th>Year</th>
-    <th>Javascript</th>
-    <th>Testing</th>
-    <th>Bundler</th>
+    <th>Core</th>
+    <th>Test</th>
+    <th>Bundle</th>
   </tr>
   <tr>
     <td>2017</td>
