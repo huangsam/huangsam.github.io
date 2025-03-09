@@ -11,8 +11,8 @@
     <enhanced:img class="profile-image" src="../lib/assets/profile.jpg" alt="profile" />
   </div>
   <div class="social">
-    {#each SOCIAL_PROFILES as { name, url }}
-      <a id={name.toLowerCase()} href={url} class="social">{name}</a>
+    {#each SOCIAL_PROFILES as profile (profile.name)}
+      <a id={profile.name.toLowerCase()} href={profile.url} class="social">{profile.name}</a>
     {/each}
   </div>
 </section>
@@ -55,8 +55,8 @@
   <p>I currently attend these churches:</p>
 
   <ul>
-    {#each CURRENT_CHURCHES as { url, name }}
-      <li><a href={url}>{name}</a></li>
+    {#each CURRENT_CHURCHES as church (church.name)}
+      <li><a href={church.url}>{church.name}</a></li>
     {/each}
   </ul>
 
