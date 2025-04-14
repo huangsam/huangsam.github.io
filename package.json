@@ -23,7 +23,7 @@
     "@sveltejs/adapter-auto": "^6.0.0",
     "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/enhanced-img": "^0.4.4",
-    "@sveltejs/kit": "^2.20.5",
+    "@sveltejs/kit": "^2.20.6",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@types/eslint": "^9.6.1",
     "@types/node": "^22.14.1",
