@@ -2,13 +2,14 @@
   import Quote from '$lib/components/Quote.svelte';
   import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
+  import profileImage from '$lib/assets/profile.jpg';
 </script>
 
 <section class="banner">
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
   <div class="profile-border">
-    <img class="profile-image" src="/src/lib/assets/profile.jpg" alt="profile" />
+    <img class="profile-image" src={profileImage} alt="profile" />
   </div>
   <div class="social">
     {#each SOCIAL_PROFILES as profile (profile.name)}
