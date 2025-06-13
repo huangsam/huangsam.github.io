@@ -1,13 +1,10 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import type { Page } from '@sveltejs/kit';
-
-  $: error = ($page as Page).error;
+  import { page } from '$app/state';
 </script>
 
 <div class="error">
-  {#if error}
-    <h1>{error.message}</h1>
+  {#if page.error}
+    <h1>{page.error.message}</h1>
   {:else}
     <h1>Unknown error</h1>
   {/if}
