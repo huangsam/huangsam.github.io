@@ -84,14 +84,15 @@
   div.profile-border {
     margin: 2rem 0;
   }
-  /* https://svelte.dev/docs/svelte/compiler-warnings#css_unused_selector */
-  .profile-image :global {
+  /* Target the enhanced image directly */
+  :global(.profile-image img) {
     border-radius: 25%;
     width: 19rem;
     height: 19rem;
     box-shadow: 3px 3px 5px lightgrey;
     -moz-box-shadow: 3px 3px 5px lightgrey;
     -webkit-box-shadow: 3px 3px 5px lightgrey;
+    object-fit: cover;
   }
   div.social {
     display: flex;
@@ -129,6 +130,10 @@
     a.social {
       margin-left: 0;
       margin-bottom: 1.25rem;
+    }
+    :global(.profile-image img) {
+      width: 15rem;
+      height: 15rem;
     }
   }
   section.about {
