@@ -8,7 +8,7 @@
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
   <div class="profile-border">
-    <enhanced:img class="profile-image" src="../lib/assets/profile.jpg" alt="profile" />
+    <img class="profile-image" src="/src/lib/assets/profile.jpg" alt="profile" />
   </div>
   <div class="social">
     {#each SOCIAL_PROFILES as profile (profile.name)}
@@ -84,8 +84,7 @@
   div.profile-border {
     margin: 2rem 0;
   }
-  /* Target the enhanced image directly */
-  :global(.profile-image img) {
+  .profile-image {
     border-radius: 25%;
     width: 19rem;
     height: 19rem;
@@ -131,7 +130,7 @@
       margin-left: 0;
       margin-bottom: 1.25rem;
     }
-    :global(.profile-image img) {
+    .profile-image {
       width: 15rem;
       height: 15rem;
     }
