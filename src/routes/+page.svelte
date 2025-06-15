@@ -87,8 +87,8 @@
   }
   .profile-image {
     border-radius: 25%;
-    width: 19rem;
-    height: 19rem;
+    width: 21rem;
+    height: 21rem;
     box-shadow: 3px 3px 5px lightgrey;
     -moz-box-shadow: 3px 3px 5px lightgrey;
     -webkit-box-shadow: 3px 3px 5px lightgrey;
@@ -132,8 +132,8 @@
       margin-bottom: 1.25rem;
     }
     .profile-image {
-      width: 15rem;
-      height: 15rem;
+      width: 19rem;
+      height: 19rem;
     }
   }
   section.about {
