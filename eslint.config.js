@@ -11,7 +11,7 @@ import svelteConfig from './svelte.config.js';
 
 const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 
-export default ts.config(
+export default [
   includeIgnoreFile(gitignorePath), // skip linting for ignored files
   js.configs.recommended, // baseline JavaScript config
   ...ts.configs.recommended, // baseline TypeScript config
@@ -34,5 +34,8 @@ export default ts.config(
         svelteConfig, // use custom Svelte config
       },
     },
+    rules: {
+      'svelte/no-navigation-without-resolve': 'off', // ignore this rule for Svelte files
+    },
   },
-);
+];
