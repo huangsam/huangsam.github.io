@@ -1,5 +1,6 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
+  import GitHubStats from '$lib/components/GitHubStats.svelte';
   import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
   import profileImage from '$lib/assets/profile.jpg';
@@ -28,9 +29,16 @@
   </p>
 
   <p>
-    I enjoy shooting photos for family, friends and clients. I have a passion for building
-    open-source projects that empower developers in their career journeys.
+    I enjoy shooting photos for family, friends and clients. Feel free to reach out regarding photo
+    opportunities via my LinkedIn profile - click the links at the top to connect and chat.
   </p>
+
+  <p>
+    I have a passion for building open-source projects that empower developers in their career
+    journeys. Here are some of my GitHub stats:
+  </p>
+
+  <GitHubStats />
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for

@@ -1,4 +1,8 @@
-<blockquote>
+<script lang="ts">
+  import { fade } from 'svelte/transition';
+</script>
+
+<blockquote transition:fade={{ duration: 1000 }}>
   <slot>No content at the moment.</slot>
 </blockquote>
 
