@@ -1,12 +1,13 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import GitHubStats from '$lib/components/GitHubStats.svelte';
   import Modal from '$lib/components/Modal.svelte';
+  import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
   import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
   let showChurches = false;
+  let showRepos = false;
 </script>
 
 <section class="banner">
@@ -38,10 +39,11 @@
 
   <p>
     I have a passion for building open-source projects that empower developers in their career
-    journeys. Here are some of my GitHub stats:
+    journeys.
+    <button class="inline-btn" on:click={() => (showRepos = true)}>View my GitHub repos</button>
   </p>
 
-  <GitHubStats />
+  <GitHubReposModal open={showRepos} onClose={() => (showRepos = false)} />
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for
