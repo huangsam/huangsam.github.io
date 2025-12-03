@@ -34,7 +34,7 @@
 
   <p>
     I enjoy shooting photos for family, friends and clients. Feel free to reach out regarding photo
-    opportunities via my LinkedIn profile - click the links at the top to connect and chat.
+    opportunities via my LinkedIn profile. Click the links at the top ☝️ to connect with me.
   </p>
 
   <p>
