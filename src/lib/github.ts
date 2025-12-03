@@ -1,3 +1,4 @@
+/** Fetches the top 10 GitHub repositories for a given user, with caching for 24 hours. */
 export async function fetchRepos(username: string) {
   const cacheKey = `repos_${username}`;
   const cached = localStorage.getItem(cacheKey);
