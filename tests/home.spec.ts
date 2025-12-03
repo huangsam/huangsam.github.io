@@ -2,7 +2,7 @@ import { test, expect, type Locator } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
-  await page.goto('http://localhost:5173');
+  await page.goto('http://localhost:4173');
 });
 
 test.describe('Site', () => {
@@ -30,6 +30,62 @@ test.describe('Site', () => {
       await expect(locator).toBeVisible();
       expect(await getBackgroundColor(locator)).toBe('rgb(245, 203, 83)');
     }
+  });
+
+  test('displays quote with fade animation', async ({ page }) => {
+    const quote = page.locator('blockquote');
+    await expect(quote).toBeVisible();
+    await expect(quote).toContainText('The days are long, but the years are short.');
+  });
+
+  test('opens and closes travel modal', async ({ page }) => {
+    await expect(page.getByText('View places visited')).toBeVisible();
+    await page.getByText('View places visited').click();
+
+    const modal = page.locator('[role="dialog"]');
+    await expect(modal).toBeVisible();
+    await expect(modal).toContainText('Travel History');
+
+    // Close via close button
+    const closeButton = modal.locator('button[aria-label="Close"]');
+    await closeButton.click();
+    await expect(modal).not.toBeVisible();
+  });
+
+  test('opens and closes churches modal', async ({ page }) => {
+    await expect(page.getByText('View churches')).toBeVisible();
+    await page.getByText('View churches').click();
+
+    const modal = page.locator('[role="dialog"]');
+    await expect(modal).toBeVisible();
+    await expect(modal).toContainText('Churches');
+
+    // Close via close button
+    const closeButton = modal.locator('button[aria-label="Close"]');
+    await closeButton.click();
+    await expect(modal).not.toBeVisible();
+  });
+
+  test('opens repos modal and loads GitHub data', async ({ page }) => {
+    await expect(page.getByText('View my GitHub repos')).toBeVisible();
+    await page.getByText('View my GitHub repos').click();
+
+    const modal = page.locator('[role="dialog"]');
+    await expect(modal).toBeVisible();
+    await expect(modal).toContainText('Top GitHub Repositories');
+
+    // Check for loading state
+    await expect(page.getByText('Loading GitHub stats...')).toBeVisible();
+
+    // Wait for repos to load (assuming API call succeeds)
+    await page.waitForSelector('li', { timeout: 10000 });
+    const repos = page.locator('li');
+    expect(await repos.count()).toBeGreaterThan(0);
+
+    // Close via close button
+    const closeButton = modal.locator('button[aria-label="Close"]');
+    await closeButton.click();
+    await expect(modal).not.toBeVisible();
   });
 });
 
