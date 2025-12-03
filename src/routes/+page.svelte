@@ -3,11 +3,10 @@
   import Modal from '$lib/components/Modal.svelte';
   import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
-  import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
+  import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
-  let showChurches = false;
   let showRepos = false;
 </script>
 
@@ -48,7 +47,7 @@
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for
-    a good meal. When I go outdoors, I prefer visiting nearby hiking trails and parks.
+    a good meal. When I go outdoors, I prefer visiting hiking trails and parks.
   </p>
 
   <p>
@@ -67,19 +66,6 @@
         <span>Countries:</span>
         <span>{places(TRAVEL_HISTORY.countries)}</span>
       </li>
-    </ul>
-  </Modal>
-
-  <p>
-    I currently attend these churches.
-    <button class="inline-btn" on:click={() => (showChurches = true)}>View churches</button>
-  </p>
-
-  <Modal open={showChurches} title="Churches" onClose={() => (showChurches = false)}>
-    <ul>
-      {#each CURRENT_CHURCHES as church (church.name)}
-        <li><a href={church.url}>{church.name}</a></li>
-      {/each}
     </ul>
   </Modal>
 

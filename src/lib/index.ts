@@ -10,11 +10,6 @@ interface TravelHistory {
   countries: string[];
 }
 
-/** Represents a church with a name and URL. */
-interface Church {
-  name: string;
-  url: string;
-}
 
 /** Represents employment info like company, role, and organization. */
 interface EmploymentInfo {
@@ -59,17 +54,6 @@ export const TRAVEL_HISTORY: TravelHistory = {
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
 
-/** List of current churches attended. */
-export const CURRENT_CHURCHES: Church[] = [
-  {
-    name: 'Glorious Light Christian Church',
-    url: 'https://glorious-light.net',
-  },
-  {
-    name: 'Echo Church',
-    url: 'https://echo.church',
-  },
-];
 
 /** Current employment information. */
 export const EMPLOYMENT_INFO: EmploymentInfo = {
