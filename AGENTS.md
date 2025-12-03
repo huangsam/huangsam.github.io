@@ -5,6 +5,7 @@ This document describes the main agents, modules, and automation logic present i
 ---
 
 ## Overview
+
 This project is a SvelteKit-based personal portfolio and showcase, featuring interactive components, automated testing, and static assets for branding and presentation.
 
 ---
