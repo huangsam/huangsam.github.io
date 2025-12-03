@@ -23,6 +23,7 @@ interface EmploymentInfo {
   org: string;
 }
 
+/** Personal and professional information. */
 export const SOCIAL_PROFILES: SocialProfile[] = [
   {
     name: 'GitHub',
@@ -46,11 +47,13 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
   },
 ];
 
+/** Detailed travel history including states and countries visited. */
 export const TRAVEL_HISTORY: TravelHistory = {
   states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago', 'Utah'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
 
+/** List of current churches attended. */
 export const CURRENT_CHURCHES: Church[] = [
   {
     name: 'Glorious Light Christian Church',
@@ -62,6 +65,7 @@ export const CURRENT_CHURCHES: Church[] = [
   },
 ];
 
+/** Current employment information. */
 export const EMPLOYMENT_INFO: EmploymentInfo = {
   company: 'Tesla',
   role: 'Software Engineer',
