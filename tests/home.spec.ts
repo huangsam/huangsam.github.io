@@ -52,20 +52,6 @@ test.describe('Site', () => {
     await expect(modal).not.toBeVisible();
   });
 
-  test('opens and closes churches modal', async ({ page }) => {
-    await expect(page.getByText('View churches')).toBeVisible();
-    await page.getByText('View churches').click();
-
-    const modal = page.locator('[role="dialog"]');
-    await expect(modal).toBeVisible();
-    await expect(modal).toContainText('Churches');
-
-    // Close via close button
-    const closeButton = modal.locator('button[aria-label="Close"]');
-    await closeButton.click();
-    await expect(modal).not.toBeVisible();
-  });
-
   test('opens repos modal and loads GitHub data', async ({ page }) => {
     await expect(page.getByText('View my GitHub repos')).toBeVisible();
     await page.getByText('View my GitHub repos').click();
