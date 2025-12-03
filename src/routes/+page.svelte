@@ -34,8 +34,8 @@
   </p>
 
   <p>
-    I enjoy shooting photos for family, friends and clients. Feel free to reach out regarding photo
-    opportunities via my LinkedIn profile. Click the links at the top ☝️ to connect with me.
+    I love capturing moments through photography for family, friends, and clients. Reach out via
+    LinkedIn for opportunities—links are at the top! ☝️
   </p>
 
   <p>
@@ -48,7 +48,7 @@
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for
-    a good meal. When I go outdoors, I prefer visiting nearby hiking trails and recreational parks.
+    a good meal. When I go outdoors, I prefer visiting nearby hiking trails and parks.
   </p>
 
   <p>
@@ -83,9 +83,7 @@
     </ul>
   </Modal>
 
-  <p>
-    I am blessed with a lovely wife and two kids, who constantly remind me that:
-  </p>
+  <p>I am blessed with a lovely wife and two kids, who constantly remind me that:</p>
 
   <Quote>The days are long, but the years are short.</Quote>
 </section>

@@ -55,7 +55,7 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
 
 /** Detailed travel history including states and countries visited. */
 export const TRAVEL_HISTORY: TravelHistory = {
-  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago', 'Utah'],
+  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago', 'Utah', 'Hawaii'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
 
