@@ -1,6 +1,12 @@
 <script lang="ts">
   import './style.css';
+  import { onMount } from 'svelte';
+  import { initVimNavigation } from '$lib/utils/vimNavigation';
   let now: Date = new Date();
+
+  onMount(() => {
+    initVimNavigation();
+  });
 </script>
 
 <svelte:head>

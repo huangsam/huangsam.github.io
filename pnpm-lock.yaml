@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      hotkeys-js:
+        specifier: 4.0.0-beta.7
+        version: 4.0.0-beta.7
     devDependencies:
       '@eslint/compat':
         specifier: ^2.0.0
@@ -927,6 +931,9 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  hotkeys-js@4.0.0-beta.7:
+    resolution: {integrity: sha512-mP3wFr733DydlwbnxOjNP/U75bKxw+Bp2i2jqw+OiME2DecyE0Eqzb+spkrV4xCkw5USYIJfKznSwKqaPMG0sw==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -2241,6 +2248,8 @@ snapshots:
   graphemer@1.4.0: {}
 
   has-flag@4.0.0: {}
+
+  hotkeys-js@4.0.0-beta.7: {}
 
   ignore@5.3.2: {}
 

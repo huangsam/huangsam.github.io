@@ -114,7 +114,8 @@
   a {
     color: white;
   }
-  a:hover {
+  a:hover,
+  a:focus {
     color: lightgray;
   }
 </style>

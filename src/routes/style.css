@@ -97,6 +97,12 @@ header a {
   margin-right: 1rem;
 }
 
+header a:hover,
+header a:focus {
+  /* Change color on hover and focus */
+  color: var(--secondary-bg-color);
+}
+
 header a:last-child {
   /* Ensure last header link is flush */
   margin-right: 0;

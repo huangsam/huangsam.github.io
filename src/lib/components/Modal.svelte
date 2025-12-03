@@ -82,7 +82,17 @@
     <div bind:this={modalEl} class="modal" transition:scale={{ duration: 200, start: 0.95 }}>
       <div class="modal-header">
         <h3>{title}</h3>
-        <button class="close" aria-label="Close" on:click={onClose}>✕</button>
+        <button
+          class="close"
+          aria-label="Close"
+          on:click={onClose}
+          on:keydown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              onClose();
+            }
+          }}>✕</button
+        >
       </div>
       <div class="modal-content">
         <slot />
@@ -127,7 +137,8 @@
     font-size: 1.25rem;
     cursor: pointer;
   }
-  .close:hover {
+  .close:hover,
+  .close:focus {
     color: lightgray;
   }
   .modal-content {

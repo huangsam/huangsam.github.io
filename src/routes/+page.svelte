@@ -133,11 +133,10 @@
   a.social:first-child {
     margin-left: 0;
   }
-  @media (hover: hover) {
-    a.social:hover {
-      background-color: var(--secondary-bg-color);
-      color: var(--primary-text-color);
-    }
+  a.social:hover,
+  a.social:focus {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
   }
   @media (max-width: 768px) {
     section.banner {
