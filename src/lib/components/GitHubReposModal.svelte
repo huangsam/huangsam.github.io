@@ -1,6 +1,6 @@
 <script lang="ts">
   import Modal from './Modal.svelte';
-  import { fetchRepos } from '$lib/github';
+  import { fetchRepos } from '$lib/utils/github';
 
   export let open = false;
   export let onClose: () => void;
