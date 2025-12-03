@@ -138,8 +138,7 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
       `https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=false`,
     );
     if (!response.ok) {
-      console.error(`API error for ${countryName}: ${response.status}`);
-      return null;
+      return null; // Return null on API error
     }
     const data = await response.json();
 
@@ -150,8 +149,7 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
     localStorage.setItem(cacheKey, JSON.stringify({ data: countryData, timestamp: Date.now() }));
     return countryData;
   } catch (error) {
-    console.error(`Error fetching country info for ${countryName}:`, error);
-    return null;
+    return null; // Return null on network or other errors
   }
 }
 
