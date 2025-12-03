@@ -1,11 +1,12 @@
+import { CACHE_TTL_MS } from './constants';
+
 /** Fetches the top 10 GitHub repositories for a given user, with caching for 24 hours. */
 export async function fetchRepos(username: string) {
   const cacheKey = `repos_${username}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     const { data, timestamp } = JSON.parse(cached);
-    if (Date.now() - timestamp < 86400000) {
-      // 24 hours TTL
+    if (Date.now() - timestamp < CACHE_TTL_MS) {
       return data;
     }
   }

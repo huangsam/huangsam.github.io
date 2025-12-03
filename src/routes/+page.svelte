@@ -1,10 +1,9 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import Modal from '$lib/components/Modal.svelte';
-  import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
+  import GitHubModal from '$lib/components/GitHubModal.svelte';
+  import TravelModal from '$lib/components/TravelModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
-  import { places } from '$lib/utils/home';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
   let showRepos = false;
@@ -43,7 +42,7 @@
     <button class="inline-btn" on:click={() => (showRepos = true)}>View my GitHub repos</button>
   </p>
 
-  <GitHubReposModal open={showRepos} onClose={() => (showRepos = false)} />
+  <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for
@@ -56,18 +55,12 @@
     <button class="inline-btn" on:click={() => (showTravel = true)}>View places visited</button>
   </p>
 
-  <Modal open={showTravel} title="Travel History" onClose={() => (showTravel = false)}>
-    <ul>
-      <li>
-        <span>US states:</span>
-        <span>{places(TRAVEL_HISTORY.states)}</span>
-      </li>
-      <li>
-        <span>Countries:</span>
-        <span>{places(TRAVEL_HISTORY.countries)}</span>
-      </li>
-    </ul>
-  </Modal>
+  <TravelModal
+    open={showTravel}
+    states={TRAVEL_HISTORY.states}
+    countries={TRAVEL_HISTORY.countries}
+    onClose={() => (showTravel = false)}
+  />
 
   <p>I am blessed with a lovely wife and two kids, who constantly remind me that:</p>
 
@@ -142,13 +135,6 @@
     background-color: var(--primary-bg-color);
     color: white;
     line-height: 2;
-  }
-  section.about ul {
-    padding: 0;
-    margin: 0 2rem;
-  }
-  section.about ul li {
-    margin-top: 0.5rem;
   }
   .inline-btn {
     margin-left: 0.5rem;

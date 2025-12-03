@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { fetchRepos } from './github';
+import { CACHE_TTL_MS } from './constants';
 
 // Mock localStorage
 const localStorageMock = {
@@ -57,7 +58,10 @@ describe('fetchRepos', () => {
   });
 
   it('fetches fresh data if cache is expired', async () => {
-    const expiredCache = JSON.stringify({ data: { items: [] }, timestamp: Date.now() - 86400001 }); // Expired
+    const expiredCache = JSON.stringify({
+      data: { items: [] },
+      timestamp: Date.now() - CACHE_TTL_MS - 1,
+    }); // Expired
     localStorageMock.getItem.mockReturnValue(expiredCache);
     const mockData = { items: [{ name: 'fresh-repo' }] };
     mockFetch.mockResolvedValueOnce({
