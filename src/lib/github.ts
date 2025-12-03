@@ -8,12 +8,14 @@ export async function fetchRepos(username: string) {
       return data;
     }
   }
+
   // Fetch fresh data
   const response = await fetch(
     `https://api.github.com/search/repositories?q=user:${username}&sort=stars&order=desc&per_page=10`,
   );
   if (!response.ok) throw new Error(`API error: ${response.status}`);
   const data = await response.json();
+
   // Cache it
   localStorage.setItem(cacheKey, JSON.stringify({ data, timestamp: Date.now() }));
   return data;
