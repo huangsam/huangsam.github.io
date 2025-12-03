@@ -23,6 +23,12 @@ interface EmploymentInfo {
   org: string;
 }
 
+/** Represents a skill with name and proficiency level. */
+interface Skill {
+  name: string;
+  level: number; // 1-100
+}
+
 /** Personal and professional information. */
 export const SOCIAL_PROFILES: SocialProfile[] = [
   {
@@ -71,3 +77,12 @@ export const EMPLOYMENT_INFO: EmploymentInfo = {
   role: 'Software Engineer',
   org: 'Network Engineering',
 };
+
+/** List of technical skills with proficiency levels. */
+export const SKILLS: Skill[] = [
+  { name: 'Python', level: 95 },
+  { name: 'Go', level: 95 },
+  { name: 'Java', level: 90 },
+  { name: 'Linux', level: 95 },
+  { name: 'Cloud Computing', level: 90 },
+];

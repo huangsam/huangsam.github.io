@@ -2,6 +2,7 @@
   import Quote from '$lib/components/Quote.svelte';
   import Modal from '$lib/components/Modal.svelte';
   import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
+  import Skills from '$lib/components/Skills.svelte';
   import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
   import profileImage from '$lib/assets/profile.jpg';
@@ -94,6 +95,8 @@
 
   <Quote>The days are long, but the years are short.</Quote>
 </section>
+
+<Skills />
 
 <style>
   section.banner {
