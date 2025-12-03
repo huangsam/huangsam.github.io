@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchCountryInfo, getStateInfo, formatPopulation } from './travel';
+import { fetchCountryInfo, getStateInfo } from './travel';
 import { CACHE_TTL_MS } from './constants';
 
 // Mock localStorage
@@ -147,22 +147,5 @@ describe('getStateInfo', () => {
     const result = getStateInfo('NonExistentState');
 
     expect(result).toBeNull();
-  });
-});
-
-describe('formatPopulation', () => {
-  it('formats large populations in millions', () => {
-    expect(formatPopulation(125000000)).toBe('125.0M');
-    expect(formatPopulation(23456789)).toBe('23.5M');
-  });
-
-  it('formats medium populations in thousands', () => {
-    expect(formatPopulation(576000)).toBe('576K');
-    expect(formatPopulation(1500)).toBe('2K');
-  });
-
-  it('formats small populations as-is', () => {
-    expect(formatPopulation(500)).toBe('500');
-    expect(formatPopulation(100)).toBe('100');
   });
 });

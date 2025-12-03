@@ -1,6 +1,6 @@
 <script lang="ts">
   import Modal from './Modal.svelte';
-  import { fetchCountryInfo, getStateInfo, formatPopulation } from '$lib/utils/travel';
+  import { fetchCountryInfo, getStateInfo } from '$lib/utils/travel';
 
   export let open = false;
   export let onClose: () => void;
@@ -20,7 +20,6 @@
   interface CountryPlaceInfo {
     name: string;
     capital: string;
-    population: number;
     region: string;
     flag: string;
     mapLink: string;
@@ -68,7 +67,6 @@
       return {
         name: info.name.common,
         capital: info.capital?.[0] || 'N/A',
-        population: info.population,
         region: info.subregion || info.region,
         flag: info.flags?.svg || info.flags?.png || '',
         mapLink: info.maps?.googleMaps || '',
@@ -141,10 +139,6 @@
               <div class="info-row">
                 <span class="label">Region:</span>
                 <span>{place.region}</span>
-              </div>
-              <div class="info-row">
-                <span class="label">Population:</span>
-                <span>{formatPopulation(place.population)}</span>
               </div>
               <div class="info-row">
                 <span class="label">Currencies:</span>

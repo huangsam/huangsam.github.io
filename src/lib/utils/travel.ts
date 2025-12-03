@@ -157,13 +157,3 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
 export function getStateInfo(stateName: string): StateData | null {
   return US_STATES_DATA[stateName] || null;
 }
-
-/** Helper to format population numbers */
-export function formatPopulation(pop: number): string {
-  if (pop >= 1000000) {
-    return `${(pop / 1000000).toFixed(1)}M`;
-  } else if (pop >= 1000) {
-    return `${(pop / 1000).toFixed(0)}K`;
-  }
-  return pop.toString();
-}
