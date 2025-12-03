@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchRepos, CACHE_TTL_MS } from './github';
+import { fetchRepos } from './github';
+import { CACHE_TTL_MS } from './constants';
 
 // Mock localStorage
 const localStorageMock = {

@@ -1,5 +1,4 @@
-/** Cache TTL (Time To Live) in milliseconds: 24 hours */
-export const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+import { CACHE_TTL_MS } from './constants';
 
 /** Fetches the top 10 GitHub repositories for a given user, with caching for 24 hours. */
 export async function fetchRepos(username: string) {

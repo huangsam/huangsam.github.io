@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchCountryInfo, getStateInfo, formatPopulation, CACHE_TTL_MS } from './travel';
+import { fetchCountryInfo, getStateInfo, formatPopulation } from './travel';
+import { CACHE_TTL_MS } from './constants';
 
 // Mock localStorage
 const localStorageMock = {
