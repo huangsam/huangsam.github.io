@@ -1,6 +1,6 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
+  import GitHubModal from '$lib/components/GitHubModal.svelte';
   import TravelModal from '$lib/components/TravelModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
@@ -42,7 +42,7 @@
     <button class="inline-btn" on:click={() => (showRepos = true)}>View my GitHub repos</button>
   </p>
 
-  <GitHubReposModal open={showRepos} onClose={() => (showRepos = false)} />
+  <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
 
   <p>
     I recharge from the busyness by playing music, building keyboards and catching up with peers for
