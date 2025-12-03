@@ -1,9 +1,12 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
   import GitHubStats from '$lib/components/GitHubStats.svelte';
+  import Modal from '$lib/components/Modal.svelte';
   import { CURRENT_CHURCHES, EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import { places } from '$lib/pages/home';
   import profileImage from '$lib/assets/profile.jpg';
+  let showTravel = false;
+  let showChurches = false;
 </script>
 
 <section class="banner">
@@ -46,28 +49,35 @@
   </p>
 
   <p>
-    I occasionally travel outside of the US to appreciate new experiences. Here are the places I
-    visited:
+    I occasionally travel outside of the US to appreciate new experiences.
+    <button class="inline-btn" on:click={() => (showTravel = true)}>View places visited</button>
   </p>
 
-  <ul>
-    <li>
-      <span>US states:</span>
-      <span>{places(TRAVEL_HISTORY.states)}</span>
-    </li>
-    <li>
-      <span>Countries:</span>
-      <span>{places(TRAVEL_HISTORY.countries)}</span>
-    </li>
-  </ul>
+  <Modal open={showTravel} title="Travel History" onClose={() => (showTravel = false)}>
+    <ul>
+      <li>
+        <span>US states:</span>
+        <span>{places(TRAVEL_HISTORY.states)}</span>
+      </li>
+      <li>
+        <span>Countries:</span>
+        <span>{places(TRAVEL_HISTORY.countries)}</span>
+      </li>
+    </ul>
+  </Modal>
 
-  <p>I currently attend these churches:</p>
+  <p>
+    I currently attend these churches.
+    <button class="inline-btn" on:click={() => (showChurches = true)}>View churches</button>
+  </p>
 
-  <ul>
-    {#each CURRENT_CHURCHES as church (church.name)}
-      <li><a href={church.url}>{church.name}</a></li>
-    {/each}
-  </ul>
+  <Modal open={showChurches} title="Churches" onClose={() => (showChurches = false)}>
+    <ul>
+      {#each CURRENT_CHURCHES as church (church.name)}
+        <li><a href={church.url}>{church.name}</a></li>
+      {/each}
+    </ul>
+  </Modal>
 
   <p>
     My parents are an important part of my life. They shaped me into who I am today, and I am proud
@@ -159,6 +169,18 @@
   }
   section.about a {
     color: inherit;
+  }
+  .inline-btn {
+    margin-left: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .inline-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
   @media (max-width: 768px) {
     section.about {
