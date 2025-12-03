@@ -39,7 +39,7 @@
 
   <p>
     I have a passion for building open-source projects that empower developers in their career
-    journeys.
+    journeys. Contributions are always welcome!
     <button class="inline-btn" on:click={() => (showRepos = true)}>View my GitHub repos</button>
   </p>
 
@@ -51,7 +51,8 @@
   </p>
 
   <p>
-    I occasionally travel outside of the US to appreciate new experiences.
+    I occasionally travel outside of the US to appreciate new experiences. These places have left a
+    lasting impression on me.
     <button class="inline-btn" on:click={() => (showTravel = true)}>View places visited</button>
   </p>
 
