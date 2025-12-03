@@ -4,7 +4,7 @@
   import GitHubReposModal from '$lib/components/GitHubReposModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
-  import { places } from '$lib/pages/home';
+  import { places } from '$lib/utils/home';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
   let showRepos = false;
