@@ -148,7 +148,7 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
     // Cache it
     localStorage.setItem(cacheKey, JSON.stringify({ data: countryData, timestamp: Date.now() }));
     return countryData;
-  } catch (error) {
+  } catch {
     return null; // Return null on network or other errors
   }
 }
