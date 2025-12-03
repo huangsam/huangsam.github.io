@@ -1,8 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchCountryInfo, getStateInfo, formatPopulation } from './travel';
-
-// Cache TTL for testing (24 hours in milliseconds)
-const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+import { fetchCountryInfo, getStateInfo, formatPopulation, CACHE_TTL_MS } from './travel';
 
 // Mock localStorage
 const localStorageMock = {

@@ -1,8 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchRepos } from './github';
-
-// Cache TTL for testing (24 hours in milliseconds)
-const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+import { fetchRepos, CACHE_TTL_MS } from './github';
 
 // Mock localStorage
 const localStorageMock = {

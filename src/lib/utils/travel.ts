@@ -110,7 +110,7 @@ const US_STATES_DATA: Record<string, StateData> = {
 };
 
 /** Cache TTL (Time To Live) in milliseconds: 24 hours */
-const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+export const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 
 /** Fetches country information from REST Countries API with 24-hour caching */
 export async function fetchCountryInfo(countryName: string): Promise<CountryData | null> {
