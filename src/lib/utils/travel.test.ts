@@ -1,6 +1,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { fetchCountryInfo, getStateInfo, formatPopulation } from './travel';
 
+// Cache TTL for testing (24 hours in milliseconds)
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+
 // Mock localStorage
 const localStorageMock = {
   getItem: vi.fn(),
@@ -77,7 +80,7 @@ describe('fetchCountryInfo', () => {
   it('fetches fresh data if cache is expired', async () => {
     const expiredCache = JSON.stringify({
       data: { name: { common: 'Old' } },
-      timestamp: Date.now() - 86400001,
+      timestamp: Date.now() - CACHE_TTL_MS - 1,
     }); // Expired
     localStorageMock.getItem.mockReturnValue(expiredCache);
     const mockData = [

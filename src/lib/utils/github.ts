@@ -1,11 +1,13 @@
+/** Cache TTL (Time To Live) in milliseconds: 24 hours */
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+
 /** Fetches the top 10 GitHub repositories for a given user, with caching for 24 hours. */
 export async function fetchRepos(username: string) {
   const cacheKey = `repos_${username}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     const { data, timestamp } = JSON.parse(cached);
-    if (Date.now() - timestamp < 86400000) {
-      // 24 hours TTL
+    if (Date.now() - timestamp < CACHE_TTL_MS) {
       return data;
     }
   }
