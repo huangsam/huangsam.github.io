@@ -84,13 +84,7 @@
   </Modal>
 
   <p>
-    My parents are an important part of my life. They shaped me into who I am today, and I am proud
-    to be their son.
-  </p>
-
-  <p>
-    I am blessed with a lovely wife who enjoys planting flowers, making crafts and eating pastries.
-    I am the father of two kids, and they constantly remind me that:
+    I am blessed with a lovely wife and two kids, who constantly remind me that:
   </p>
 
   <Quote>The days are long, but the years are short.</Quote>
