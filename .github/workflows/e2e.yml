@@ -25,6 +25,8 @@ jobs:
         uses: pnpm/action-setup@v4
       - name: Install dependencies
         run: pnpm install
+      - name: Build site
+        run: pnpm build
       - name: Setup browsers
         run: pnpm prepare:e2e chromium
       - name: Run tests
