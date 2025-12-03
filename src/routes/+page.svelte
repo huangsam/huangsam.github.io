@@ -150,9 +150,6 @@
   section.about ul li {
     margin-top: 0.5rem;
   }
-  section.about a {
-    color: inherit;
-  }
   .inline-btn {
     margin-left: 0.5rem;
     padding: 0.35rem 0.75rem;
