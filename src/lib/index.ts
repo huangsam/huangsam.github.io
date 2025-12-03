@@ -10,7 +10,6 @@ interface TravelHistory {
   countries: string[];
 }
 
-
 /** Represents employment info like company, role, and organization. */
 interface EmploymentInfo {
   company: string;
@@ -53,7 +52,6 @@ export const TRAVEL_HISTORY: TravelHistory = {
   states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Chicago', 'Utah', 'Hawaii'],
   countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
 };
-
 
 /** Current employment information. */
 export const EMPLOYMENT_INFO: EmploymentInfo = {
