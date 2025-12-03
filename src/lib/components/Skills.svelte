@@ -1,10 +1,5 @@
 <script lang="ts">
   import { SKILLS } from '$lib/index';
-
-  interface Skill {
-    name: string;
-    level: number;
-  }
 </script>
 
 <section class="skills">
