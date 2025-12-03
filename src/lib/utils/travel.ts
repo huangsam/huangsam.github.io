@@ -31,6 +31,7 @@ interface StateData {
   region: string;
   wikipedia: string;
   touristInfo: string;
+  yearFounded: number;
 }
 
 /** Mapping of US states to their data */
@@ -43,6 +44,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Pacific Northwest',
     wikipedia: 'https://en.wikipedia.org/wiki/Oregon',
     touristInfo: 'https://traveloregon.com/',
+    yearFounded: 1859,
   },
   Washington: {
     name: 'Washington',
@@ -52,6 +54,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Pacific Northwest',
     wikipedia: 'https://en.wikipedia.org/wiki/Washington_(state)',
     touristInfo: 'https://www.visitseattle.org/',
+    yearFounded: 1889,
   },
   Nevada: {
     name: 'Nevada',
@@ -61,6 +64,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Western United States',
     wikipedia: 'https://en.wikipedia.org/wiki/Nevada',
     touristInfo: 'https://travelnevada.com/',
+    yearFounded: 1864,
   },
   Wyoming: {
     name: 'Wyoming',
@@ -70,6 +74,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Mountain West',
     wikipedia: 'https://en.wikipedia.org/wiki/Wyoming',
     touristInfo: 'https://www.wyomingtourism.org/',
+    yearFounded: 1890,
   },
   Ohio: {
     name: 'Ohio',
@@ -79,8 +84,9 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Midwest',
     wikipedia: 'https://en.wikipedia.org/wiki/Ohio',
     touristInfo: 'https://www.ohio.org/',
+    yearFounded: 1803,
   },
-  Chicago: {
+  Illinois: {
     name: 'Illinois',
     capital: 'Springfield',
     nickname: 'Land of Lincoln',
@@ -88,6 +94,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Midwest',
     wikipedia: 'https://en.wikipedia.org/wiki/Illinois',
     touristInfo: 'https://www.enjoyillinois.com/',
+    yearFounded: 1818,
   },
   Utah: {
     name: 'Utah',
@@ -97,6 +104,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Mountain West',
     wikipedia: 'https://en.wikipedia.org/wiki/Utah',
     touristInfo: 'https://www.visitutah.com/',
+    yearFounded: 1896,
   },
   Hawaii: {
     name: 'Hawaii',
@@ -106,6 +114,7 @@ const US_STATES_DATA: Record<string, StateData> = {
     region: 'Pacific',
     wikipedia: 'https://en.wikipedia.org/wiki/Hawaii',
     touristInfo: 'https://www.gohawaii.com/',
+    yearFounded: 1959,
   },
 };
 

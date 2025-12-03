@@ -7,20 +7,30 @@
   export let states: string[] = [];
   export let countries: string[] = [];
 
-  interface PlaceInfo {
+  interface StatePlaceInfo {
     name: string;
-    capital?: string;
-    population?: number;
-    region?: string;
-    nickname?: string;
-    flag?: string;
-    mapLink?: string;
-    wikiLink?: string;
-    touristLink?: string;
+    capital: string;
+    region: string;
+    nickname: string;
+    wikiLink: string;
+    touristLink: string;
+    yearFounded: number;
   }
 
-  let stateInfos: PlaceInfo[] = [];
-  let countryInfos: PlaceInfo[] = [];
+  interface CountryPlaceInfo {
+    name: string;
+    capital: string;
+    population: number;
+    region: string;
+    flag: string;
+    mapLink: string;
+    wikiLink: string;
+    currencies: string;
+    languages: string;
+  }
+
+  let stateInfos: StatePlaceInfo[] = [];
+  let countryInfos: CountryPlaceInfo[] = [];
   let loading = true;
 
   async function loadPlaceData() {
@@ -34,32 +44,42 @@
         return {
           name: info.name,
           capital: info.capital,
-          population: info.population,
           region: info.region,
           nickname: info.nickname,
           wikiLink: info.wikipedia,
           touristLink: info.touristInfo,
+          yearFounded: info.yearFounded,
         };
       })
-      .filter((info): info is PlaceInfo => info !== null);
+      .filter((info): info is StatePlaceInfo => info !== null);
 
     // Load country information
     const countryPromises = countries.map(async (countryName) => {
       const info = await fetchCountryInfo(countryName);
       if (!info) return null;
+      // Extract currencies as comma-separated string
+      const currencies = info.currencies
+        ? Object.values(info.currencies)
+            .map((c) => `${c.name} (${c.symbol})`)
+            .join(', ')
+        : 'N/A';
+      // Extract languages as comma-separated string
+      const languages = info.languages ? Object.values(info.languages).join(', ') : 'N/A';
       return {
         name: info.name.common,
         capital: info.capital?.[0] || 'N/A',
         population: info.population,
         region: info.subregion || info.region,
-        flag: info.flags.svg || info.flags.png,
-        mapLink: info.maps.googleMaps,
+        flag: info.flags?.svg || info.flags?.png || '',
+        mapLink: info.maps?.googleMaps || '',
         wikiLink: `https://en.wikipedia.org/wiki/${encodeURIComponent(info.name.common)}`,
+        currencies,
+        languages,
       };
     });
 
     countryInfos = (await Promise.all(countryPromises)).filter(
-      (info): info is PlaceInfo => info !== null,
+      (info): info is CountryPlaceInfo => info !== null,
     );
 
     loading = false;
@@ -79,37 +99,25 @@
           <div class="place-card">
             <div class="place-header">
               <strong>{place.name}</strong>
-              {#if place.nickname}
-                <span class="nickname">{place.nickname}</span>
-              {/if}
+              <span class="nickname">{place.nickname}</span>
             </div>
             <div class="place-info">
-              {#if place.capital}
-                <div class="info-row">
-                  <span class="label">Capital:</span>
-                  <span>{place.capital}</span>
-                </div>
-              {/if}
-              {#if place.region}
-                <div class="info-row">
-                  <span class="label">Region:</span>
-                  <span>{place.region}</span>
-                </div>
-              {/if}
-              {#if place.population}
-                <div class="info-row">
-                  <span class="label">Population:</span>
-                  <span>{formatPopulation(place.population)}</span>
-                </div>
-              {/if}
+              <div class="info-row">
+                <span class="label">Capital:</span>
+                <span>{place.capital}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Region:</span>
+                <span>{place.region}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Year Founded:</span>
+                <span>{place.yearFounded}</span>
+              </div>
             </div>
             <div class="place-links">
-              {#if place.wikiLink}
-                <a href={place.wikiLink} target="_blank" rel="noopener">Wikipedia</a>
-              {/if}
-              {#if place.touristLink}
-                <a href={place.touristLink} target="_blank" rel="noopener">Tourist Info</a>
-              {/if}
+              <a href={place.wikiLink} target="_blank" rel="noopener">Wikipedia</a>
+              <a href={place.touristLink} target="_blank" rel="noopener">Tourist Info</a>
             </div>
           </div>
         {/each}
@@ -122,38 +130,34 @@
         {#each countryInfos as place (place.name)}
           <div class="place-card">
             <div class="place-header">
-              {#if place.flag}
-                <img src={place.flag} alt={`${place.name} flag`} class="flag" />
-              {/if}
+              <img src={place.flag} alt={`${place.name} flag`} class="flag" />
               <strong>{place.name}</strong>
             </div>
             <div class="place-info">
-              {#if place.capital}
-                <div class="info-row">
-                  <span class="label">Capital:</span>
-                  <span>{place.capital}</span>
-                </div>
-              {/if}
-              {#if place.region}
-                <div class="info-row">
-                  <span class="label">Region:</span>
-                  <span>{place.region}</span>
-                </div>
-              {/if}
-              {#if place.population}
-                <div class="info-row">
-                  <span class="label">Population:</span>
-                  <span>{formatPopulation(place.population)}</span>
-                </div>
-              {/if}
+              <div class="info-row">
+                <span class="label">Capital:</span>
+                <span>{place.capital}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Region:</span>
+                <span>{place.region}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Population:</span>
+                <span>{formatPopulation(place.population)}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Currencies:</span>
+                <span>{place.currencies}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Languages:</span>
+                <span>{place.languages}</span>
+              </div>
             </div>
             <div class="place-links">
-              {#if place.mapLink}
-                <a href={place.mapLink} target="_blank" rel="noopener">Map</a>
-              {/if}
-              {#if place.wikiLink}
-                <a href={place.wikiLink} target="_blank" rel="noopener">Wikipedia</a>
-              {/if}
+              <a href={place.wikiLink} target="_blank" rel="noopener">Wikipedia</a>
+              <a href={place.mapLink} target="_blank" rel="noopener">Map</a>
             </div>
           </div>
         {/each}
@@ -234,9 +238,20 @@
 
   .info-row {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.25rem;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
+  }
+  .info-row .label {
+    text-align: left;
+    min-width: 110px;
+    padding-right: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .info-row span:not(.label) {
+    text-align: left;
   }
 
   .label {
