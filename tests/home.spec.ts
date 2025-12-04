@@ -40,7 +40,7 @@ test.describe('Site', () => {
   });
 
   test('opens and closes travel modal', async ({ page }) => {
-    const travelLink = page.locator('button.link-button').filter({ hasText: /These places/ });
+    const travelLink = page.locator('button').filter({ hasText: /These places/ });
     await expect(travelLink).toBeVisible();
     await travelLink.click();
 
@@ -55,9 +55,7 @@ test.describe('Site', () => {
   });
 
   test('opens repos modal and loads GitHub data', async ({ page }) => {
-    const githubLink = page
-      .locator('button.link-button')
-      .filter({ hasText: /open-source projects/ });
+    const githubLink = page.locator('button').filter({ hasText: /open-source projects/ });
     await expect(githubLink).toBeVisible();
     await githubLink.click();
 
@@ -80,8 +78,8 @@ test.describe('Site', () => {
   });
 
   test('family modal opens and closes', async ({ page }) => {
-    // Find and click the family button - look for the link-button containing "wife"
-    const familyLink = page.locator('button.link-button').filter({ hasText: /wife/ });
+    // Find and click the family button - look for the button containing "wife"
+    const familyLink = page.locator('button').filter({ hasText: /wife/ });
     await expect(familyLink).toBeVisible();
     await familyLink.click();
 
