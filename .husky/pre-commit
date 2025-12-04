@@ -1,2 +1,5 @@
+#!/bin/bash
+
+# Run linting and tests before committing
 pnpm lint
 pnpm test run
