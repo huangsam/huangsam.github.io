@@ -71,41 +71,6 @@
 <Skills />
 
 <style>
-  .wiggle-finger {
-    display: inline-block; /* Make button behave like inline element */
-    cursor: pointer; /* Show pointer on hover */
-    transition: transform 0.2s; /* Smooth transform transitions */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    font: inherit; /* Inherit font from parent */
-    color: inherit; /* Inherit color from parent */
-    outline: none; /* Remove default outline */
-  }
-  .wiggle-finger:hover,
-  .wiggle-finger:focus {
-    animation: wiggle 0.7s;
-  }
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-20deg);
-    }
-    40% {
-      transform: rotate(20deg);
-    }
-    60% {
-      transform: rotate(-10deg);
-    }
-    80% {
-      transform: rotate(10deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
   section.banner {
     padding: 1em 0;
     text-align: center;
