@@ -25,7 +25,9 @@
     background-color: var(--primary-bg-color);
     color: white;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s;
+    transition:
+      background 0.2s,
+      color 0.2s;
   }
   .social-link:first-child {
     margin-left: 0;
