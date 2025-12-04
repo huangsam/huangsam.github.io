@@ -16,7 +16,7 @@ test.describe('Site', () => {
 
   test('has social links', async ({ page }) => {
     const expectedSocialLinksCount = 5;
-    const socialLinks = page.locator('a.social');
+    const socialLinks = page.locator('a.social-link');
     await expect(socialLinks).toHaveCount(expectedSocialLinksCount);
 
     for (let i = 0; i < expectedSocialLinksCount; i++) {
@@ -26,6 +26,7 @@ test.describe('Site', () => {
       expect(await getBackgroundColor(locator)).toBe('rgb(17, 17, 17)');
 
       await locator.hover();
+      await page.waitForTimeout(300); // Wait for transition to complete (0.2s + buffer)
 
       await expect(locator).toBeVisible();
       expect(await getBackgroundColor(locator)).toBe('rgb(245, 203, 83)');

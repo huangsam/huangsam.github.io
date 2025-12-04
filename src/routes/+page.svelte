@@ -4,6 +4,7 @@
   import TravelModal from '$lib/components/TravelModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import FingerToTop from '$lib/components/FingerToTop.svelte';
+  import SocialLinks from '$lib/components/SocialLinks.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
@@ -16,11 +17,7 @@
   <div class="profile-border">
     <img class="profile-image" src={profileImage} alt="profile" />
   </div>
-  <div class="social">
-    {#each SOCIAL_PROFILES as profile (profile.name)}
-      <a id={profile.name.toLowerCase()} href={profile.url} class="social">{profile.name}</a>
-    {/each}
-  </div>
+  <SocialLinks profiles={SOCIAL_PROFILES} />
 </section>
 
 <section class="about">
@@ -90,41 +87,9 @@
     -webkit-box-shadow: 3px 3px 5px lightgrey;
     object-fit: cover;
   }
-  div.social {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 2em 0;
-  }
-  a.social {
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 1.25em;
-    border-radius: 1em;
-    background-color: var(--primary-bg-color);
-    color: white;
-  }
-  a.social:first-child {
-    margin-left: 0;
-  }
-  a.social:hover,
-  a.social:focus {
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
-  }
   @media (max-width: 768px) {
     section.banner {
       padding: 0.5em 0;
-    }
-    div.social {
-      flex-direction: column;
-      margin-left: 0;
-      padding: 1em 2em;
-    }
-    a.social {
-      margin-left: 0;
-      margin-bottom: 1.25rem;
     }
     .profile-image {
       width: 19rem;
