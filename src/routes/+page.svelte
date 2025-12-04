@@ -3,6 +3,7 @@
   import GitHubModal from '$lib/components/GitHubModal.svelte';
   import TravelModal from '$lib/components/TravelModal.svelte';
   import FamilyModal from '$lib/components/FamilyModal.svelte';
+  import LinkButton from '$lib/components/LinkButton.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
@@ -38,7 +39,7 @@
 
   <p>
     I have a passion for building
-    <button class="link-button" on:click={() => (showRepos = true)}>open-source projects</button>
+    <LinkButton on:click={() => (showRepos = true)}>open-source projects</LinkButton>
     that empower developers in their career journeys. I enjoy contributing to projects that solve real
     problems.
   </p>
@@ -48,7 +49,7 @@
   <p>
     I recharge by playing music, building keyboards, and catching up with peers over a meal. I also
     travel outside the US to appreciate new experiences.
-    <button class="link-button" on:click={() => (showTravel = true)}>These places</button>
+    <LinkButton on:click={() => (showTravel = true)}>These places</LinkButton>
     have left a lasting impression on me.
   </p>
 
@@ -60,8 +61,8 @@
   />
 
   <p>
-    I am blessed with a <button class="link-button" on:click={() => (showFamily = true)}
-      >lovely wife and two kids</button
+    I am blessed with a <LinkButton on:click={() => (showFamily = true)}
+      >lovely wife and two kids</LinkButton
     >, who constantly remind me that:
   </p>
 
@@ -95,18 +96,5 @@
     section.about {
       padding: 2em;
     }
-  }
-  .link-button {
-    background: none;
-    border: none;
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-    padding: 0;
-  }
-  .link-button:hover {
-    opacity: 0.8;
   }
 </style>
