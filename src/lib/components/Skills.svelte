@@ -3,34 +3,18 @@
   import { SKILLS } from '$lib/index';
 </script>
 
-<!-- Skills section with themed background and centered title -->
 <section class="skills">
   <h2>Skills</h2>
 
-  <!--
-    Responsive grid layout for skill items
-    Uses CSS Grid with auto-fit columns that adapt to screen size
-  -->
   <div class="skills-grid">
-    <!--
-      Iterate through SKILLS array, using skill.name as unique key
-      Each skill displays name, progress bar, and percentage
-    -->
     {#each SKILLS as skill (skill.name)}
       <div class="skill">
-        <!-- Skill name displayed prominently -->
         <div class="skill-name">{skill.name}</div>
 
-        <!-- Progress bar container -->
         <div class="skill-bar">
-          <!--
-            Animated fill bar - width controlled by skill.level percentage
-            Includes shimmer effect on hover
-          -->
           <div class="skill-fill" style="width: {skill.level}%"></div>
         </div>
 
-        <!-- Skill proficiency percentage -->
         <div class="skill-level">{skill.level}%</div>
       </div>
     {/each}
