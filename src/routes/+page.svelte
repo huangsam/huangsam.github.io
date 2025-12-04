@@ -32,8 +32,8 @@
   </p>
 
   <p>
-    I love capturing moments through photography—events, family gatherings, and travel adventures.
-    If you're interested in photography opportunities, reach out via LinkedIn!
+    I love capturing moments through photography—corporate events, family gatherings, and travel
+    adventures. If you're interested in photo opportunities, reach out via LinkedIn!
     <FingerToTop ariaLabel="Go to top" />
   </p>
 
