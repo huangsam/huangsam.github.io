@@ -3,6 +3,7 @@
   import GitHubModal from '$lib/components/GitHubModal.svelte';
   import TravelModal from '$lib/components/TravelModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
+  import FingerToTop from '$lib/components/FingerToTop.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
@@ -33,14 +34,7 @@
 
   <p>
     I love capturing moments through photography for family, friends, and clients. Reach out via
-    LinkedIn for opportunities—links are at the top! <button
-      class="wiggle-finger"
-      aria-label="Go to top"
-      on:click={(e) => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        e.currentTarget.blur();
-      }}>☝️</button
-    >
+    LinkedIn for opportunities—links are at the top! <FingerToTop ariaLabel="Go to top" />
   </p>
 
   <p>
