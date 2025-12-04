@@ -6,6 +6,7 @@
   import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
   import ProfileImage from '$lib/components/ProfileImage.svelte';
+  import InlineButton from '$lib/components/InlineButton.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   let showTravel = false;
   let showRepos = false;
@@ -35,7 +36,7 @@
   <p>
     I have a passion for building open-source projects that empower developers in their career
     journeys. Contributions are always welcome!
-    <button class="inline-btn" on:click={() => (showRepos = true)}>View my GitHub repos</button>
+    <InlineButton bind:active={showRepos} label="View my GitHub repos" />
   </p>
 
   <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
@@ -48,7 +49,7 @@
   <p>
     I occasionally travel outside of the US to appreciate new experiences. These places have left a
     lasting impression on me.
-    <button class="inline-btn" on:click={() => (showTravel = true)}>View places visited</button>
+    <InlineButton bind:active={showTravel} label="View places visited" />
   </p>
 
   <TravelModal
@@ -83,18 +84,6 @@
     background-color: var(--primary-bg-color);
     color: white;
     line-height: 2;
-  }
-  .inline-btn {
-    margin-left: 0.5rem;
-    padding: 0.35rem 0.75rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    background: transparent;
-    color: white;
-    cursor: pointer;
-  }
-  .inline-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
   }
   @media (max-width: 768px) {
     section.about {
