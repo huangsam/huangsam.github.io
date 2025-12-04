@@ -97,7 +97,7 @@
   <!-- Display loading message while fetching data -->
   {#if loading}
     <p class="loading">Loading travel information...</p>
-  <!-- Display travel information once loaded -->
+    <!-- Display travel information once loaded -->
   {:else}
     <!-- Show US states section if any states are provided -->
     {#if stateInfos.length > 0}

@@ -45,10 +45,10 @@
   <!-- Display loading message while fetching data -->
   {#if loading}
     <p>Loading GitHub stats...</p>
-  <!-- Display error message if fetch fails -->
+    <!-- Display error message if fetch fails -->
   {:else if error}
     <p>Error: {error}</p>
-  <!-- Display list of repositories -->
+    <!-- Display list of repositories -->
   {:else}
     <ul>
       {#each repos as repo (repo.name)}
