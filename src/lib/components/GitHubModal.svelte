@@ -1,3 +1,7 @@
+<!--
+  GitHubModal component: Displays a modal with the top GitHub repositories for a user.
+  Fetches repository data from GitHub API and shows details like stars, language, and topics.
+-->
 <script lang="ts">
   import Modal from './Modal.svelte';
   import { fetchRepos } from '$lib/utils/github';
@@ -5,6 +9,7 @@
   export let open = false;
   export let onClose: () => void;
 
+  // Interface for GitHub repository data fetched from the API
   interface Repo {
     name: string;
     stargazers_count: number;
@@ -32,14 +37,18 @@
     }
   }
 
+  // Load repositories when the modal opens
   $: if (open) loadRepos();
 </script>
 
 <Modal {open} title="Top GitHub Repositories" {onClose}>
+  <!-- Display loading message while fetching data -->
   {#if loading}
     <p>Loading GitHub stats...</p>
+  <!-- Display error message if fetch fails -->
   {:else if error}
     <p>Error: {error}</p>
+  <!-- Display list of repositories -->
   {:else}
     <ul>
       {#each repos as repo (repo.name)}

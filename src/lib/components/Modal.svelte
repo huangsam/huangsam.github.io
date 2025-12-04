@@ -1,3 +1,8 @@
+<!--
+  Modal component: A reusable modal dialog with accessibility features.
+  Handles focus management, keyboard navigation, backdrop clicks, and smooth transitions.
+  Used as a base for other modals like GitHubModal and TravelModal.
+-->
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
   import { scale, fade } from 'svelte/transition';

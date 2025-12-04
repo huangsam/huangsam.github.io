@@ -1,3 +1,7 @@
+<!--
+  TravelModal component: Displays a modal with travel history, including visited US states and countries.
+  Loads place information from local data and external APIs, showing details like capitals, regions, and flags.
+-->
 <script lang="ts">
   import Modal from './Modal.svelte';
   import { fetchCountryInfo, getStateInfo } from '$lib/utils/travel';
@@ -7,6 +11,7 @@
   export let states: string[] = [];
   export let countries: string[] = [];
 
+  // Interface for US state information, including capital, region, and links
   interface StatePlaceInfo {
     name: string;
     capital: string;
@@ -17,6 +22,7 @@
     yearFounded: number;
   }
 
+  // Interface for country information, including capital, region, flag, and links
   interface CountryPlaceInfo {
     name: string;
     capital: string;
@@ -83,13 +89,17 @@
     loading = false;
   }
 
+  // Load place data when the modal opens
   $: if (open) loadPlaceData();
 </script>
 
 <Modal {open} title="Travel History" {onClose}>
+  <!-- Display loading message while fetching data -->
   {#if loading}
     <p class="loading">Loading travel information...</p>
+  <!-- Display travel information once loaded -->
   {:else}
+    <!-- Show US states section if any states are provided -->
     {#if stateInfos.length > 0}
       <h3>US States</h3>
       <div class="places-grid">
@@ -122,6 +132,7 @@
       </div>
     {/if}
 
+    <!-- Show countries section if any countries are provided -->
     {#if countryInfos.length > 0}
       <h3>Countries</h3>
       <div class="places-grid">
