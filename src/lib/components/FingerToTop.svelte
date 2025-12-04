@@ -27,7 +27,6 @@
     padding: 0; /* Remove default button padding */
     font: inherit; /* Inherit font from parent */
     color: inherit; /* Inherit color from parent */
-    outline: none; /* Remove default outline */
   }
 
   /* Wiggle animation on hover/focus */

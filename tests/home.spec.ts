@@ -40,8 +40,9 @@ test.describe('Site', () => {
   });
 
   test('opens and closes travel modal', async ({ page }) => {
-    await expect(page.getByText('View places visited')).toBeVisible();
-    await page.getByText('View places visited').click();
+    const travelLink = page.locator('button.link-button').filter({ hasText: /These places/ });
+    await expect(travelLink).toBeVisible();
+    await travelLink.click();
 
     const modal = page.locator('[role="dialog"]');
     await expect(modal).toBeVisible();
@@ -54,8 +55,11 @@ test.describe('Site', () => {
   });
 
   test('opens repos modal and loads GitHub data', async ({ page }) => {
-    await expect(page.getByText('View my GitHub repos')).toBeVisible();
-    await page.getByText('View my GitHub repos').click();
+    const githubLink = page
+      .locator('button.link-button')
+      .filter({ hasText: /open-source projects/ });
+    await expect(githubLink).toBeVisible();
+    await githubLink.click();
 
     const modal = page.locator('[role="dialog"]');
     await expect(modal).toBeVisible();
@@ -73,6 +77,30 @@ test.describe('Site', () => {
     const closeButton = modal.locator('button[aria-label="Close"]');
     await closeButton.click();
     await expect(modal).not.toBeVisible();
+  });
+
+  test('family modal opens and closes', async ({ page }) => {
+    // Find and click the family button - look for the link-button containing "wife"
+    const familyLink = page.locator('button.link-button').filter({ hasText: /wife/ });
+    await expect(familyLink).toBeVisible();
+    await familyLink.click();
+
+    // Verify the modal is visible with the correct title
+    const modalTitle = page.locator('text=Family photo in Hawaii');
+    await expect(modalTitle).toBeVisible();
+
+    // Verify the modal contains the expected intro
+    await expect(page.locator('text=Meet my family!')).toBeVisible();
+
+    // Wait for the lazy-loaded image to appear
+    await expect(page.locator('img[alt="Sam with wife and two kids"]')).toBeVisible({
+      timeout: 5000,
+    });
+
+    // Close via close button
+    const closeButton = page.locator('button[aria-label="Close"]').first();
+    await closeButton.click(); // Verify the modal is closed
+    await expect(modalTitle).not.toBeVisible();
   });
 });
 

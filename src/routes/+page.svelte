@@ -2,14 +2,15 @@
   import Quote from '$lib/components/Quote.svelte';
   import GitHubModal from '$lib/components/GitHubModal.svelte';
   import TravelModal from '$lib/components/TravelModal.svelte';
+  import FamilyModal from '$lib/components/FamilyModal.svelte';
   import Skills from '$lib/components/Skills.svelte';
   import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
   import ProfileImage from '$lib/components/ProfileImage.svelte';
-  import InlineButton from '$lib/components/InlineButton.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   let showTravel = false;
   let showRepos = false;
+  let showFamily = false;
 </script>
 
 <section class="banner">
@@ -34,9 +35,9 @@
   </p>
 
   <p>
-    I have a passion for building open-source projects that empower developers in their career
-    journeys. Contributions are always welcome!
-    <InlineButton bind:active={showRepos} label="View my GitHub repos" />
+    I have a passion for building
+    <button class="link-button" on:click={() => (showRepos = true)}>open-source projects</button>
+    that empower developers in their career journeys. Contributions are always welcome!
   </p>
 
   <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
@@ -47,9 +48,9 @@
   </p>
 
   <p>
-    I occasionally travel outside of the US to appreciate new experiences. These places have left a
-    lasting impression on me.
-    <InlineButton bind:active={showTravel} label="View places visited" />
+    I occasionally travel outside of the US to appreciate new experiences.
+    <button class="link-button" on:click={() => (showTravel = true)}>These places</button>
+    have left a lasting impression on me.
   </p>
 
   <TravelModal
@@ -59,9 +60,15 @@
     onClose={() => (showTravel = false)}
   />
 
-  <p>I am blessed with a lovely wife and two kids, who constantly remind me that:</p>
+  <p>
+    I am blessed with a <button class="link-button" on:click={() => (showFamily = true)}
+      >lovely wife and two kids</button
+    >, who constantly remind me that:
+  </p>
 
   <Quote>The days are long, but the years are short.</Quote>
+
+  <FamilyModal open={showFamily} onClose={() => (showFamily = false)} />
 </section>
 
 <Skills />
@@ -89,5 +96,18 @@
     section.about {
       padding: 2em;
     }
+  }
+  .link-button {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0;
+  }
+  .link-button:hover {
+    opacity: 0.8;
   }
 </style>
