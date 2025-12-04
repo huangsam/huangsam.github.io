@@ -26,29 +26,28 @@
   <p>
     I graduated from UC Davis with a bachelor's degree in Computer Science and Engineering. I
     currently work as a {EMPLOYMENT_INFO.role} at {EMPLOYMENT_INFO.company}
-    under {EMPLOYMENT_INFO.org}.
+    under {EMPLOYMENT_INFO.org}. I'm passionate about solving distributed systems and data pipeline
+    challenges at scale.
   </p>
 
   <p>
-    I love capturing moments through photography for family, friends, and clients. Reach out via
-    LinkedIn for opportunities—links are at the top! <FingerToTop ariaLabel="Go to top" />
+    I love capturing moments through photography—events, family gatherings, and travel adventures.
+    If you're interested in photography opportunities, reach out via LinkedIn!
+    <FingerToTop ariaLabel="Go to top" />
   </p>
 
   <p>
     I have a passion for building
     <button class="link-button" on:click={() => (showRepos = true)}>open-source projects</button>
-    that empower developers in their career journeys. Contributions are always welcome!
+    that empower developers in their career journeys. I enjoy contributing to projects that solve real
+    problems.
   </p>
 
   <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
 
   <p>
-    I recharge from the busyness by playing music, building keyboards and catching up with peers for
-    a good meal. When I go outdoors, I prefer visiting hiking trails and parks.
-  </p>
-
-  <p>
-    I occasionally travel outside of the US to appreciate new experiences.
+    I recharge by playing music, building keyboards, and catching up with peers over a meal. I also
+    travel outside the US to appreciate new experiences.
     <button class="link-button" on:click={() => (showTravel = true)}>These places</button>
     have left a lasting impression on me.
   </p>
