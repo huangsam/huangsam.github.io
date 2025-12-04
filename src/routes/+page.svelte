@@ -5,8 +5,8 @@
   import Skills from '$lib/components/Skills.svelte';
   import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
+  import ProfileImage from '$lib/components/ProfileImage.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
-  import profileImage from '$lib/assets/profile.jpg';
   let showTravel = false;
   let showRepos = false;
 </script>
@@ -14,9 +14,7 @@
 <section class="banner">
   <h1>Sam Huang</h1>
   <p>Engineer at day. Artist at night.</p>
-  <div class="profile-border">
-    <img class="profile-image" src={profileImage} alt="profile" />
-  </div>
+  <ProfileImage />
   <SocialLinks profiles={SOCIAL_PROFILES} />
 </section>
 
@@ -75,25 +73,9 @@
   section.banner h1 {
     font-size: 2.25rem;
   }
-  div.profile-border {
-    margin: 2rem 0;
-  }
-  .profile-image {
-    border-radius: 25%;
-    width: 21rem;
-    height: 21rem;
-    box-shadow: 3px 3px 5px lightgrey;
-    -moz-box-shadow: 3px 3px 5px lightgrey;
-    -webkit-box-shadow: 3px 3px 5px lightgrey;
-    object-fit: cover;
-  }
   @media (max-width: 768px) {
     section.banner {
       padding: 0.5em 0;
-    }
-    .profile-image {
-      width: 19rem;
-      height: 19rem;
     }
   }
   section.about {
