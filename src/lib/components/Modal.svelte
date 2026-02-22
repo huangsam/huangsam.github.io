@@ -84,6 +84,7 @@
    * When modal closes: restore previous focus
    */
   $: if (open && modalEl && typeof document !== 'undefined') {
+    // eslint-disable-next-line no-useless-assignment
     previousFocus = document.activeElement as HTMLElement;
     const focusable = modalEl.querySelector(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
