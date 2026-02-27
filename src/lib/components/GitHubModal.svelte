@@ -82,6 +82,14 @@
     margin: var(--space-sm) 0;
     padding: var(--space-md);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+    transition:
+      background-color var(--transition-fast),
+      transform var(--transition-bounce);
+  }
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateX(4px);
   }
   li:last-child {
     border-bottom: none;
@@ -122,9 +130,10 @@
   }
   a {
     color: white;
+    transition: color var(--transition-fast);
   }
   a:hover,
   a:focus {
-    color: lightgray;
+    color: var(--color-accent);
   }
 </style>

@@ -109,13 +109,17 @@
     tabindex="-1"
     on:click={clickBackdrop}
     on:keydown={handleBackdropKey}
-    transition:fade={{ duration: 200 }}
+    transition:fade={{ duration: 150 }}
   >
     <!--
       Modal content container with scale transition
       Centers modal and provides backdrop click-to-close functionality
     -->
-    <div bind:this={modalEl} class="modal" transition:scale={{ duration: 200, start: 0.95 }}>
+    <div
+      bind:this={modalEl}
+      class="modal"
+      transition:scale={{ duration: 300, start: 0.95, opacity: 0, easing: (t) => t * (2 - t) }}
+    >
       <!-- Modal header with title and close button -->
       <div class="modal-header">
         <h3>{title}</h3>
@@ -144,7 +148,9 @@
   .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4); /* Less harsh dark overlay */
+    backdrop-filter: blur(8px); /* Glassmorphism effect */
+    -webkit-backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,12 +162,12 @@
     width: min(800px, 90vw); /* Max 800px or 90% viewport width */
     max-height: 80vh; /* Max 80% viewport height */
     overflow: auto; /* Scroll if content exceeds height */
-    background: var(--primary-bg-color);
-    color: white;
+    background: var(--color-primary-bg);
+    color: var(--color-text-inverse);
     border-radius: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    padding: 1rem 1rem 1.25rem;
+    padding: var(--space-md) var(--space-md) var(--space-lg);
   }
 
   /* Modal header - title and close button layout */
@@ -181,10 +187,14 @@
     color: white;
     font-size: 1.25rem;
     cursor: pointer;
+    transition:
+      color var(--transition-fast),
+      transform var(--transition-bounce);
   }
   .close:hover,
   .close:focus {
-    color: lightgray;
+    color: var(--color-secondary-bg);
+    transform: scale(1.1);
   }
 
   /* Content area - improved line height for readability */

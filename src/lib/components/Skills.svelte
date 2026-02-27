@@ -54,6 +54,14 @@
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:
+      transform var(--transition-bounce),
+      box-shadow var(--transition-normal);
+  }
+
+  .skill:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
 
   /* Skill name - bold white text */
@@ -106,7 +114,7 @@
   /* Trigger shimmer animation on skill card hover */
   .skill:hover .skill-fill::before {
     left: 100%;
-    transition: left 1s ease;
+    transition: left var(--transition-slow) ease-out;
   }
 
   /* Skill level percentage - right-aligned small text */

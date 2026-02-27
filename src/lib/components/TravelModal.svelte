@@ -201,13 +201,18 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     padding: var(--space-md);
-    transition: all var(--transition-normal) ease;
+    transition:
+      transform var(--transition-bounce),
+      background var(--transition-normal),
+      border-color var(--transition-normal),
+      box-shadow var(--transition-normal);
   }
 
   .place-card:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
   .place-header {
