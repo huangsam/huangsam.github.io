@@ -203,7 +203,7 @@
     padding: var(--space-md);
     transition:
       transform var(--transition-bounce),
-      background var(--transition-normal),
+      background-color var(--transition-normal),
       border-color var(--transition-normal),
       box-shadow var(--transition-normal);
   }
@@ -283,7 +283,7 @@
     color: var(--color-text-inverse);
     text-decoration: none;
     font-size: 0.85rem;
-    transition: background var(--transition-normal) ease;
+    transition: background-color var(--transition-normal) ease;
   }
 
   .place-links a:hover {
