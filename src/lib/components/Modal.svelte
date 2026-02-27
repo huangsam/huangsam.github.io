@@ -86,10 +86,9 @@
   $: if (open && modalEl && typeof document !== 'undefined') {
     // eslint-disable-next-line no-useless-assignment
     previousFocus = document.activeElement as HTMLElement;
-    const focusable = modalEl.querySelector(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-    ) as HTMLElement;
-    if (focusable) focusable.focus();
+    // Focus the modal container itself so screen readers announce it,
+    // avoiding the immediate focus state on the 'Close' button.
+    modalEl.focus();
   } else if (!open && previousFocus && typeof document !== 'undefined') {
     previousFocus.focus();
   }
@@ -118,6 +117,7 @@
     <div
       bind:this={modalEl}
       class="modal"
+      tabindex="-1"
       transition:scale={{ duration: 300, start: 0.95, opacity: 0, easing: (t) => t * (2 - t) }}
     >
       <!-- Modal header with title and close button -->
