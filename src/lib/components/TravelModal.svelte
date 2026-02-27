@@ -179,10 +179,10 @@
   }
 
   h3 {
-    color: white;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    color: var(--color-text-inverse);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-lg);
   }
 
   h3:first-child {
@@ -192,16 +192,16 @@
   .places-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
   }
 
   .place-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
-    padding: 1rem;
-    transition: all 0.2s ease;
+    padding: var(--space-md);
+    transition: all var(--transition-normal) ease;
   }
 
   .place-card:hover {
@@ -213,14 +213,14 @@
   .place-header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-sm);
     margin-bottom: 0.75rem;
     flex-wrap: wrap;
   }
 
   .place-header strong {
     font-size: 1.1rem;
-    color: white;
+    color: var(--color-text-inverse);
   }
 
   .flag {
@@ -245,7 +245,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-sm);
     font-size: 0.9rem;
   }
   .info-row .label {
@@ -267,7 +267,7 @@
 
   .place-links {
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-sm);
     flex-wrap: wrap;
   }
 
@@ -275,10 +275,10 @@
     padding: 0.35rem 0.75rem;
     border-radius: 0.3rem;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: var(--color-text-inverse);
     text-decoration: none;
     font-size: 0.85rem;
-    transition: background 0.2s ease;
+    transition: background var(--transition-normal) ease;
   }
 
   .place-links a:hover {

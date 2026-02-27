@@ -48,7 +48,7 @@
 
   .intro {
     font-size: 1.1rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 var(--space-md) 0;
     color: inherit;
     opacity: 0.9;
   }
@@ -62,7 +62,7 @@
     max-width: 60%;
     height: auto;
     border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 

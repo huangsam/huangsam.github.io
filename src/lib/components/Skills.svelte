@@ -25,15 +25,15 @@
   /* Skills section - themed background with secondary color */
   .skills {
     padding: 2em 10em;
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text);
   }
 
   /* Section title - centered with bottom margin */
   .skills h2 {
     text-align: center;
     margin-bottom: 2em;
-    color: var(--primary-text-color);
+    color: var(--color-text);
   }
 
   /*
@@ -50,7 +50,7 @@
 
   /* Individual skill card - themed background with subtle shadow */
   .skill {
-    background-color: var(--primary-bg-color);
+    background-color: var(--color-primary-bg);
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@
   .skill-name {
     font-weight: bold;
     margin-bottom: 0.5em;
-    color: white;
+    color: var(--color-text-inverse);
   }
 
   /* Progress bar container - semi-transparent background */
@@ -79,7 +79,7 @@
     - Position relative for pseudo-element positioning
   */
   .skill-fill {
-    background-color: var(--accent-color);
+    background-color: var(--color-accent);
     height: 100%;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -113,7 +113,7 @@
   .skill-level {
     text-align: right;
     font-size: 0.8em;
-    color: white;
+    color: var(--color-text-inverse);
   }
 
   /* Responsive design for mobile screens */

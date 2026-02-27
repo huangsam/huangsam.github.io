@@ -79,8 +79,8 @@
     margin: 0;
   }
   li {
-    margin: 0.5rem 0;
-    padding: 1rem;
+    margin: var(--space-sm) 0;
+    padding: var(--space-md);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   li:last-child {
@@ -93,8 +93,8 @@
     flex-wrap: wrap;
   }
   .language {
-    background-color: var(--primary-bg-color);
-    color: white;
+    background-color: var(--color-primary-bg);
+    color: var(--color-text-inverse);
     padding: 0.2rem 0.5rem;
     border-radius: 0.25rem;
     font-size: 0.8rem;

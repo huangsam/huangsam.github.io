@@ -1,9 +1,30 @@
 :root {
-  --primary-bg-color: #111;
-  --secondary-bg-color: #f5cb53;
-  --default-text-color: #111;
-  --primary-text-color: #111;
-  --accent-color: #f5cb53;
+  /* Colors */
+  --color-primary-bg: #111;
+  --color-secondary-bg: #f5cb53;
+  --color-text: #111;
+  --color-text-inverse: white;
+  --color-accent: #f5cb53;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.25rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+
+  /* Transitions */
+  --transition-normal: 0.2s;
 }
 
 html,
@@ -13,7 +34,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  color: var(--default-text-color);
+  color: var(--color-text);
 }
 
 div.layout {
@@ -37,12 +58,12 @@ main {
 }
 
 header {
-  background-color: var(--primary-bg-color);
-  color: white;
+  background-color: var(--color-primary-bg);
+  color: var(--color-text-inverse);
 }
 
 footer {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--color-secondary-bg);
 }
 
 @media (pointer: fine) {
@@ -102,7 +123,7 @@ header a {
 header a:hover,
 header a:focus {
   /* Change color on hover and focus */
-  color: var(--secondary-bg-color);
+  color: var(--color-secondary-bg);
 }
 
 header a:last-child {
@@ -136,25 +157,25 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-2xl);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 h5 {
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
 }

@@ -8,7 +8,7 @@
 
 <style>
   div.profile-border {
-    margin: 2rem 0;
+    margin: var(--space-2xl) 0;
   }
   .profile-image {
     border-radius: 25%;

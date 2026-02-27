@@ -74,21 +74,21 @@
 
 <style>
   section.banner {
-    padding: 1em 0;
+    padding: var(--space-md) 0;
     text-align: center;
   }
   section.banner h1 {
-    font-size: 2.25rem;
+    font-size: var(--font-size-3xl);
   }
   @media (max-width: 768px) {
     section.banner {
-      padding: 0.5em 0;
+      padding: var(--space-sm) 0;
     }
   }
   section.about {
     padding: 2em 10em;
-    background-color: var(--primary-bg-color);
-    color: white;
+    background-color: var(--color-primary-bg);
+    color: var(--color-text-inverse);
     line-height: 2;
   }
   @media (max-width: 768px) {

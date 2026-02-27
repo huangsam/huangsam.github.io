@@ -13,6 +13,6 @@
 
 <style>
   div.error {
-    padding: 1em 1.25em;
+    padding: var(--space-md) var(--space-lg);
   }
 </style>

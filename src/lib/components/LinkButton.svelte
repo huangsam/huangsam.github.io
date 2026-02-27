@@ -16,5 +16,6 @@
 
   button:hover {
     opacity: 0.8; /* Subtle opacity reduction on hover for visual feedback */
+    transition: opacity var(--transition-normal);
   }
 </style>
