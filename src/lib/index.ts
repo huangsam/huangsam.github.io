@@ -62,9 +62,9 @@ export const EMPLOYMENT_INFO: EmploymentInfo = {
 
 /** List of technical skills with proficiency levels. */
 export const SKILLS: Skill[] = [
-  { name: 'Python', level: 95 },
+  { name: 'Python', level: 99 },
   { name: 'Go', level: 95 },
-  { name: 'Java', level: 90 },
+  { name: 'Java', level: 95 },
   { name: 'Linux', level: 95 },
   { name: 'Cloud Computing', level: 90 },
 ];
