@@ -35,12 +35,12 @@
     "playwright": "^1.58.2",
     "prettier": "^3.8.1",
     "prettier-plugin-svelte": "^3.5.1",
-    "svelte": "^5.54.1",
+    "svelte": "^5.55.0",
     "svelte-check": "^4.4.5",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.57.1",
+    "typescript-eslint": "^8.57.2",
     "vite": "^7.3.1",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.1"
   },
   "type": "module",
   "packageManager": "pnpm@10.12.1",
