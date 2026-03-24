@@ -32,6 +32,9 @@ export function initVimNavigation() {
     // If modal is open or user is typing, ignore Vim shortcuts
     if (isModalOpen() || isTyping(event)) return;
 
+    // Ignore if a modifier key (Cmd, Ctrl, Alt) is pressed, except Shift which we handle
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+
     const key = event.key;
     const shift = event.shiftKey;
 

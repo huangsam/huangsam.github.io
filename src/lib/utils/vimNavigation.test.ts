@@ -86,4 +86,19 @@ describe('vimNavigation', () => {
     // Scroll should NOT be called
     expect(window.scrollBy).not.toHaveBeenCalled();
   });
+
+  it('ignores hotkeys when modifier keys (Cmd/Ctrl/Alt) are pressed', () => {
+    document.body.innerHTML = '<a href="#">Link 1</a><button>Btn 1</button><a href="#">Link 2</a>';
+    const elements = document.querySelectorAll('a, button');
+    (elements[0] as HTMLElement).focus(); // Focus Link 1
+
+    const event = new KeyboardEvent('keydown', { key: 'l', metaKey: true });
+    const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+
+    window.dispatchEvent(event);
+
+    // Should not have prevented default, and focus should remain on Link 1
+    expect(preventDefaultSpy).not.toHaveBeenCalled();
+    expect(document.activeElement).toBe(elements[0]);
+  });
 });
