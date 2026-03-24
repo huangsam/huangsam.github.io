@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Run linting and tests before committing
-pnpm lint
+# Run lint-staged and tests before committing
+pnpm lint-staged
 pnpm test run

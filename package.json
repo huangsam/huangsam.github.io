@@ -14,6 +14,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "lint": "svelte-kit sync && prettier --check . && eslint .",
     "format": "prettier --write .",
+    "lint-staged": "lint-staged",
     "github": "vite build && gh-pages -d build -t"
   },
   "devDependencies": {
@@ -40,7 +41,17 @@
     "typescript": "5.9.3",
     "typescript-eslint": "^8.57.2",
     "vite": "^8.0.2",
-    "vitest": "^4.1.1"
+    "vitest": "^4.1.1",
+    "lint-staged": "^16.4.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,html}": [
+      "prettier --write"
+    ]
   },
   "type": "module",
   "packageManager": "pnpm@10.12.1",
