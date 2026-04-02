@@ -3,7 +3,7 @@
 </script>
 
 <div class="profile-border">
-  <img class="profile-image" src={profileImage} alt="profile" />
+  <img class="profile-image" src={profileImage} alt="Sam Huang's profile photo" />
 </div>
 
 <style>

@@ -47,14 +47,19 @@
     <p>Loading GitHub stats...</p>
     <!-- Display error message if fetch fails -->
   {:else if error}
-    <p>Error: {error}</p>
+    <div class="error-container">
+      <p>Error: {error}</p>
+      <button on:click={loadRepos} class="retry-button">↻ Retry</button>
+    </div>
     <!-- Display list of repositories -->
   {:else}
     <ul>
       {#each repos as repo (repo.name)}
         <li>
           <div class="repo-header">
-            <a href={repo.html_url} target="_blank" rel="noopener"><strong>{repo.name}</strong></a>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer"
+              ><strong>{repo.name}</strong></a
+            >
             {#if repo.language}<span class="language">{repo.language}</span>{/if}
             <span class="stars">⭐ {repo.stargazers_count}</span>
           </div>
@@ -135,5 +140,32 @@
   a:hover,
   a:focus {
     color: var(--color-accent);
+  }
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .retry-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-primary-bg);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition:
+      background-color var(--transition-fast),
+      transform var(--transition-bounce);
+  }
+  .retry-button:hover {
+    background-color: rgba(245, 203, 83, 0.8);
+    transform: scale(1.05);
+  }
+  .retry-button:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
 </style>
