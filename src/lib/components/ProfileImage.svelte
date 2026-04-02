@@ -1,9 +1,13 @@
 <script lang="ts">
   import profileImage from '$lib/assets/profile.jpg';
+  import profileImageWebp from '$lib/assets/profile.webp';
 </script>
 
 <div class="profile-border">
-  <img class="profile-image" src={profileImage} alt="profile" />
+  <picture>
+    <source srcset={profileImageWebp} type="image/webp" />
+    <img class="profile-image" src={profileImage} alt="profile" />
+  </picture>
 </div>
 
 <style>
