@@ -6,7 +6,7 @@
 <div class="profile-border">
   <picture>
     <source srcset={profileImageWebp} type="image/webp" />
-    <img class="profile-image" src={profileImage} alt="profile" />
+    <img class="profile-image" src={profileImage} alt="profile" fetchpriority="high" />
   </picture>
 </div>
 
