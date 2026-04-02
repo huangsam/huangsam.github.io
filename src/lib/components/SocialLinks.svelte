@@ -26,7 +26,7 @@
     color: var(--color-text-inverse);
     text-decoration: none;
     transition:
-      background var(--transition-normal),
+      background-color var(--transition-normal),
       color var(--transition-normal);
   }
   .social-link:first-child {
