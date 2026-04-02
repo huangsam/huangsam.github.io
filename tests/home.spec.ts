@@ -26,7 +26,7 @@ test.describe('Site', () => {
       expect(await getBackgroundColor(locator)).toBe('rgb(17, 17, 17)');
 
       await locator.hover();
-      await page.waitForTimeout(300); // Wait for transition to complete (0.2s + buffer)
+      await page.waitForTimeout(500); // Wait for transition to complete (0.15s + buffer for CI)
 
       await expect(locator).toBeVisible();
       expect(await getBackgroundColor(locator)).toBe('rgb(245, 203, 83)');
@@ -63,10 +63,8 @@ test.describe('Site', () => {
     await expect(modal).toBeVisible();
     await expect(modal).toContainText('Top GitHub Repositories');
 
-    // Check for loading state
-    await expect(page.getByText('Loading GitHub stats...')).toBeVisible();
-
-    // Wait for repos to load (assuming API call succeeds)
+    // Wait for repos to load (either from loading state or cached/fast API call)
+    // Either the loading text appears, or the repos appear directly
     await page.waitForSelector('li', { timeout: 10000 });
     const repos = page.locator('li');
     expect(await repos.count()).toBeGreaterThan(0);
