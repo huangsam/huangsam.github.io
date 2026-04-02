@@ -11,6 +11,20 @@
 
 <svelte:head>
   <title>Sam Huang</title>
+  <link
+    rel="preload"
+    href="/fonts/FjallaOne-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/Merriweather-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin="anonymous"
+  />
   <meta
     name="description"
     content="Engineer at day. Artist at night. Software engineer, photographer, and musician."
