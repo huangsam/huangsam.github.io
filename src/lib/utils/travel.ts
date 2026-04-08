@@ -132,14 +132,12 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
     }
   }
 
-  try {
-    // Fetch fresh data from REST Countries API
+  // Fetch fresh data from REST Countries API, returning null on any error
+  return Promise.try(async () => {
     const response = await fetch(
       `https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=false`,
     );
-    if (!response.ok) {
-      return null; // Return null on API error
-    }
+    if (!response.ok) return null;
     const data = await response.json();
 
     // Get the first matching country
@@ -148,12 +146,17 @@ export async function fetchCountryInfo(countryName: string): Promise<CountryData
     // Cache it
     localStorage.setItem(cacheKey, JSON.stringify({ data: countryData, timestamp: Date.now() }));
     return countryData;
-  } catch {
-    return null; // Return null on network or other errors
-  }
+  }).catch(() => null);
 }
 
-/** Gets US state information from local data */
+/** In-memory cache for state lookups within a session */
+const stateInfoCache = new Map<string, StateData>();
+
+/** Gets US state information from local data, memoized via Map */
 export function getStateInfo(stateName: string): StateData | null {
-  return US_STATES_DATA[stateName] || null;
+  if (!(stateName in US_STATES_DATA)) return null;
+  if (!stateInfoCache.has(stateName)) {
+    stateInfoCache.set(stateName, US_STATES_DATA[stateName] as StateData);
+  }
+  return stateInfoCache.get(stateName) ?? null;
 }
