@@ -27,7 +27,7 @@
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@types/eslint": "^9.6.1",
     "@types/node": "^25.6.0",
-    "eslint": "^10.2.0",
+    "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.17.1",
     "gh-pages": "^6.3.0",
