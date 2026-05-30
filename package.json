@@ -29,7 +29,7 @@
     "@types/node": "^25.9.1",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.18.0",
+    "eslint-plugin-svelte": "^3.19.0",
     "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
     "husky": "^9.1.7",
