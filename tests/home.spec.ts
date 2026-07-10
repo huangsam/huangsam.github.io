@@ -15,7 +15,7 @@ test.describe('Site', () => {
   });
 
   test('has social links', async ({ page }) => {
-    const expectedSocialLinksCount = 5;
+    const expectedSocialLinksCount = 4;
     const socialLinks = page.locator('a.social-link');
     await expect(socialLinks).toHaveCount(expectedSocialLinksCount);
 

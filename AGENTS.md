@@ -37,8 +37,8 @@ Unit and end-to-end test specifications for core features, logic, and UI compone
 ## Automation & Scripts (package.json)
 
 - **dev, build, preview**: Agents for local development, building, and previewing the site.
-- **test**: Agent for running tests in watch mode (continuous).
-- **test run**: Agent for running tests a single time (non-watch).
+- **test**: Agent for running tests a single time (non-watch).
+- **test:watch**: Agent for running tests in watch mode (continuous).
 - **test:e2e, report:e2e**: Agents for running end-to-end tests and viewing reports.
 - **lint, format, check**: Agents for code quality, formatting, and type checking.
 - **github**: Agent for deploying to GitHub Pages.

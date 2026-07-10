@@ -2,4 +2,4 @@
 
 # Run lint-staged and tests before committing
 pnpm lint-staged
-pnpm test run
+pnpm test

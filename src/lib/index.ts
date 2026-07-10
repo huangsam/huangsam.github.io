@@ -31,10 +31,6 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
     url: 'https://github.com/huangsam',
   },
   {
-    name: 'Facebook',
-    url: 'https://facebook.com/samuel.c.huang',
-  },
-  {
     name: 'Linkedin',
     url: 'https://www.linkedin.com/in/sambyte/',
   },
