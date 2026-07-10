@@ -58,18 +58,18 @@ export const FOCUS_AREAS: FocusArea[] = [
   {
     name: 'High-Performance Systems',
     description: 'Building efficient, resource-optimized, and low-latency systems and tooling.',
-    technologies: ['Go', 'Rust', 'Java', 'Linux Systems'],
+    technologies: ['Go', 'Rust', 'Java', 'Linux'],
   },
   {
     name: 'Agentic Workflows & Local AI',
     description:
       'Designing autonomous agent systems, prompt engineering pipelines, and MLOps for model deployment.',
-    technologies: ['Python', 'Ollama', 'LangChain', 'LlamaIndex', 'PyTorch'],
+    technologies: ['Python', 'Ollama', 'LangChain', 'LangGraph', 'PyTorch'],
   },
   {
     name: 'Distributed Systems Architecture',
     description:
       'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
-    technologies: ['Cloud Computing', 'Kubernetes', 'Docker', 'gRPC', 'Kafka'],
+    technologies: ['IaC', 'Kubernetes', 'Docker', 'gRPC', 'Kafka'],
   },
 ];
