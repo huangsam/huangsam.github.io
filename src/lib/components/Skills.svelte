@@ -1,21 +1,23 @@
 <script lang="ts">
-  // Import skills data from the main index file
-  import { SKILLS } from '$lib/index';
+  // Import architectural focus areas from the main index file
+  import { FOCUS_AREAS } from '$lib/index';
 </script>
 
 <section class="skills">
-  <h2>Skills</h2>
+  <h2>Architectural Focus Areas</h2>
 
   <div class="skills-grid">
-    {#each SKILLS as skill (skill.name)}
-      <div class="skill">
-        <div class="skill-name">{skill.name}</div>
-
-        <div class="skill-bar">
-          <div class="skill-fill" style="width: {skill.level}%"></div>
+    {#each FOCUS_AREAS as area (area.name)}
+      <div class="skill-card">
+        <div class="card-header">
+          <h3>{area.name}</h3>
         </div>
-
-        <div class="skill-level">{skill.level}%</div>
+        <p class="card-description">{area.description}</p>
+        <div class="tech-pills">
+          {#each area.technologies as tech (tech)}
+            <span class="tech-pill">{tech}</span>
+          {/each}
+        </div>
       </div>
     {/each}
   </div>
@@ -24,114 +26,114 @@
 <style>
   /* Skills section - themed background with secondary color */
   .skills {
-    padding: 2em 10em;
+    padding: 3em 10em;
     background-color: var(--color-secondary-bg);
     color: var(--color-text);
   }
 
-  /* Section title - centered with bottom margin */
+  /* Section title */
   .skills h2 {
     text-align: center;
     margin-bottom: 2em;
     color: var(--color-text);
+    font-size: var(--font-size-2xl);
   }
 
-  /*
-    Responsive CSS Grid layout for skill items
-    - auto-fit: Creates as many columns as fit in available space
-    - minmax(250px, 1fr): Minimum 250px width, maximum 1 fraction of available space
-    - gap: 1.5em spacing between grid items
-  */
+  /* Grid layout for focus area cards */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
   }
 
-  /* Individual skill card - themed background with subtle shadow */
-  .skill {
+  /* Individual card */
+  .skill-card {
     background-color: var(--color-primary-bg);
-    padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--color-text-inverse);
+    padding: 2em;
+    border-radius: 0.75em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition:
       transform var(--transition-bounce),
-      box-shadow var(--transition-normal);
+      box-shadow var(--transition-normal),
+      border-color var(--transition-normal);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .skill:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  .skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgba(245, 203, 83, 0.4);
   }
 
-  /* Skill name - bold white text */
-  .skill-name {
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    color: var(--color-text-inverse);
+  /* Card Header */
+  .card-header h3 {
+    margin: 0 0 1rem 0;
+    font-size: var(--font-size-lg);
+    color: var(--color-accent);
   }
 
-  /* Progress bar container - semi-transparent background */
-  .skill-bar {
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 0.5em;
+  /* Description text */
+  .card-description {
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 1.5em 0;
+    flex-grow: 1;
   }
 
-  /*
-    Animated progress bar fill
-    - Width controlled by skill.level percentage
-    - Smooth transition for width changes
-    - Position relative for pseudo-element positioning
-  */
-  .skill-fill {
-    background-color: var(--color-accent);
-    height: 100%;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+  /* Tech tags container */
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
   }
 
-  /*
-    Shimmer effect pseudo-element
-    - Initially positioned off-screen (left: -100%)
-    - Linear gradient creates light sweep effect
-    - Animates on hover to create "shine" effect
-  */
-  .skill-fill::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  /* Individual tech tag */
+  .tech-pill {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.35em 0.85em;
+    border-radius: 2em;
+    font-size: var(--font-size-xs);
+    font-family: 'Merriweather', sans-serif;
+    transition:
+      background-color var(--transition-fast),
+      border-color var(--transition-fast),
+      color var(--transition-fast),
+      transform var(--transition-fast);
   }
 
-  /* Trigger shimmer animation on skill card hover */
-  .skill:hover .skill-fill::before {
-    left: 100%;
-    transition: left var(--transition-slow) ease-out;
+  .skill-card:hover .tech-pill {
+    border-color: rgba(245, 203, 83, 0.2);
   }
 
-  /* Skill level percentage - right-aligned small text */
-  .skill-level {
-    text-align: right;
-    font-size: 0.8em;
-    color: var(--color-text-inverse);
+  .tech-pill:hover {
+    background-color: rgba(245, 203, 83, 0.15);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: scale(1.05);
   }
 
-  /* Responsive design for mobile screens */
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .skills {
+      padding: 3em 4em;
+    }
+  }
+
   @media (max-width: 768px) {
     .skills {
-      padding: 2em; /* Reduced padding on mobile */
+      padding: 2em;
     }
 
     .skills-grid {
-      grid-template-columns: 1fr; /* Single column on mobile */
+      grid-template-columns: 1fr;
+      gap: 1.5em;
     }
   }
 </style>

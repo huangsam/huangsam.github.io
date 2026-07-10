@@ -17,10 +17,11 @@ interface EmploymentInfo {
   org: string;
 }
 
-/** Represents a skill with name and proficiency level. */
-interface Skill {
+/** Represents a core focus area or architectural domain. */
+interface FocusArea {
   name: string;
-  level: number; // 1-100
+  description: string;
+  technologies: string[];
 }
 
 /** Personal and professional information. */
@@ -60,11 +61,23 @@ export const EMPLOYMENT_INFO: EmploymentInfo = {
   org: 'Network Engineering',
 };
 
-/** List of technical skills with proficiency levels. */
-export const SKILLS: Skill[] = [
-  { name: 'Python', level: 99 },
-  { name: 'Go', level: 95 },
-  { name: 'Java', level: 95 },
-  { name: 'Linux', level: 95 },
-  { name: 'Cloud Computing', level: 90 },
+/** List of architectural focus areas. */
+export const FOCUS_AREAS: FocusArea[] = [
+  {
+    name: 'High-Performance Systems',
+    description: 'Building efficient, resource-optimized, and low-latency systems and tooling.',
+    technologies: ['Go', 'Rust', 'Java', 'Linux Systems'],
+  },
+  {
+    name: 'Agentic Workflows & Local AI',
+    description:
+      'Designing autonomous agent systems, prompt engineering pipelines, and MLOps for model deployment.',
+    technologies: ['Python', 'Ollama', 'LangChain', 'LlamaIndex', 'PyTorch'],
+  },
+  {
+    name: 'Distributed Systems Architecture',
+    description:
+      'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
+    technologies: ['Cloud Computing', 'Kubernetes', 'Docker', 'gRPC', 'Kafka'],
+  },
 ];

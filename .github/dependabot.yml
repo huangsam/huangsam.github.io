@@ -7,7 +7,7 @@ updates:
     groups:
       site-dependencies:
         patterns:
-            - '*'
+          - '*'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
