@@ -19,8 +19,8 @@
   }
   .social-link {
     margin-bottom: var(--space-md);
-    margin-left: var(--space-md);
-    padding: 1.25em;
+    margin-left: var(--space-xl);
+    padding: 1.25em 1.75em;
     border-radius: 1em;
     background-color: var(--color-primary-bg);
     color: var(--color-text-inverse);
