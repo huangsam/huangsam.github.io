@@ -35,10 +35,6 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
     url: 'https://www.linkedin.com/in/sambyte/',
   },
   {
-    name: 'Wordpress',
-    url: 'https://sambyte.wordpress.com/',
-  },
-  {
     name: 'Twitter',
     url: 'https://twitter.com/s_c_huang',
   },
