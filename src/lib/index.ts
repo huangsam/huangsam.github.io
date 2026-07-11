@@ -50,7 +50,7 @@ export const TRAVEL_HISTORY: TravelHistory = {
 export const EMPLOYMENT_INFO: EmploymentInfo = {
   company: 'Tesla',
   role: 'Software Engineer',
-  org: 'Network Engineering',
+  org: 'AI/IT Infra',
 };
 
 /** List of architectural focus areas. */
