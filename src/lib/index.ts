@@ -64,12 +64,12 @@ export const FOCUS_AREAS: FocusArea[] = [
     name: 'Agentic Workflows & Local AI',
     description:
       'Designing autonomous agent systems, prompt engineering pipelines, and MLOps for model deployment.',
-    technologies: ['Python', 'Ollama', 'LangChain', 'LangGraph', 'PyTorch'],
+    technologies: ['Python', 'Ollama', 'LangChain', 'PyTorch'],
   },
   {
     name: 'Distributed Systems Architecture',
     description:
       'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
-    technologies: ['Kubernetes', 'gRPC', 'Kafka', 'Spark', 'OTel'],
+    technologies: ['Kubernetes', 'gRPC', 'Kafka', 'OTel'],
   },
 ];
