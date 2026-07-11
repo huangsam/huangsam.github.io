@@ -13,14 +13,14 @@
   <title>Sam Huang</title>
   <link
     rel="preload"
-    href="/fonts/FjallaOne-Regular.ttf"
+    href="/fonts/Outfit-Regular.ttf"
     as="font"
     type="font/ttf"
     crossorigin="anonymous"
   />
   <link
     rel="preload"
-    href="/fonts/Merriweather-Regular.ttf"
+    href="/fonts/SourceSerif4-Regular.ttf"
     as="font"
     type="font/ttf"
     crossorigin="anonymous"

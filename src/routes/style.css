@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
 :root {
   /* Colors */
   --color-primary-bg: #111;
@@ -88,18 +86,40 @@ footer {
 }
 
 @font-face {
-  /* Define custom sans-serif font */
-  font-family: 'Fjalla One';
-  font-weight: normal;
-  src: url(/fonts/FjallaOne-Regular.ttf) format('truetype');
+  font-family: 'Outfit';
+  font-weight: 400;
+  src: url('/fonts/Outfit-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
-  /* Define custom serif font */
-  font-family: 'Merriweather';
-  font-weight: normal;
-  src: url(/fonts/Merriweather-Regular.ttf) format('truetype');
+  font-family: 'Outfit';
+  font-weight: 700;
+  src: url('/fonts/Outfit-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/SourceSerif4-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/SourceSerif4-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/SourceSerif4-Italic.ttf') format('truetype');
   font-display: swap;
 }
 
