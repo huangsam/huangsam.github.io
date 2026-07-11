@@ -14,7 +14,7 @@ This project is a SvelteKit-based personal portfolio and showcase, featuring int
 
 ### 1. UI Components (`src/lib/components`)
 
-Reusable Svelte components for modals, focus areas visualization, quotes, and GitHub integration.
+Reusable Svelte components for modals, focus areas visualization, quotes, and featured projects showcase.
 
 ### 2. Data & Logic (`src/lib`)
 

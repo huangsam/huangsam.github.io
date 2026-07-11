@@ -37,15 +37,19 @@
     background-color: var(--color-secondary-bg);
     color: var(--color-text);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .social-links {
       flex-direction: column;
-      margin-left: 0;
-      padding: 1em 2em;
+      margin: 2em 0;
+      padding: 0 2.5em;
+      box-sizing: border-box;
     }
     .social-link {
       margin-left: 0;
       margin-bottom: var(--space-lg);
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
     }
   }
 </style>

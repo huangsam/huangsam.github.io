@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 :root {
   /* Colors */
   --color-primary-bg: #111;
@@ -142,7 +144,7 @@ header nav {
 
 body {
   /* Define default font */
-  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Source Serif 4', 'Merriweather', Georgia, 'Times New Roman', Times, serif;
 }
 
 h1,
@@ -152,7 +154,7 @@ h4,
 h5,
 h6 {
   /* Define header font */
-  font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', sans-serif;
   /* Define common settings for header font */
   color: inherit;
   font-weight: bold;

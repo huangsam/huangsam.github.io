@@ -54,25 +54,22 @@ test.describe('Site', () => {
     await expect(modal).not.toBeVisible();
   });
 
-  test('opens repos modal and loads GitHub data', async ({ page }) => {
-    const githubLink = page.locator('button').filter({ hasText: /open-source projects/ });
-    await expect(githubLink).toBeVisible();
-    await githubLink.click();
+  test('renders featured projects section and links', async ({ page }) => {
+    const featuredHeading = page.locator('h2', { hasText: 'Featured Projects' });
+    await expect(featuredHeading).toBeVisible();
 
-    const modal = page.locator('[role="dialog"]');
-    await expect(modal).toBeVisible();
-    await expect(modal).toContainText('Top GitHub Repositories');
+    const ultimatePythonCard = page.locator('h3', { hasText: 'ultimatepython.org' });
+    await expect(ultimatePythonCard).toBeVisible();
 
-    // Wait for repos to load (either from loading state or cached/fast API call)
-    // Either the loading text appears, or the repos appear directly
-    await page.waitForSelector('li', { timeout: 10000 });
-    const repos = page.locator('li');
-    expect(await repos.count()).toBeGreaterThan(0);
+    const systologyCard = page.locator('h3', { hasText: 'Systology' });
+    await expect(systologyCard).toBeVisible();
 
-    // Close via close button
-    const closeButton = modal.locator('button[aria-label="Close"]');
-    await closeButton.click();
-    await expect(modal).not.toBeVisible();
+    const rustokuCard = page.locator('h3', { hasText: 'Rustoku' });
+    await expect(rustokuCard).toBeVisible();
+
+    // Verify links exist and have external targets
+    const link = page.locator('a', { hasText: 'ultimatepython.org' });
+    await expect(link).toHaveAttribute('href', 'https://ultimatepython.org');
   });
 
   test('family modal opens and closes', async ({ page }) => {

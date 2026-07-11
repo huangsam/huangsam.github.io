@@ -146,7 +146,7 @@
 
   .highlight-badge {
     font-size: var(--font-size-xs);
-    font-family: 'Fjalla One', Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -159,7 +159,7 @@
     color: rgba(255, 255, 255, 0.85);
     margin: 0 0 2em 0;
     flex-grow: 1;
-    font-family: 'Merriweather', Georgia, serif;
+    font-family: 'Source Serif 4', 'Merriweather', Georgia, serif;
   }
 
   /* Tag Container */

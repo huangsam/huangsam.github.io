@@ -1,6 +1,5 @@
 <script lang="ts">
   import Quote from '$lib/components/Quote.svelte';
-  import GitHubModal from '$lib/components/GitHubModal.svelte';
   import TravelModal from '$lib/components/TravelModal.svelte';
   import FamilyModal from '$lib/components/FamilyModal.svelte';
   import LinkButton from '$lib/components/LinkButton.svelte';
@@ -11,7 +10,6 @@
   import ProfileImage from '$lib/components/ProfileImage.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
   let showTravel = false;
-  let showRepos = false;
   let showFamily = false;
 </script>
 
@@ -38,13 +36,9 @@
   </p>
 
   <p>
-    I have a passion for building
-    <LinkButton on:click={() => (showRepos = true)}>open-source projects</LinkButton>
-    that empower developers in their career journeys. I enjoy contributing to projects that solve real
-    problems.
+    I have a passion for building open-source projects that empower developers in their career
+    journeys. I enjoy contributing to projects that solve real problems.
   </p>
-
-  <GitHubModal open={showRepos} onClose={() => (showRepos = false)} />
 
   <p>
     I recharge by playing music, building keyboards, and catching up with peers over a meal. I also
