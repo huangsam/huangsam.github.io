@@ -9,7 +9,7 @@
 
   const PROJECTS: Project[] = [
     {
-      title: 'ultimatepython.org',
+      title: 'Ultimate Python',
       url: 'https://ultimatepython.org',
       highlight: 'Interactive Python Study Guide',
       description:

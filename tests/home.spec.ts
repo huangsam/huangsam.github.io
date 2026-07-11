@@ -58,7 +58,7 @@ test.describe('Site', () => {
     const featuredHeading = page.locator('h2', { hasText: 'Featured Projects' });
     await expect(featuredHeading).toBeVisible();
 
-    const ultimatePythonCard = page.locator('h3', { hasText: 'ultimatepython.org' });
+    const ultimatePythonCard = page.locator('h3', { hasText: 'Ultimate Python' });
     await expect(ultimatePythonCard).toBeVisible();
 
     const systologyCard = page.locator('h3', { hasText: 'Systology' });
@@ -68,7 +68,7 @@ test.describe('Site', () => {
     await expect(rustokuCard).toBeVisible();
 
     // Verify links exist and have external targets
-    const link = page.locator('a', { hasText: 'ultimatepython.org' });
+    const link = page.locator('a', { hasText: 'Ultimate Python' });
     await expect(link).toHaveAttribute('href', 'https://ultimatepython.org');
   });
 
