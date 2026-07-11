@@ -14,7 +14,7 @@
       highlight: 'Interactive Python Study Guide',
       description:
         'A zero-dependency, hands-on learning platform for mastering Python by example. Features heavily-commented, executable lessons designed for both newcomers and professionals, covering standard library fundamentals through advanced concurrency patterns.',
-      tags: ['Python', 'Astro', 'TypeScript', 'Responsive Design', 'Open Source'],
+      tags: ['Python', 'Astro', 'Mentorship'],
     },
     {
       title: 'Systology',
@@ -22,7 +22,7 @@
       highlight: 'Systems Architecture & Principles',
       description:
         'A curated knowledge base and digital garden dedicated to systems engineering at scale. Documents architectural designs, distributed algorithms, caching strategies, and core engineering principles derived from real-world systems.',
-      tags: ['Systems', 'Hugo', 'Distributed Systems', 'Go', 'Cassandra'],
+      tags: ['Python', 'Hugo', 'Systems'],
     },
     {
       title: 'Rustoku',
@@ -30,7 +30,7 @@
       highlight: 'Rust & WebAssembly Sudoku Engine',
       description:
         'A high-performance interactive Sudoku solver and generator running entirely in the browser. Powered by Rust compiled to WebAssembly (WASM), demonstrating low-level systems logic, memory-efficient backtracking, and real-time UI synchronization.',
-      tags: ['Rust', 'WebAssembly', 'WASM', 'Svelte', 'Vite', 'Algorithms'],
+      tags: ['Rust', 'Python', 'WASM'],
     },
   ];
 </script>
