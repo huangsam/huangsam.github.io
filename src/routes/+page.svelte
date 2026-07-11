@@ -5,7 +5,6 @@
   import LinkButton from '$lib/components/LinkButton.svelte';
   import FocusAreas from '$lib/components/FocusAreas.svelte';
   import FeaturedWork from '$lib/components/FeaturedWork.svelte';
-  import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
   import ProfileImage from '$lib/components/ProfileImage.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
@@ -33,19 +32,15 @@
 
   <ul class="about-list">
     <li>
-      <strong>Open Source:</strong> Building developer tools and contributing to projects that solve real-world
-      problems.
+      <strong>Open Source:</strong> Building developer tools and contributing to real-world projects.
     </li>
     <li>
-      <strong>Photography:</strong> Capturing corporate events, family gatherings, and travel
-      adventures. (Reach out on LinkedIn for photo opportunities! <FingerToTop
-        ariaLabel="Go to top"
-      />)
+      <strong>Photography:</strong> Capturing corporate events, family gatherings, and travel adventures.
     </li>
     <li>
-      <strong>Interests:</strong> Recharging by playing music, building custom mechanical keyboards,
-      and traveling—<LinkButton on:click={() => (showTravel = true)}>these places</LinkButton> have left
-      a lasting impression.
+      <strong>Interests:</strong> Playing music, building mechanical keyboards, and traveling to <LinkButton
+        on:click={() => (showTravel = true)}>cool places</LinkButton
+      >.
     </li>
   </ul>
 
