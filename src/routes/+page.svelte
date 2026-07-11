@@ -15,7 +15,7 @@
 
 <section class="banner">
   <h1>Sam Huang</h1>
-  <p>Engineer at day. Artist at night.</p>
+  <p>Engineer by day. Artist by night.</p>
   <ProfileImage />
   <SocialLinks profiles={SOCIAL_PROFILES} />
 </section>
