@@ -14,11 +14,11 @@ This project is a SvelteKit-based personal portfolio and showcase, featuring int
 
 ### 1. UI Components (`src/lib/components`)
 
-Reusable Svelte components for modals, skill visualization, quotes, and GitHub integration.
+Reusable Svelte components for modals, focus areas visualization, quotes, and GitHub integration.
 
 ### 2. Data & Logic (`src/lib`)
 
-Centralized modules for profile data, skills, travel history, employment info, API utilities, and navigation logic.
+Centralized modules for profile data, focus areas, travel history, employment info, API utilities, and navigation logic.
 
 ### 3. Routes (`src/routes`)
 

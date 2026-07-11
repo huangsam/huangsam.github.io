@@ -1,14 +1,14 @@
 <script lang="ts">
-  // Import architectural focus areas from the main index file
+  // Import focus areas from the main index file
   import { FOCUS_AREAS } from '$lib/index';
 </script>
 
-<section class="skills">
-  <h2>Architectural Focus Areas</h2>
+<section class="focus-areas">
+  <h2>Focus Areas</h2>
 
-  <div class="skills-grid">
+  <div class="focus-areas-grid">
     {#each FOCUS_AREAS as area (area.name)}
-      <div class="skill-card">
+      <div class="focus-area-card">
         <div class="card-header">
           <h3>{area.name}</h3>
         </div>
@@ -24,15 +24,15 @@
 </section>
 
 <style>
-  /* Skills section - themed background with secondary color */
-  .skills {
+  /* Focus areas section - themed background with secondary color */
+  .focus-areas {
     padding: 3em 10em;
     background-color: var(--color-secondary-bg);
     color: var(--color-text);
   }
 
   /* Section title */
-  .skills h2 {
+  .focus-areas h2 {
     text-align: center;
     margin-bottom: 2em;
     color: var(--color-text);
@@ -40,14 +40,14 @@
   }
 
   /* Grid layout for focus area cards */
-  .skills-grid {
+  .focus-areas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2em;
   }
 
   /* Individual card */
-  .skill-card {
+  .focus-area-card {
     background-color: var(--color-primary-bg);
     color: var(--color-text-inverse);
     padding: 2em;
@@ -63,7 +63,7 @@
     justify-content: space-between;
   }
 
-  .skill-card:hover {
+  .focus-area-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     border-color: rgba(245, 203, 83, 0.4);
@@ -108,7 +108,7 @@
       transform var(--transition-fast);
   }
 
-  .skill-card:hover .tech-pill {
+  .focus-area-card:hover .tech-pill {
     border-color: rgba(245, 203, 83, 0.2);
   }
 
@@ -121,17 +121,17 @@
 
   /* Responsive design */
   @media (max-width: 1024px) {
-    .skills {
+    .focus-areas {
       padding: 3em 4em;
     }
   }
 
   @media (max-width: 768px) {
-    .skills {
+    .focus-areas {
       padding: 2em;
     }
 
-    .skills-grid {
+    .focus-areas-grid {
       grid-template-columns: 1fr;
       gap: 1.5em;
     }

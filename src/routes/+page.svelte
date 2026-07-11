@@ -4,7 +4,7 @@
   import TravelModal from '$lib/components/TravelModal.svelte';
   import FamilyModal from '$lib/components/FamilyModal.svelte';
   import LinkButton from '$lib/components/LinkButton.svelte';
-  import Skills from '$lib/components/Skills.svelte';
+  import FocusAreas from '$lib/components/FocusAreas.svelte';
   import FingerToTop from '$lib/components/FingerToTop.svelte';
   import SocialLinks from '$lib/components/SocialLinks.svelte';
   import ProfileImage from '$lib/components/ProfileImage.svelte';
@@ -70,7 +70,7 @@
   <FamilyModal open={showFamily} onClose={() => (showFamily = false)} />
 </section>
 
-<Skills />
+<FocusAreas />
 
 <style>
   section.banner {
