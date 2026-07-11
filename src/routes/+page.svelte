@@ -29,23 +29,25 @@
     excited about solving distributed systems and data pipeline challenges at scale.
   </p>
 
-  <p>
-    I love capturing moments through photography—corporate events, family gatherings, and travel
-    adventures. If you're interested in photo opportunities, reach out via LinkedIn!
-    <FingerToTop ariaLabel="Go to top" />
-  </p>
+  <p class="list-intro">Outside of my core work:</p>
 
-  <p>
-    I have a passion for building open-source projects that empower developers in their career
-    journeys. I enjoy contributing to projects that solve real problems.
-  </p>
-
-  <p>
-    I recharge by playing music, building keyboards, and catching up with peers over a meal. I also
-    travel outside the US to appreciate new experiences.
-    <LinkButton on:click={() => (showTravel = true)}>These places</LinkButton>
-    have left a lasting impression on me.
-  </p>
+  <ul class="about-list">
+    <li>
+      <strong>Open Source:</strong> Building developer tools and contributing to projects that solve real-world
+      problems.
+    </li>
+    <li>
+      <strong>Photography:</strong> Capturing corporate events, family gatherings, and travel
+      adventures. (Reach out on LinkedIn for photo opportunities! <FingerToTop
+        ariaLabel="Go to top"
+      />)
+    </li>
+    <li>
+      <strong>Interests:</strong> Recharging by playing music, building custom mechanical keyboards,
+      and traveling—<LinkButton on:click={() => (showTravel = true)}>these places</LinkButton> have left
+      a lasting impression.
+    </li>
+  </ul>
 
   <TravelModal
     open={showTravel}
@@ -54,7 +56,7 @@
     onClose={() => (showTravel = false)}
   />
 
-  <p>
+  <p class="family-closing">
     I am blessed with a <LinkButton on:click={() => (showFamily = true)}
       >lovely wife and two kids</LinkButton
     >, who constantly remind me that:
@@ -87,6 +89,24 @@
     background-color: var(--color-primary-bg);
     color: var(--color-text-inverse);
     line-height: 2;
+  }
+  .list-intro {
+    margin-bottom: 0.5em;
+  }
+  .about-list {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin: 0 0 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .about-list li {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
+  .family-closing {
+    margin-top: 1.5em;
   }
   @media (max-width: 768px) {
     section.about {
