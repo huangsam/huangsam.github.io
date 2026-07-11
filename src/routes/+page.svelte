@@ -25,7 +25,7 @@
   <p>
     I graduated from UC Davis with a bachelor's in Computer Science and Engineering. Currently, I
     work as a {EMPLOYMENT_INFO.role} at {EMPLOYMENT_INFO.company} under {EMPLOYMENT_INFO.org},
-    excited about solving distributed systems and data pipeline challenges at scale.
+    focusing on distributed systems and data pipeline challenges at scale.
   </p>
 
   <p class="list-intro">Outside of my core work:</p>
