@@ -70,6 +70,6 @@ export const FOCUS_AREAS: FocusArea[] = [
     name: 'Distributed Systems Architecture',
     description:
       'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
-    technologies: ['IaC', 'Kubernetes', 'gRPC', 'Kafka', 'Spark'],
+    technologies: ['Kubernetes', 'gRPC', 'Kafka', 'Spark', 'OTel'],
   },
 ];
