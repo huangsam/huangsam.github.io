@@ -22,7 +22,7 @@
       highlight: 'Systems Architecture & Principles',
       description:
         'A curated knowledge base and digital garden dedicated to systems engineering at scale. Documents architectural designs, distributed algorithms, caching strategies, and core engineering principles derived from real-world systems.',
-      tags: ['Python', 'Hugo', 'Systems'],
+      tags: ['Hugo', 'Mermaid', 'Systems'],
     },
     {
       title: 'Rustoku',
