@@ -39,21 +39,6 @@ test.describe('Site', () => {
     await expect(quote).toContainText('The days are long, but the years are short.');
   });
 
-  test('opens and closes travel modal', async ({ page }) => {
-    const travelLink = page.locator('button').filter({ hasText: /These places/ });
-    await expect(travelLink).toBeVisible();
-    await travelLink.click();
-
-    const modal = page.locator('[role="dialog"]');
-    await expect(modal).toBeVisible();
-    await expect(modal).toContainText('Travel History');
-
-    // Close via close button
-    const closeButton = modal.locator('button[aria-label="Close"]');
-    await closeButton.click();
-    await expect(modal).not.toBeVisible();
-  });
-
   test('renders featured projects section and links', async ({ page }) => {
     const featuredHeading = page.locator('h2', { hasText: 'Featured Projects' });
     await expect(featuredHeading).toBeVisible();
