@@ -4,6 +4,10 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    ignore:
+      - dependency-name: 'lint-staged'
+      - dependency-name: 'typescript'
+      - dependency-name: 'typescript-eslint'
     groups:
       site-dependencies:
         patterns:
