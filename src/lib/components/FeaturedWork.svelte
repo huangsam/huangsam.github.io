@@ -13,7 +13,7 @@
       url: 'https://ultimatepython.org',
       highlight: 'Interactive Python Study Guide',
       description:
-        'A zero-dependency, hands-on learning platform for mastering Python by example. Features heavily-commented, executable lessons designed for both newcomers and professionals, covering standard library fundamentals through advanced concurrency patterns.',
+        'A zero-dependency, hands-on learning platform for mastering Python by example. Features heavily-commented, executable lessons designed to scale mentorship for both newcomers and professionals, covering standard library fundamentals through advanced concurrency patterns.',
       tags: ['Python', 'Astro', 'Mentorship'],
     },
     {
