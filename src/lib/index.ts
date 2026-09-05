@@ -67,7 +67,7 @@ export const FOCUS_AREAS: FocusArea[] = [
     technologies: ['Python', 'Ollama', 'LangChain', 'PyTorch'],
   },
   {
-    name: 'Distributed Systems Architecture',
+    name: 'Distributed Systems',
     description:
       'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
     technologies: ['Kubernetes', 'gRPC', 'Kafka', 'OTel'],

@@ -5,11 +5,15 @@
 <script lang="ts">
   import Modal from './Modal.svelte';
 
-  export let open = false;
-  export let onClose: () => void;
+  interface Props {
+    open?: boolean;
+    onClose?: () => void;
+  }
 
-  let familyImage: string = '';
-  let imageLoaded = false;
+  let { open = false, onClose }: Props = $props();
+
+  let familyImage = $state('');
+  let imageLoaded = $state(false);
 
   // Lazy load the image only when the modal opens
   async function loadImage() {
@@ -20,9 +24,11 @@
     }
   }
 
-  $: if (open) {
-    loadImage();
-  }
+  $effect(() => {
+    if (open) {
+      loadImage();
+    }
+  });
 </script>
 
 <Modal {open} title="Family photo in Hawaii" {onClose}>

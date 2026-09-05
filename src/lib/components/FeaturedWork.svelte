@@ -13,7 +13,7 @@
       url: 'https://ultimatepython.org',
       highlight: 'Interactive Python Study Guide',
       description:
-        'A zero-dependency, hands-on learning platform for mastering Python by example. Features heavily-commented, executable lessons designed to scale mentorship for both newcomers and professionals, covering standard library fundamentals through advanced concurrency patterns.',
+        'A zero-dependency learning platform designed to scale engineering mentorship. Covers core library internals through advanced concurrency patterns with executable, real-world examples.',
       tags: ['Python', 'Astro', 'Mentorship'],
     },
     {
@@ -21,7 +21,7 @@
       url: 'https://sambyte.net/systology/',
       highlight: 'Systems Architecture & Principles',
       description:
-        'A curated knowledge base and digital garden dedicated to systems engineering at scale. Documents architectural designs, distributed algorithms, caching strategies, and core engineering principles derived from real-world systems.',
+        'A curated knowledge base on systems engineering at scale. Synthesizes distributed algorithms, caching strategies, and architectural trade-offs drawn from real-world production systems.',
       tags: ['Hugo', 'Mermaid', 'Systems'],
     },
     {
@@ -29,7 +29,7 @@
       url: 'https://sambyte.net/rustoku/',
       highlight: 'Rust & WebAssembly Sudoku Engine',
       description:
-        'A high-performance interactive Sudoku solver and generator running entirely in the browser. Powered by Rust compiled to WebAssembly (WASM), demonstrating low-level systems logic, memory-efficient backtracking, and real-time UI synchronization.',
+        'A high-performance browser engine powered by Rust and WebAssembly (WASM). Implements memory-efficient backtracking algorithms with real-time UI synchronization.',
       tags: ['Rust', 'Python', 'WASM'],
     },
   ];

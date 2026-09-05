@@ -4,17 +4,21 @@
   Used as a base for other modals like GitHubModal and TravelModal.
 -->
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount, onDestroy, type Snippet } from 'svelte';
   import { scale, fade } from 'svelte/transition';
 
-  // Props
-  export let open = false; // Controls modal visibility
-  export let title = ''; // Modal title for accessibility
-  export let onClose: () => void; // Callback when modal should close
+  interface Props {
+    open?: boolean;
+    title?: string;
+    onClose?: () => void;
+    children?: Snippet;
+  }
+
+  let { open = false, title = '', onClose, children }: Props = $props();
 
   // DOM element references for focus management and event handling
-  let dialogEl: HTMLDivElement | null = null;
-  let modalEl: HTMLDivElement | null = null;
+  let dialogEl: HTMLDivElement | null = $state(null);
+  let modalEl: HTMLDivElement | null = $state(null);
   let previousFocus: HTMLElement | null = null; // Element that had focus before modal opened
 
   /**
@@ -79,19 +83,20 @@
   });
 
   /**
-   * Reactive statement for focus management
+   * Focus management effect
    * When modal opens: save current focus and focus first focusable element
    * When modal closes: restore previous focus
    */
-  $: if (open && modalEl && typeof document !== 'undefined') {
-    // eslint-disable-next-line no-useless-assignment
-    previousFocus = document.activeElement as HTMLElement;
-    // Focus the modal container itself so screen readers announce it,
-    // avoiding the immediate focus state on the 'Close' button.
-    modalEl.focus();
-  } else if (!open && previousFocus && typeof document !== 'undefined') {
-    previousFocus.focus();
-  }
+  $effect(() => {
+    if (open && modalEl && typeof document !== 'undefined') {
+      previousFocus = document.activeElement as HTMLElement;
+      // Focus the modal container itself so screen readers announce it,
+      // avoiding the immediate focus state on the 'Close' button.
+      modalEl.focus();
+    } else if (!open && previousFocus && typeof document !== 'undefined') {
+      previousFocus.focus();
+    }
+  });
 </script>
 
 {#if open}
@@ -106,8 +111,8 @@
     aria-modal="true"
     aria-label={title}
     tabindex="-1"
-    on:click={clickBackdrop}
-    on:keydown={handleBackdropKey}
+    onclick={clickBackdrop}
+    onkeydown={handleBackdropKey}
     transition:fade={{ duration: 150 }}
   >
     <!--
@@ -126,18 +131,18 @@
         <button
           class="close"
           aria-label="Close"
-          on:click={onClose}
-          on:keydown={(e) => {
+          onclick={onClose}
+          onkeydown={(e) => {
             if (e.key === 'Enter') {
               e.preventDefault();
-              onClose();
+              onClose?.();
             }
           }}>✕</button
         >
       </div>
-      <!-- Modal content area - slot for custom content -->
+      <!-- Modal content area - snippet for custom content -->
       <div class="modal-content">
-        <slot />
+        {@render children?.()}
       </div>
     </div>
   </div>

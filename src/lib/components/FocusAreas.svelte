@@ -70,8 +70,15 @@
   }
 
   /* Card Header */
+  .card-header {
+    min-height: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
   .card-header h3 {
-    margin: 0 0 1rem 0;
+    margin: 0;
     font-size: var(--font-size-lg);
     color: var(--color-accent);
   }
@@ -82,6 +89,7 @@
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.8);
     margin: 0 0 1.5em 0;
+    min-height: 4.8rem;
     flex-grow: 1;
   }
 
@@ -89,7 +97,7 @@
   .tech-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.35em;
   }
 
   /* Individual tech tag */
@@ -97,7 +105,7 @@
     background-color: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: rgba(255, 255, 255, 0.9);
-    padding: 0.35em 0.85em;
+    padding: 0.25em 0.65em;
     border-radius: 2em;
     font-size: var(--font-size-xs);
     font-family: 'Source Serif 4', 'Merriweather', sans-serif;
@@ -134,6 +142,11 @@
     .focus-areas-grid {
       grid-template-columns: 1fr;
       gap: 1.5em;
+    }
+
+    .card-header,
+    .card-description {
+      min-height: auto;
     }
   }
 </style>

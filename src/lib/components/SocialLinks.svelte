@@ -1,5 +1,14 @@
 <script lang="ts">
-  export let profiles: Array<{ name: string; url: string }> = [];
+  interface Profile {
+    name: string;
+    url: string;
+  }
+
+  interface Props {
+    profiles?: Profile[];
+  }
+
+  let { profiles = [] }: Props = $props();
 </script>
 
 <div class="social-links">

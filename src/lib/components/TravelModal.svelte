@@ -10,18 +10,26 @@
     type CountryInfo,
   } from '$lib/utils/travel';
 
-  export let open = false;
-  export let onClose: () => void;
-  export let states: string[] = [];
-  export let countries: string[] = [];
+  interface Props {
+    open?: boolean;
+    onClose?: () => void;
+    states?: string[];
+    countries?: string[];
+  }
 
-  $: stateInfos = states
-    .map((stateName) => getStateInfo(stateName))
-    .filter((info): info is StateInfo => info !== null);
+  let { open = false, onClose, states = [], countries = [] }: Props = $props();
 
-  $: countryInfos = countries
-    .map((countryName) => getCountryInfo(countryName))
-    .filter((info): info is CountryInfo => info !== null);
+  let stateInfos = $derived(
+    states
+      .map((stateName) => getStateInfo(stateName))
+      .filter((info): info is StateInfo => info !== null),
+  );
+
+  let countryInfos = $derived(
+    countries
+      .map((countryName) => getCountryInfo(countryName))
+      .filter((info): info is CountryInfo => info !== null),
+  );
 </script>
 
 <Modal {open} title="Travel History" {onClose}>

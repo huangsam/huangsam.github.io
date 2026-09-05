@@ -8,8 +8,8 @@
   import SocialLinks from '$lib/components/SocialLinks.svelte';
   import ProfileImage from '$lib/components/ProfileImage.svelte';
   import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
-  let showTravel = false;
-  let showFamily = false;
+  let showTravel = $state(false);
+  let showFamily = $state(false);
 </script>
 
 <section class="banner">
@@ -39,7 +39,7 @@
     </li>
     <li>
       <strong>Interests:</strong> Playing music, building mechanical keyboards, and traveling to <LinkButton
-        on:click={() => (showTravel = true)}>cool places</LinkButton
+        onclick={() => (showTravel = true)}>cool places</LinkButton
       >.
     </li>
   </ul>
@@ -52,7 +52,7 @@
   />
 
   <p class="family-closing">
-    I am blessed with a <LinkButton on:click={() => (showFamily = true)}
+    I am blessed with a <LinkButton onclick={() => (showFamily = true)}
       >lovely wife and two kids</LinkButton
     >, who constantly remind me that:
   </p>

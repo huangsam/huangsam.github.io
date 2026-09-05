@@ -1,5 +1,17 @@
-<button on:click>
-  <slot />
+<script lang="ts">
+  import type { Snippet } from 'svelte';
+  import type { MouseEventHandler } from 'svelte/elements';
+
+  interface Props {
+    onclick?: MouseEventHandler<HTMLButtonElement>;
+    children?: Snippet;
+  }
+
+  let { onclick, children }: Props = $props();
+</script>
+
+<button {onclick}>
+  {@render children?.()}
 </button>
 
 <style>

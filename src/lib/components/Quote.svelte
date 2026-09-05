@@ -1,9 +1,20 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
+  import type { Snippet } from 'svelte';
+
+  interface Props {
+    children?: Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <blockquote transition:fade={{ duration: 1000 }}>
-  <slot>No content at the moment.</slot>
+  {#if children}
+    {@render children()}
+  {:else}
+    No content at the moment.
+  {/if}
 </blockquote>
 
 <style>

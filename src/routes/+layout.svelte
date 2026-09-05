@@ -1,8 +1,14 @@
 <script lang="ts">
   import './style.css';
-  import { onMount } from 'svelte';
+  import { onMount, type Snippet } from 'svelte';
   import { initVimNavigation } from '$lib/utils/vimNavigation';
-  let now: Date = new Date();
+
+  interface Props {
+    children?: Snippet;
+  }
+
+  let { children }: Props = $props();
+  const now = new Date();
 
   onMount(() => {
     initVimNavigation();
@@ -59,7 +65,7 @@
   </header>
 
   <main>
-    <slot />
+    {@render children?.()}
   </main>
 
   <footer>
