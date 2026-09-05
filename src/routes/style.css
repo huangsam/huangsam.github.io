@@ -23,6 +23,10 @@
   --space-xl: 1.5rem;
   --space-2xl: 2rem;
 
+  /* Section Padding */
+  --section-padding-y: 2em;
+  --section-padding-x: 10em;
+
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-normal: 300ms ease;
@@ -131,10 +135,22 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@media (max-width: 1024px) {
+  :root {
+    --section-padding-y: 3em;
+    --section-padding-x: 4em;
+  }
+}
+
 @media (max-width: 768px) {
   /* Apply smaller font for small screens */
   html {
     font-size: 14px;
+  }
+
+  :root {
+    --section-padding-y: 2em;
+    --section-padding-x: 2em;
   }
 }
 

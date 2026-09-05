@@ -26,7 +26,7 @@
 <style>
   /* Focus areas section - themed background with secondary color */
   .focus-areas {
-    padding: 2em 10em;
+    padding: var(--section-padding-y) var(--section-padding-x);
     background-color: var(--color-secondary-bg);
     color: var(--color-text);
   }
@@ -128,17 +128,7 @@
   }
 
   /* Responsive design */
-  @media (max-width: 1024px) {
-    .focus-areas {
-      padding: 3em 4em;
-    }
-  }
-
   @media (max-width: 768px) {
-    .focus-areas {
-      padding: 2em;
-    }
-
     .focus-areas-grid {
       grid-template-columns: 1fr;
       gap: 1.5em;

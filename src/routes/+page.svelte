@@ -80,7 +80,7 @@
     }
   }
   section.about {
-    padding: 2em 10em;
+    padding: var(--section-padding-y) var(--section-padding-x);
     background-color: var(--color-primary-bg);
     color: var(--color-text-inverse);
     line-height: 2;
@@ -102,10 +102,5 @@
   }
   .family-closing {
     margin-top: 1.5em;
-  }
-  @media (max-width: 768px) {
-    section.about {
-      padding: 2em;
-    }
   }
 </style>
