@@ -80,6 +80,41 @@ test.describe('Site', () => {
     await closeButton.click(); // Verify the modal is closed
     await expect(modalTitle).not.toBeVisible();
   });
+
+  test('keyboard shortcuts modal opens and toggles via hotkey and closes via escape', async ({
+    page,
+  }) => {
+    // Verify subtle footer hint is visible
+    const footerHint = page.locator('.shortcuts-hint');
+    await expect(footerHint).toBeVisible();
+    await expect(footerHint).toContainText('for navigation');
+
+    // 1. Open via '?' hotkey
+    await page.keyboard.press('?');
+    const modalTitle = page.getByRole('heading', { name: 'Keyboard Navigation' });
+    await expect(modalTitle).toBeVisible();
+    await expect(page.locator('text=Scroll down / up')).toBeVisible();
+    await expect(page.locator('text=Previous / next interactive element')).toBeVisible();
+    await expect(page.locator('text=Jump to first / last element')).toBeVisible();
+    await expect(page.locator('text=Close modal')).toBeVisible();
+
+    // Toggle closed via '?' hotkey
+    await page.keyboard.press('?');
+    await expect(modalTitle).not.toBeVisible();
+
+    // 2. Open via '?' hotkey and close via Escape
+    await page.keyboard.press('?');
+    await expect(modalTitle).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(modalTitle).not.toBeVisible();
+
+    // 3. Open via '?' hotkey and close via close button
+    await page.keyboard.press('?');
+    await expect(modalTitle).toBeVisible();
+    const closeButton = page.locator('button[aria-label="Close"]').first();
+    await closeButton.click();
+    await expect(modalTitle).not.toBeVisible();
+  });
 });
 
 /** Retrieves the background color of a given locator element. */

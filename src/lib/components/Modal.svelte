@@ -160,6 +160,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    outline: none;
   }
 
   /* Main modal container - responsive width, scrollable content, themed background */
@@ -173,6 +174,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: var(--space-md) var(--space-md) var(--space-lg);
+    outline: none;
   }
 
   /* Modal header - title and close button layout */

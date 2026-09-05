@@ -1,4 +1,8 @@
-export function initVimNavigation() {
+export interface VimNavigationOptions {
+  onOpenShortcuts?: () => void;
+}
+
+export function initVimNavigation(options?: VimNavigationOptions): () => void {
   // Helper to check if a modal is open
   const isModalOpen = () => document.querySelector('.modal-backdrop') !== null;
 
@@ -19,16 +23,19 @@ export function initVimNavigation() {
     );
   };
 
-  const focusableQuery = 'a, button';
+  const focusableQuery = 'a:not([tabindex="-1"]), button:not([tabindex="-1"])';
 
   // Helper to reliably get focusable elements and tracking current focus index
   const getFocusState = () => {
-    const elements = Array.from(document.querySelectorAll<HTMLElement>(focusableQuery));
+    const rawElements = Array.from(document.querySelectorAll<HTMLElement>(focusableQuery));
+    const elements = rawElements.filter(
+      (el) => !el.closest('footer') && !el.closest('.modal') && !el.closest('.modal-backdrop'),
+    );
     const currentIndex = elements.indexOf(document.activeElement as HTMLElement);
     return { elements, currentIndex };
   };
 
-  window.addEventListener('keydown', (event) => {
+  const handleKeydown = (event: KeyboardEvent) => {
     // If modal is open or user is typing, ignore Vim shortcuts
     if (isModalOpen() || isTyping(event)) return;
 
@@ -39,6 +46,15 @@ export function initVimNavigation() {
     const shift = event.shiftKey;
 
     switch (key) {
+      case '?':
+      case '/': {
+        if (key === '?' || (key === '/' && shift)) {
+          event.preventDefault();
+          options?.onOpenShortcuts?.();
+          window.dispatchEvent(new CustomEvent('open-keyboard-shortcuts'));
+        }
+        break;
+      }
       case 'h': {
         event.preventDefault();
         const { elements, currentIndex } = getFocusState();
@@ -89,5 +105,10 @@ export function initVimNavigation() {
         break;
       }
     }
-  });
+  };
+
+  window.addEventListener('keydown', handleKeydown);
+  return () => {
+    window.removeEventListener('keydown', handleKeydown);
+  };
 }
