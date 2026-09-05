@@ -10,6 +10,45 @@ test.describe('Site', () => {
     await expect(page).toHaveTitle(/Sam/);
   });
 
+  test('has canonical link', async ({ page }) => {
+    const canonicalLink = page.locator('link[rel="canonical"]');
+    await expect(canonicalLink).toHaveAttribute('href', 'https://sambyte.net');
+  });
+
+  test('has valid Schema.org JSON-LD structured data', async ({ page }) => {
+    const jsonLdScript = page.locator('script[type="application/ld+json"]');
+    await expect(jsonLdScript).toHaveCount(1);
+    const content = await jsonLdScript.textContent();
+    expect(content).toBeTruthy();
+
+    const data = JSON.parse(content!);
+    expect(data['@context']).toBe('https://schema.org');
+    expect(data['@graph']).toBeDefined();
+    expect(Array.isArray(data['@graph'])).toBe(true);
+
+    const website = data['@graph'].find((item: { '@type': string }) => item['@type'] === 'WebSite');
+    expect(website).toBeDefined();
+    expect(website.url).toBe('https://sambyte.net');
+    expect(website.name).toBe('Sam Huang');
+
+    const person = data['@graph'].find((item: { '@type': string }) => item['@type'] === 'Person');
+    expect(person).toBeDefined();
+    expect(person.name).toBe('Sam Huang');
+    expect(person.jobTitle).toBe('Software Engineer');
+    expect(person.worksFor).toEqual({
+      '@type': 'Organization',
+      name: 'Tesla',
+    });
+    expect(person.sameAs).toEqual([
+      'https://github.com/huangsam',
+      'https://www.linkedin.com/in/sambyte/',
+      'https://twitter.com/s_c_huang',
+    ]);
+    expect(person.knowsAbout).toContain('High-Performance Systems');
+    expect(person.knowsAbout).toContain('Go');
+    expect(person.skills).toContain('Distributed Systems');
+  });
+
   test('has source code link', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Source code' })).toBeVisible();
   });

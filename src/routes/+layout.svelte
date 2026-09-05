@@ -3,6 +3,7 @@
   import { onMount, type Snippet } from 'svelte';
   import { initVimNavigation } from '$lib/utils/vimNavigation';
   import KeyboardShortcutsModal from '$lib/components/KeyboardShortcutsModal.svelte';
+  import { EMPLOYMENT_INFO, FOCUS_AREAS, SOCIAL_PROFILES } from '$lib';
 
   interface Props {
     children?: Snippet;
@@ -11,6 +12,42 @@
   let { children }: Props = $props();
   let showShortcuts = $state(false);
   const now = new Date();
+
+  const skills = Array.from(
+    new Set([
+      ...FOCUS_AREAS.map((area) => area.name),
+      ...FOCUS_AREAS.flatMap((area) => area.technologies),
+    ]),
+  );
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://sambyte.net/#website',
+        url: 'https://sambyte.net',
+        name: 'Sam Huang',
+        description:
+          'Engineer at day. Artist at night. Software engineer, photographer, and musician.',
+      },
+      {
+        '@type': 'Person',
+        '@id': 'https://sambyte.net/#person',
+        name: 'Sam Huang',
+        url: 'https://sambyte.net',
+        image: 'https://sambyte.net/profile.jpg',
+        jobTitle: EMPLOYMENT_INFO.role,
+        worksFor: {
+          '@type': 'Organization',
+          name: EMPLOYMENT_INFO.company,
+        },
+        sameAs: SOCIAL_PROFILES.map((profile) => profile.url),
+        knowsAbout: skills,
+        skills: skills,
+      },
+    ],
+  };
 
   onMount(() => {
     const cleanup = initVimNavigation({
@@ -27,6 +64,7 @@
 
 <svelte:head>
   <title>Sam Huang</title>
+  <link rel="canonical" href="https://sambyte.net" />
   <link
     rel="preload"
     href="/fonts/Outfit-Regular.ttf"
@@ -50,8 +88,8 @@
     property="og:description"
     content="Engineer at day. Artist at night. Software engineer, photographer, and musician."
   />
-  <meta property="og:image" content="https://huangsam.github.io/profile.jpg" />
-  <meta property="og:url" content="https://huangsam.github.io" />
+  <meta property="og:image" content="https://sambyte.net/profile.jpg" />
+  <meta property="og:url" content="https://sambyte.net" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sam Huang" />
@@ -59,7 +97,9 @@
     name="twitter:description"
     content="Engineer at day. Artist at night. Software engineer, photographer, and musician."
   />
-  <meta name="twitter:image" content="https://huangsam.github.io/profile.jpg" />
+  <meta name="twitter:image" content="https://sambyte.net/profile.jpg" />
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html '<script type="application/ld+json">' + JSON.stringify(jsonLd) + '</' + 'script>'}
 </svelte:head>
 
 <div class="layout">
