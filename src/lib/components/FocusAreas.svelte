@@ -26,7 +26,7 @@
 <style>
   /* Focus areas section - themed background with secondary color */
   .focus-areas {
-    padding: 3em 10em;
+    padding: 2em 10em;
     background-color: var(--color-secondary-bg);
     color: var(--color-text);
   }

@@ -64,7 +64,7 @@
 <style>
   /* Featured Work Section */
   .featured-work {
-    padding: 4em 10em;
+    padding: 2em 10em;
     background-color: var(--color-primary-bg);
     color: var(--color-text-inverse);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
