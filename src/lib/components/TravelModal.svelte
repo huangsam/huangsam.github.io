@@ -3,41 +3,24 @@
 -->
 <script lang="ts">
   import Modal from './Modal.svelte';
-  import {
-    getStateInfo,
-    getCountryInfo,
-    type StateInfo,
-    type CountryInfo,
-  } from '$lib/utils/travel';
+  import type { StateInfo, CountryInfo } from '$lib/index';
 
   interface Props {
     open?: boolean;
     onClose?: () => void;
-    states?: string[];
-    countries?: string[];
+    states?: StateInfo[];
+    countries?: CountryInfo[];
   }
 
   let { open = false, onClose, states = [], countries = [] }: Props = $props();
-
-  let stateInfos = $derived(
-    states
-      .map((stateName) => getStateInfo(stateName))
-      .filter((info): info is StateInfo => info !== null),
-  );
-
-  let countryInfos = $derived(
-    countries
-      .map((countryName) => getCountryInfo(countryName))
-      .filter((info): info is CountryInfo => info !== null),
-  );
 </script>
 
 <Modal {open} title="Travel History" {onClose}>
   <!-- Show US states section if any states are provided -->
-  {#if stateInfos.length > 0}
+  {#if states.length > 0}
     <h3>US States</h3>
     <div class="places-grid">
-      {#each stateInfos as place (place.name)}
+      {#each states as place (place.name)}
         <div class="place-card">
           <div class="place-header">
             <strong>{place.name}</strong>
@@ -53,10 +36,10 @@
   {/if}
 
   <!-- Show countries section if any countries are provided -->
-  {#if countryInfos.length > 0}
+  {#if countries.length > 0}
     <h3>Countries</h3>
     <div class="places-grid">
-      {#each countryInfos as place (place.name)}
+      {#each countries as place (place.name)}
         <div class="place-card">
           <div class="place-header">
             <span class="flag">{place.flag}</span>

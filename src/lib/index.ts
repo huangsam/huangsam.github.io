@@ -4,10 +4,26 @@ interface SocialProfile {
   url: string;
 }
 
+/** Interface for US state information */
+export interface StateInfo {
+  name: string;
+  nickname: string;
+  wikipedia: string;
+  touristInfo: string;
+}
+
+/** Interface for country information */
+export interface CountryInfo {
+  name: string;
+  flag: string;
+  wikipedia: string;
+  touristInfo: string;
+}
+
 /** Represents places traveled, including states and countries. */
-interface TravelHistory {
-  states: string[];
-  countries: string[];
+export interface TravelHistory {
+  states: StateInfo[];
+  countries: CountryInfo[];
 }
 
 /** Represents employment info like company, role, and organization. */
@@ -42,8 +58,88 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
 
 /** Detailed travel history including states and countries visited. */
 export const TRAVEL_HISTORY: TravelHistory = {
-  states: ['Oregon', 'Washington', 'Nevada', 'Wyoming', 'Ohio', 'Illinois', 'Utah', 'Hawaii'],
-  countries: ['Taiwan', 'Mexico', 'Japan', 'Korea', 'Italy'],
+  states: [
+    {
+      name: 'Oregon',
+      nickname: 'The Beaver State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Oregon',
+      touristInfo: 'https://traveloregon.com/',
+    },
+    {
+      name: 'Washington',
+      nickname: 'The Evergreen State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Washington_(state)',
+      touristInfo: 'https://www.visitseattle.org/',
+    },
+    {
+      name: 'Nevada',
+      nickname: 'The Silver State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Nevada',
+      touristInfo: 'https://travelnevada.com/',
+    },
+    {
+      name: 'Wyoming',
+      nickname: 'The Equality State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Wyoming',
+      touristInfo: 'https://www.wyomingtourism.org/',
+    },
+    {
+      name: 'Ohio',
+      nickname: 'The Buckeye State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Ohio',
+      touristInfo: 'https://www.ohio.org/',
+    },
+    {
+      name: 'Illinois',
+      nickname: 'Land of Lincoln',
+      wikipedia: 'https://en.wikipedia.org/wiki/Illinois',
+      touristInfo: 'https://www.enjoyillinois.com/',
+    },
+    {
+      name: 'Utah',
+      nickname: 'The Beehive State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Utah',
+      touristInfo: 'https://www.visitutah.com/',
+    },
+    {
+      name: 'Hawaii',
+      nickname: 'The Aloha State',
+      wikipedia: 'https://en.wikipedia.org/wiki/Hawaii',
+      touristInfo: 'https://www.gohawaii.com/',
+    },
+  ],
+  countries: [
+    {
+      name: 'Taiwan',
+      flag: '🇹🇼',
+      wikipedia: 'https://en.wikipedia.org/wiki/Taiwan',
+      touristInfo: 'https://eng.taiwan.net.tw/',
+    },
+    {
+      name: 'Mexico',
+      flag: '🇲🇽',
+      wikipedia: 'https://en.wikipedia.org/wiki/Mexico',
+      touristInfo: 'https://www.lonelyplanet.com/mexico',
+    },
+    {
+      name: 'Japan',
+      flag: '🇯🇵',
+      wikipedia: 'https://en.wikipedia.org/wiki/Japan',
+      touristInfo: 'https://www.japan.travel/en/',
+    },
+    {
+      name: 'Korea',
+      flag: '🇰🇷',
+      wikipedia: 'https://en.wikipedia.org/wiki/South_Korea',
+      touristInfo: 'https://english.visitkorea.or.kr/',
+    },
+    {
+      name: 'Italy',
+      flag: '🇮🇹',
+      wikipedia: 'https://en.wikipedia.org/wiki/Italy',
+      touristInfo: 'https://www.italia.it/en',
+    },
+  ],
 };
 
 /** Current employment information. */
