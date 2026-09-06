@@ -2,7 +2,7 @@ import { test, expect, type Locator } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
-  await page.goto('http://localhost:4173');
+  await page.goto('/');
 });
 
 test.describe('Site', () => {
