@@ -24,10 +24,10 @@
     font-size: inherit; /* Inherit font size from parent element */
     font-family: inherit; /* Inherit font family from parent element */
     padding: 0; /* Remove default button padding for seamless inline appearance */
+    transition: opacity var(--transition-normal);
   }
 
   button:hover {
     opacity: 0.8; /* Subtle opacity reduction on hover for visual feedback */
-    transition: opacity var(--transition-normal);
   }
 </style>
