@@ -20,6 +20,10 @@
     ]),
   );
 
+  /**
+   * Schema.org JSON-LD structured data graph for SEO.
+   * Defines WebSite and Person entities with work info, social links, and skills.
+   */
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
