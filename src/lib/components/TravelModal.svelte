@@ -149,7 +149,7 @@
     color: var(--color-text-inverse);
     text-decoration: none;
     font-size: 0.85rem;
-    transition: background-color var(--transition-normal) ease;
+    transition: background-color var(--transition-normal);
   }
 
   .place-links a:hover {
