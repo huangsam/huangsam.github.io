@@ -20,8 +20,6 @@
     width: var(--profile-image-size, 21rem);
     height: var(--profile-image-size, 21rem);
     box-shadow: 3px 3px 5px lightgrey;
-    -moz-box-shadow: 3px 3px 5px lightgrey;
-    -webkit-box-shadow: 3px 3px 5px lightgrey;
     object-fit: cover;
   }
   @media (max-width: 768px) {
