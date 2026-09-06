@@ -57,6 +57,7 @@ footer {
   /* Support sticky footer */
   flex-grow: 0;
   flex-shrink: 0;
+  padding: 1.25em;
 }
 
 main {
@@ -71,22 +72,6 @@ header {
 
 footer {
   background-color: var(--color-secondary-bg);
-}
-
-@media (pointer: fine) {
-  /* Apply fine padding across UI */
-  header,
-  footer {
-    padding: 1.25em;
-  }
-}
-
-@media (pointer: coarse) {
-  /* Apply coarse padding across UI */
-  header,
-  footer {
-    padding: 1.5em;
-  }
 }
 
 @font-face {
