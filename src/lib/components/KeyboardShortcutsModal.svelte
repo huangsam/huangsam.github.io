@@ -59,14 +59,14 @@
 <style>
   .shortcuts-container {
     max-width: 520px;
-    margin: 0 auto;
+    margin: var(--space-md) auto;
   }
 
   .intro {
     font-size: var(--font-size-sm);
     color: var(--color-text-inverse);
     opacity: 0.85;
-    margin: 0 0 var(--space-xl) 0;
+    margin: 0 0 var(--space-md) 0;
     line-height: 1.5;
   }
 
