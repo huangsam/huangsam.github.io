@@ -7,6 +7,12 @@ const config = {
     adapter: adapter({
       fallback: '404.html',
     }),
+    typescript: {
+      config: (config) => {
+        config.include.push('../playwright.config.ts');
+        return config;
+      },
+    },
   },
   preprocess: vitePreprocess(),
 };
