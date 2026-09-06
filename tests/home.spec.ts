@@ -1,4 +1,5 @@
 import { test, expect, type Locator } from '@playwright/test';
+import { FOCUS_AREAS } from '../src/lib';
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
@@ -44,9 +45,14 @@ test.describe('Site', () => {
       'https://www.linkedin.com/in/sambyte/',
       'https://twitter.com/s_c_huang',
     ]);
-    expect(person.knowsAbout).toContain('High-Performance Systems');
-    expect(person.knowsAbout).toContain('Go');
-    expect(person.skills).toContain('Distributed Systems');
+    for (const area of FOCUS_AREAS) {
+      expect(person.knowsAbout).toContain(area.name);
+      expect(person.skills).toContain(area.name);
+      for (const tech of area.technologies) {
+        expect(person.knowsAbout).toContain(tech);
+        expect(person.skills).toContain(tech);
+      }
+    }
   });
 
   test('has source code link', async ({ page }) => {
