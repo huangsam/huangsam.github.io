@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "prepare": "svelte-kit sync && husky",
     "prepare:e2e": "playwright install --with-deps",
+    "postinstall": "playwright install --with-deps",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "NODE_OPTIONS=--no-experimental-strip-types playwright test",
