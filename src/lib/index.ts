@@ -152,7 +152,7 @@ export const EMPLOYMENT_INFO: EmploymentInfo = {
 /** List of architectural focus areas. */
 export const FOCUS_AREAS: FocusArea[] = [
   {
-    name: 'High-Performance Systems',
+    name: 'Systems Programming',
     description: 'Building efficient, resource-optimized, and low-latency systems and tooling.',
     technologies: ['Go', 'Rust', 'Java', 'Linux'],
   },
@@ -163,7 +163,7 @@ export const FOCUS_AREAS: FocusArea[] = [
     technologies: ['Python', 'LangChain', 'PyTorch'],
   },
   {
-    name: 'Distributed Systems',
+    name: 'Cloud Infrastructure',
     description:
       'Architecting scalable, resilient, and fault-tolerant cloud-native infrastructure.',
     technologies: ['Kubernetes', 'gRPC', 'Kafka', 'OTel'],
