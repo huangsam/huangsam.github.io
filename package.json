@@ -16,7 +16,7 @@
     "lint": "svelte-kit sync && prettier --check . && eslint .",
     "format": "prettier --write .",
     "lint-staged": "lint-staged",
-    "github": "vite build && gh-pages -d build -t"
+    "deploy": "gh workflow run deploy.yml"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
@@ -30,7 +30,6 @@
     "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.23.0",
-    "gh-pages": "^6.3.0",
     "globals": "^17.12.0",
     "husky": "^9.1.7",
     "jsdom": "^30.0.1",
