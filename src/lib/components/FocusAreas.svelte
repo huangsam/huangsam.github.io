@@ -108,7 +108,7 @@
     padding: 0.25em 0.65em;
     border-radius: 2em;
     font-size: var(--font-size-xs);
-    font-family: 'Source Serif 4', 'Merriweather', sans-serif;
+    font-family: 'Source Serif 4', 'Merriweather', Georgia, serif;
     transition:
       background-color var(--transition-fast),
       border-color var(--transition-fast),
