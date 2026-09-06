@@ -157,10 +157,10 @@ export const FOCUS_AREAS: FocusArea[] = [
     technologies: ['Go', 'Rust', 'Java', 'Linux'],
   },
   {
-    name: 'Agentic Workflows & Local AI',
+    name: 'Agentic Workflows',
     description:
       'Designing autonomous agent systems, prompt engineering pipelines, and MLOps for model deployment.',
-    technologies: ['Python', 'Ollama', 'LangChain', 'PyTorch'],
+    technologies: ['Python', 'LangChain', 'PyTorch'],
   },
   {
     name: 'Distributed Systems',
