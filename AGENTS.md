@@ -5,6 +5,7 @@
 - Write pure vanilla CSS without external libraries or frameworks.
 - Use centralized custom properties (`var(--...)`) for theme tokens and spacing.
 - Use `768px` as the standard mobile breakpoint across all components.
+- Use `480px` as the secondary breakpoint for narrow phone adjustments.
 - Do not author obsolete vendor prefixes (`-webkit-`, `-moz-`, `-ms-`).
 
 ## Config
