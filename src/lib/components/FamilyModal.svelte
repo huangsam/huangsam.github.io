@@ -80,7 +80,7 @@
     padding: 0 4rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .family-image {
       max-width: 90%;
     }
