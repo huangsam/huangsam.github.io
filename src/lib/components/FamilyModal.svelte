@@ -79,4 +79,14 @@
     margin-top: 0;
     padding: 0 4rem;
   }
+
+  @media (max-width: 600px) {
+    .family-image {
+      max-width: 90%;
+    }
+
+    .description {
+      padding: 0 1rem;
+    }
+  }
 </style>
