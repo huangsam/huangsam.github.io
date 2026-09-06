@@ -30,4 +30,10 @@
   button:hover {
     opacity: 0.8; /* Subtle opacity reduction on hover for visual feedback */
   }
+
+  button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 </style>
