@@ -66,7 +66,7 @@
     font-size: var(--font-size-sm);
     color: var(--color-text-inverse);
     opacity: 0.85;
-    margin: 0 0 var(--space-md) 0;
+    margin: 0 0 var(--space-xl) 0;
     line-height: 1.5;
   }
 
