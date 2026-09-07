@@ -158,9 +158,8 @@ export const FOCUS_AREAS: FocusArea[] = [
   },
   {
     name: 'Agentic Workflows',
-    description:
-      'Designing autonomous agent systems, prompt engineering pipelines, and MLOps for model deployment.',
-    technologies: ['Python', 'LangChain', 'PyTorch'],
+    description: 'Designing RAG systems, autonomous agents, and MCP servers for LLM applications.',
+    technologies: ['Python', 'LangChain', 'MCP'],
   },
   {
     name: 'Cloud Infrastructure',
