@@ -74,6 +74,12 @@ test.describe('Site', () => {
     }
   });
 
+  test('has header brand link', async ({ page }) => {
+    const brandLink = page.locator('header a.brand');
+    await expect(brandLink).toBeVisible();
+    await expect(brandLink).toHaveText('Sam Huang');
+  });
+
   test('has source code link', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Source code' })).toBeVisible();
   });

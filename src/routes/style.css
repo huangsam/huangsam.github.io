@@ -152,6 +152,14 @@ header a:focus-visible {
   color: var(--color-secondary-bg);
 }
 
+.brand {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
 header nav {
   display: flex;
   align-items: center;

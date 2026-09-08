@@ -110,7 +110,16 @@
 
 <div class="layout">
   <header>
-    <a href="/">Sam's website</a>
+    <a
+      href="/"
+      class="brand"
+      onclick={(e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }}
+    >
+      Sam Huang
+    </a>
     <nav class="right" aria-label="Site links and utilities">
       <a
         href="https://github.com/huangsam/huangsam.github.io"
