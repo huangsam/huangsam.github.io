@@ -16,6 +16,25 @@ test.describe('Site', () => {
     await expect(canonicalLink).toHaveAttribute('href', 'https://sambyte.net');
   });
 
+  test('has sitemap link in head', async ({ page }) => {
+    const sitemapLink = page.locator('link[rel="sitemap"]');
+    await expect(sitemapLink).toHaveAttribute('href', '/sitemap.xml');
+    await expect(sitemapLink).toHaveAttribute('type', 'application/xml');
+  });
+
+  test('serves static sitemap.xml and robots.txt', async ({ request }) => {
+    const sitemapRes = await request.get('/sitemap.xml');
+    expect(sitemapRes.status()).toBe(200);
+    const sitemapText = await sitemapRes.text();
+    expect(sitemapText).toContain('<urlset');
+    expect(sitemapText).toContain('https://sambyte.net/');
+
+    const robotsRes = await request.get('/robots.txt');
+    expect(robotsRes.status()).toBe(200);
+    const robotsText = await robotsRes.text();
+    expect(robotsText).toContain('Sitemap: https://sambyte.net/sitemap.xml');
+  });
+
   test('has valid Schema.org JSON-LD structured data', async ({ page }) => {
     const jsonLdScript = page.locator('script[type="application/ld+json"]');
     await expect(jsonLdScript).toHaveCount(1);
@@ -57,6 +76,20 @@ test.describe('Site', () => {
 
   test('has source code link', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Source code' })).toBeVisible();
+  });
+
+  test('has header utility icons', async ({ page }) => {
+    await expect(page.getByRole('link', { name: 'Site map' })).toBeVisible();
+    const shortcutsBtn = page.getByRole('button', { name: 'Keyboard shortcuts' });
+    await expect(shortcutsBtn).toBeVisible();
+
+    await shortcutsBtn.click();
+    const modalTitle = page.getByRole('heading', { name: 'Keyboard Navigation' });
+    await expect(modalTitle).toBeVisible();
+
+    const closeButton = page.locator('button[aria-label="Close"]').first();
+    await closeButton.click();
+    await expect(modalTitle).not.toBeVisible();
   });
 
   test('has social links', async ({ page }) => {

@@ -118,6 +118,9 @@ importers:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.10.0)
+      '@lucide/svelte':
+        specifier: ^1.41.0
+        version: 1.41.0(svelte@5.57.0(@typescript-eslint/types@8.69.0))
       '@playwright/test':
         specifier: ^1.63.0
         version: 1.63.0
@@ -339,6 +342,11 @@ packages:
 
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
+
+  '@lucide/svelte@1.41.0':
+    resolution: {integrity: sha512-N5dInvHWGxNcnu3VJvbO2zOJA832Uy4he6qGwcqd8i3m8iYGlLoebp+e+X8NfncXXLnXkYvru5BnkUVdNdo1xg==}
+    peerDependencies:
+      svelte: ^5
 
   '@oxc-project/types@0.148.0':
     resolution: {integrity: sha512-Nm4s/jB+4FpFsPhWGEC4h7rzksesmtnMXomo6rCMcg/b8zLQuOziRgkCS1fxDCXOlJB/6Q8oABOZ/OP6RIPj9A==}
@@ -1577,6 +1585,10 @@ snapshots:
       keyv: 5.6.0
 
   '@keyv/serialize@1.1.1': {}
+
+  '@lucide/svelte@1.41.0(svelte@5.57.0(@typescript-eslint/types@8.69.0))':
+    dependencies:
+      svelte: 5.57.0(@typescript-eslint/types@8.69.0)
 
   '@oxc-project/types@0.148.0': {}
 

@@ -3,6 +3,7 @@
   import { onMount, type Snippet } from 'svelte';
   import { initVimNavigation } from '$lib/utils/vimNavigation';
   import KeyboardShortcutsModal from '$lib/components/KeyboardShortcutsModal.svelte';
+  import { Code, Network, Keyboard } from '@lucide/svelte';
   import { EMPLOYMENT_INFO, FOCUS_AREAS, SOCIAL_PROFILES } from '$lib';
 
   interface Props {
@@ -69,6 +70,7 @@
 <svelte:head>
   <title>Sam Huang</title>
   <link rel="canonical" href="https://sambyte.net" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link
     rel="preload"
     href="/fonts/Outfit-Regular.ttf"
@@ -109,12 +111,36 @@
 <div class="layout">
   <header>
     <a href="/">Sam's website</a>
-    <nav class="right">
+    <nav class="right" aria-label="Site links and utilities">
       <a
         href="https://github.com/huangsam/huangsam.github.io"
         rel="noopener noreferrer"
-        target="_blank">Source code</a
+        target="_blank"
+        class="header-icon-link"
+        aria-label="Source code"
+        title="Source code"
       >
+        <Code size={18} />
+      </a>
+      <a
+        href="/sitemap.xml"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-icon-link"
+        aria-label="Site map"
+        title="Site map"
+      >
+        <Network size={18} />
+      </a>
+      <button
+        type="button"
+        class="header-icon-btn"
+        onclick={() => (showShortcuts = true)}
+        aria-label="Keyboard shortcuts"
+        title="Keyboard shortcuts (?)"
+      >
+        <Keyboard size={18} />
+      </button>
     </nav>
   </header>
 
