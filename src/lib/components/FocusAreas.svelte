@@ -1,6 +1,6 @@
 <script lang="ts">
   // Import focus areas from the main index file
-  import { FOCUS_AREAS } from '$lib/index';
+  import { FOCUS_AREAS } from '#lib/index.js';
 </script>
 
 <section class="focus-areas">

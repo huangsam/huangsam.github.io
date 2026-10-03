@@ -18,7 +18,7 @@
   // Lazy load the image only when the modal opens
   async function loadImage() {
     if (open && !imageLoaded) {
-      const module = await import('$lib/assets/family.jpg');
+      const module = await import('#lib/assets/family.jpg');
       familyImage = module.default;
       imageLoaded = true;
     }

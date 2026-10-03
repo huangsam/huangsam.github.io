@@ -1,13 +1,13 @@
 <script lang="ts">
-  import Quote from '$lib/components/Quote.svelte';
-  import TravelModal from '$lib/components/TravelModal.svelte';
-  import FamilyModal from '$lib/components/FamilyModal.svelte';
-  import LinkButton from '$lib/components/LinkButton.svelte';
-  import FocusAreas from '$lib/components/FocusAreas.svelte';
-  import FeaturedWork from '$lib/components/FeaturedWork.svelte';
-  import SocialLinks from '$lib/components/SocialLinks.svelte';
-  import ProfileImage from '$lib/components/ProfileImage.svelte';
-  import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '$lib/index';
+  import Quote from '#lib/components/Quote.svelte';
+  import TravelModal from '#lib/components/TravelModal.svelte';
+  import FamilyModal from '#lib/components/FamilyModal.svelte';
+  import LinkButton from '#lib/components/LinkButton.svelte';
+  import FocusAreas from '#lib/components/FocusAreas.svelte';
+  import FeaturedWork from '#lib/components/FeaturedWork.svelte';
+  import SocialLinks from '#lib/components/SocialLinks.svelte';
+  import ProfileImage from '#lib/components/ProfileImage.svelte';
+  import { EMPLOYMENT_INFO, SOCIAL_PROFILES, TRAVEL_HISTORY } from '#lib/index.js';
   let showTravel = $state(false);
   let showFamily = $state(false);
 </script>

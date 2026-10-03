@@ -1,10 +1,10 @@
 <script lang="ts">
   import './style.css';
   import { onMount, type Snippet } from 'svelte';
-  import { initVimNavigation } from '$lib/utils/vimNavigation';
-  import KeyboardShortcutsModal from '$lib/components/KeyboardShortcutsModal.svelte';
+  import { initVimNavigation } from '#lib/utils/vimNavigation.js';
+  import KeyboardShortcutsModal from '#lib/components/KeyboardShortcutsModal.svelte';
   import { Code, Network, Keyboard } from '@lucide/svelte';
-  import { EMPLOYMENT_INFO, FOCUS_AREAS, SOCIAL_PROFILES } from '$lib';
+  import { EMPLOYMENT_INFO, FOCUS_AREAS, SOCIAL_PROFILES } from '#lib';
 
   interface Props {
     children?: Snippet;

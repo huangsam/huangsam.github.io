@@ -1,6 +1,6 @@
 <script lang="ts">
-  import profileImage from '$lib/assets/profile.jpg';
-  import profileImageWebp from '$lib/assets/profile.webp';
+  import profileImage from '#lib/assets/profile.jpg';
+  import profileImageWebp from '#lib/assets/profile.webp';
 </script>
 
 <div class="profile-border">

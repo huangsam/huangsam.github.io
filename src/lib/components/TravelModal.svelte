@@ -3,7 +3,7 @@
 -->
 <script lang="ts">
   import Modal from './Modal.svelte';
-  import type { StateInfo, CountryInfo } from '$lib/index';
+  import type { StateInfo, CountryInfo } from '#lib/index.js';
 
   interface Props {
     open?: boolean;
