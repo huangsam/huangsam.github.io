@@ -21,29 +21,29 @@
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
     "@eslint/js": "^10.0.1",
-    "@lucide/svelte": "^1.52.0",
-    "@playwright/test": "^1.64.0",
+    "@lucide/svelte": "^1.57.0",
+    "@playwright/test": "^1.64.1",
     "@sveltejs/adapter-static": "^4.0.0",
-    "@sveltejs/kit": "^3.0.1",
+    "@sveltejs/kit": "^3.1.0",
     "@sveltejs/load-config": "^0.2.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "eslint": "^10.12.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.23.0",
+    "eslint-plugin-svelte": "^3.23.1",
     "globals": "^17.13.0",
     "husky": "^9.1.7",
     "jsdom": "^30.1.2",
     "lint-staged": "^17.6.0",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "prettier-plugin-svelte": "^4.1.1",
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.6",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.1",
-    "vite": "^8.3.3",
-    "vitest": "^5.0.3"
+    "typescript-eslint": "^8.71.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
@@ -55,7 +55,7 @@
     ]
   },
   "type": "module",
-  "packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c",
+  "packageManager": "pnpm@12.11.2+sha512.25a51652a196785af5f28bda6dfe8dc582ebefa4ac1d180221ce1390231c5fb76637822ea4b6e4633ce74acdcb0a77f725af11bad38177fdeddaee818a955cb9",
   "imports": {
     "#lib": "./src/lib/index.js",
     "#lib/*": "./src/lib/*"
